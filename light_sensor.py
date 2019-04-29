@@ -21,6 +21,7 @@ logname = "/home/pi/Desktop/smartGarden/smartGarden/sunlightLog.txt"
 def check_sunlight():
 	try:
 		f = open(logname, "a+")
+
 		timeStamp = time.time()
 		dateTimeString = datetime.datetime.fromtimestamp(timeStamp).strftime('%Y-%m-%d %H:%M:%S')
 		if GPIO.input(4):
