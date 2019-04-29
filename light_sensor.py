@@ -1,15 +1,33 @@
 import RPi.GPIO as GPIO
 import keyboard
+import threading
+import datetime
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+#WAIT_TIME_SECONDS = 900
+WAIT_TIME_SECONDS = 2
 
-#def light_callback():
-#	print "Light!"
+def check_sunlight:
+	try:
+		f = open("sunlightLog.txt", "a+")
+		timeStamp = time.time()
+		dateTimeString = datetime.datetime.fromtimestamp(timeStamp).strftime('%Y-%m-%d %H:%M:%S')
+		if GPIO.input(4):
+			f.write("NO Sunlight at: " + dateTimeString)
+			print "NO SunLight at: " + dateTimeString
+		else:
+			f.write("YES Sunlight at: " + dateTimeString)
+			print "YES SunLight at: " + dateTimeString
+	finally:
+		f.close()
+	except:
+		print "There was an error writing to file."
+		
 
-#GPIO.add_event_callback(4, light_callback)
 
-while True:
+def run_continuous:
+	while True:
 	if GPIO.input(4):
 		print "no light"
 	else:
@@ -23,4 +41,6 @@ while True:
 	except:
 		break
 
-#print GPIO.input(4)
+timer = threading.Event()
+while not timer.wait(WAIT_TIME_SECONDS)
+	check_sunlight()
