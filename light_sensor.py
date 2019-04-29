@@ -6,12 +6,12 @@ import time
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
-WAIT_TIME_SECONDS = 900
+WAIT_TIME_SECONDS = 600
 #WAIT_TIME_SECONDS = 2
 
 def check_sunlight():
 	try:
-		f = open("sunlightLog.txt", "a+")
+		f = open("/home/pi/Desktop/smartGarden/smartGarden/sunlightLog.txt", "a+")
 		timeStamp = time.time()
 		dateTimeString = datetime.datetime.fromtimestamp(timeStamp).strftime('%Y-%m-%d %H:%M:%S')
 		if GPIO.input(4):
