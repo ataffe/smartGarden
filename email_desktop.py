@@ -1,6 +1,7 @@
 #! /usr/bin/python
 
 import smtplib, ssl
+import threading
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.utils import formatdate
@@ -41,6 +42,7 @@ def send_email():
 
 		p.add_header('Content-Disposition', "attachment; filename=%s" % "sunlightLog.txt")
 		message.attach(p)
+		attachment.close()
 	except Exception as e:
 		print("There was an error reading html file. Defaulting to basic html page")
 		html = """\
@@ -73,4 +75,7 @@ def send_email():
 		server.sendmail(sender_email, receiver_email, message.as_string())
 		print("Email Sent")
 
-send_email()
+if __name__ == "__main__":
+	t1 = threading.Thread(target=send_email)
+	t1.start()
+	t1.join()
