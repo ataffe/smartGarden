@@ -23,26 +23,26 @@ def check_sunlight():
 		timeStamp = time.time()
 		dateTimeString = datetime.datetime.fromtimestamp(timeStamp).strftime('%Y-%m-%d %H:%M:%S')
 		if not GPIO.input(4):
-			f.write("NO Sunlight at: " + dateTimeString + "\n")
-			print "NO SunLight at: " + dateTimeString
+			f.write("YES Sunlight at: " + dateTimeString + "\n")
+			print("YES SunLight at: " + dateTimeString)
 		else:
-			f.write("YES Sunlight at: " + dateTimeString  + "\n")
-			print "YES SunLight at: " + dateTimeString
+			f.write("NO Sunlight at: " + dateTimeString  + "\n")
+			print("NO SunLight at: " + dateTimeString)
 	except Exception as e:
-		print "There was an error writing to file."
-		print e
+		print("There was an error writing to file.")
+		print(e)
 	finally:
 		f.close()
 
 def run_continuous():
 	while True:
 		if GPIO.input(4):
-			print "no light"
+			print("no light")
 		else:
-			print "light"
+			print("light")
 		try:
 			if keyboard.is_pressed('q'):
-				print "Exiting"
+				print("Exiting")
 				break
 			else:
 				pass
