@@ -4,6 +4,8 @@ import threading
 import datetime
 import time
 import smtplib, ssl
+import RPi.GPIO as GPIO
+import time
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
@@ -11,14 +13,16 @@ from email.utils import formatdate
 from email import encoders
 from os.path import basename
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+#GPIO.setmode(GPIO.BCM)
+#GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 WAIT_TIME_SECONDS = 600
 EMAIL_TIME_SECONDS = 7200
-#WAIT_TIME_SECONDS = 2
+PUMP_TIME_SECONDS = 7200
 
 def check_sunlight():
 	try:
+		GPIO.setmode(GPIO.BCM)
+		GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 		f = open("/home/pi/Desktop/smartGarden/smartGarden/sunlightLog.txt", "a+")
 		timeStamp = time.time()
 		dateTimeString = datetime.datetime.fromtimestamp(timeStamp).strftime('%Y-%m-%d %H:%M:%S')
@@ -49,6 +53,19 @@ def run_continuous():
 		except:
 			break
 
+def run_pump(run_time):
+	dutycycle = 60
+	GPIO.setmode(GPIO.BCM)
+	GPIO.setup(18, GPIO.OUT)
+	GPIO.output(18, GPIO.HIGH)
+	GPIO.output(18, GPIO.LOW)
+	p = GPIO.PWM(18,50)
+	p.start(dutycycle)
+	time.sleep(run_time)
+	GPIO.output(18, GPIO.LOW)
+	p.stop()
+	GPIO.cleanup()
+
 def send_email():
 	port = 465 # For SSL
 	password = "al.EX.91.27"
@@ -60,24 +77,19 @@ def send_email():
 	message["To"] = receiver_email
 	message["Date"] = formatdate(localtime=True)
 
-
-
 	# Create the body of the message (a plain-text and an HTML version).
 	text = "Hi!\nHow are you?\nHere is the link you wanted:\nhttp://www.python.org"
 
 	try:
-		f=open("email.html", "r")
+		f=open("/home/pi/Desktop/smartGarden/smartGarden/email.html", "r")
 		if f.mode == 'r':
 				html = f.read()
 		f.close()
 
 		#Open the file to be sent
-		attachment = open("sunlightLog.txt", "rb")
-
+		attachment = open("/home/pi/Desktop/smartGarden/smartGarden/sunlightLog.txt", "rb")
 		p = MIMEBase('application', 'octet-stream')
-
 		p.set_payload((attachment).read())
-
 		encoders.encode_base64(p)
 
 		p.add_header('Content-Disposition', "attachment; filename=%s" % "sunlightLog.txt")
@@ -93,9 +105,6 @@ def send_email():
 		</html>
 		"""
 		print(e)
-
-
-
 
 	# Record the MIME types of both parts - text/plain and text/html.
 	part1 = MIMEText(text, 'plain')
@@ -115,9 +124,10 @@ def send_email():
 		print("Email Sent")
 
 def email_thread():
+	time.sleep(120)
 	send_email()
-	timer2 = threading.Event()
-	while not timer2.wait(EMAIL_TIME_SECONDS):
+	timer = threading.Event()
+	while not timer.wait(EMAIL_TIME_SECONDS):
 		send_email()
 
 def sunlight_thread():
@@ -125,11 +135,20 @@ def sunlight_thread():
 	while not timer.wait(WAIT_TIME_SECONDS):
 		check_sunlight()
 
+def pump_thread():
+	run_pump(5)
+	timer = threading.Event()
+	while not timer.wait(PUMP_TIME_SECONDS):
+		run_pump(5)
+
 if __name__ == "__main__":
 	thread1 = threading.Thread(target=email_thread)
 	thread2 = threading.Thread(target=sunlight_thread)
+	thread3 = threading.Thread(target=pump_thread)
 
 	thread1.start()
 	thread2.start()
+	thread3.start()
 	thread1.join()
 	thread2.join()
+	thread3.join()
