@@ -17,7 +17,7 @@ from os.path import basename
 #GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 WAIT_TIME_SECONDS = 600
 EMAIL_TIME_SECONDS = 7200
-PUMP_TIME_SECONDS = 7200
+PUMP_TIME_SECONDS = 18000
 
 def check_sunlight():
 	try:
@@ -124,7 +124,7 @@ def send_email():
 		print("Email Sent")
 
 def email_thread():
-	time.sleep(120)
+	time.sleep(60)
 	send_email()
 	timer = threading.Event()
 	while not timer.wait(EMAIL_TIME_SECONDS):
@@ -136,7 +136,7 @@ def sunlight_thread():
 		check_sunlight()
 
 def pump_thread():
-	run_pump(5)
+	#run_pump(5)
 	timer = threading.Event()
 	while not timer.wait(PUMP_TIME_SECONDS):
 		run_pump(5)
