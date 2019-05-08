@@ -1,10 +1,10 @@
 import RPi.GPIO as GPIO
 import keyboard
 import threading
-import datetime
+from datetime import datetime  
+from datetime import timedelta
 import time
 import smtplib, ssl
-import RPi.GPIO as GPIO
 import time
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -12,6 +12,7 @@ from email.mime.base import MIMEBase
 from email.utils import formatdate
 from email import encoders
 from os.path import basename
+import sqlite3
 
 #GPIO.setmode(GPIO.BCM)
 #GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
@@ -19,18 +20,35 @@ WAIT_TIME_SECONDS = 600
 EMAIL_TIME_SECONDS = 7200
 PUMP_TIME_SECONDS = 18000
 
+def insertSunlightRecord(message,time1, time2):
+	insert_command = "INSERT INTO sunlight VALUES (\'" + message + "\',\'"+ time1 + "\',\'" + time2 + "\');"
+	try:
+		conn = sqlite3.connect('/home/pi/Desktop/smartGarden/smartGarden/gardenDatabase.db')
+		cursor = conn.cursor()
+		cursor.execute(insert_command)
+		conn.commit()
+		print("Inserted sunlight record")
+		return cursor.lastrowid
+	except Exception as e:
+		print(e)
+	finally:
+		conn.close()
+
 def check_sunlight():
 	try:
 		GPIO.setmode(GPIO.BCM)
 		GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 		f = open("/home/pi/Desktop/smartGarden/smartGarden/sunlightLog.txt", "a+")
-		timeStamp = time.time()
-		dateTimeString = datetime.datetime.fromtimestamp(timeStamp).strftime('%Y-%m-%d %H:%M:%S')
+		time = datetime.now()
+		dateTimeString = str(time)
+		cleanDateString = str(time + timedelta(days=60))
 		if not GPIO.input(4):
 			f.write("YES Sunlight at: " + dateTimeString + "\n")
+			insertSunlightRecord("Yes Sunlight",dateTimeString,cleanDateString)	
 			print("YES SunLight at: " + dateTimeString)
 		else:
 			f.write("NO Sunlight at: " + dateTimeString  + "\n")
+			insertSunlightRecord("No Sunlight", dateTimeString, cleanDateString)	
 			print("NO SunLight at: " + dateTimeString)
 	except Exception as e:
 		print("There was an error writing to file.")
