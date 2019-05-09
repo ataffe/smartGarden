@@ -17,7 +17,7 @@ import sqlite3
 #GPIO.setmode(GPIO.BCM)
 #GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 WAIT_TIME_SECONDS = 600
-EMAIL_TIME_SECONDS = 7200
+EMAIL_TIME_SECONDS = 14400
 PUMP_TIME_SECONDS = 18000
 
 def insertSunlightRecord(message,time1, time2):
@@ -149,6 +149,7 @@ def email_thread():
 		send_email()
 
 def sunlight_thread():
+	check_sunlight()
 	timer = threading.Event()
 	while not timer.wait(WAIT_TIME_SECONDS):
 		check_sunlight()
