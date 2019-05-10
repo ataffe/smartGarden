@@ -16,5 +16,5 @@ finally:
 	zf.close()
 os.system("rm images/*.jpg")
 
-scp_command = "scp images/" + filename + ".zip alex@192.168.0.7:C:\\\\Users\\\\Alex\\\\Desktop\\\\SmartGarden\\\\"
+scp_command = "scp images/" + filename + ".zip alext@192.168.0.20:C:\\\\Users\\\\ALEXT\\\\OneDrive\\\\Desktop\\\\SmartGarden\\\\"
 os.system(scp_command)
