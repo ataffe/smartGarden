@@ -2,19 +2,60 @@ import os
 import zipfile
 from datetime import datetime
 
-filename = str(datetime.now()).replace(" ", "-")
-filename = filename.replace(":","-")
-filename = filename.replace(".","-")
-filename = filename + ".jpg"
-print("filename: " + filename)
-myCmd = 'fswebcam -r 1280x720 /home/pi/Desktop/smartGarden/smartGarden/test/images/' + str(filename)
-os.system(myCmd)
-zf = zipfile.ZipFile("images/" + filename + ".zip", mode = 'w')
-try:
-	zf.write("images/" + filename, compress_type= zipfile.ZIP_DEFLATED)
-finally:
-	zf.close()
-os.system("rm images/*.jpg")
+def zipdir(path, ziph):
+    for root, dirs, files in os.walk(path):
+        for file in files:
+            ziph.write(os.path.join(root, file))
 
-scp_command = "scp images/" + filename + ".zip alext@192.168.0.20:C:\\\\Users\\\\ALEXT\\\\OneDrive\\\\Desktop\\\\SmartGarden\\\\"
-os.system(scp_command)
+def create_folder():
+    filename = str(datetime.now()).replace(" ", "-")
+    dateArray = filename.split('-')
+    ymd = dateArray[0] + "-" + dateArray[1] + "-" + dateArray[2]
+    try:
+        os.mkdir("/home/pi/Desktop/smartGarden/smartGarden/test/images/" + ymd)
+    except FileExistsError:
+        pass
+    finally:
+        return ymd
+
+def send_folder(ymd):
+    print("Zipping File...")
+    baseFolder = ymd
+    ymd = baseFolder + ".zip"
+    os.chdir("images")
+    zf = zipfile.ZipFile(ymd, mode = 'w', compression=zipfile.ZIP_LZMA)
+    try:
+        zipdir(baseFolder,zf)
+    	#zf.write("images/" + ymd,"dir\\images"/ + ymd, compress_type= zipfile.ZIP_DEFLATED)
+    finally:
+    	zf.close()
+    print("Sending images...")
+    scp_command = "SSHPASS='al.EX.91.27' sshpass -e scp " + ymd + " alext@192.168.0.20:D:\\\\smartGarden\\\\Images"
+    os.system(scp_command)
+    os.system("rm " + ymd)
+    os.system("rm -r " + baseFolder)
+    os.chdir("..")
+    print(os.listdir())
+
+def take_pics(ymd, number=1, sharpness=1):
+    for x in range(number):
+        print("Taking image " + str(x + 1) + " out of " + str(number))
+        filename = str(datetime.now()).replace(" ", "-")
+        filename = filename.replace(":","-")
+        filename = filename.replace(".","-")
+        filename = filename + ".jpg"
+        #resolution 1280x720
+        myCmd = 'fswebcam -q -i 0 -r 800x600 /home/pi/Desktop/smartGarden/smartGarden/test/images/' + ymd + "/" + str(filename)
+        os.system(myCmd)
+        
+
+    
+
+ymd = create_folder()
+take_pics(ymd, 2, 5)
+#take_pics(ymd, 5, 5)
+#take_pics(ymd, 5, 6)
+send_folder(ymd)
+
+
+
