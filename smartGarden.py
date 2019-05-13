@@ -14,6 +14,7 @@ from email import encoders
 import os
 import sqlite3
 import zipfile
+import logging
 
 
 #GPIO.setmode(GPIO.BCM)
@@ -22,6 +23,8 @@ WAIT_TIME_SECONDS = 600
 EMAIL_TIME_SECONDS = 14400
 PUMP_TIME_SECONDS = 14400
 CAMERA_TIME_SECONDS = 300
+ARTIFICIAL_LIGHT_SECONDS = 1800
+LAMP_PIN = 16
 image_count = 0
 
 def insertSunlightRecord(message,time1, time2):
@@ -31,14 +34,15 @@ def insertSunlightRecord(message,time1, time2):
 		cursor = conn.cursor()
 		cursor.execute(insert_command)
 		conn.commit()
-		print("Inserted sunlight record")
+		logging.info("Inserted sunlight record")
 		return cursor.lastrowid
 	except Exception as e:
-		print(e)
+		logging.warn(e)
 	finally:
 		conn.close()
 
 def check_sunlight():
+	artificialLightHours = False
 	try:
 		GPIO.setmode(GPIO.BCM)
 		GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
@@ -46,15 +50,33 @@ def check_sunlight():
 		time = datetime.now()
 		dateTimeString = str(time)
 		cleanDateString = str(time + timedelta(days=60))
-		if not GPIO.input(4):
-			f.write("YES Sunlight at: " + dateTimeString + "\n")
-			insertSunlightRecord("Yes Sunlight",dateTimeString,cleanDateString)
-		else:
-			f.write("NO Sunlight at: " + dateTimeString  + "\n")
-			insertSunlightRecord("No Sunlight", dateTimeString, cleanDateString)
+		currentTimeStamp = str(datetime.now()).split()[1]
+		currentHour = currentTimeStamp.split(':')[0]
+		hourAsInt = int(currentHour)
+
+		if hourAsInt >= 18:
+			f.write("YES Artificial Sunlight at: " + dateTimeString + "\n")
+			insertSunlightRecord("YES Artificial Sunlight",dateTimeString,cleanDateString)
+			artificialLightHours = True
+			logging.info("Checked artificial sunlight")
+		if hourAsInt >=6 and hourAsInt <= 12:
+			f.write("YES Artificial Sunlight at: " + dateTimeString + "\n")
+			insertSunlightRecord("YES Artificial Sunlight",dateTimeString,cleanDateString)
+			artificialLightHours = True
+			logging.info("Checked artificial sunlight")
+
+		if not artificialLightHours:
+			if not GPIO.input(4):
+				f.write("YES Natural Sunlight at: " + dateTimeString + "\n")
+				insertSunlightRecord("Yes Sunlight",dateTimeString,cleanDateString)
+				logging.info("Checked natural sunlight")
+			else:
+				f.write("NO Sunlight at: " + dateTimeString  + "\n")
+				insertSunlightRecord("No Sunlight", dateTimeString, cleanDateString)
+				logging.info("Checked natural sunlight")
 	except Exception as e:
-		print("There was an error writing to file.")
-		print(e)
+		logging.warn("There was an error writing to file.")
+		logging.warn(e)
 	finally:
 		f.close()
 
@@ -70,14 +92,14 @@ def create_folder():
 		return ymd
 
 def zipdir(path, ziph):
-	print("zipping path: " + path)
+	logging.info("zipping path: " + path)
 	for root, dirs, files in os.walk(path):
-		print("root: " + root)
+		logging.info("root: " + root)
 		for file in files:
 			ziph.write(os.path.join(root, file))
 
 def send_folder(ymd):
-	print("Zipping File...")
+	logging.info("Zipping File...")
 	baseFolder = ymd
 	ymd = baseFolder + ".zip"
 	os.chdir("images")
@@ -86,16 +108,24 @@ def send_folder(ymd):
 		zipdir(baseFolder,zf)
 	finally:
 		zf.close()
-	print("Sending images...")
-	scp_command = "SSHPASS='al.EX.91.27' sshpass -e scp " + ymd + " alext@192.168.0.20:D:\\\\smartGarden\\\\Images"
-	os.system(scp_command)
-	os.system("rm " + ymd)
-	os.system("rm -r " + baseFolder)
-	os.chdir("..")
+	logging.info("Sending images...")
+	try:
+		scp_command = "SSHPASS='al.EX.91.27' sshpass -e scp " + ymd + " alext@192.168.0.20:D:\\\\smartGarden\\\\Images"
+	except Exception as e:
+		logging.warn("There was an error sending the file to Cacutar")
+		logging.warn(e)
+	try:	
+		os.system(scp_command)
+		os.system("rm " + ymd)
+		os.system("rm -r " + baseFolder)
+		os.chdir("..")
+	except Exception as e:
+		logging.warn("There was an error deleting the folders and moving back a directory")
+		logging.warn(e)
 
 def take_pics(ymd, number=1):
 	for x in range(number):
-		print("Taking image " + str(x + 1) + " out of " + str(number))
+		logging.info("Taking image " + str(x + 1) + " out of " + str(number))
 		filename = str(datetime.now()).replace(" ", "-")
 		filename = filename.replace(":","-")
 		filename = filename.replace(".","-")
@@ -122,7 +152,6 @@ def run_pump(run_time):
 	time.sleep(run_time)
 	GPIO.output(18, GPIO.LOW)
 	p.stop()
-	GPIO.cleanup()
 
 def send_email():
 	port = 465 # For SSL
@@ -170,13 +199,27 @@ def send_email():
 							row = "<tr><td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
 						row = row + "<td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>" + lineArray[3] + " " +  lineArray[4]+ "</td></tr>"
 					html = html + row
+				elif currentYMD == lineArray[4]:
+					if cnt % 2 == 0:
+						if "YES" in lineArray[0]:
+							row = "<tr><td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + " " + lineArray[2] + "</td>"
+						else:
+							row = "<tr><td style='border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
+						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center'>" + lineArray[4] + " " +  lineArray[5]+ "</td></tr>"
+					else:
+						if "YES" in lineArray[0]:
+							row = "<tr><td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + " " + lineArray[2] + "</td>"
+						else:
+							row = "<tr><td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
+						row = row + "<td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>" + lineArray[4] + " " +  lineArray[5]+ "</td></tr>"
+					html = html + row
 		html = html + """\
 					</table>
 				</body>
 			</html>
 			"""
 	except Exception as e:
-		print("There was an error reading html file. Defaulting to basic html page")
+		logging.warn("There was an error reading html file. Defaulting to basic html page")
 		html = """\
 		<html>
 			<head></head>
@@ -185,7 +228,7 @@ def send_email():
 			</body>
 		</html>
 		"""
-		print(e)
+		logging.warn(e)
 
 	try:
 		#Open the file to be sent
@@ -197,8 +240,8 @@ def send_email():
 		p.add_header('Content-Disposition', "attachment; filename=%s" % "sunlightLog.txt")
 		message.attach(p)
 	except Exception as e:
-		print("There was an error opening attachment.")
-		print(e)
+		logging.warn("There was an error opening attachment.")
+		logging.warn(e)
 
 	# Record the MIME types of both parts - text/plain and text/html.
 	part1 = MIMEText(text, 'plain')
@@ -215,7 +258,38 @@ def send_email():
 	with smtplib.SMTP_SSL("smtp.gmail.com", port) as server:
 		server.login("raspberry.pi.taffe@gmail.com", password)
 		server.sendmail(sender_email, receiver_email, message.as_string())
-		print("Email Sent")
+		logging.info("Email Sent")
+
+def control_artifical_light(on_off):
+	try:
+		GPIO.setmode(GPIO.BCM)
+		GPIO.setup(LAMP_PIN, GPIO.OUT, initial=1)
+		if on_off == "on":
+			GPIO.output(LAMP_PIN, 0)
+		else:
+			GPIO.output(LAMP_PIN, 1)
+	except Exception as e:
+		logging.warn(e)
+
+def run_artificial_light():
+	try:
+		currentTimeStamp = str(datetime.now()).split()[1]
+		currentHour = currentTimeStamp.split(':')[0]
+		logging.info("Currrent time: " + currentHour)
+		if currentHour == "18":
+			control_artifical_light("on")
+			logging.info("Turning light on")
+		elif currentHour == "00":
+			control_artifical_light("off")
+			logging.info("Turning light on")
+		elif currentHour == "06":
+			control_artifical_light("on")
+			logging.info("Turning light on")
+		elif currentHour == "12":
+			control_artifical_light("off")
+			logging.info("Turning light on")
+	except Exception as e:
+		logging.info("Could not setup light")
 
 def email_thread():
 	time.sleep(60)
@@ -225,12 +299,14 @@ def email_thread():
 		send_email()
 
 def sunlight_thread():
+	check_sunlight()
 	timer = threading.Event()
 	while not timer.wait(WAIT_TIME_SECONDS):
 		check_sunlight()
 
 def pump_thread():
-	#run_pump(5)
+	time.sleep(45)
+	run_pump(5)
 	timer = threading.Event()
 	while not timer.wait(PUMP_TIME_SECONDS):
 		run_pump(5)
@@ -242,17 +318,28 @@ def camera_thread():
 	while not timer.wait(CAMERA_TIME_SECONDS):
 		run_camera(ymd)
 
+def artifical_light_thread():
+	run_artificial_light()
+	timer = threading.Event()
+	while not timer.wait(ARTIFICIAL_LIGHT_SECONDS):
+		run_artificial_light()
+	GPIO.cleanup()
+
 if __name__ == "__main__":
+	logging.basicConfig(filename="/home/pi/Desktop/smartGarden/smartGarden/smartGardenLog.txt", level=logging.INFO)
 	thread1 = threading.Thread(target=email_thread)
 	thread2 = threading.Thread(target=sunlight_thread)
 	thread3 = threading.Thread(target=pump_thread)
 	thread4 = threading.Thread(target=camera_thread)
+	thread5 = threading.Thread(target=artifical_light_thread)
 
 	thread1.start()
 	thread2.start()
 	thread3.start()
 	thread4.start()
+	thread5.start()
 	thread1.join()
 	thread2.join()
 	thread3.join()
 	thread4.join()
+	thread5.join()

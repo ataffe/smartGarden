@@ -1,0 +1,470 @@
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 00
+INFO:root:Turning light on
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Email Sent
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 01
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 01
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 02
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 02
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 03
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 03
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 04
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 04
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Email Sent
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 05
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 05
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 06
+INFO:root:Turning light on
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 06
+INFO:root:Turning light on
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 07
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 07
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 08
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 08
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Email Sent
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 09
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 09
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 10
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 10
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 11
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 11
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 12
+INFO:root:Turning light on
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 12
+INFO:root:Turning light on
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Email Sent
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 13
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 13
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 14
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 14
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Currrent time: 16
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Email Sent
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 16
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Email Sent
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 17
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 17
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 18
+INFO:root:Turning light on
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 18
+INFO:root:Turning light on
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Currrent time: 20
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Email Sent
