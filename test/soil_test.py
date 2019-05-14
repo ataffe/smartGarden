@@ -17,13 +17,28 @@ print("voltage: " + str(chan.voltage))
 
 lowest = chan.value
 highest = lowest
+min = 1061
+max = 14667
+started = False
+weight = 40
+valInt = 0
 while True:
-	val = chan.value
-	if val < lowest:
-		lowest = val
-	if val > highest:
-		highest = val
+	if started:
+		rawVal = chan.value
+		val = (rawVal - min) / (max - min)
+		val = val * 100
+		newValInt = round(val, 5)
+		rawVal = (weight * newValInt) + ((1 - weight) * valInt)
+	else:
+		rawVal = chan.value
+		#Normalization
+		val = (rawVal - min) / (max - min)
+		#Convert to a percentage
+		val = val * 100
+		valInt = round(val, 5)
 
-	print("Voltage: " + str(chan.voltage) + " Value: " + str(val) + "   lowest: " + str(lowest) + "   highest: " + str(highest))
+	print("Voltage: " + str(chan.voltage) + "\t\tValue: " + str(valInt))
 
+	if not started:
+		started = True
 

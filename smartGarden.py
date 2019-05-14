@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import keyboard
 import threading
-from datetime import datetime  
+from datetime import datetime
 from datetime import timedelta
 import time
 import smtplib, ssl
@@ -15,6 +15,11 @@ import os
 import sqlite3
 import zipfile
 import logging
+import board
+import busio
+import adafruit_ads1x15.ads1115 as ADS
+from adafruit_ads1x15.analog_in import AnalogIn
+
 
 
 #GPIO.setmode(GPIO.BCM)
@@ -99,7 +104,7 @@ def zipdir(path, ziph):
 			ziph.write(os.path.join(root, file))
 
 def send_folder(ymd):
-	logging.info("Zipping File...")
+	logging.info("Zipping File... "+ str(datetime.now()))
 	baseFolder = ymd
 	ymd = baseFolder + ".zip"
 	os.chdir("images")
@@ -114,7 +119,7 @@ def send_folder(ymd):
 	except Exception as e:
 		logging.warn("There was an error sending the file to Cacutar")
 		logging.warn(e)
-	try:	
+	try:
 		os.system(scp_command)
 		os.system("rm " + ymd)
 		os.system("rm -r " + baseFolder)
@@ -152,6 +157,7 @@ def run_pump(run_time):
 	time.sleep(run_time)
 	GPIO.output(18, GPIO.LOW)
 	p.stop()
+	logging.log("Water plants at: " + str(datetime.now()))
 
 def send_email():
 	port = 465 # For SSL
@@ -232,16 +238,26 @@ def send_email():
 
 	try:
 		#Open the file to be sent
-		attachment = open("/home/pi/Desktop/smartGarden/smartGarden/sunlightLog.txt", "rb")
+		attachment = open("/home/pi/Desktop/smartGarden/smartGarden/smartGardenLog.txt", "rb")
+		attachment2 = open("/home/pi/Desktop/smartGarden/smartGarden/soilLog.txt", "rb")
 		p = MIMEBase('application', 'octet-stream')
 		p.set_payload((attachment).read())
 		encoders.encode_base64(p)
 
-		p.add_header('Content-Disposition', "attachment; filename=%s" % "sunlightLog.txt")
+		p2 = MIMEBase('application', 'octet-stream')
+		p2.set_payload((attachment2).read())
+		encoders.encode_base64(p2)
+
+		p.add_header('Content-Disposition', "attachment; filename=%s" % "GardenLog.txt")
+		p2.add_header('Content-Disposition', "attachement; filename=%s" % "soilLog.txt")
+		message.attach(p2)
 		message.attach(p)
 	except Exception as e:
 		logging.warn("There was an error opening attachment.")
 		logging.warn(e)
+	finally:
+		attachment.close()
+		attachment2.close()
 
 	# Record the MIME types of both parts - text/plain and text/html.
 	part1 = MIMEText(text, 'plain')
@@ -258,7 +274,7 @@ def send_email():
 	with smtplib.SMTP_SSL("smtp.gmail.com", port) as server:
 		server.login("raspberry.pi.taffe@gmail.com", password)
 		server.sendmail(sender_email, receiver_email, message.as_string())
-		logging.info("Email Sent")
+		logging.info("Email Sent "+ str(datetime.now()))
 
 def control_artifical_light(on_off):
 	try:
@@ -274,25 +290,66 @@ def control_artifical_light(on_off):
 def run_artificial_light():
 	try:
 		currentTimeStamp = str(datetime.now()).split()[1]
-		currentHour = currentTimeStamp.split(':')[0]
-		logging.info("Currrent time: " + currentHour)
-		if currentHour == "18":
+		currentHour = int(currentTimeStamp.split(':')[0])
+		logging.info("Currrent time: " + str(currentHour))
+		if currentHour >= 18 or (currentHour >= 6 and currentHour < 12):
 			control_artifical_light("on")
-			logging.info("Turning light on")
-		elif currentHour == "00":
+			logging.info("Turning light on "+ str(datetime.now()))
+		elif (currentHour >= 12 and currentHour < 18) or currentHour < 6:
 			control_artifical_light("off")
-			logging.info("Turning light on")
-		elif currentHour == "06":
-			control_artifical_light("on")
-			logging.info("Turning light on")
-		elif currentHour == "12":
-			control_artifical_light("off")
-			logging.info("Turning light on")
+			logging.info("Turning light off "+ str(datetime.now()))
 	except Exception as e:
-		logging.info("Could not setup light")
+		logging.info("Could not setup light "+ str(datetime.now()))
+		logging.warn(e)
+
+def check_soil():
+	rawVal = 0.0
+	try:
+		i2c = busio.I2C(board.SCL, board.SDA)
+		ads = ADS.ADS1115(i2c)
+		ads.gain = 2/3
+		chan = AnalogIn(ads, ADS.P0)
+		#From claibration
+		min = 1061
+		max = 14667
+		started = False
+		weight = 40
+		valInt = 0
+		for x in range(20):
+			if started:
+				rawVal = chan.value
+				val = (rawVal - min) / (max - min)
+				val = val * 100
+				newValInt = round(val, 8)
+				rawVal = (weight * newValInt) + ((1 - weight) * valInt)
+			else:
+				rawVal = chan.value
+				#Normalization
+				val = (rawVal - min) / (max - min)
+				#Convert to a percentage
+				val = val * 100
+				valInt = round(val, 5)
+
+			if not started:
+				started = True
+		output = rawVal
+		logging.info("Soil Moisture Level: " + str(output))
+	except Exception as e:
+		logging.WARN("Error calculating soil moisture")
+		logging.WARN(e)
+	
+	try:
+		f = open("/home/pi/Desktop/smartGarden/smartGarden/soilLog.txt", "a+")
+		f.write("Soil Moisture Level: " + str(rawVal) + "\n")
+	except Exception as e:
+		logging.WARN("Error writing soil moisture level")
+		logging.WARN(e)
+	finally:
+		f.close()
+
 
 def email_thread():
-	time.sleep(60)
+	#time.sleep(60)
 	send_email()
 	timer = threading.Event()
 	while not timer.wait(EMAIL_TIME_SECONDS):
@@ -305,8 +362,6 @@ def sunlight_thread():
 		check_sunlight()
 
 def pump_thread():
-	time.sleep(45)
-	run_pump(5)
 	timer = threading.Event()
 	while not timer.wait(PUMP_TIME_SECONDS):
 		run_pump(5)
@@ -325,6 +380,14 @@ def artifical_light_thread():
 		run_artificial_light()
 	GPIO.cleanup()
 
+def soil_moisture_thread():
+	check_soil()
+	timer = threading.Event()
+	while not timer.wait(WAIT_TIME_SECONDS):
+		check_soil()
+	
+
+
 if __name__ == "__main__":
 	logging.basicConfig(filename="/home/pi/Desktop/smartGarden/smartGarden/smartGardenLog.txt", level=logging.INFO)
 	thread1 = threading.Thread(target=email_thread)
@@ -332,14 +395,17 @@ if __name__ == "__main__":
 	thread3 = threading.Thread(target=pump_thread)
 	thread4 = threading.Thread(target=camera_thread)
 	thread5 = threading.Thread(target=artifical_light_thread)
+	thread6 = threading.Thread(target=soil_moisture_thread)
 
 	thread1.start()
 	thread2.start()
 	thread3.start()
 	thread4.start()
 	thread5.start()
+	thread6.start()
 	thread1.join()
 	thread2.join()
 	thread3.join()
 	thread4.join()
 	thread5.join()
+	thread6.join()
