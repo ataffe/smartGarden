@@ -147,17 +147,21 @@ def run_camera(ymd):
 	take_pics(ymd)
 
 def run_pump(run_time):
-	dutycycle = 60
-	GPIO.setmode(GPIO.BCM)
-	GPIO.setup(18, GPIO.OUT)
-	GPIO.output(18, GPIO.HIGH)
-	GPIO.output(18, GPIO.LOW)
-	p = GPIO.PWM(18,50)
-	p.start(dutycycle)
-	time.sleep(run_time)
-	GPIO.output(18, GPIO.LOW)
-	p.stop()
-	logging.log("Water plants at: " + str(datetime.now()))
+    try:
+	    dutycycle = 60
+	    GPIO.setmode(GPIO.BCM)
+	    GPIO.setup(18, GPIO.OUT)
+	    GPIO.output(18, GPIO.HIGH)
+	    GPIO.output(18, GPIO.LOW)
+	    p = GPIO.PWM(18,50)
+	    p.start(dutycycle)
+	    time.sleep(run_time)
+	    GPIO.output(18, GPIO.LOW)
+	    p.stop()
+	    logging.info("Watered plants at: " + str(datetime.now()))
+    except Exception as e:
+        logging.warn("There was an error watering the plants.")
+        logging.warn(e)
 
 def send_email():
 	port = 465 # For SSL
@@ -200,54 +204,58 @@ def send_email():
 				currentYMD = str(datetime.now()).split()[0]
 				soilMoisture = "No Data"
 				soilTimeStamp = "No Data"
-				if cnt < len(soilLogArray):
-					try:
-						splitLine = soilLogArray[cnt].split()
-						soilMoisture = splitLine[3]
-						soilTimeStamp = splitLine[4] + " " + splitLine[5]
-						print("soilMoisture: " + soilMoisture)
-						print("soil time stamp: " + soilTimeStamp)
-					except Exception as e:
-						logging.warn("Unable to parse soil moisture or time stamp for email.")
-						logging.warn(e)
+				highlightedRow = "<td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>"
+				regularRow = "<td style='border: 1px solid;padding: 8px; text-align: center;'>"
+				greyRow = "<td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>"
 
-				if currentYMD == lineArray[3]:
-					if cnt % 2 == 0:
-						if "YES" in lineArray[0]:
-							row = "<tr><td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
-						else:
-							row = "<tr><td style='border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
+                                if cnt < len(soilLogArray):
+                                        try:
+                                                splitLine = soilLogArray[cnt].split()
+                                                soilMoisture = splitLine[3]
+                                                soilTimeStamp = splitLine[4] + " " + splitLine[5]
+                                                print("soilMoisture: " + soilMoisture)
+                                                print("soil time stamp: " + soilTimeStamp)
+                                        except Exception as e:
+                                                logging.warn("Unable to parse soil moisture or time stamp for email.")
+                                                logging.warn(e)
 
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center'>" + lineArray[3] + " " +  lineArray[4]+ "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilMoisture + "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilTimeStamp + "</td></tr>"
-					else:
-						if "YES" in lineArray[0]:
-							row = "<tr><td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
-						else:
-							row = "<tr><td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
-						row = row + "<td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>" + lineArray[3] + " " +  lineArray[4]+ "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilMoisture + "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilTimeStamp + "</td></tr>"
-					html = html + row
-				elif currentYMD == lineArray[4]:
-					if cnt % 2 == 0:
-						if "YES" in lineArray[0]:
-							row = "<tr><td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + " " + lineArray[2] + "</td>"
-						else:
-							row = "<tr><td style='border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center'>" + lineArray[4] + " " +  lineArray[5]+ "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilMoisture + "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilTimeStamp + "</td></tr>"
-					else:
-						if "YES" in lineArray[0]:
-							row = "<tr><td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + " " + lineArray[2] + "</td>"
-						else:
-							row = "<tr><td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
-						row = row + "<td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>" + lineArray[4] + " " +  lineArray[5]+ "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilMoisture + "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilTimeStamp + "</td></tr>"
-					html = html + row
+                                if currentYMD == lineArray[3]:
+                                        if cnt % 2 == 0:
+                                                if "YES" in lineArray[0]:
+                                                        row = "<tr>" + highlightedRow  + lineArray[0] + " " + lineArray[1] + "</td>"
+                                                else:
+                                                        row = "<tr>" + regularRow + lineArray[0] + " " + lineArray[1] + "</td>"
+
+                                                row = row + regularRow + lineArray[3] + " " +  lineArray[4]+ "</td>"
+                                                row = row + regularRow + soilMoisture + "</td>"
+                                                row = row + regularRow + soilTimeStamp + "</td></tr>"
+                                        else:
+                                                if "YES" in lineArray[0]:
+                                                        row = "<tr>" + highlightedRow + lineArray[0] + " " + lineArray[1] + "</td>"
+                                                else:
+                                                        row = "<tr>" + greyRow + lineArray[0] + " " + lineArray[1] + "</td>"
+                                                row = row + greyRow + lineArray[3] + " " +  lineArray[4]+ "</td>"
+                                                row = row + greyRow + soilMoisture + "</td>"
+                                                row = row + greyRow + soilTimeStamp + "</td></tr>"
+                                        html = html + row
+                                elif currentYMD == lineArray[4]:
+                                        if cnt % 2 == 0:
+                                                if "YES" in lineArray[0]:
+                                                        row = "<tr>" + highlightedRow + lineArray[0] + " " + lineArray[1] + " " + lineArray[2] + "</td>"
+                                                else:
+                                                        row = "<tr>" + regularRow + lineArray[0] + " " + lineArray[1] + "</td>"
+                                                row = row + regularRow + lineArray[4] + " " +  lineArray[5]+ "</td>"
+                                                row = row + regularRow + soilMoisture + "</td>"
+                                                row = row + regularRow + soilTimeStamp + "</td></tr>"
+                                        else:
+                                                if "YES" in lineArray[0]:
+                                                        row = "<tr>" + highlightedRow + lineArray[0] + " " + lineArray[1] + " " + lineArray[2] + "</td>"
+                                                else:
+                                                        row = "<tr>" + greyRow + lineArray[0] + " " + lineArray[1] + "</td>"
+                                                row = row + greyRow + lineArray[4] + " " +  lineArray[5]+ "</td>"
+                                                row = row + greyRow + soilMoisture + "</td>"
+                                                row = row + greyRow + soilTimeStamp + "</td></tr>"
+                                        html = html + row
 				html = html + """\
 						</table>
 					</body>
@@ -354,14 +362,14 @@ def check_soil():
 			if not started:
 				started = True
 		output = rawVal
-		logging.info("Soil Moisture Level: " + str(round(output)))
+		logging.info("Soil Moisture Level: " + str(100 - round(output)))
 	except Exception as e:
 		logging.WARN("Error calculating soil moisture")
 		logging.WARN(e)
 	
 	try:
 		f = open("/home/pi/Desktop/smartGarden/smartGarden/soilLog.txt", "a+")
-		f.write("Soil Moisture Level: " + str(round(rawVal)) + " " + str(datetime.now()) + "\n")
+		f.write("Soil Moisture Level: " + str(100 - round(rawVal)) + " " + str(datetime.now()) + "\n")
 	except Exception as e:
 		logging.WARN("Error writing soil moisture level")
 		logging.WARN(e)
