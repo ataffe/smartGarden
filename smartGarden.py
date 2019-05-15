@@ -185,30 +185,31 @@ def send_email():
 						<tr>
 							<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;"> Sunlight </th>
 							<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;"> TimeStamp </th>
-                            <th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;"> Soil Moisture </th>
-                            <th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;"> TimeStamp </th>
+							<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;"> Soil Moisture </th>
+							<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;"> TimeStamp </th>
 						</tr>
 						"""
-        soilLogArray = []
+		soilLogArray = []
 		with open("/home/pi/Desktop/smartGarden/smartGarden/soilLog.txt", "r") as fp2:
-            for count, line in enumerate(fp2):
-                soilLogArray.append(line)
-		
+			for count, line in enumerate(fp2):
+				soilLogArray.append(line)
+
 		with open("/home/pi/Desktop/smartGarden/smartGarden/sunlightLog.txt", "r") as fp:
 			for cnt, line in enumerate(fp):
 				lineArray = line.split()
 				currentYMD = str(datetime.now()).split()[0]
-                soilMoisture = "No Data"
-                soilTimeStamp = "No Data"
-
-                if cnt < len(soilLogArray) {
-                    try:
-                        soilMoisture = soilLogArray[cnt].split()[3]
-                        soilTimeStamp = soilLogArray[cnt].split()[4] + " " + soilLogArray[cnt].split()[5]
-                    catch Exception as e:
-                        logging.warn("Unable to parse soil moisture or time stamp for email.")
-                        logging.warn(e)
-                }
+				soilMoisture = "No Data"
+				soilTimeStamp = "No Data"
+				if cnt < len(soilLogArray):
+					try:
+						splitLine = soilLogArray[cnt].split()
+						soilMoisture = splitLine[3]
+						soilTimeStamp = splitLine[4] + " " + splitLine[5]
+						print("soilMoisture: " + soilMoisture)
+						print("soil time stamp: " + soilTimeStamp)
+					except Exception as e:
+						logging.warn("Unable to parse soil moisture or time stamp for email.")
+						logging.warn(e)
 
 				if currentYMD == lineArray[3]:
 					if cnt % 2 == 0:
@@ -216,18 +217,18 @@ def send_email():
 							row = "<tr><td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
 						else:
 							row = "<tr><td style='border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
-						
-                        row = row + "<td style='border: 1px solid;padding: 8px; text-align: center'>" + lineArray[3] + " " +  lineArray[4]+ "</td>"
-                        row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilMoisture + "</td>"
-                        row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilTimeStamp + "</td></tr>"
+
+						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center'>" + lineArray[3] + " " +  lineArray[4]+ "</td>"
+						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilMoisture + "</td>"
+						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilTimeStamp + "</td></tr>"
 					else:
 						if "YES" in lineArray[0]:
 							row = "<tr><td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
 						else:
 							row = "<tr><td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
 						row = row + "<td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>" + lineArray[3] + " " +  lineArray[4]+ "</td>"
-                        row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilMoisture + "</td>"
-                        row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilTimeStamp + "</td></tr>"
+						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilMoisture + "</td>"
+						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilTimeStamp + "</td></tr>"
 					html = html + row
 				elif currentYMD == lineArray[4]:
 					if cnt % 2 == 0:
@@ -236,22 +237,22 @@ def send_email():
 						else:
 							row = "<tr><td style='border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
 						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center'>" + lineArray[4] + " " +  lineArray[5]+ "</td>"
-                        row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilMoisture + "</td>"
-                        row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilTimeStamp + "</td></tr>"
+						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilMoisture + "</td>"
+						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilTimeStamp + "</td></tr>"
 					else:
 						if "YES" in lineArray[0]:
 							row = "<tr><td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + " " + lineArray[2] + "</td>"
 						else:
 							row = "<tr><td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
 						row = row + "<td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>" + lineArray[4] + " " +  lineArray[5]+ "</td>"
-                        row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilMoisture + "</td>"
-                        row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilTimeStamp + "</td></tr>"
+						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilMoisture + "</td>"
+						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilTimeStamp + "</td></tr>"
 					html = html + row
-		html = html + """\
-					</table>
-				</body>
-			</html>
-			"""
+				html = html + """\
+						</table>
+					</body>
+				</html>
+				"""
 	except Exception as e:
 		logging.warn("There was an error reading html file. Defaulting to basic html page")
 		html = """\
@@ -267,25 +268,17 @@ def send_email():
 	try:
 		#Open the file to be sent
 		attachment = open("/home/pi/Desktop/smartGarden/smartGarden/smartGardenLog.txt", "rb")
-		attachment2 = open("/home/pi/Desktop/smartGarden/smartGarden/soilLog.txt", "rb")
 		p = MIMEBase('application', 'octet-stream')
 		p.set_payload((attachment).read())
 		encoders.encode_base64(p)
 
-		p2 = MIMEBase('application', 'octet-stream')
-		p2.set_payload((attachment2).read())
-		encoders.encode_base64(p2)
-
 		p.add_header('Content-Disposition', "attachment; filename=%s" % "GardenLog.txt")
-		p2.add_header('Content-Disposition', "attachement; filename=%s" % "soilLog.txt")
-		message.attach(p2)
 		message.attach(p)
 	except Exception as e:
 		logging.warn("There was an error opening attachment.")
 		logging.warn(e)
 	finally:
 		attachment.close()
-		attachment2.close()
 
 	# Record the MIME types of both parts - text/plain and text/html.
 	part1 = MIMEText(text, 'plain')
@@ -348,7 +341,7 @@ def check_soil():
 				rawVal = chan.value
 				val = (rawVal - min) / (max - min)
 				val = val * 100
-				newValInt = round(val, 8)
+				newValInt = round(val, 10)
 				rawVal = (weight * newValInt) + ((1 - weight) * valInt)
 			else:
 				rawVal = chan.value
@@ -361,14 +354,14 @@ def check_soil():
 			if not started:
 				started = True
 		output = rawVal
-		logging.info("Soil Moisture Level: " + str(output))
+		logging.info("Soil Moisture Level: " + str(round(output)))
 	except Exception as e:
 		logging.WARN("Error calculating soil moisture")
 		logging.WARN(e)
 	
 	try:
 		f = open("/home/pi/Desktop/smartGarden/smartGarden/soilLog.txt", "a+")
-		f.write("Soil Moisture Level: " + str(rawVal) + " " + str(datetime.now()) + "\n")
+		f.write("Soil Moisture Level: " + str(round(rawVal)) + " " + str(datetime.now()) + "\n")
 	except Exception as e:
 		logging.WARN("Error writing soil moisture level")
 		logging.WARN(e)

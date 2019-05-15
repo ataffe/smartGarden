@@ -3,10 +3,7 @@ import os
 from datetime import datetime
 
 def zipdir(path, ziph):
-	print("zipping path: " + path)
 	for root, dirs, files in os.walk(path):
-		print("root: " + root)
-		print("files: " + str(files))
 		for file in files:
 			ziph.write(os.path.join(root, file))
 
@@ -14,12 +11,13 @@ def send_folder(ymd):
 	print("Zipping File...")
 	baseFolder = ymd
 	ymd = baseFolder + ".zip"
-	print("ymd: " + ymd)
+	os.chdir("images")
 	zf = zipfile.ZipFile(ymd, mode = 'w', compression=zipfile.ZIP_LZMA)
 	try:
 		zipdir(baseFolder,zf)
 	finally:
 		zf.close()
+	os.chdir("..")
 	print("Sending images...")
 	scp_command = "SSHPASS='al.EX.91.27' sshpass -e scp images/" + ymd + " alext@192.168.0.20:D:\\\\smartGarden\\\\Images"
 	os.system(scp_command)
