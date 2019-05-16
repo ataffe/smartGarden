@@ -352,3 +352,4 @@ INFO:root:Turning light on 2019-05-15 18:23:25.936728
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
 INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
