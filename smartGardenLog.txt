@@ -1,728 +1,29 @@
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
+INFO:root:Currrent time: 8
 INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 18
-INFO:root:Turning light on 2019-05-14 18:43:35.712209
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
+INFO:root:Turning light on 2019-05-15 08:23:25.765606
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
 INFO:root:Soil Moisture Level: 37
 WARNING:root:Unable to parse soil moisture or time stamp for email.
 WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-15 08:25:02.310212
+INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 36.78508239999974
+INFO:root:Soil Moisture Level: 36
 INFO:root:Taking image 1 out of 1
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
 INFO:root:Taking image 1 out of 1
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-INFO:root:Currrent time: 18
-INFO:root:Turning light on 2019-05-14 18:44:10.198719
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-INFO:root:Soil Moisture Level: 35
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-INFO:root:Email Sent 2019-05-14 18:44:13.190446
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
+INFO:root:Soil Moisture Level: 36
 INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 18
-INFO:root:Turning light on 2019-05-14 18:45:39.416958
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 8
+INFO:root:Turning light on 2019-05-15 08:53:25.809872
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-INFO:root:Soil Moisture Level: 37
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
-WARNING:root:Unable to parse soil moisture or time stamp for email.
-WARNING:root:list index out of range
+INFO:root:Soil Moisture Level: 36
+INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
@@ -734,8 +35,93 @@ INFO:root:Checked artificial sunlight
 INFO:root:Soil Moisture Level: 37
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 19
-INFO:root:Turning light on 2019-05-14 19:15:39.423097
+INFO:root:Currrent time: 9
+INFO:root:Turning light on 2019-05-15 09:23:25.816385
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 36
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 36
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 9
+INFO:root:Turning light on 2019-05-15 09:53:25.823109
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 38
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 10
+INFO:root:Turning light on 2019-05-15 10:23:25.829829
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 36
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 38
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 10
+INFO:root:Turning light on 2019-05-15 10:53:25.836331
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 36
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 11
+INFO:root:Turning light on 2019-05-15 11:23:25.843086
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 36
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 38
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 11
+INFO:root:Turning light on 2019-05-15 11:53:25.849836
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
 INFO:root:Soil Moisture Level: 37
@@ -748,13 +134,221 @@ INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 35
+INFO:root:Soil Moisture Level: 38
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 19
-INFO:root:Turning light on 2019-05-14 19:45:39.429926
+INFO:root:Currrent time: 12
+INFO:root:Turning light off 2019-05-15 12:23:25.856122
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 37
+WARNING:root:Unable to parse soil moisture or time stamp for email.
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-15 12:25:04.438587
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
 INFO:root:Soil Moisture Level: 37
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 38
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 12
+INFO:root:Turning light off 2019-05-15 12:53:25.862879
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 38
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 13
+INFO:root:Turning light off 2019-05-15 13:23:25.869665
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 38
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 38
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 13
+INFO:root:Turning light off 2019-05-15 13:53:25.876234
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 14
+INFO:root:Turning light off 2019-05-15 14:23:25.883085
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 36
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 14
+INFO:root:Turning light off 2019-05-15 14:53:25.889978
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 15
+INFO:root:Turning light off 2019-05-15 15:23:25.896522
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 38
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 15
+INFO:root:Turning light off 2019-05-15 15:53:25.903327
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 36
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 16
+INFO:root:Turning light off 2019-05-15 16:23:25.910025
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+WARNING:root:Unable to parse soil moisture or time stamp for email.
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-15 16:25:06.673814
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 16
+INFO:root:Turning light off 2019-05-15 16:53:25.916616
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 17
+INFO:root:Turning light off 2019-05-15 17:23:25.923424
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 36
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 17
+INFO:root:Turning light off 2019-05-15 17:53:25.930194
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 37
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 18
+INFO:root:Turning light on 2019-05-15 18:23:25.936728
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 37

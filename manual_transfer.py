@@ -1,6 +1,6 @@
 import zipfile
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 
 def zipdir(path, ziph):
 	for root, dirs, files in os.walk(path):
@@ -17,14 +17,16 @@ def send_folder(ymd):
 		zipdir(baseFolder,zf)
 	finally:
 		zf.close()
-	os.chdir("..")
+	
 	print("Sending images...")
 	scp_command = "SSHPASS='al.EX.91.27' sshpass -e scp images/" + ymd + " alext@192.168.0.20:D:\\\\smartGarden\\\\Images"
 	os.system(scp_command)
-	#os.system("rm " + ymd)
-	#os.system("rm -r " + baseFolder)
+	os.system("rm -f " + ymd)
+	#os.system("rm -rf " + baseFolder)
+	os.chdir("..")
 
-filename = str(datetime.now()).replace(" ", "-")
+yesterday = datetime.now() - timedelta(days=1)
+filename = str(yesterday).replace(" ", "-")
 dateArray = filename.split('-')
 ymd = dateArray[0] + "-" + dateArray[1] + "-" + dateArray[2]
 send_folder(ymd)

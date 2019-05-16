@@ -129,3 +129,140 @@ YES Artificial Sunlight at: 2019-05-14 19:15:39.726217
 YES Artificial Sunlight at: 2019-05-14 19:25:39.761862
 YES Artificial Sunlight at: 2019-05-14 19:35:39.794352
 YES Artificial Sunlight at: 2019-05-14 19:45:39.825016
+YES Artificial Sunlight at: 2019-05-14 19:55:39.860553
+YES Artificial Sunlight at: 2019-05-14 20:05:39.893318
+YES Artificial Sunlight at: 2019-05-14 20:15:39.924748
+YES Artificial Sunlight at: 2019-05-14 20:25:39.976803
+YES Artificial Sunlight at: 2019-05-14 20:35:40.011762
+YES Artificial Sunlight at: 2019-05-14 20:45:40.045090
+YES Artificial Sunlight at: 2019-05-14 20:55:40.080183
+YES Artificial Sunlight at: 2019-05-14 21:05:40.113926
+YES Artificial Sunlight at: 2019-05-14 21:15:40.145120
+YES Artificial Sunlight at: 2019-05-14 21:25:40.177946
+YES Artificial Sunlight at: 2019-05-14 21:35:40.211557
+YES Artificial Sunlight at: 2019-05-14 21:45:40.244786
+YES Artificial Sunlight at: 2019-05-14 21:55:40.281795
+YES Artificial Sunlight at: 2019-05-14 22:05:40.313347
+YES Artificial Sunlight at: 2019-05-14 22:15:40.345735
+YES Artificial Sunlight at: 2019-05-14 22:25:40.378551
+YES Artificial Sunlight at: 2019-05-14 22:35:40.409927
+YES Artificial Sunlight at: 2019-05-14 22:45:40.441454
+YES Artificial Sunlight at: 2019-05-14 22:55:40.478433
+YES Artificial Sunlight at: 2019-05-14 23:05:40.514018
+YES Artificial Sunlight at: 2019-05-14 23:15:40.547268
+YES Artificial Sunlight at: 2019-05-14 23:25:40.578279
+YES Artificial Sunlight at: 2019-05-14 23:35:40.611447
+YES Artificial Sunlight at: 2019-05-14 23:45:40.646685
+YES Artificial Sunlight at: 2019-05-14 23:55:40.680218
+NO Sunlight at: 2019-05-15 00:05:40.721425
+NO Sunlight at: 2019-05-15 00:15:40.755866
+NO Sunlight at: 2019-05-15 00:25:40.790216
+NO Sunlight at: 2019-05-15 00:35:40.819728
+NO Sunlight at: 2019-05-15 00:45:40.851047
+NO Sunlight at: 2019-05-15 00:55:40.880709
+NO Sunlight at: 2019-05-15 01:05:40.912900
+NO Sunlight at: 2019-05-15 01:15:40.944709
+NO Sunlight at: 2019-05-15 01:25:40.974435
+NO Sunlight at: 2019-05-15 01:35:41.005115
+NO Sunlight at: 2019-05-15 01:45:41.034391
+NO Sunlight at: 2019-05-15 01:55:41.066232
+NO Sunlight at: 2019-05-15 02:05:41.100035
+NO Sunlight at: 2019-05-15 02:15:41.130203
+NO Sunlight at: 2019-05-15 02:25:41.162725
+NO Sunlight at: 2019-05-15 02:35:41.192199
+NO Sunlight at: 2019-05-15 02:45:41.224223
+NO Sunlight at: 2019-05-15 02:55:41.266704
+NO Sunlight at: 2019-05-15 03:05:41.296339
+NO Sunlight at: 2019-05-15 03:15:41.341635
+NO Sunlight at: 2019-05-15 03:25:41.375593
+NO Sunlight at: 2019-05-15 03:35:41.412593
+NO Sunlight at: 2019-05-15 03:45:41.449900
+NO Sunlight at: 2019-05-15 03:55:41.482215
+NO Sunlight at: 2019-05-15 04:05:41.511023
+NO Sunlight at: 2019-05-15 04:15:41.541823
+NO Sunlight at: 2019-05-15 04:25:41.574106
+NO Sunlight at: 2019-05-15 04:35:41.607946
+NO Sunlight at: 2019-05-15 04:45:41.639127
+NO Sunlight at: 2019-05-15 04:55:41.701633
+NO Sunlight at: 2019-05-15 05:05:41.732415
+NO Sunlight at: 2019-05-15 05:15:41.766072
+NO Sunlight at: 2019-05-15 05:25:41.797133
+NO Sunlight at: 2019-05-15 05:35:41.827078
+NO Sunlight at: 2019-05-15 05:45:41.859619
+NO Sunlight at: 2019-05-15 05:55:41.890861
+YES Artificial Sunlight at: 2019-05-15 06:05:41.920051
+YES Artificial Sunlight at: 2019-05-15 06:15:41.952055
+YES Artificial Sunlight at: 2019-05-15 06:25:41.984989
+YES Artificial Sunlight at: 2019-05-15 06:35:42.019580
+YES Artificial Sunlight at: 2019-05-15 06:45:42.053371
+YES Artificial Sunlight at: 2019-05-15 06:55:42.085882
+YES Artificial Sunlight at: 2019-05-15 07:05:42.117977
+YES Artificial Sunlight at: 2019-05-15 07:15:42.150463
+YES Artificial Sunlight at: 2019-05-15 07:25:42.180541
+YES Artificial Sunlight at: 2019-05-15 07:35:42.212531
+YES Artificial Sunlight at: 2019-05-15 07:45:42.247391
+YES Artificial Sunlight at: 2019-05-15 07:55:42.279267
+YES Artificial Sunlight at: 2019-05-15 08:05:42.315733
+YES Artificial Sunlight at: 2019-05-15 08:15:42.346908
+YES Artificial Sunlight at: 2019-05-15 08:16:10.802325
+YES Artificial Sunlight at: 2019-05-15 08:23:25.697712
+YES Artificial Sunlight at: 2019-05-15 08:33:25.887338
+YES Artificial Sunlight at: 2019-05-15 08:43:25.921813
+YES Artificial Sunlight at: 2019-05-15 08:53:25.960171
+YES Artificial Sunlight at: 2019-05-15 09:03:25.991606
+YES Artificial Sunlight at: 2019-05-15 09:13:26.026261
+YES Artificial Sunlight at: 2019-05-15 09:23:26.064766
+YES Artificial Sunlight at: 2019-05-15 09:33:26.099997
+YES Artificial Sunlight at: 2019-05-15 09:43:26.139170
+YES Artificial Sunlight at: 2019-05-15 09:53:26.171467
+YES Artificial Sunlight at: 2019-05-15 10:03:26.203837
+YES Artificial Sunlight at: 2019-05-15 10:13:26.240984
+YES Artificial Sunlight at: 2019-05-15 10:23:26.271025
+YES Artificial Sunlight at: 2019-05-15 10:33:26.302893
+YES Artificial Sunlight at: 2019-05-15 10:43:26.335672
+YES Artificial Sunlight at: 2019-05-15 10:53:26.368597
+YES Artificial Sunlight at: 2019-05-15 11:03:26.398356
+YES Artificial Sunlight at: 2019-05-15 11:13:26.430510
+YES Artificial Sunlight at: 2019-05-15 11:23:26.465004
+YES Artificial Sunlight at: 2019-05-15 11:33:26.525384
+YES Artificial Sunlight at: 2019-05-15 11:43:26.558847
+YES Artificial Sunlight at: 2019-05-15 11:53:26.599068
+YES Artificial Sunlight at: 2019-05-15 12:03:26.632328
+YES Artificial Sunlight at: 2019-05-15 12:13:26.663462
+YES Artificial Sunlight at: 2019-05-15 12:23:26.700024
+YES Artificial Sunlight at: 2019-05-15 12:33:26.732202
+YES Artificial Sunlight at: 2019-05-15 12:43:26.765380
+YES Artificial Sunlight at: 2019-05-15 12:53:26.800650
+NO Sunlight at: 2019-05-15 13:03:26.836375
+NO Sunlight at: 2019-05-15 13:13:26.870235
+NO Sunlight at: 2019-05-15 13:23:26.905469
+NO Sunlight at: 2019-05-15 13:33:26.938596
+NO Sunlight at: 2019-05-15 13:43:26.972859
+NO Sunlight at: 2019-05-15 13:53:27.005613
+NO Sunlight at: 2019-05-15 14:03:27.037490
+NO Sunlight at: 2019-05-15 14:13:27.070198
+NO Sunlight at: 2019-05-15 14:23:27.104358
+NO Sunlight at: 2019-05-15 14:33:27.135782
+NO Sunlight at: 2019-05-15 14:43:27.168498
+NO Sunlight at: 2019-05-15 14:53:27.204712
+YES Natural Sunlight at: 2019-05-15 15:03:27.237144
+YES Natural Sunlight at: 2019-05-15 15:13:27.268073
+YES Natural Sunlight at: 2019-05-15 15:23:27.298850
+NO Sunlight at: 2019-05-15 15:33:27.330423
+NO Sunlight at: 2019-05-15 15:43:27.362789
+YES Natural Sunlight at: 2019-05-15 15:53:27.399300
+YES Natural Sunlight at: 2019-05-15 16:03:27.430459
+NO Sunlight at: 2019-05-15 16:13:27.462266
+NO Sunlight at: 2019-05-15 16:23:27.494753
+NO Sunlight at: 2019-05-15 16:33:27.527053
+NO Sunlight at: 2019-05-15 16:43:27.558217
+NO Sunlight at: 2019-05-15 16:53:27.603843
+NO Sunlight at: 2019-05-15 17:03:27.634337
+NO Sunlight at: 2019-05-15 17:13:27.665514
+NO Sunlight at: 2019-05-15 17:23:27.696355
+NO Sunlight at: 2019-05-15 17:33:27.728480
+NO Sunlight at: 2019-05-15 17:43:27.766932
+NO Sunlight at: 2019-05-15 17:53:27.800812
+YES Artificial Sunlight at: 2019-05-15 18:03:27.834900
+YES Artificial Sunlight at: 2019-05-15 18:13:27.880524
+YES Artificial Sunlight at: 2019-05-15 18:23:27.910765

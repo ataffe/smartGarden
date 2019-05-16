@@ -142,6 +142,10 @@ def take_pics(ymd, number=1):
 def run_camera(ymd):
 	today = str(datetime.now()).split()[0]
 	if today != ymd:
+		yesterday = datetime.now() - timedelta(days=1)
+		filename = str(yesterday).replace(" ", "-")
+		dateArray = filename.split('-')
+		ymd = dateArray[0] + "-" + dateArray[1] + "-" + dateArray[2]
 		send_folder(ymd)
 		ymd = create_folder()
 	take_pics(ymd)
@@ -204,9 +208,8 @@ def send_email():
 					try:
 						splitLine = soilLogArray[cnt].split()
 						soilMoisture = splitLine[3]
-						soilTimeStamp = splitLine[4] + " " + splitLine[5]
-						print("soilMoisture: " + soilMoisture)
-						print("soil time stamp: " + soilTimeStamp)
+						if len(splitLine) >= 6:
+							soilTimeStamp = splitLine[4] + " " + splitLine[5]
 					except Exception as e:
 						logging.warn("Unable to parse soil moisture or time stamp for email.")
 						logging.warn(e)
@@ -370,7 +373,7 @@ def check_soil():
 
 
 def email_thread():
-	#time.sleep(60)
+	time.sleep(60)
 	send_email()
 	timer = threading.Event()
 	while not timer.wait(EMAIL_TIME_SECONDS):
