@@ -8,22 +8,32 @@ def zipdir(path, ziph):
 			ziph.write(os.path.join(root, file))
 
 def send_folder(ymd):
+	time1 = datetime.now()
 	print("Zipping File...")
 	baseFolder = ymd
+
 	ymd = baseFolder + ".zip"
-	os.chdir("images")
-	zf = zipfile.ZipFile(ymd, mode = 'w', compression=zipfile.ZIP_LZMA)
-	try:
-		zipdir(baseFolder,zf)
-	finally:
-		zf.close()
-	
+	currentDirectory = os.path.dirname(os.path.realpath(__file__))
+	print("Current DIR: " + str(currentDirectory))
+	os.chdir("/home/pi/Desktop/smartGarden/smartGarden/images")
+	if os.path.isfile(ymd):
+		print(ymd + " already exists")
+	else:
+		zf = zipfile.ZipFile(ymd, mode = 'w', compression=zipfile.ZIP_LZMA)
+		try:
+			zipdir(baseFolder,zf)
+		finally:
+			zf.close()
+
 	print("Sending images...")
-	scp_command = "SSHPASS='al.EX.91.27' sshpass -e scp images/" + ymd + " alext@192.168.0.20:D:\\\\smartGarden\\\\Images"
+	scp_command = "SSHPASS='al.EX.91.27' sshpass -e scp " + ymd + " alext@192.168.0.20:D:\\\\smartGarden\\\\Images"
 	os.system(scp_command)
 	os.system("rm -f " + ymd)
 	#os.system("rm -rf " + baseFolder)
-	os.chdir("..")
+	os.chdir(currentDirectory)
+	time2 = datetime.now()
+	diff = time2 - time1
+	print("It took (mins, seconds): " + str(divmod(diff.total_seconds(),60)) + " to transfer " + str(ymd))
 
 yesterday = datetime.now() - timedelta(days=1)
 filename = str(yesterday).replace(" ", "-")

@@ -4,21 +4,12 @@ import threading
 from datetime import datetime
 from datetime import timedelta
 import time
-import smtplib, ssl
-import time
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from email.mime.base import MIMEBase
-from email.utils import formatdate
-from email import encoders
 import os
-import sqlite3
 import zipfile
 import logging
-import board
-import busio
-import adafruit_ads1x15.ads1115 as ADS
-from adafruit_ads1x15.analog_in import AnalogIn
+import GardenModules.soilMoisture.soil as soil
+import GardenModules.sunlightSensor.sunlight as sunlight
+import GardenModules.email.email as email
 
 
 
@@ -26,64 +17,11 @@ from adafruit_ads1x15.analog_in import AnalogIn
 #GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 WAIT_TIME_SECONDS = 600
 EMAIL_TIME_SECONDS = 14400
-PUMP_TIME_SECONDS = 14400
+PUMP_TIME_SECONDS = 10800
 CAMERA_TIME_SECONDS = 300
 ARTIFICIAL_LIGHT_SECONDS = 1800
 LAMP_PIN = 16
 image_count = 0
-
-def insertSunlightRecord(message,time1, time2):
-	insert_command = "INSERT INTO sunlight VALUES (\'" + message + "\',\'"+ time1 + "\',\'" + time2 + "\');"
-	try:
-		conn = sqlite3.connect('/home/pi/Desktop/smartGarden/smartGarden/gardenDatabase.db')
-		cursor = conn.cursor()
-		cursor.execute(insert_command)
-		conn.commit()
-		logging.info("Inserted sunlight record")
-		return cursor.lastrowid
-	except Exception as e:
-		logging.warn(e)
-	finally:
-		conn.close()
-
-def check_sunlight():
-	artificialLightHours = False
-	try:
-		GPIO.setmode(GPIO.BCM)
-		GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
-		f = open("/home/pi/Desktop/smartGarden/smartGarden/sunlightLog.txt", "a+")
-		time = datetime.now()
-		dateTimeString = str(time)
-		cleanDateString = str(time + timedelta(days=60))
-		currentTimeStamp = str(datetime.now()).split()[1]
-		currentHour = currentTimeStamp.split(':')[0]
-		hourAsInt = int(currentHour)
-
-		if hourAsInt >= 18:
-			f.write("YES Artificial Sunlight at: " + dateTimeString + "\n")
-			insertSunlightRecord("YES Artificial Sunlight",dateTimeString,cleanDateString)
-			artificialLightHours = True
-			logging.info("Checked artificial sunlight")
-		if hourAsInt >=6 and hourAsInt <= 12:
-			f.write("YES Artificial Sunlight at: " + dateTimeString + "\n")
-			insertSunlightRecord("YES Artificial Sunlight",dateTimeString,cleanDateString)
-			artificialLightHours = True
-			logging.info("Checked artificial sunlight")
-
-		if not artificialLightHours:
-			if not GPIO.input(4):
-				f.write("YES Natural Sunlight at: " + dateTimeString + "\n")
-				insertSunlightRecord("Yes Sunlight",dateTimeString,cleanDateString)
-				logging.info("Checked natural sunlight")
-			else:
-				f.write("NO Sunlight at: " + dateTimeString  + "\n")
-				insertSunlightRecord("No Sunlight", dateTimeString, cleanDateString)
-				logging.info("Checked natural sunlight")
-	except Exception as e:
-		logging.warn("There was an error writing to file.")
-		logging.warn(e)
-	finally:
-		f.close()
 
 def create_folder():
 	filename = str(datetime.now()).replace(" ", "-")
@@ -104,10 +42,12 @@ def zipdir(path, ziph):
 			ziph.write(os.path.join(root, file))
 
 def send_folder(ymd):
+	time1 = datetime.now()
 	logging.info("Zipping File... "+ str(datetime.now()))
 	baseFolder = ymd
 	ymd = baseFolder + ".zip"
-	os.chdir("images")
+	currentDirectory = os.path.dirname(os.path.realpath(__file__))
+	os.chdir("/home/pi/Desktop/smartGarden/smartGarden/images")
 	zf = zipfile.ZipFile(ymd, mode = 'w', compression=zipfile.ZIP_LZMA)
 	try:
 		zipdir(baseFolder,zf)
@@ -123,7 +63,10 @@ def send_folder(ymd):
 		os.system(scp_command)
 		os.system("rm " + ymd)
 		os.system("rm -r " + baseFolder)
-		os.chdir("..")
+		os.chdir(currentDirectory)
+		time2 = datetime.now()
+		diff = time2 - time1
+		logging.info("It took (mins, seconds): " + str(divmod(diff.total_seconds(),60)) + " to transfer " + str(ymd))
 	except Exception as e:
 		logging.warn("There was an error deleting the folders and moving back a directory")
 		logging.warn(e)
@@ -151,21 +94,21 @@ def run_camera(ymd):
 	take_pics(ymd)
 
 def run_pump(run_time):
-    try:
-	    dutycycle = 60
-	    GPIO.setmode(GPIO.BCM)
-	    GPIO.setup(18, GPIO.OUT)
-	    GPIO.output(18, GPIO.HIGH)
-	    GPIO.output(18, GPIO.LOW)
-	    p = GPIO.PWM(18,50)
-	    p.start(dutycycle)
-	    time.sleep(run_time)
-	    GPIO.output(18, GPIO.LOW)
-	    p.stop()
-	    logging.info("Watered plants at: " + str(datetime.now()))
-    except Exception as e:
-        logging.warn("There was an error watering the plants.")
-        logging.warn(e)
+	try:
+		dutycycle = 60
+		GPIO.setmode(GPIO.BCM)
+		GPIO.setup(18, GPIO.OUT)
+		GPIO.output(18, GPIO.HIGH)
+		GPIO.output(18, GPIO.LOW)
+		p = GPIO.PWM(18,50)
+		p.start(dutycycle)
+		time.sleep(run_time)
+		GPIO.output(18, GPIO.LOW)
+		p.stop()
+		logging.info("Watered plants at: " + str(datetime.now()))
+	except Exception as e:
+		logging.warn("There was an error watering the plants.")
+		logging.warn(e)
 
 def send_email():
 	port = 465 # For SSL
@@ -208,108 +151,56 @@ def send_email():
 				currentYMD = str(datetime.now()).split()[0]
 				soilMoisture = "No Data"
 				soilTimeStamp = "No Data"
-<<<<<<< HEAD
-				if cnt < len(soilLogArray):
-					try:
-						splitLine = soilLogArray[cnt].split()
-						soilMoisture = splitLine[3]
-						if len(splitLine) >= 6:
-							soilTimeStamp = splitLine[4] + " " + splitLine[5]
-					except Exception as e:
-						logging.warn("Unable to parse soil moisture or time stamp for email.")
-						logging.warn(e)
-
-				if currentYMD == lineArray[3]:
-					if cnt % 2 == 0:
-						if "YES" in lineArray[0]:
-							row = "<tr><td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
-						else:
-							row = "<tr><td style='border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
-
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center'>" + lineArray[3] + " " +  lineArray[4]+ "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilMoisture + "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilTimeStamp + "</td></tr>"
-					else:
-						if "YES" in lineArray[0]:
-							row = "<tr><td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
-						else:
-							row = "<tr><td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
-						row = row + "<td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>" + lineArray[3] + " " +  lineArray[4]+ "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilMoisture + "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilTimeStamp + "</td></tr>"
-					html = html + row
-				elif currentYMD == lineArray[4]:
-					if cnt % 2 == 0:
-						if "YES" in lineArray[0]:
-							row = "<tr><td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + " " + lineArray[2] + "</td>"
-						else:
-							row = "<tr><td style='border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center'>" + lineArray[4] + " " +  lineArray[5]+ "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilMoisture + "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilTimeStamp + "</td></tr>"
-					else:
-						if "YES" in lineArray[0]:
-							row = "<tr><td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + " " + lineArray[2] + "</td>"
-						else:
-							row = "<tr><td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
-						row = row + "<td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>" + lineArray[4] + " " +  lineArray[5]+ "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilMoisture + "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center; '>" + soilTimeStamp + "</td></tr>"
-					html = html + row
-=======
 				highlightedRow = "<td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>"
 				regularRow = "<td style='border: 1px solid;padding: 8px; text-align: center;'>"
 				greyRow = "<td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>"
+			
+				if cnt < len(soilLogArray):
+						try:
+								splitLine = soilLogArray[cnt].split()
+								soilMoisture = splitLine[3]
+								soilTimeStamp = splitLine[4] + " " + splitLine[5]
+						except Exception as e:
+								logging.warn("Unable to parse soil moisture or time stamp for email.")
+								logging.warn(e)
 
-                                if cnt < len(soilLogArray):
-                                        try:
-                                                splitLine = soilLogArray[cnt].split()
-                                                soilMoisture = splitLine[3]
-                                                soilTimeStamp = splitLine[4] + " " + splitLine[5]
-                                                print("soilMoisture: " + soilMoisture)
-                                                print("soil time stamp: " + soilTimeStamp)
-                                        except Exception as e:
-                                                logging.warn("Unable to parse soil moisture or time stamp for email.")
-                                                logging.warn(e)
+				if currentYMD == lineArray[3]:
+						if cnt % 2 == 0:
+								if "YES" in lineArray[0]:
+										row = "<tr>" + highlightedRow  + lineArray[0] + " " + lineArray[1] + "</td>"
+								else:
+										row = "<tr>" + regularRow + lineArray[0] + " " + lineArray[1] + "</td>"
 
-                                if currentYMD == lineArray[3]:
-                                        if cnt % 2 == 0:
-                                                if "YES" in lineArray[0]:
-                                                        row = "<tr>" + highlightedRow  + lineArray[0] + " " + lineArray[1] + "</td>"
-                                                else:
-                                                        row = "<tr>" + regularRow + lineArray[0] + " " + lineArray[1] + "</td>"
-
-                                                row = row + regularRow + lineArray[3] + " " +  lineArray[4]+ "</td>"
-                                                row = row + regularRow + soilMoisture + "</td>"
-                                                row = row + regularRow + soilTimeStamp + "</td></tr>"
-                                        else:
-                                                if "YES" in lineArray[0]:
-                                                        row = "<tr>" + highlightedRow + lineArray[0] + " " + lineArray[1] + "</td>"
-                                                else:
-                                                        row = "<tr>" + greyRow + lineArray[0] + " " + lineArray[1] + "</td>"
-                                                row = row + greyRow + lineArray[3] + " " +  lineArray[4]+ "</td>"
-                                                row = row + greyRow + soilMoisture + "</td>"
-                                                row = row + greyRow + soilTimeStamp + "</td></tr>"
-                                        html = html + row
-                                elif currentYMD == lineArray[4]:
-                                        if cnt % 2 == 0:
-                                                if "YES" in lineArray[0]:
-                                                        row = "<tr>" + highlightedRow + lineArray[0] + " " + lineArray[1] + " " + lineArray[2] + "</td>"
-                                                else:
-                                                        row = "<tr>" + regularRow + lineArray[0] + " " + lineArray[1] + "</td>"
-                                                row = row + regularRow + lineArray[4] + " " +  lineArray[5]+ "</td>"
-                                                row = row + regularRow + soilMoisture + "</td>"
-                                                row = row + regularRow + soilTimeStamp + "</td></tr>"
-                                        else:
-                                                if "YES" in lineArray[0]:
-                                                        row = "<tr>" + highlightedRow + lineArray[0] + " " + lineArray[1] + " " + lineArray[2] + "</td>"
-                                                else:
-                                                        row = "<tr>" + greyRow + lineArray[0] + " " + lineArray[1] + "</td>"
-                                                row = row + greyRow + lineArray[4] + " " +  lineArray[5]+ "</td>"
-                                                row = row + greyRow + soilMoisture + "</td>"
-                                                row = row + greyRow + soilTimeStamp + "</td></tr>"
-                                        html = html + row
->>>>>>> 8062a8d65d8398917ce76ae5b1ea55da3c2330c3
+								row = row + regularRow + lineArray[3] + " " +  lineArray[4]+ "</td>"
+								row = row + regularRow + soilMoisture + "</td>"
+								row = row + regularRow + soilTimeStamp + "</td></tr>"
+						else:
+								if "YES" in lineArray[0]:
+										row = "<tr>" + highlightedRow + lineArray[0] + " " + lineArray[1] + "</td>"
+								else:
+										row = "<tr>" + greyRow + lineArray[0] + " " + lineArray[1] + "</td>"
+								row = row + greyRow + lineArray[3] + " " +	lineArray[4]+ "</td>"
+								row = row + greyRow + soilMoisture + "</td>"
+								row = row + greyRow + soilTimeStamp + "</td></tr>"
+						html = html + row
+				elif currentYMD == lineArray[4]:
+						if cnt % 2 == 0:
+								if "YES" in lineArray[0]:
+										row = "<tr>" + highlightedRow + lineArray[0] + " " + lineArray[1] + " " + lineArray[2] + "</td>"
+								else:
+										row = "<tr>" + regularRow + lineArray[0] + " " + lineArray[1] + "</td>"
+								row = row + regularRow + lineArray[4] + " " +  lineArray[5]+ "</td>"
+								row = row + regularRow + soilMoisture + "</td>"
+								row = row + regularRow + soilTimeStamp + "</td></tr>"
+						else:
+								if "YES" in lineArray[0]:
+										row = "<tr>" + highlightedRow + lineArray[0] + " " + lineArray[1] + " " + lineArray[2] + "</td>"
+								else:
+										row = "<tr>" + greyRow + lineArray[0] + " " + lineArray[1] + "</td>"
+								row = row + greyRow + lineArray[4] + " " +	lineArray[5]+ "</td>"
+								row = row + greyRow + soilMoisture + "</td>"
+								row = row + greyRow + soilTimeStamp + "</td></tr>"
+						html = html + row
 				html = html + """\
 						</table>
 					</body>
@@ -385,64 +276,18 @@ def run_artificial_light():
 		logging.info("Could not setup light "+ str(datetime.now()))
 		logging.warn(e)
 
-def check_soil():
-	rawVal = 0.0
-	try:
-		i2c = busio.I2C(board.SCL, board.SDA)
-		ads = ADS.ADS1115(i2c)
-		ads.gain = 2/3
-		chan = AnalogIn(ads, ADS.P0)
-		#From claibration
-		min = 1061
-		max = 14667
-		started = False
-		weight = 40
-		valInt = 0
-		for x in range(20):
-			if started:
-				rawVal = chan.value
-				val = (rawVal - min) / (max - min)
-				val = val * 100
-				newValInt = round(val, 10)
-				rawVal = (weight * newValInt) + ((1 - weight) * valInt)
-			else:
-				rawVal = chan.value
-				#Normalization
-				val = (rawVal - min) / (max - min)
-				#Convert to a percentage
-				val = val * 100
-				valInt = round(val, 5)
-
-			if not started:
-				started = True
-		output = rawVal
-		logging.info("Soil Moisture Level: " + str(100 - round(output)))
-	except Exception as e:
-		logging.WARN("Error calculating soil moisture")
-		logging.WARN(e)
-	
-	try:
-		f = open("/home/pi/Desktop/smartGarden/smartGarden/soilLog.txt", "a+")
-		f.write("Soil Moisture Level: " + str(100 - round(rawVal)) + " " + str(datetime.now()) + "\n")
-	except Exception as e:
-		logging.WARN("Error writing soil moisture level")
-		logging.WARN(e)
-	finally:
-		f.close()
-
-
 def email_thread():
-	time.sleep(60)
-	send_email()
+	#time.sleep(60)
+	email.send_email()
 	timer = threading.Event()
 	while not timer.wait(EMAIL_TIME_SECONDS):
-		send_email()
+		email.send_email()
 
 def sunlight_thread():
-	check_sunlight()
+	sunlight.check_sunlight()
 	timer = threading.Event()
 	while not timer.wait(WAIT_TIME_SECONDS):
-		check_sunlight()
+		sunlight.check_sunlight()
 
 def pump_thread():
 	timer = threading.Event()
@@ -464,10 +309,10 @@ def artifical_light_thread():
 	GPIO.cleanup()
 
 def soil_moisture_thread():
-	check_soil()
+	soil.check_soil()
 	timer = threading.Event()
 	while not timer.wait(WAIT_TIME_SECONDS):
-		check_soil()
+		soil.check_soil()
 	
 
 
