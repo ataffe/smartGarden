@@ -1,295 +1,3 @@
-
-Soil Moisture Level: 36.31475400000022
-Soil Moisture Level: 35.47681760000023
-Soil Moisture Level: 36.35878160000016
-Soil Moisture Level: 35.48415560000012
-Soil Moisture Level: 36.11654919999978
-Soil Moisture Level: 35.300707199999806
-Soil Moisture Level: 34.609609999999975
-Soil Moisture Level: 34.86690799999997
-Soil Moisture Level: 34.65363760000014
-Soil Moisture Level: 34.9700292
-Soil Moisture Level: 35.86666919999993
-Soil Moisture Level: 34.96269119999988
-Soil Moisture Level: 35.47689799999989
-Soil Moisture Level: 35.741533999999774
-Soil Moisture Level: 34.93294960000003
-Soil Moisture Level: 35.19758559999991
-Soil Moisture Level: 35.13154439999994
-Soil Moisture Level: 35.1755720000001
-Soil Moisture Level: 34.580258000000185
-Soil Moisture Level: 34.58759599999985
-Soil Moisture Level: 35.13888199999997
-Soil Moisture Level: 35.160895999999866
-Soil Moisture Level: 34.9109355999999
-Soil Moisture Level: 34.94028760000015
-Soil Moisture Level: 35.565343199999916
-Soil Moisture Level: 34.89626000000021
-Soil Moisture Level: 35.844655200000034
-Soil Moisture Level: 34.98470520000001
-Soil Moisture Level: 34.720069200000125
-Soil Moisture Level: 35.10945040000024
-Soil Moisture Level: 34.8081244
-Soil Moisture Level: 34.79344839999999
-Soil Moisture Level: 35.99875199999974
-Soil Moisture Level: 35.36674839999978
-Soil Moisture Level: 35.374086400000124
-Soil Moisture Level: 35.660736399999905
-Soil Moisture Level: 35.374086400000124
-Soil Moisture Level: 35.102112399999896
-Soil Moisture Level: 35.96206239999992
-Soil Moisture Level: 35.69008840000015
-Soil Moisture Level: 35.10945040000024
-Soil Moisture Level: 35.42545199999995
-Soil Moisture Level: 35.44746600000008
-Soil Moisture Level: 34.088065600000164
-Soil Moisture Level: 35.55800520000025
-Soil Moisture Level: 34.04364799999985
-Soil Moisture Level: 33.68361839999989
-Soil Moisture Level: 34.29360799999995
-Soil Moisture Level: 35.18290999999999
-Soil Moisture Level: 35.49157359999981
-Soil Moisture Level: 36.108901199999764
-Soil Moisture Level: 34.66870360000007
-Soil Moisture Level: 34.38205360000029
-Soil Moisture Level: 35.85933120000004
-Soil Moisture Level: 34.16144480000003
-Soil Moisture Level: 34.46277079999982
-Soil Moisture Level: 34.80078639999988
-Soil Moisture Level: 35.653398400000015
-Soil Moisture Level: 35.96940040000027
-Soil Moisture Level: 36.380875599999854
-Soil Moisture Level: 34.96269119999988
-Soil Moisture Level: 34.69071720000011
-Soil Moisture Level: 34.24216239999987
-Soil Moisture Level: 36.322091999999884
-Soil Moisture Level: 36.35878160000016
-Soil Moisture Level: 34.64660959999969
-Soil Moisture Level: 34.71998880000001
-Soil Moisture Level: 37.20412519999991
-Soil Moisture Level: 35.02115479999975
-Soil Moisture Level: 34.741842800000086
-Soil Moisture Level: 36.1750927999999
-Soil Moisture Level: 36.20444439999983
-Soil Moisture Level: 35.40358800000013
-Soil Moisture Level: 36.513108399999965
-Soil Moisture Level: 35.866428799999994
-Soil Moisture Level: 36.969001199999866
-Soil Moisture Level: 36.11638919999996
-Soil Moisture Level: 36.05768560000001
-Soil Moisture Level: 36.03567159999989
-Soil Moisture Level: 35.45503359999998
-Soil Moisture Level: 35.66057640000008
-Soil Moisture Level: 35.785791600000266
-Soil Moisture Level: 35.84449519999998
-Soil Moisture Level: 35.8591707999999
-Soil Moisture Level: 35.256519200000184
-Soil Moisture Level: 35.57252079999989
-Soil Moisture Level: 35.62388639999995
-Soil Moisture Level: 35.631224400000065
-Soil Moisture Level: 35.388992000000144
-Soil Moisture Level: 35.94722639999986
-Soil Moisture Level: 35.690317999999934
-Soil Moisture Level: 35.690317999999934
-Soil Moisture Level: 36.27095600000007
-Soil Moisture Level: 35.68298000000004
-Soil Moisture Level: 36.557215999999926
-Soil Moisture Level: 35.35925039999984
-Soil Moisture Level: 35.97696799999994
-Soil Moisture Level: 35.94722639999986
-Soil Moisture Level: 36.53520200000003
-Soil Moisture Level: 36.57228200000009
-Soil Moisture Level: 35.97696799999994
-Soil Moisture Level: 35.90319879999993
-Soil Moisture Level: 35.93255040000008
-Soil Moisture Level: 36.17517279999993
-Soil Moisture Level: 35.285870799999884
-Soil Moisture Level: 35.63856240000018
-Soil Moisture Level: 35.99164399999995
-Soil Moisture Level: 35.99164399999995
-Soil Moisture Level: 35.690317999999934
-Soil Moisture Level: 35.24176320000015
-Soil Moisture Level: 36.292970000000196
-Soil Moisture Level: 35.793049199999814
-Soil Moisture Level: 36.10905119999984
-Soil Moisture Level: 35.94722639999986 2019-05-14 17:52:17.715858
-Soil Moisture Level: 36.56494399999997 2019-05-14 17:55:38.352572
-Soil Moisture Level: 35.35925039999984
-Soil Moisture Level: 35.763697600000114
-Soil Moisture Level: 35.50639920000003
-Soil Moisture Level: 36.56494399999997 2019-05-14 18:23:39.781014
-Soil Moisture Level: 36.33699760000013 2019-05-14 18:29:21.276892
-Soil Moisture Level: 34.61709760000008 2019-05-14 18:30:36.007138
-Soil Moisture Level: 36.094375200000286 2019-05-14 18:31:30.267858
-Soil Moisture Level: 36.969001199999866 2019-05-14 18:33:40.046285
-Soil Moisture Level: 36.10171320000018 2019-05-14 18:34:57.343332
-Soil Moisture Level: 35.793049199999814 2019-05-14 18:35:16.786757
-Soil Moisture Level: 36.094375200000286 2019-05-14 18:37:33.450824
-Soil Moisture Level: 35.771035600000005 2019-05-14 18:39:44.762826
-Soil Moisture Level: 37 2019-05-14 18:43:36.476496
-Soil Moisture Level: 36.78508239999974 2019-05-14 18:43:40.306185
-Soil Moisture Level: 35 2019-05-14 18:44:10.910437
-Soil Moisture Level: 37 2019-05-14 18:45:41.009617
-Soil Moisture Level: 36 2019-05-14 18:55:41.274519
-Soil Moisture Level: 37 2019-05-14 19:05:41.528336
-Soil Moisture Level: 37 2019-05-14 19:15:41.782232
-Soil Moisture Level: 37 2019-05-14 19:25:42.036276
-Soil Moisture Level: 35 2019-05-14 19:35:42.288959
-Soil Moisture Level: 37 2019-05-14 19:45:42.542442
-Soil Moisture Level: 35 2019-05-14 19:55:42.795113
-Soil Moisture Level: 37 2019-05-14 20:05:43.058547
-Soil Moisture Level: 36 2019-05-14 20:15:43.322893
-Soil Moisture Level: 36 2019-05-14 20:25:43.580791
-Soil Moisture Level: 35 2019-05-14 20:35:43.848013
-Soil Moisture Level: 36 2019-05-14 20:45:44.104639
-Soil Moisture Level: 35 2019-05-14 20:55:44.360599
-Soil Moisture Level: 36 2019-05-14 21:05:44.616909
-Soil Moisture Level: 37 2019-05-14 21:15:44.873584
-Soil Moisture Level: 36 2019-05-14 21:25:45.129844
-Soil Moisture Level: 36 2019-05-14 21:35:45.392611
-Soil Moisture Level: 36 2019-05-14 21:45:45.657001
-Soil Moisture Level: 36 2019-05-14 21:55:45.914470
-Soil Moisture Level: 35 2019-05-14 22:05:46.168636
-Soil Moisture Level: 37 2019-05-14 22:15:46.429613
-Soil Moisture Level: 36 2019-05-14 22:25:46.685630
-Soil Moisture Level: 36 2019-05-14 22:35:46.947743
-Soil Moisture Level: 36 2019-05-14 22:45:47.203877
-Soil Moisture Level: 36 2019-05-14 22:55:47.460214
-Soil Moisture Level: 37 2019-05-14 23:05:47.716272
-Soil Moisture Level: 36 2019-05-14 23:15:47.973128
-Soil Moisture Level: 36 2019-05-14 23:25:48.229430
-Soil Moisture Level: 35 2019-05-14 23:35:48.483124
-Soil Moisture Level: 37 2019-05-14 23:45:48.745566
-Soil Moisture Level: 36 2019-05-14 23:55:49.000960
-Soil Moisture Level: 36 2019-05-15 00:05:49.254439
-Soil Moisture Level: 36 2019-05-15 00:15:49.516487
-Soil Moisture Level: 36 2019-05-15 00:25:49.778172
-Soil Moisture Level: 36 2019-05-15 00:35:50.034551
-Soil Moisture Level: 35 2019-05-15 00:45:50.288073
-Soil Moisture Level: 36 2019-05-15 00:55:50.544084
-Soil Moisture Level: 36 2019-05-15 01:05:50.800038
-Soil Moisture Level: 36 2019-05-15 01:15:51.055802
-Soil Moisture Level: 36 2019-05-15 01:25:51.311381
-Soil Moisture Level: 36 2019-05-15 01:35:51.566533
-Soil Moisture Level: 36 2019-05-15 01:45:51.827142
-Soil Moisture Level: 36 2019-05-15 01:55:52.083965
-Soil Moisture Level: 36 2019-05-15 02:05:52.341224
-Soil Moisture Level: 37 2019-05-15 02:15:52.598567
-Soil Moisture Level: 36 2019-05-15 02:25:52.858535
-Soil Moisture Level: 36 2019-05-15 02:35:53.113955
-Soil Moisture Level: 36 2019-05-15 02:45:53.369875
-Soil Moisture Level: 36 2019-05-15 02:55:53.623927
-Soil Moisture Level: 37 2019-05-15 03:05:53.876932
-Soil Moisture Level: 36 2019-05-15 03:15:54.132213
-Soil Moisture Level: 36 2019-05-15 03:25:54.389289
-Soil Moisture Level: 36 2019-05-15 03:35:54.645560
-Soil Moisture Level: 36 2019-05-15 03:45:54.901677
-Soil Moisture Level: 36 2019-05-15 03:55:55.162202
-Soil Moisture Level: 37 2019-05-15 04:05:55.420151
-Soil Moisture Level: 36 2019-05-15 04:15:55.676144
-Soil Moisture Level: 37 2019-05-15 04:25:55.930075
-Soil Moisture Level: 36 2019-05-15 04:35:56.191890
-Soil Moisture Level: 36 2019-05-15 04:45:56.446329
-Soil Moisture Level: 36 2019-05-15 04:55:56.700583
-Soil Moisture Level: 36 2019-05-15 05:05:56.962182
-Soil Moisture Level: 36 2019-05-15 05:15:57.219420
-Soil Moisture Level: 36 2019-05-15 05:25:57.476724
-Soil Moisture Level: 37 2019-05-15 05:35:57.731549
-Soil Moisture Level: 37 2019-05-15 05:45:57.990915
-Soil Moisture Level: 36 2019-05-15 05:55:58.247467
-Soil Moisture Level: 36 2019-05-15 06:05:58.502930
-Soil Moisture Level: 37 2019-05-15 06:15:58.759486
-Soil Moisture Level: 37 2019-05-15 06:25:59.012601
-Soil Moisture Level: 36 2019-05-15 06:35:59.269947
-Soil Moisture Level: 37 2019-05-15 06:45:59.526628
-Soil Moisture Level: 36 2019-05-15 06:55:59.781079
-Soil Moisture Level: 36 2019-05-15 07:06:00.042674
-Soil Moisture Level: 37 2019-05-15 07:16:00.305620
-Soil Moisture Level: 38 2019-05-15 07:26:00.571564
-Soil Moisture Level: 36 2019-05-15 07:36:00.833799
-Soil Moisture Level: 37 2019-05-15 07:46:01.105592
-Soil Moisture Level: 37 2019-05-15 07:56:01.365135
-Soil Moisture Level: 37 2019-05-15 08:06:01.620059
-Soil Moisture Level: 36 2019-05-15 08:16:01.876339
-Soil Moisture Level: 37 2019-05-15 08:16:11.315925
-Soil Moisture Level: 37 2019-05-15 08:23:26.717028
-Soil Moisture Level: 36 2019-05-15 08:33:26.984924
-Soil Moisture Level: 36 2019-05-15 08:43:27.237854
-Soil Moisture Level: 36 2019-05-15 08:53:27.491307
-Soil Moisture Level: 36 2019-05-15 09:03:27.743093
-Soil Moisture Level: 37 2019-05-15 09:13:27.996207
-Soil Moisture Level: 37 2019-05-15 09:23:28.249456
-Soil Moisture Level: 36 2019-05-15 09:33:28.502230
-Soil Moisture Level: 36 2019-05-15 09:43:28.764864
-Soil Moisture Level: 37 2019-05-15 09:53:29.028728
-Soil Moisture Level: 38 2019-05-15 10:03:29.282386
-Soil Moisture Level: 37 2019-05-15 10:13:29.535200
-Soil Moisture Level: 36 2019-05-15 10:23:29.787967
-Soil Moisture Level: 38 2019-05-15 10:33:30.040737
-Soil Moisture Level: 37 2019-05-15 10:43:30.292471
-Soil Moisture Level: 36 2019-05-15 10:53:30.545400
-Soil Moisture Level: 37 2019-05-15 11:03:30.797789
-Soil Moisture Level: 37 2019-05-15 11:13:31.050751
-Soil Moisture Level: 36 2019-05-15 11:23:31.302830
-Soil Moisture Level: 38 2019-05-15 11:33:31.563626
-Soil Moisture Level: 37 2019-05-15 11:43:31.827620
-Soil Moisture Level: 37 2019-05-15 11:53:32.092953
-Soil Moisture Level: 37 2019-05-15 12:03:32.351578
-Soil Moisture Level: 38 2019-05-15 12:13:32.611520
-Soil Moisture Level: 37 2019-05-15 12:23:32.865444
-Soil Moisture Level: 37 2019-05-15 12:33:33.118538
-Soil Moisture Level: 38 2019-05-15 12:43:33.371905
-Soil Moisture Level: 38 2019-05-15 12:53:33.626159
-Soil Moisture Level: 37 2019-05-15 13:03:33.884735
-Soil Moisture Level: 37 2019-05-15 13:13:34.138148
-Soil Moisture Level: 38 2019-05-15 13:23:34.392400
-Soil Moisture Level: 37 2019-05-15 13:33:34.646811
-Soil Moisture Level: 38 2019-05-15 13:43:34.900169
-Soil Moisture Level: 37 2019-05-15 13:53:35.156098
-Soil Moisture Level: 37 2019-05-15 14:03:35.411011
-Soil Moisture Level: 37 2019-05-15 14:13:35.668050
-Soil Moisture Level: 37 2019-05-15 14:23:35.921652
-Soil Moisture Level: 36 2019-05-15 14:33:36.175457
-Soil Moisture Level: 37 2019-05-15 14:43:36.428501
-Soil Moisture Level: 37 2019-05-15 14:53:36.682023
-Soil Moisture Level: 37 2019-05-15 15:03:36.933964
-Soil Moisture Level: 37 2019-05-15 15:13:37.186994
-Soil Moisture Level: 37 2019-05-15 15:23:37.440718
-Soil Moisture Level: 37 2019-05-15 15:33:37.695501
-Soil Moisture Level: 38 2019-05-15 15:43:37.960107
-Soil Moisture Level: 37 2019-05-15 15:53:38.216851
-Soil Moisture Level: 37 2019-05-15 16:03:38.473184
-Soil Moisture Level: 36 2019-05-15 16:13:38.727057
-Soil Moisture Level: 37 2019-05-15 16:23:38.984780
-Soil Moisture Level: 37 2019-05-15 16:33:39.237987
-Soil Moisture Level: 37 2019-05-15 16:43:39.491532
-Soil Moisture Level: 37 2019-05-15 16:53:39.744113
-Soil Moisture Level: 37 2019-05-15 17:03:39.997760
-Soil Moisture Level: 37 2019-05-15 17:13:40.260757
-Soil Moisture Level: 37 2019-05-15 17:23:40.518821
-Soil Moisture Level: 36 2019-05-15 17:33:40.772407
-Soil Moisture Level: 37 2019-05-15 17:43:41.025582
-Soil Moisture Level: 37 2019-05-15 17:53:41.278695
-Soil Moisture Level: 37 2019-05-15 18:03:41.534064
-Soil Moisture Level: 37 2019-05-15 18:13:41.793376
-Soil Moisture Level: 37 2019-05-15 18:23:42.051670
-Soil Moisture Level: 37 2019-05-15 18:33:42.306336
-Soil Moisture Level: 37 2019-05-15 18:43:42.560971
-Soil Moisture Level: 38 2019-05-15 18:53:42.814479
-Soil Moisture Level: 36 2019-05-15 19:03:43.069763
-Soil Moisture Level: 38 2019-05-15 19:13:43.333916
-Soil Moisture Level: 37 2019-05-15 19:23:43.588868
-Soil Moisture Level: 36 2019-05-15 19:33:43.843233
-Soil Moisture Level: 62 2019-05-15 19:35:37.710462
-Soil Moisture Level: 62 2019-05-15 19:40:23.819220
-Soil Moisture Level: 38 2019-05-15 19:43:44.096448
-Soil Moisture Level: 37 2019-05-15 19:53:44.351372
-Soil Moisture Level: 37 2019-05-15 20:03:44.605878
-Soil Moisture Level: 36 2019-05-15 20:13:44.861259
-Soil Moisture Level: 36 2019-05-15 20:23:45.122524
-Soil Moisture Level: 37 2019-05-15 20:33:45.376949
-Soil Moisture Level: 37 2019-05-15 20:43:45.631583
-Soil Moisture Level: 38 2019-05-15 20:53:45.886332
 Soil Moisture Level: 63 2019-05-15 20:58:19.666584
 Soil Moisture Level: 63 2019-05-15 20:59:18.099043
 Soil Moisture Level: 62 2019-05-15 21:09:18.362556
@@ -454,3 +162,267 @@ Soil Moisture Level: 63 2019-05-16 22:37:10.672521
 Soil Moisture Level: 63 2019-05-16 22:37:40.862464
 Soil Moisture Level: 63 2019-05-16 22:37:57.840667
 Soil Moisture Level: 63 2019-05-16 22:38:57.617825
+Soil Moisture Level: 64 2019-05-16 22:39:57.725435
+Soil Moisture Level: 63 2019-05-16 22:41:33.115406
+Soil Moisture Level: 64 2019-05-16 22:44:58.923112
+Soil Moisture Level: 63 2019-05-16 22:46:38.819955
+Soil Moisture Level: 63 2019-05-16 22:48:02.310453
+Soil Moisture Level: 64 2019-05-16 22:48:43.905980
+Soil Moisture Level: 64 2019-05-16 22:49:05.320360
+Soil Moisture Level: 63 2019-05-16 22:49:57.980930
+Soil Moisture Level: 63 2019-05-16 22:50:33.961426
+Soil Moisture Level: 64 2019-05-16 22:51:22.527413
+Soil Moisture Level: 64 2019-05-16 22:52:05.411354
+Soil Moisture Level: 64 2019-05-16 22:52:43.838125
+Soil Moisture Level: 65 2019-05-16 22:54:37.361408
+Soil Moisture Level: 65 2019-05-16 22:55:33.632466
+Soil Moisture Level: 63 2019-05-16 22:58:03.457188
+Soil Moisture Level: 65 2019-05-16 22:59:09.352107
+Soil Moisture Level: 64 2019-05-16 22:59:46.640240
+Soil Moisture Level: 63 2019-05-16 23:09:46.916719
+Soil Moisture Level: 64 2019-05-16 23:19:47.170850
+Soil Moisture Level: 63 2019-05-16 23:29:47.432348
+Soil Moisture Level: 64 2019-05-16 23:39:47.689848
+Soil Moisture Level: 64 2019-05-16 23:49:47.944479
+Soil Moisture Level: 64 2019-05-16 23:59:48.203484
+Soil Moisture Level: 63 2019-05-17 00:09:48.458968
+Soil Moisture Level: 63 2019-05-17 00:19:48.716030
+Soil Moisture Level: 63 2019-05-17 00:29:48.970754
+Soil Moisture Level: 63 2019-05-17 00:39:49.225311
+Soil Moisture Level: 63 2019-05-17 00:49:49.480343
+Soil Moisture Level: 63 2019-05-17 00:59:49.735389
+Soil Moisture Level: 63 2019-05-17 01:09:49.995216
+Soil Moisture Level: 63 2019-05-17 01:19:50.256258
+Soil Moisture Level: 63 2019-05-17 01:29:50.511968
+Soil Moisture Level: 63 2019-05-17 01:39:50.767370
+Soil Moisture Level: 63 2019-05-17 01:49:51.022435
+Soil Moisture Level: 63 2019-05-17 01:59:51.283352
+Soil Moisture Level: 62 2019-05-17 02:09:51.546040
+Soil Moisture Level: 63 2019-05-17 02:19:51.810765
+Soil Moisture Level: 63 2019-05-17 02:29:52.071707
+Soil Moisture Level: 63 2019-05-17 02:39:52.329980
+Soil Moisture Level: 63 2019-05-17 02:49:52.594832
+Soil Moisture Level: 62 2019-05-17 02:59:52.859493
+Soil Moisture Level: 64 2019-05-17 03:09:53.125707
+Soil Moisture Level: 63 2019-05-17 03:19:53.380686
+Soil Moisture Level: 62 2019-05-17 03:29:53.702450
+Soil Moisture Level: 63 2019-05-17 03:39:53.968968
+Soil Moisture Level: 63 2019-05-17 03:49:54.225100
+Soil Moisture Level: 63 2019-05-17 03:59:54.480100
+Soil Moisture Level: 63 2019-05-17 04:09:54.737253
+Soil Moisture Level: 63 2019-05-17 04:19:54.993504
+Soil Moisture Level: 63 2019-05-17 04:29:55.249234
+Soil Moisture Level: 63 2019-05-17 04:39:55.504352
+Soil Moisture Level: 63 2019-05-17 04:49:55.757330
+Soil Moisture Level: 63 2019-05-17 04:59:56.018537
+Soil Moisture Level: 63 2019-05-17 05:09:56.274671
+Soil Moisture Level: 63 2019-05-17 05:19:56.531339
+Soil Moisture Level: 63 2019-05-17 05:29:56.787627
+Soil Moisture Level: 63 2019-05-17 05:39:57.044002
+Soil Moisture Level: 62 2019-05-17 05:49:57.299770
+Soil Moisture Level: 63 2019-05-17 05:59:57.555228
+Soil Moisture Level: 63 2019-05-17 06:09:57.810562
+Soil Moisture Level: 63 2019-05-17 06:19:58.065520
+Soil Moisture Level: 63 2019-05-17 06:29:58.324154
+Soil Moisture Level: 63 2019-05-17 06:39:58.583708
+Soil Moisture Level: 63 2019-05-17 06:49:58.839491
+Soil Moisture Level: 62 2019-05-17 06:59:59.094798
+Soil Moisture Level: 62 2019-05-17 07:09:59.357335
+Soil Moisture Level: 62 2019-05-17 07:19:59.611133
+Soil Moisture Level: 63 2019-05-17 07:29:59.869551
+Soil Moisture Level: 63 2019-05-17 07:40:00.128657
+Soil Moisture Level: 63 2019-05-17 07:50:00.384470
+Soil Moisture Level: 63 2019-05-17 08:00:00.639913
+Soil Moisture Level: 63 2019-05-17 08:06:17.573983
+Soil Moisture Level: 64 2019-05-17 08:08:43.492190
+Soil Moisture Level: 62 2019-05-17 08:15:41.171922
+Soil Moisture Level: 62 2019-05-17 08:25:41.439130
+Soil Moisture Level: 63 2019-05-17 08:35:41.692541
+Soil Moisture Level: 63 2019-05-17 08:41:39.662987
+Soil Moisture Level: 64 2019-05-17 08:47:35.139655
+Soil Moisture Level: 63 2019-05-17 08:48:32.889544
+Soil Moisture Level: 62 2019-05-17 08:51:39.925450
+Soil Moisture Level: 63 2019-05-17 08:51:55.985863
+Soil Moisture Level: 63 2019-05-17 08:53:41.245340
+Soil Moisture Level: 62 2019-05-17 08:54:55.602428
+Soil Moisture Level: 63 2019-05-17 08:56:21.619042
+Soil Moisture Level: 62 2019-05-17 08:57:24.126857
+Soil Moisture Level: 62 2019-05-17 09:07:24.386921
+Soil Moisture Level: 63 2019-05-17 09:17:24.645272
+Soil Moisture Level: 62 2019-05-17 09:27:24.907613
+Soil Moisture Level: 63 2019-05-17 09:37:25.165881
+Soil Moisture Level: 62 2019-05-17 09:47:25.422940
+Soil Moisture Level: 62 2019-05-17 09:57:25.680694
+Soil Moisture Level: 63 2019-05-17 10:07:25.937353
+Soil Moisture Level: 62 2019-05-17 10:17:26.194819
+Soil Moisture Level: 62 2019-05-17 10:27:26.451223
+Soil Moisture Level: 62 2019-05-17 10:37:26.710371
+Soil Moisture Level: 62 2019-05-17 10:47:26.973184
+Soil Moisture Level: 62 2019-05-17 10:57:27.235664
+Soil Moisture Level: 63 2019-05-17 11:07:27.493881
+Soil Moisture Level: 62 2019-05-17 11:17:27.753394
+Soil Moisture Level: 62 2019-05-17 11:27:28.012571
+Soil Moisture Level: 63 2019-05-17 11:37:28.274679
+Soil Moisture Level: 63 2019-05-17 11:47:28.536207
+Soil Moisture Level: 61 2019-05-17 11:57:28.807874
+Soil Moisture Level: 61 2019-05-17 12:07:29.077032
+Soil Moisture Level: 62 2019-05-17 12:17:29.336607
+Soil Moisture Level: 62 2019-05-17 12:27:29.599277
+Soil Moisture Level: 62 2019-05-17 12:37:29.867593
+Soil Moisture Level: 62 2019-05-17 12:47:30.124967
+Soil Moisture Level: 62 2019-05-17 12:57:30.384276
+Soil Moisture Level: 62 2019-05-17 13:07:30.641995
+Soil Moisture Level: 62 2019-05-17 13:17:30.900684
+Soil Moisture Level: 62 2019-05-17 13:27:31.157692
+Soil Moisture Level: 62 2019-05-17 13:37:31.415974
+Soil Moisture Level: 62 2019-05-17 13:47:31.673326
+Soil Moisture Level: 62 2019-05-17 13:57:31.929493
+Soil Moisture Level: 62 2019-05-17 14:07:32.185496
+Soil Moisture Level: 62 2019-05-17 14:17:32.446223
+Soil Moisture Level: 62 2019-05-17 14:27:32.706119
+Soil Moisture Level: 63 2019-05-17 14:37:32.962749
+Soil Moisture Level: 63 2019-05-17 14:47:33.220160
+Soil Moisture Level: 62 2019-05-17 14:57:33.482528
+Soil Moisture Level: 62 2019-05-17 15:07:33.738799
+Soil Moisture Level: 62 2019-05-17 15:17:33.997375
+Soil Moisture Level: 62 2019-05-17 15:27:34.255331
+Soil Moisture Level: 63 2019-05-17 15:37:34.518502
+Soil Moisture Level: 62 2019-05-17 15:47:34.778656
+Soil Moisture Level: 62 2019-05-17 15:57:35.038861
+Soil Moisture Level: 62 2019-05-17 16:07:35.306642
+Soil Moisture Level: 62 2019-05-17 16:17:35.563780
+Soil Moisture Level: 62 2019-05-17 16:27:35.821208
+Soil Moisture Level: 62 2019-05-17 16:37:36.078556
+Soil Moisture Level: 62 2019-05-17 16:47:36.335431
+Soil Moisture Level: 61 2019-05-17 16:57:36.590170
+Soil Moisture Level: 62 2019-05-17 17:07:36.844800
+Soil Moisture Level: 62 2019-05-17 17:17:37.102229
+Soil Moisture Level: 63 2019-05-17 17:27:37.359778
+Soil Moisture Level: 62 2019-05-17 17:37:37.623157
+Soil Moisture Level: 62 2019-05-17 17:47:37.881721
+Soil Moisture Level: 62 2019-05-17 17:57:38.139715
+Soil Moisture Level: 61 2019-05-17 18:07:38.562363
+Soil Moisture Level: 62 2019-05-17 18:17:24.608307
+Soil Moisture Level: 62 2019-05-17 18:17:38.834465
+Soil Moisture Level: 62 2019-05-17 18:23:30.702496
+Soil Moisture Level: 61 2019-05-17 18:33:30.963476
+Soil Moisture Level: 61 2019-05-17 18:43:31.217012
+Soil Moisture Level: 61 2019-05-17 18:53:31.471095
+Soil Moisture Level: 61 2019-05-17 19:03:31.725996
+Soil Moisture Level: 62 2019-05-17 19:13:31.983050
+Soil Moisture Level: 61 2019-05-17 19:23:32.241264
+Soil Moisture Level: 61 2019-05-17 19:33:32.501831
+Soil Moisture Level: 62 2019-05-17 19:43:32.755522
+Soil Moisture Level: 61 2019-05-17 19:53:33.011148
+Soil Moisture Level: 60 2019-05-17 20:03:33.265480
+Soil Moisture Level: 61 2019-05-17 20:13:33.521917
+Soil Moisture Level: 61 2019-05-17 20:23:33.776374
+Soil Moisture Level: 62 2019-05-17 20:33:34.030358
+Soil Moisture Level: 61 2019-05-17 20:43:34.284593
+Soil Moisture Level: 61 2019-05-17 20:53:34.537386
+Soil Moisture Level: 61 2019-05-17 21:03:34.791307
+Soil Moisture Level: 62 2019-05-17 21:13:35.044832
+Soil Moisture Level: 62 2019-05-17 21:23:35.306999
+Soil Moisture Level: 60 2019-05-17 21:33:35.564476
+Soil Moisture Level: 62 2019-05-17 21:43:35.823014
+Soil Moisture Level: 61 2019-05-17 21:53:36.082322
+Soil Moisture Level: 62 2019-05-17 22:03:36.341602
+Soil Moisture Level: 62 2019-05-17 22:13:36.603085
+Soil Moisture Level: 60 2019-05-17 22:23:36.856533
+Soil Moisture Level: 62 2019-05-17 22:33:37.110545
+Soil Moisture Level: 62 2019-05-17 22:43:37.364931
+Soil Moisture Level: 62 2019-05-17 22:53:37.618157
+Soil Moisture Level: 61 2019-05-17 23:03:37.875824
+Soil Moisture Level: 62 2019-05-17 23:13:38.130397
+Soil Moisture Level: 62 2019-05-17 23:23:38.384929
+Soil Moisture Level: 61 2019-05-17 23:33:38.638691
+Soil Moisture Level: 61 2019-05-17 23:43:38.892081
+Soil Moisture Level: 61 2019-05-17 23:53:39.145920
+Soil Moisture Level: 60 2019-05-18 00:03:39.416870
+Soil Moisture Level: 61 2019-05-18 00:13:39.690908
+Soil Moisture Level: 60 2019-05-18 00:23:39.963251
+Soil Moisture Level: 61 2019-05-18 00:33:40.217245
+Soil Moisture Level: 61 2019-05-18 00:43:40.472045
+Soil Moisture Level: 61 2019-05-18 00:53:40.733040
+Soil Moisture Level: 60 2019-05-18 01:03:41.015420
+Soil Moisture Level: 61 2019-05-18 01:13:41.286139
+Soil Moisture Level: 61 2019-05-18 01:23:41.548416
+Soil Moisture Level: 60 2019-05-18 01:33:41.849949
+Soil Moisture Level: 60 2019-05-18 01:43:42.104643
+Soil Moisture Level: 60 2019-05-18 01:53:42.362144
+Soil Moisture Level: 60 2019-05-18 02:03:42.616447
+Soil Moisture Level: 60 2019-05-18 02:13:42.873210
+Soil Moisture Level: 60 2019-05-18 02:23:43.131088
+Soil Moisture Level: 61 2019-05-18 02:33:43.396881
+Soil Moisture Level: 60 2019-05-18 02:43:43.675298
+Soil Moisture Level: 60 2019-05-18 02:53:43.985824
+Soil Moisture Level: 60 2019-05-18 03:03:44.248075
+Soil Moisture Level: 60 2019-05-18 03:13:44.502463
+Soil Moisture Level: 60 2019-05-18 03:23:44.757737
+Soil Moisture Level: 59 2019-05-18 03:33:45.011407
+Soil Moisture Level: 60 2019-05-18 03:43:45.269783
+Soil Moisture Level: 60 2019-05-18 03:53:45.578421
+Soil Moisture Level: 60 2019-05-18 04:03:45.845318
+Soil Moisture Level: 60 2019-05-18 04:13:46.115325
+Soil Moisture Level: 60 2019-05-18 04:23:46.396869
+Soil Moisture Level: 61 2019-05-18 04:33:46.648915
+Soil Moisture Level: 59 2019-05-18 04:43:46.899709
+Soil Moisture Level: 59 2019-05-18 04:53:47.154861
+Soil Moisture Level: 59 2019-05-18 05:03:47.408170
+Soil Moisture Level: 59 2019-05-18 05:13:47.675310
+Soil Moisture Level: 60 2019-05-18 05:23:47.945310
+Soil Moisture Level: 59 2019-05-18 05:33:48.226935
+Soil Moisture Level: 59 2019-05-18 05:43:48.545399
+Soil Moisture Level: 59 2019-05-18 05:53:48.802158
+Soil Moisture Level: 60 2019-05-18 06:03:49.057401
+Soil Moisture Level: 60 2019-05-18 06:13:49.311172
+Soil Moisture Level: 59 2019-05-18 06:23:49.568804
+Soil Moisture Level: 59 2019-05-18 06:33:49.829598
+Soil Moisture Level: 58 2019-05-18 06:43:50.130667
+Soil Moisture Level: 59 2019-05-18 06:53:50.415308
+Soil Moisture Level: 59 2019-05-18 07:03:50.679949
+Soil Moisture Level: 59 2019-05-18 07:13:50.939904
+Soil Moisture Level: 59 2019-05-18 07:23:51.193022
+Soil Moisture Level: 58 2019-05-18 07:33:51.447317
+Soil Moisture Level: 59 2019-05-18 07:43:51.702074
+Soil Moisture Level: 60 2019-05-18 07:53:51.956187
+Soil Moisture Level: 59 2019-05-18 08:03:52.275301
+Soil Moisture Level: 60 2019-05-18 08:13:52.595317
+Soil Moisture Level: 59 2019-05-18 08:23:52.890019
+Soil Moisture Level: 60 2019-05-18 08:33:53.164564
+Soil Moisture Level: 60 2019-05-18 08:43:53.417514
+Soil Moisture Level: 60 2019-05-18 08:53:53.673538
+Soil Moisture Level: 59 2019-05-18 09:03:53.927308
+Soil Moisture Level: 58 2019-05-18 09:13:54.181993
+Soil Moisture Level: 59 2019-05-18 09:23:54.455319
+Soil Moisture Level: 58 2019-05-18 09:33:54.735300
+Soil Moisture Level: 59 2019-05-18 09:43:55.055328
+Soil Moisture Level: 60 2019-05-18 09:53:55.329927
+Soil Moisture Level: 58 2019-05-18 10:03:55.584457
+Soil Moisture Level: 55 2019-05-18 10:13:55.844289
+Soil Moisture Level: 55 2019-05-18 10:23:56.102436
+Soil Moisture Level: 55 2019-05-18 10:33:56.363398
+Soil Moisture Level: 55 2019-05-18 10:43:56.622885
+Soil Moisture Level: 55 2019-05-18 10:53:56.896882
+Soil Moisture Level: 56 2019-05-18 11:03:57.165309
+Soil Moisture Level: 56 2019-05-18 11:13:57.507788
+Soil Moisture Level: 56 2019-05-18 11:23:57.771829
+Soil Moisture Level: 56 2019-05-18 11:33:58.025401
+Soil Moisture Level: 55 2019-05-18 11:43:58.280129
+Soil Moisture Level: 56 2019-05-18 11:53:58.536700
+Soil Moisture Level: 56 2019-05-18 12:03:58.792739
+Soil Moisture Level: 56 2019-05-18 12:13:59.055315
+Soil Moisture Level: 55 2019-05-18 12:23:59.336991
+Soil Moisture Level: 56 2019-05-18 12:33:59.616114
+Soil Moisture Level: 55 2019-05-18 12:43:59.889986
+Soil Moisture Level: 55 2019-05-18 12:54:00.144890
+Soil Moisture Level: 55 2019-05-18 13:04:00.400427
+Soil Moisture Level: 55 2019-05-18 13:14:00.660159
+Soil Moisture Level: 55 2019-05-18 13:24:00.911111
+Soil Moisture Level: 55 2019-05-18 13:34:01.182577
+Soil Moisture Level: 55 2019-05-18 13:44:01.434897
+Soil Moisture Level: 56 2019-05-18 13:54:01.677506
+Soil Moisture Level: 55 2019-05-18 14:04:01.956852
+Soil Moisture Level: 55 2019-05-18 14:14:02.240804
+Soil Moisture Level: 56 2019-05-18 14:24:02.520321
+Soil Moisture Level: 55 2019-05-18 14:34:02.786971

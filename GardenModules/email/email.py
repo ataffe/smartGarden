@@ -18,6 +18,8 @@ def send_email():
 	message["From"] = sender_email
 	message["To"] = receiver_email
 	message["Date"] = formatdate(localtime=True)
+	soilMoisture = "No Data"
+	soilTimeStamp = "No Data"
 
 	# Create the body of the message (a plain-text and an HTML version).
 	text = "Garden update plan text"
@@ -47,8 +49,6 @@ def send_email():
 			for cnt, line in enumerate(fp):
 				lineArray = line.split()
 				currentYMD = str(datetime.now()).split()[0]
-				soilMoisture = "No Data"
-				soilTimeStamp = "No Data"
 				highlightedRow = "<td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>"
 				regularRow = "<td style='border: 1px solid;padding: 8px; text-align: center;'>"
 				greyRow = "<td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>"
@@ -56,10 +56,12 @@ def send_email():
 				if cnt < len(soilLogArray):
 						try:
 								splitLine = soilLogArray[cnt].split()
-								soilMoisture = splitLine[3]
-								soilTimeStamp = splitLine[4] + " " + splitLine[5]
+								if len(splitLine) > 5:
+									soilTimeStamp = splitLine[4] + " " + splitLine[5]
+								if len(splitLine) > 2:
+									soilMoisture = splitLine[3]	
 						except Exception as e:
-								logging.warn("Unable to parse soil moisture or time stamp for email.")
+								logging.warn("Unable to parse soil moisture or time stamp for email for line: " + str(cnt))
 								logging.warn(e)
 
 				if currentYMD == lineArray[3]:
