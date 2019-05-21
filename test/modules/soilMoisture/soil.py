@@ -38,7 +38,7 @@ def test_soil():
 			val = val * 100
 			valInt = round(val, 5)
 
-		print("Voltage: " + str(chan.voltage) + "\t\tValue: " + str(valInt))
+		print("Voltage: " + str(chan.voltage) + "\t\tValue: " + str(chan.value))
 
 		if not started:
 			started = True

@@ -35,7 +35,7 @@ def send_folder(ymd):
 	diff = time2 - time1
 	print("It took (mins, seconds): " + str(divmod(diff.total_seconds(),60)) + " to transfer " + str(ymd))
 
-yesterday = datetime.now() - timedelta(days=2)
+yesterday = datetime.now() - timedelta(days=1)
 filename = str(yesterday).replace(" ", "-")
 dateArray = filename.split('-')
 ymd = dateArray[0] + "-" + dateArray[1] + "-" + dateArray[2]

@@ -16,7 +16,7 @@ import GardenModules.pump.pump as pump
 #GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 WAIT_TIME_SECONDS = 600
 EMAIL_TIME_SECONDS = 14400
-PUMP_TIME_SECONDS = 10800
+PUMP_TIME_SECONDS = 14400
 CAMERA_TIME_SECONDS = 300
 ARTIFICIAL_LIGHT_SECONDS = 1800
 LAMP_PIN = 16
@@ -150,7 +150,7 @@ def sunlight_thread():
 		sunlight.check_sunlight()
 
 def pump_thread():
-	pump.run_pump(5)
+	#pump.run_pump(5)
 	timer = threading.Event()
 	while not timer.wait(PUMP_TIME_SECONDS):
 		pump.run_pump(5)

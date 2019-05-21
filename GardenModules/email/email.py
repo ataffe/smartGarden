@@ -20,6 +20,10 @@ def send_email():
 	message["Date"] = formatdate(localtime=True)
 	soilMoisture = "No Data"
 	soilTimeStamp = "No Data"
+	soilIterator = 0
+	soilMoistureArray = []
+	soilTimeStampArray = []
+	currentYMD = str(datetime.now()).split()[0]
 
 	# Create the body of the message (a plain-text and an HTML version).
 	text = "Garden update plan text"
@@ -44,63 +48,67 @@ def send_email():
 		with open("/home/pi/Desktop/smartGarden/smartGarden/soilLog.txt", "r") as fp2:
 			for count, line in enumerate(fp2):
 				soilLogArray.append(line)
+				
+		for line in soilLogArray:
+			try:
+				splitLine = line.split()
+				if (currentYMD == splitLine[4]) and (len(splitLine) > 5):
+					soilMoistureArray.append(splitLine[3])
+					soilTimeStampArray.append(splitLine[4] + " " + splitLine[5])
+			except Exception as e:
+				logging.warn("Unable to parse soil moisture or time stamp for email")
+				logging.warn(e)
 
 		with open("/home/pi/Desktop/smartGarden/smartGarden/sunlightLog.txt", "r") as fp:
 			for cnt, line in enumerate(fp):
 				lineArray = line.split()
-				currentYMD = str(datetime.now()).split()[0]
 				highlightedRow = "<td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>"
 				regularRow = "<td style='border: 1px solid;padding: 8px; text-align: center;'>"
-				greyRow = "<td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>"
-			
-				if cnt < len(soilLogArray):
-						try:
-								splitLine = soilLogArray[cnt].split()
-								if len(splitLine) > 5:
-									soilTimeStamp = splitLine[4] + " " + splitLine[5]
-								if len(splitLine) > 2:
-									soilMoisture = splitLine[3]	
-						except Exception as e:
-								logging.warn("Unable to parse soil moisture or time stamp for email for line: " + str(cnt))
-								logging.warn(e)
+				greyRow = "<td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>"			
 
 				if currentYMD == lineArray[3]:
-						if cnt % 2 == 0:
-								if "YES" in lineArray[0]:
-										row = "<tr>" + highlightedRow  + lineArray[0] + " " + lineArray[1] + "</td>"
-								else:
-										row = "<tr>" + regularRow + lineArray[0] + " " + lineArray[1] + "</td>"
+					if soilIterator < len(soilMoistureArray):
+						soilMoisture = soilMoistureArray[soilIterator]
+						soilTimeStamp = soilTimeStampArray[soilIterator]
+						soilIterator = soilIterator + 1
+						print("Setting moisture: " + soilMoisture)
 
-								row = row + regularRow + lineArray[3] + " " +  lineArray[4]+ "</td>"
-								row = row + regularRow + soilMoisture + "</td>"
-								row = row + regularRow + soilTimeStamp + "</td></tr>"
-						else:
-								if "YES" in lineArray[0]:
-										row = "<tr>" + highlightedRow + lineArray[0] + " " + lineArray[1] + "</td>"
-								else:
-										row = "<tr>" + greyRow + lineArray[0] + " " + lineArray[1] + "</td>"
-								row = row + greyRow + lineArray[3] + " " +	lineArray[4]+ "</td>"
-								row = row + greyRow + soilMoisture + "</td>"
-								row = row + greyRow + soilTimeStamp + "</td></tr>"
-						html = html + row
+					if cnt % 2 == 0:
+							if "YES" in lineArray[0]:
+									row = "<tr style='width:100%'>" + highlightedRow  + lineArray[0] + " " + lineArray[1] + "</td>"
+							else:
+									row = "<tr style='width:100%'>" + regularRow + lineArray[0] + " " + lineArray[1] + "</td>"
+
+							row = row + regularRow + lineArray[3] + " " +  lineArray[4]+ "</td>"
+							row = row + regularRow + soilMoisture + "</td>"
+							row = row + regularRow + soilTimeStamp + "</td></tr>"
+					else:
+							if "YES" in lineArray[0]:
+									row = "<tr style='width:100%'>" + highlightedRow + lineArray[0] + " " + lineArray[1] + "</td>"
+							else:
+									row = "<tr style='width:100%'>" + greyRow + lineArray[0] + " " + lineArray[1] + "</td>"
+							row = row + greyRow + lineArray[3] + " " +	lineArray[4]+ "</td>"
+							row = row + greyRow + soilMoisture + "</td>"
+							row = row + greyRow + soilTimeStamp + "</td></tr>"
+					html = html + row
 				elif currentYMD == lineArray[4]:
-						if cnt % 2 == 0:
-								if "YES" in lineArray[0]:
-										row = "<tr>" + highlightedRow + lineArray[0] + " " + lineArray[1] + " " + lineArray[2] + "</td>"
-								else:
-										row = "<tr>" + regularRow + lineArray[0] + " " + lineArray[1] + "</td>"
-								row = row + regularRow + lineArray[4] + " " +  lineArray[5]+ "</td>"
-								row = row + regularRow + soilMoisture + "</td>"
-								row = row + regularRow + soilTimeStamp + "</td></tr>"
-						else:
-								if "YES" in lineArray[0]:
-										row = "<tr>" + highlightedRow + lineArray[0] + " " + lineArray[1] + " " + lineArray[2] + "</td>"
-								else:
-										row = "<tr>" + greyRow + lineArray[0] + " " + lineArray[1] + "</td>"
-								row = row + greyRow + lineArray[4] + " " +	lineArray[5]+ "</td>"
-								row = row + greyRow + soilMoisture + "</td>"
-								row = row + greyRow + soilTimeStamp + "</td></tr>"
-						html = html + row
+					if cnt % 2 == 0:
+							if "YES" in lineArray[0]:
+									row = "<tr style='width:100%'>" + highlightedRow + lineArray[0] + " " + lineArray[1] + " " + lineArray[2] + "</td>"
+							else:
+									row = "<tr style='width:100%'>" + regularRow + lineArray[0] + " " + lineArray[1] + "</td>"
+							row = row + regularRow + lineArray[4] + " " +  lineArray[5]+ "</td>"
+							row = row + regularRow + soilMoisture + "</td>"
+							row = row + regularRow + soilTimeStamp + "</td></tr>"
+					else:
+							if "YES" in lineArray[0]:
+									row = "<tr style='width:100%'>" + highlightedRow + lineArray[0] + " " + lineArray[1] + " " + lineArray[2] + "</td>"
+							else:
+									row = "<tr style='width:100%'>" + greyRow + lineArray[0] + " " + lineArray[1] + "</td>"
+							row = row + greyRow + lineArray[4] + " " +	lineArray[5]+ "</td>"
+							row = row + greyRow + soilMoisture + "</td>"
+							row = row + greyRow + soilTimeStamp + "</td></tr>"
+					html = html + row
 				html = html + """\
 						</table>
 					</body>
