@@ -1,19 +1,16 @@
 import RPi.GPIO as GPIO
-import keyboard
 import threading
-from datetime import datetime  
+from datetime import datetime
 from datetime import timedelta
 import time
-import smtplib, ssl
-import time
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from email.mime.base import MIMEBase
-from email.utils import formatdate
-from email import encoders
 import os
-import sqlite3
 import zipfile
+import logging
+import GardenModules.soilMoisture.soil as soil
+import GardenModules.sunlightSensor.sunlight as sunlight
+import GardenModules.email.email as email
+import GardenModules.pump.pump as pump
+import cv2
 
 
 #GPIO.setmode(GPIO.BCM)
@@ -22,41 +19,9 @@ WAIT_TIME_SECONDS = 600
 EMAIL_TIME_SECONDS = 14400
 PUMP_TIME_SECONDS = 14400
 CAMERA_TIME_SECONDS = 300
+ARTIFICIAL_LIGHT_SECONDS = 1800
+LAMP_PIN = 16
 image_count = 0
-
-def insertSunlightRecord(message,time1, time2):
-	insert_command = "INSERT INTO sunlight VALUES (\'" + message + "\',\'"+ time1 + "\',\'" + time2 + "\');"
-	try:
-		conn = sqlite3.connect('/home/pi/Desktop/smartGarden/smartGarden/gardenDatabase.db')
-		cursor = conn.cursor()
-		cursor.execute(insert_command)
-		conn.commit()
-		print("Inserted sunlight record")
-		return cursor.lastrowid
-	except Exception as e:
-		print(e)
-	finally:
-		conn.close()
-
-def check_sunlight():
-	try:
-		GPIO.setmode(GPIO.BCM)
-		GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
-		f = open("/home/pi/Desktop/smartGarden/smartGarden/sunlightLog.txt", "a+")
-		time = datetime.now()
-		dateTimeString = str(time)
-		cleanDateString = str(time + timedelta(days=60))
-		if not GPIO.input(4):
-			f.write("YES Sunlight at: " + dateTimeString + "\n")
-			insertSunlightRecord("Yes Sunlight",dateTimeString,cleanDateString)
-		else:
-			f.write("NO Sunlight at: " + dateTimeString  + "\n")
-			insertSunlightRecord("No Sunlight", dateTimeString, cleanDateString)
-	except Exception as e:
-		print("There was an error writing to file.")
-		print(e)
-	finally:
-		f.close()
 
 def create_folder():
 	filename = str(datetime.now()).replace(" ", "-")
@@ -70,189 +35,208 @@ def create_folder():
 		return ymd
 
 def zipdir(path, ziph):
-	print("zipping path: " + path)
+	logging.info("zipping path: " + path)
 	for root, dirs, files in os.walk(path):
-		print("root: " + root)
+		logging.info("root: " + root)
 		for file in files:
 			ziph.write(os.path.join(root, file))
 
 def send_folder(ymd):
-	print("Zipping File...")
+	time1 = datetime.now()
+	logging.info("Zipping File... "+ str(datetime.now()))
 	baseFolder = ymd
+	baseFolder = "/home/pi/Desktop/smartGarden/smartGarden/images/" + baseFolder
 	ymd = baseFolder + ".zip"
-	os.chdir("images")
+	currentDirectory = os.path.dirname(os.path.realpath(__file__))
+	os.chdir("/home/pi/Desktop/smartGarden/smartGarden/images")
 	zf = zipfile.ZipFile(ymd, mode = 'w', compression=zipfile.ZIP_LZMA)
 	try:
 		zipdir(baseFolder,zf)
 	finally:
 		zf.close()
-	print("Sending images...")
-	scp_command = "SSHPASS='al.EX.91.27' sshpass -e scp " + ymd + " alext@192.168.0.20:D:\\\\smartGarden\\\\Images"
-	os.system(scp_command)
-	os.system("rm " + ymd)
-	os.system("rm -r " + baseFolder)
-	os.chdir("..")
+	logging.info("Sending images...")
+	try:
+		scp_command = "SSHPASS='al.EX.91.27' sshpass -e scp " + ymd + " alext@192.168.0.20:D:\\\\smartGarden\\\\Images"
+	except Exception as e:
+		logging.warn("There was an error sending the file to Cacutar")
+		logging.warn(e)
+	try:
+		os.system(scp_command)
+		os.system("rm " + ymd)
+		#os.system("rm -r " + baseFolder)
+		os.chdir(currentDirectory)
+		time2 = datetime.now()
+		diff = time2 - time1
+		logging.info("It took (mins, seconds): " + str(divmod(diff.total_seconds(),60)) + " to transfer " + str(ymd))
+	except Exception as e:
+		logging.warn("There was an error deleting the folders and moving back a directory")
+		logging.warn(e)
 
 def take_pics(ymd, number=1):
 	for x in range(number):
-		print("Taking image " + str(x + 1) + " out of " + str(number))
+		logging.info("Taking image " + str(x + 1) + " out of " + str(number))
 		filename = str(datetime.now()).replace(" ", "-")
 		filename = filename.replace(":","-")
 		filename = filename.replace(".","-")
 		filename = filename + ".jpg"
 		#Take image
-		myCmd = 'fswebcam -q -i 0 -r 800x600 /home/pi/Desktop/smartGarden/smartGarden/images/' + ymd + "/" + str(filename)
-		os.system(myCmd)
+		#old was 800x600
+		vid_cap = cv2.VideoCapture(0)
+		vid_cap.set(3, 1280)
+		vid_cap.set(4, 720)
+		if not vid_cap.isOpened():
+			logging.warn("Error opening video device using opencv")
+		else:
+			print("Taking picture")
+			for x in range(10):
+				ret, image = vid_cap.read()
+			cv2.imwrite("/home/pi/Desktop/smartGarden/smartGarden/images/" + ymd + "/" + str(filename), image)
+			vid_cap.release()
+			print("picture taken")
+		#myCmd = 'fswebcam -q -i 0 -r 1280x720 /home/pi/Desktop/smartGarden/smartGarden/images/' + ymd + "/" + str(filename)
+		#os.system(myCmd)
 
-def run_camera(ymd):
-	today = str(datetime.now()).split()[0]
-	if today != ymd:
+def run_camera(send_folder=False):
+	ymd = create_folder()
+	if send_folder:
+		yesterday = datetime.now() - timedelta(days=1)
+		filename = str(yesterday).replace(" ", "-")
+		dateArray = filename.split('-')
+		ymd = dateArray[0] + "-" + dateArray[1] + "-" + dateArray[2]
 		send_folder(ymd)
 		ymd = create_folder()
 	take_pics(ymd)
 
 def run_pump(run_time):
-	dutycycle = 60
-	GPIO.setmode(GPIO.BCM)
-	GPIO.setup(18, GPIO.OUT)
-	GPIO.output(18, GPIO.HIGH)
-	GPIO.output(18, GPIO.LOW)
-	p = GPIO.PWM(18,50)
-	p.start(dutycycle)
-	time.sleep(run_time)
-	GPIO.output(18, GPIO.LOW)
-	p.stop()
-	GPIO.cleanup()
-
-def send_email():
-	port = 465 # For SSL
-	password = "al.EX.91.27"
-	sender_email = "raspberry.pi.taffe@gmail.com"
-	receiver_email = "taffeAlexander@gmail.com"
-	message = MIMEMultipart("alternative")
-	message["Subject"] = "Garden update: " + formatdate(localtime=True)
-	message["From"] = sender_email
-	message["To"] = receiver_email
-	message["Date"] = formatdate(localtime=True)
-
-	# Create the body of the message (a plain-text and an HTML version).
-	text = "Garden update plan text"
-
 	try:
-		html = """\
-			<!DOCTYPE html>
-			<html>
-				<head>
-				</head>
-				<body>
-					<h1>Garden Update</h1>
-					<table style="width:100%">
-						<tr>
-							<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;"> Sunlight </th>
-							<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;"> TimeStamp </th>
-						</tr>
-						"""
-		with open("/home/pi/Desktop/smartGarden/smartGarden/sunlightLog.txt", "r") as fp:
-			for cnt, line in enumerate(fp):
-				lineArray = line.split()
-				currentYMD = str(datetime.now()).split()[0]
-				if currentYMD == lineArray[3]:
-					if cnt % 2 == 0:
-						if "YES" in lineArray[0]:
-							row = "<tr><td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
-						else:
-							row = "<tr><td style='border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
-						row = row + "<td style='border: 1px solid;padding: 8px; text-align: center'>" + lineArray[3] + " " +  lineArray[4]+ "</td></tr>"
-					else:
-						if "YES" in lineArray[0]:
-							row = "<tr><td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
-						else:
-							row = "<tr><td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center; '>" + lineArray[0] + " " + lineArray[1] + "</td>"
-						row = row + "<td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>" + lineArray[3] + " " +  lineArray[4]+ "</td></tr>"
-					html = html + row
-		html = html + """\
-					</table>
-				</body>
-			</html>
-			"""
+		dutycycle = 60
+		GPIO.setmode(GPIO.BCM)
+		GPIO.setup(18, GPIO.OUT)
+		GPIO.output(18, GPIO.HIGH)
+		GPIO.output(18, GPIO.LOW)
+		p = GPIO.PWM(18,50)
+		p.start(dutycycle)
+		time.sleep(run_time)
+		GPIO.output(18, GPIO.LOW)
+		p.stop()
+		logging.info("Watered plants at: " + str(datetime.now()))
 	except Exception as e:
-		print("There was an error reading html file. Defaulting to basic html page")
-		html = """\
-		<html>
-			<head></head>
-			<body>
-				<h1>Garden Update</h1>
-			</body>
-		</html>
-		"""
-		print(e)
+		logging.warn("There was an error watering the plants.")
+		logging.warn(e)
 
+def control_artifical_light(on_off):
 	try:
-		#Open the file to be sent
-		attachment = open("/home/pi/Desktop/smartGarden/smartGarden/sunlightLog.txt", "rb")
-		p = MIMEBase('application', 'octet-stream')
-		p.set_payload((attachment).read())
-		encoders.encode_base64(p)
-
-		p.add_header('Content-Disposition', "attachment; filename=%s" % "sunlightLog.txt")
-		message.attach(p)
+		GPIO.setmode(GPIO.BCM)
+		GPIO.setup(LAMP_PIN, GPIO.OUT, initial=1)
+		if on_off == "on":
+			GPIO.output(LAMP_PIN, 0)
+		else:
+			GPIO.output(LAMP_PIN, 1)
 	except Exception as e:
-		print("There was an error opening attachment.")
-		print(e)
+		logging.warn(e)
 
-	# Record the MIME types of both parts - text/plain and text/html.
-	part1 = MIMEText(text, 'plain')
-	part2 = MIMEText(html, 'html')
-
-	# Attach parts into message container.
-	# According to RFC 2046, the last part of a multipart message, in this case
-	# the HTML message, is best and preferred.
-	message.attach(part1)
-	message.attach(part2)
-
-	# Create a secure SSL context
-	context = ssl.create_default_context()
-	with smtplib.SMTP_SSL("smtp.gmail.com", port) as server:
-		server.login("raspberry.pi.taffe@gmail.com", password)
-		server.sendmail(sender_email, receiver_email, message.as_string())
-		print("Email Sent")
+def run_artificial_light():
+	try:
+		currentTimeStamp = str(datetime.now()).split()[1]
+		currentHour = int(currentTimeStamp.split(':')[0])
+		logging.info("Currrent time: " + str(currentHour))
+		if currentHour >= 18 or (currentHour >= 6 and currentHour < 12):
+			control_artifical_light("on")
+			logging.info("Turning light on "+ str(datetime.now()))
+		elif (currentHour >= 12 and currentHour < 18) or currentHour < 6:
+			control_artifical_light("off")
+			logging.info("Turning light off "+ str(datetime.now()))
+	except Exception as e:
+		logging.info("Could not setup light "+ str(datetime.now()))
+		logging.warn(e)
 
 def email_thread():
 	time.sleep(60)
-	send_email()
+	email.send_email()
 	timer = threading.Event()
 	while not timer.wait(EMAIL_TIME_SECONDS):
-		send_email()
+		email.send_email()
 
 def sunlight_thread():
+	sunlight.check_sunlight()
 	timer = threading.Event()
 	while not timer.wait(WAIT_TIME_SECONDS):
-		check_sunlight()
+		sunlight.check_sunlight()
 
 def pump_thread():
-	#run_pump(5)
+	#pump.run_pump(5)
 	timer = threading.Event()
 	while not timer.wait(PUMP_TIME_SECONDS):
-		run_pump(5)
+		pump.run_pump(5)
 
 def camera_thread():
 	ymd = create_folder()
-	run_camera(ymd)
 	timer = threading.Event()
+	run_camera(send_folder=False)
 	while not timer.wait(CAMERA_TIME_SECONDS):
-		run_camera(ymd)
+		send_folder = False
+		sent_folder = False
+		time = str(datetime.now()).split()
+		hour = str(time[1].split(':')[0])
+		
+		if hour == "00" and not sent_folder:
+			send_folder = True
+			sent_folder = True
+		elif hour != "00" and sent_folder:
+			sent_folder = False
+		else:
+			send_folder = False
+		run_camera(send_folder)
+
+def artifical_light_thread():
+	run_artificial_light()
+	timer = threading.Event()
+	while not timer.wait(ARTIFICIAL_LIGHT_SECONDS):
+		run_artificial_light()
+	GPIO.cleanup()
+
+def soil_moisture_thread():
+	soil.check_soil()
+	timer = threading.Event()
+	while not timer.wait(WAIT_TIME_SECONDS):
+		soil.check_soil()
+	
+
 
 if __name__ == "__main__":
+	logging.basicConfig(filename="/home/pi/Desktop/smartGarden/smartGarden/smartGardenLog.txt", level=logging.INFO)
 	thread1 = threading.Thread(target=email_thread)
 	thread2 = threading.Thread(target=sunlight_thread)
 	thread3 = threading.Thread(target=pump_thread)
 	thread4 = threading.Thread(target=camera_thread)
-
+	thread5 = threading.Thread(target=artifical_light_thread)
+	thread6 = threading.Thread(target=soil_moisture_thread)
+	
+	print("Starting threads at time: " + str(datetime.now()) + "...")
+	logging.info("Starting threads at time: " + str(datetime.now()) + "...")
 	thread1.start()
 	thread2.start()
 	thread3.start()
 	thread4.start()
+	thread5.start()
+	thread6.start()
+	print("""  \n\n\nAll Threads Started!\n\n\n
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  """)
+	logging.info("""  \n\n\nAll Threads Started!\n\n\n
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  """)
 	thread1.join()
 	thread2.join()
 	thread3.join()
 	thread4.join()
+	thread5.join()
+	thread6.join()

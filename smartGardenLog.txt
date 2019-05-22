@@ -1,0 +1,810 @@
+INFO:root:Starting threads at time: 2019-05-21 08:16:08.435923...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 8
+INFO:root:Turning light on 2019-05-21 08:16:08.504308
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 15956
+INFO:root:Email Sent 2019-05-21 08:17:44.192740
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 15922
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 15567
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 8
+INFO:root:Turning light on 2019-05-21 08:46:08.510788
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 15939
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 15918
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 15892
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 9
+INFO:root:Turning light on 2019-05-21 09:16:08.517409
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 15911
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 15899
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 15992
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 9
+INFO:root:Turning light on 2019-05-21 09:46:08.524274
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16013
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16017
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16016
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 10
+INFO:root:Turning light on 2019-05-21 10:16:08.531086
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16011
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16006
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16014
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 10
+INFO:root:Turning light on 2019-05-21 10:46:08.537710
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16032
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 15936
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16061
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 11
+INFO:root:Turning light on 2019-05-21 11:16:08.544480
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16044
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16072
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16066
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 11
+INFO:root:Turning light on 2019-05-21 11:46:08.551229
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16083
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16082
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16089
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 12
+INFO:root:Turning light off 2019-05-21 12:16:08.557765
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Watered plants at: 2019-05-21 12:16:13.469114
+INFO:root:Soil Moisture Level: 16104
+INFO:root:Email Sent 2019-05-21 12:17:46.532973
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16053
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 15972
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 12
+INFO:root:Turning light off 2019-05-21 12:46:08.564678
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 4206
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 3716
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 3446
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 13
+INFO:root:Turning light off 2019-05-21 13:16:08.571351
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 3248
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2809
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2564
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 13
+INFO:root:Turning light off 2019-05-21 13:46:08.577955
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2770
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2343
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 3602
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 14
+INFO:root:Turning light off 2019-05-21 14:16:08.584749
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2688
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2459
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 3105
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 14
+INFO:root:Turning light off 2019-05-21 14:46:08.591567
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2997
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 3853
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2432
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 15
+INFO:root:Turning light off 2019-05-21 15:16:08.598146
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2407
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 3137
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 3042
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 15
+INFO:root:Turning light off 2019-05-21 15:46:08.604883
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2540
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2921
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 3095
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 16
+INFO:root:Turning light off 2019-05-21 16:16:08.611585
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Watered plants at: 2019-05-21 16:16:18.473604
+INFO:root:Soil Moisture Level: 2757
+INFO:root:Email Sent 2019-05-21 16:17:49.055780
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2579
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 3063
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 16
+INFO:root:Turning light off 2019-05-21 16:46:08.618241
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2507
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2966
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2813
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 17
+INFO:root:Turning light off 2019-05-21 17:16:08.624953
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2825
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2815
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 3019
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 17
+INFO:root:Turning light off 2019-05-21 17:46:08.631743
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2666
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2833
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 2565
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 18
+INFO:root:Turning light on 2019-05-21 18:16:08.638269
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 4158
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 2960
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 3957
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 18
+INFO:root:Turning light on 2019-05-21 18:46:08.645307
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 2969
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 2628
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 3128
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-05-21 19:16:08.651934
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 3063
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 3033
+INFO:root:Starting threads at time: 2019-05-21 19:30:29.088174...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Turning light on 2019-05-21 19:30:29.140962
+INFO:root:Soil Moisture Level: 15
+INFO:root:Taking image 1 out of 1
+INFO:root:Starting threads at time: 2019-05-21 19:31:28.188466...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-05-21 19:31:28.236604
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Soil Moisture Level: 15
+INFO:root:Starting threads at time: 2019-05-21 19:32:24.297878...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-05-21 19:32:24.357148
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 14
+INFO:root:Starting threads at time: 2019-05-21 19:34:32.206963...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-05-21 19:34:32.258298
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Soil Moisture Level: 16
+INFO:root:Starting threads at time: 2019-05-21 19:35:45.901645...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-05-21 19:35:45.947745
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 13
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 2948
+INFO:root:Starting threads at time: 2019-05-21 19:36:52.442305...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-05-21 19:36:52.490080
+INFO:root:Inserted sunlight record
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 13
+INFO:root:Starting threads at time: 2019-05-21 19:38:02.498688...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Turning light on 2019-05-21 19:38:02.547317
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Soil Moisture Level: 86
+INFO:root:Starting threads at time: 2019-05-21 19:40:55.854964...
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-05-21 19:40:55.978252
+INFO:root:Taking image 1 out of 1
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 88
+WARNING:root:Unable to parse soil moisture or time stamp for email
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-21 19:42:32.544163
+INFO:root:Taking image 1 out of 1
+INFO:root:Starting threads at time: 2019-05-21 19:47:55.568539...
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-05-21 19:47:55.637578
+INFO:root:Taking image 1 out of 1
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 88
+WARNING:root:Unable to parse soil moisture or time stamp for email
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-21 19:49:31.533567
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 93
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 91
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 20
+INFO:root:Turning light on 2019-05-21 20:17:55.697985
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 40
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 87
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: -7
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 20
+INFO:root:Turning light on 2019-05-21 20:47:55.704817
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: -8
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 88
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 90
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 21
+INFO:root:Turning light on 2019-05-21 21:17:55.711526
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 91
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 88
+INFO:root:Taking image 1 out of 1
+INFO:root:Starting threads at time: 2019-05-21 21:33:14.394721...
+INFO:root:Taking image 1 out of 1
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Currrent time: 21
+INFO:root:Turning light on 2019-05-21 21:33:14.487495
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: -3
+WARNING:root:Unable to parse soil moisture or time stamp for email
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-21 21:34:51.050401
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 85
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Starting threads at time: 2019-05-21 21:49:03.967653...
+INFO:root:Currrent time: 21
+INFO:root:Taking image 1 out of 1
+INFO:root:Turning light on 2019-05-21 21:49:04.021008
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 87
+WARNING:root:Unable to parse soil moisture or time stamp for email
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-21 21:50:40.486662
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 88
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 87
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 22
+INFO:root:Turning light on 2019-05-21 22:19:04.048930
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 90
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 90
+INFO:root:Taking image 1 out of 1
+INFO:root:Starting threads at time: 2019-05-21 22:31:06.783989...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 22
+INFO:root:Turning light on 2019-05-21 22:31:06.920259
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Soil Moisture Level: 90
+INFO:root:Taking image 1 out of 1
+INFO:root:Starting threads at time: 2019-05-21 22:34:51.333890...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 22
+INFO:root:Turning light on 2019-05-21 22:34:51.488799
+INFO:root:Inserted sunlight record
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 90
+INFO:root:Starting threads at time: 2019-05-21 22:37:43.188046...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 22
+INFO:root:Turning light on 2019-05-21 22:37:43.324830
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Soil Moisture Level: 90
+INFO:root:Starting threads at time: 2019-05-21 22:38:19.379437...
+INFO:root:Currrent time: 22
+INFO:root:Taking image 1 out of 1
+INFO:root:Turning light on 2019-05-21 22:38:19.417377
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Soil Moisture Level: 90
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 89
+INFO:root:Taking image 1 out of 1
