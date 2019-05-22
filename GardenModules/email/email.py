@@ -80,7 +80,7 @@ def send_email():
 									row = "<tr style='width:100%'>" + regularRow + lineArray[0] + " " + lineArray[1] + "</td>"
 
 							row = row + regularRow + lineArray[3] + " " +  lineArray[4]+ "</td>"
-							row = row + regularRow + soilMoisture + "</td>"
+							row = row + regularRow + soilMoisture +"%</td>"
 							row = row + regularRow + soilTimeStamp + "</td></tr>"
 					else:
 							if "YES" in lineArray[0]:
@@ -88,7 +88,7 @@ def send_email():
 							else:
 									row = "<tr style='width:100%'>" + greyRow + lineArray[0] + " " + lineArray[1] + "</td>"
 							row = row + greyRow + lineArray[3] + " " +	lineArray[4]+ "</td>"
-							row = row + greyRow + soilMoisture + "</td>"
+							row = row + greyRow + soilMoisture + "%</td>"
 							row = row + greyRow + soilTimeStamp + "</td></tr>"
 					html = html + row
 				elif currentYMD == lineArray[4]:
@@ -98,7 +98,7 @@ def send_email():
 							else:
 									row = "<tr style='width:100%'>" + regularRow + lineArray[0] + " " + lineArray[1] + "</td>"
 							row = row + regularRow + lineArray[4] + " " +  lineArray[5]+ "</td>"
-							row = row + regularRow + soilMoisture + "</td>"
+							row = row + regularRow + soilMoisture + "%</td>"
 							row = row + regularRow + soilTimeStamp + "</td></tr>"
 					else:
 							if "YES" in lineArray[0]:
@@ -106,7 +106,7 @@ def send_email():
 							else:
 									row = "<tr style='width:100%'>" + greyRow + lineArray[0] + " " + lineArray[1] + "</td>"
 							row = row + greyRow + lineArray[4] + " " +	lineArray[5]+ "</td>"
-							row = row + greyRow + soilMoisture + "</td>"
+							row = row + greyRow + soilMoisture + "%</td>"
 							row = row + greyRow + soilTimeStamp + "</td></tr>"
 					html = html + row
 				html = html + """\

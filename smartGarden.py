@@ -10,6 +10,7 @@ import GardenModules.soilMoisture.soil as soil
 import GardenModules.sunlightSensor.sunlight as sunlight
 import GardenModules.email.email as email
 import GardenModules.pump.pump as pump
+import cv2
 
 
 #GPIO.setmode(GPIO.BCM)
@@ -79,12 +80,25 @@ def take_pics(ymd, number=1):
 		filename = filename.replace(".","-")
 		filename = filename + ".jpg"
 		#Take image
-		myCmd = 'fswebcam -q -i 0 -r 800x600 /home/pi/Desktop/smartGarden/smartGarden/images/' + ymd + "/" + str(filename)
-		os.system(myCmd)
+		#old was 800x600
+		vid_cap = cv2.VideoCapture(0)
+		vid_cap.set(3, 1280)
+		vid_cap.set(4, 720)
+		if not vid_cap.isOpened():
+			logging.warn("Error opening video device using opencv")
+		else:
+			print("Taking picture")
+			for x in range(10):
+				ret, image = vid_cap.read()
+			cv2.imwrite("/home/pi/Desktop/smartGarden/smartGarden/images/" + ymd + "/" + str(filename), image)
+			vid_cap.release()
+			print("picture taken")
+		#myCmd = 'fswebcam -q -i 0 -r 1280x720 /home/pi/Desktop/smartGarden/smartGarden/images/' + ymd + "/" + str(filename)
+		#os.system(myCmd)
 
-def run_camera(ymd):
-	today = str(datetime.now()).split()[0]
-	if today != ymd:
+def run_camera(send_folder=False):
+	ymd = create_folder()
+	if send_folder:
 		yesterday = datetime.now() - timedelta(days=1)
 		filename = str(yesterday).replace(" ", "-")
 		dateArray = filename.split('-')
@@ -157,10 +171,22 @@ def pump_thread():
 
 def camera_thread():
 	ymd = create_folder()
-	run_camera(ymd)
 	timer = threading.Event()
+	run_camera(send_folder=False)
 	while not timer.wait(CAMERA_TIME_SECONDS):
-		run_camera(ymd)
+		send_folder = False
+		sent_folder = False
+		time = str(datetime.now()).split()
+		hour = str(time[1].split(':')[0])
+		
+		if hour == "00" and not sent_folder:
+			send_folder = True
+			sent_folder = True
+		elif hour != "00" and sent_folder:
+			sent_folder = False
+		else:
+			send_folder = False
+		run_camera(send_folder)
 
 def artifical_light_thread():
 	run_artificial_light()

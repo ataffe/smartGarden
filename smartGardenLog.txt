@@ -1,162 +1,7 @@
-INFO:root:Zipping File... 2019-05-19 00:25:56.368426
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-18
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-18
-INFO:root:Starting threads at time: 2019-05-19 00:26:34.253311...
+INFO:root:Starting threads at time: 2019-05-21 08:16:08.435923...
 INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Currrent time: 0
-INFO:root:Turning light off 2019-05-19 00:26:34.432393
-INFO:root:  
-
-
-All Threads Started!
-
-
-
- ____                       _      ____               _            
-/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
-\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
- ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
-|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
-  
-INFO:root:Soil Moisture Level: 53
-INFO:root:Email Sent 2019-05-19 00:26:37.047072
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 53
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (3.0, 13.320549999999997) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-18.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Starting threads at time: 2019-05-19 00:30:38.312079...
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 0
-INFO:root:Turning light off 2019-05-19 00:30:38.392419
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:  
-
-
-All Threads Started!
-
-
-
- ____                       _      ____               _            
-/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
-\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
- ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
-|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
-  
-WARNING:root:There was an error reading html file. Defaulting to basic html page
-WARNING:root:list index out of range
-INFO:root:Soil Moisture Level: 53
-INFO:root:Email Sent 2019-05-19 00:30:40.253115
-INFO:root:Starting threads at time: 2019-05-19 00:32:48.955566...
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Currrent time: 0
-INFO:root:Turning light off 2019-05-19 00:32:49.066934
-INFO:root:  
-
-
-All Threads Started!
-
-
-
- ____                       _      ____               _            
-/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
-\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
- ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
-|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
-  
-INFO:root:Soil Moisture Level: 53
-INFO:root:Email Sent 2019-05-19 00:32:50.950344
-INFO:root:Zipping File... 2019-05-19 00:34:11.809504
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-18
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-18
-INFO:root:Starting threads at time: 2019-05-19 00:34:39.489383...
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 0
-INFO:root:Turning light off 2019-05-19 00:34:39.652121
-INFO:root:  
-
-
-All Threads Started!
-
-
-
- ____                       _      ____               _            
-/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
-\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
- ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
-|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
-  
-INFO:root:Soil Moisture Level: 53
-INFO:root:Email Sent 2019-05-19 00:34:42.053526
-INFO:root:Starting threads at time: 2019-05-19 00:35:41.578833...
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Currrent time: 0
-INFO:root:Turning light off 2019-05-19 00:35:41.739300
-INFO:root:  
-
-
-All Threads Started!
-
-
-
- ____                       _      ____               _            
-/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
-\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
- ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
-|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
-  
-INFO:root:Soil Moisture Level: 53
-INFO:root:Email Sent 2019-05-19 00:35:44.193960
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (3.0, 20.583595000000003) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-18.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 53
-INFO:root:Starting threads at time: 2019-05-19 00:39:01.516927...
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 0
-INFO:root:  
-
-
-All Threads Started!
-
-
-
- ____                       _      ____               _            
-/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
-\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
- ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
-|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
-  
-INFO:root:Turning light off 2019-05-19 00:39:01.642879
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 53
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 53
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 52
-INFO:root:Taking image 1 out of 1
-INFO:root:Starting threads at time: 2019-05-19 01:00:44.524909...
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 1
-INFO:root:Turning light off 2019-05-19 01:00:44.628465
+INFO:root:Currrent time: 8
+INFO:root:Turning light on 2019-05-21 08:16:08.504308
 INFO:root:  
 
 
@@ -171,3040 +16,795 @@ All Threads Started!
 |____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
   
 INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 53
-INFO:root:Email Sent 2019-05-19 01:02:20.121433
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 15956
+INFO:root:Email Sent 2019-05-21 08:17:44.192740
 INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 52
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 52
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 1
-INFO:root:Turning light off 2019-05-19 01:30:44.635069
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 52
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 52
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 51
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 2
-INFO:root:Turning light off 2019-05-19 02:00:44.641600
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 52
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 51
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 52
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 2
-INFO:root:Turning light off 2019-05-19 02:30:44.648440
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 51
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 52
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 51
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 3
-INFO:root:Turning light off 2019-05-19 03:00:44.655078
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 52
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 51
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 51
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 3
-INFO:root:Turning light off 2019-05-19 03:30:44.661639
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 52
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 50
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 51
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 4
-INFO:root:Turning light off 2019-05-19 04:00:44.668443
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 49
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 49
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 49
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 4
-INFO:root:Turning light off 2019-05-19 04:30:44.675406
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 48
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 48
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 48
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 5
-INFO:root:Turning light off 2019-05-19 05:00:44.681822
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Watered plants at: 2019-05-19 05:00:49.589074
-INFO:root:Soil Moisture Level: 46
-INFO:root:Email Sent 2019-05-19 05:02:22.248453
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 46
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 46
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 5
-INFO:root:Turning light off 2019-05-19 05:30:44.688560
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 22
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 40
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 44
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 6
-INFO:root:Turning light on 2019-05-19 06:00:44.695222
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 51
+INFO:root:Soil Moisture Level: 15922
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 47
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 47
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 6
-INFO:root:Turning light on 2019-05-19 06:30:44.701746
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 45
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 46
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 46
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 7
-INFO:root:Turning light on 2019-05-19 07:00:44.708445
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 47
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 45
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 47
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 7
-INFO:root:Turning light on 2019-05-19 07:30:44.715128
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 45
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 46
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 46
+INFO:root:Soil Moisture Level: 15567
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 8
-INFO:root:Turning light on 2019-05-19 08:00:44.721684
+INFO:root:Turning light on 2019-05-21 08:46:08.510788
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 52
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 39
+INFO:root:Soil Moisture Level: 15939
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 42
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 8
-INFO:root:Turning light on 2019-05-19 08:30:44.728370
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 31
+INFO:root:Soil Moisture Level: 15918
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 42
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 42
+INFO:root:Soil Moisture Level: 15892
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 9
-INFO:root:Turning light on 2019-05-19 09:00:44.735045
+INFO:root:Turning light on 2019-05-21 09:16:08.517409
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Watered plants at: 2019-05-19 09:00:54.597953
-INFO:root:Soil Moisture Level: 42
-INFO:root:Email Sent 2019-05-19 09:02:24.552761
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 40
+INFO:root:Soil Moisture Level: 15911
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 42
+INFO:root:Soil Moisture Level: 15899
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 15992
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 9
-INFO:root:Turning light on 2019-05-19 09:30:44.741667
+INFO:root:Turning light on 2019-05-21 09:46:08.524274
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 43
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 44
+INFO:root:Soil Moisture Level: 16013
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 43
+INFO:root:Soil Moisture Level: 16017
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16016
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 10
-INFO:root:Turning light on 2019-05-19 10:00:44.748541
+INFO:root:Turning light on 2019-05-21 10:16:08.531086
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 42
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 43
+INFO:root:Soil Moisture Level: 16011
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 44
+INFO:root:Soil Moisture Level: 16006
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16014
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 10
-INFO:root:Turning light on 2019-05-19 10:30:44.755240
+INFO:root:Turning light on 2019-05-21 10:46:08.537710
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 43
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 44
+INFO:root:Soil Moisture Level: 16032
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 44
+INFO:root:Soil Moisture Level: 15936
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16061
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 11
-INFO:root:Turning light on 2019-05-19 11:00:44.762256
+INFO:root:Turning light on 2019-05-21 11:16:08.544480
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 44
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 45
+INFO:root:Soil Moisture Level: 16044
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 46
+INFO:root:Soil Moisture Level: 16072
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16066
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 11
-INFO:root:Turning light on 2019-05-19 11:30:44.768849
+INFO:root:Turning light on 2019-05-21 11:46:08.551229
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 47
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 48
+INFO:root:Soil Moisture Level: 16083
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 49
+INFO:root:Soil Moisture Level: 16082
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 16089
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 12
-INFO:root:Turning light off 2019-05-19 12:00:44.775493
+INFO:root:Turning light off 2019-05-21 12:16:08.557765
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 49
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 48
+INFO:root:Watered plants at: 2019-05-21 12:16:13.469114
+INFO:root:Soil Moisture Level: 16104
+INFO:root:Email Sent 2019-05-21 12:17:46.532973
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 48
+INFO:root:Soil Moisture Level: 16053
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 15972
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 12
-INFO:root:Turning light off 2019-05-19 12:30:44.782522
+INFO:root:Turning light off 2019-05-21 12:46:08.564678
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 49
+INFO:root:Soil Moisture Level: 4206
 INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: 49
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 3716
 INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: 49
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 13
-INFO:root:Turning light off 2019-05-19 13:00:44.789336
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Taking image 1 out of 1
-INFO:root:Watered plants at: 2019-05-19 13:00:59.606796
-INFO:root:Soil Moisture Level: 44
-INFO:root:Email Sent 2019-05-19 13:02:26.717438
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: 47
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 46
+INFO:root:Soil Moisture Level: 3446
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 13
-INFO:root:Turning light off 2019-05-19 13:30:44.795939
+INFO:root:Turning light off 2019-05-21 13:16:08.571351
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 45
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 47
+INFO:root:Soil Moisture Level: 3248
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 44
+INFO:root:Soil Moisture Level: 2809
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2564
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 13
+INFO:root:Turning light off 2019-05-21 13:46:08.577955
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2770
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2343
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 3602
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 14
-INFO:root:Turning light off 2019-05-19 14:00:44.802741
+INFO:root:Turning light off 2019-05-21 14:16:08.584749
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 43
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 44
+INFO:root:Soil Moisture Level: 2688
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 44
+INFO:root:Soil Moisture Level: 2459
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 3105
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 14
-INFO:root:Turning light off 2019-05-19 14:30:44.809329
+INFO:root:Turning light off 2019-05-21 14:46:08.591567
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 43
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 44
+INFO:root:Soil Moisture Level: 2997
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 42
+INFO:root:Soil Moisture Level: 3853
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2432
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 15
-INFO:root:Turning light off 2019-05-19 15:00:44.815907
+INFO:root:Turning light off 2019-05-21 15:16:08.598146
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 43
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 42
+INFO:root:Soil Moisture Level: 2407
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 42
+INFO:root:Soil Moisture Level: 3137
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 3042
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 15
-INFO:root:Turning light off 2019-05-19 15:30:44.822586
+INFO:root:Turning light off 2019-05-21 15:46:08.604883
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 41
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 42
+INFO:root:Soil Moisture Level: 2540
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 43
+INFO:root:Soil Moisture Level: 2921
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 3095
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 16
-INFO:root:Turning light off 2019-05-19 16:00:44.829233
+INFO:root:Turning light off 2019-05-21 16:16:08.611585
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 43
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 43
+INFO:root:Watered plants at: 2019-05-21 16:16:18.473604
+INFO:root:Soil Moisture Level: 2757
+INFO:root:Email Sent 2019-05-21 16:17:49.055780
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 44
+INFO:root:Soil Moisture Level: 2579
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 3063
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 16
-INFO:root:Turning light off 2019-05-19 16:30:44.835842
+INFO:root:Turning light off 2019-05-21 16:46:08.618241
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 44
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 45
+INFO:root:Soil Moisture Level: 2507
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 45
+INFO:root:Soil Moisture Level: 2966
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 2813
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 17
-INFO:root:Turning light off 2019-05-19 17:00:44.842724
+INFO:root:Turning light off 2019-05-21 17:16:08.624953
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Watered plants at: 2019-05-19 17:01:04.615410
-INFO:root:Soil Moisture Level: 44
-INFO:root:Email Sent 2019-05-19 17:02:28.881089
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 43
+INFO:root:Soil Moisture Level: 2825
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 43
+INFO:root:Soil Moisture Level: 2815
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 3019
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 17
-INFO:root:Turning light off 2019-05-19 17:30:44.849419
+INFO:root:Turning light off 2019-05-21 17:46:08.631743
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 43
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 43
+INFO:root:Soil Moisture Level: 2666
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 42
+INFO:root:Soil Moisture Level: 2833
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 2565
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 18
-INFO:root:Turning light on 2019-05-19 18:00:44.856188
+INFO:root:Turning light on 2019-05-21 18:16:08.638269
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 44
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 42
+INFO:root:Soil Moisture Level: 4158
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 43
+INFO:root:Soil Moisture Level: 2960
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 3957
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 18
-INFO:root:Turning light on 2019-05-19 18:30:44.862986
+INFO:root:Turning light on 2019-05-21 18:46:08.645307
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 42
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 42
+INFO:root:Soil Moisture Level: 2969
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 43
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 19
-INFO:root:Turning light on 2019-05-19 19:00:44.869531
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 43
+INFO:root:Soil Moisture Level: 2628
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 43
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 44
+INFO:root:Soil Moisture Level: 3128
 INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 19
-INFO:root:Turning light on 2019-05-19 19:30:44.876195
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 44
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 44
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 43
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 20
-INFO:root:Turning light on 2019-05-19 20:00:44.882973
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 43
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 42
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 39
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 20
-INFO:root:Turning light on 2019-05-19 20:30:44.889549
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 21
-INFO:root:Turning light on 2019-05-19 21:00:44.896214
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Watered plants at: 2019-05-19 21:01:09.624336
-INFO:root:Soil Moisture Level: 37
-INFO:root:Email Sent 2019-05-19 21:02:31.238371
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 37
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 37
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 21
-INFO:root:Turning light on 2019-05-19 21:30:44.903023
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 37
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 22
-INFO:root:Turning light on 2019-05-19 22:00:44.909598
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 22
-INFO:root:Turning light on 2019-05-19 22:30:44.916354
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 37
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 37
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 23
-INFO:root:Turning light on 2019-05-19 23:00:44.923129
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 39
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 39
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 23
-INFO:root:Turning light on 2019-05-19 23:30:44.929683
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 39
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Taking image 1 out of 1
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 0
-INFO:root:Turning light off 2019-05-20 00:00:44.936364
-INFO:root:Zipping File... 2019-05-20 00:00:46.178364
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 36
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 40.841745) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 00:10:29.158214
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 39
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 36.79319400000003) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 00:20:08.046777
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 35.24947700000001) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 00:29:45.648833
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Currrent time: 0
-INFO:root:Turning light off 2019-05-20 00:30:44.941317
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 37
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 29.846805000000018) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 00:39:17.493233
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 39
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 29.25576799999999) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 00:48:48.997222
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 30.02042899999998) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 00:58:21.120115
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Currrent time: 1
-INFO:root:Turning light off 2019-05-20 01:00:44.945609
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Watered plants at: 2019-05-20 01:01:14.632118
-INFO:root:Soil Moisture Level: 39
-INFO:root:Sending images...
-INFO:root:Email Sent 2019-05-20 01:02:34.031627
-INFO:root:It took (mins, seconds): (4.0, 25.425685999999985) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 01:07:48.632186
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Sending images...
-INFO:root:Soil Moisture Level: 38
-INFO:root:It took (mins, seconds): (4.0, 28.066392000000008) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 01:17:18.904149
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:It took (mins, seconds): (4.0, 40.758647999999994) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 01:27:01.730456
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:Currrent time: 1
-INFO:root:Turning light off 2019-05-20 01:30:44.950534
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 37
-INFO:root:It took (mins, seconds): (4.0, 25.46237000000002) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 01:36:29.278558
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:It took (mins, seconds): (4.0, 25.472954000000016) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: 38
-INFO:root:Zipping File... 2019-05-20 01:45:56.747755
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 37.27163100000001) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Zipping File... 2019-05-20 01:55:36.245630
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 26.379545000000007) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 2
-INFO:root:Turning light off 2019-05-20 02:00:44.962767
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Zipping File... 2019-05-20 02:05:04.746363
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 28.268451000000027) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 39
-INFO:root:Zipping File... 2019-05-20 02:14:35.042514
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 23.675489000000027) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Zipping File... 2019-05-20 02:24:00.950149
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 35.05416700000001) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 2
-INFO:root:Turning light off 2019-05-20 02:30:44.969334
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 39
-INFO:root:Zipping File... 2019-05-20 02:33:38.221503
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 43.608600000000024) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 39
-INFO:root:Zipping File... 2019-05-20 02:43:24.076805
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 26.952094999999986) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 38
-INFO:root:Zipping File... 2019-05-20 02:52:53.256349
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 31.592498999999975) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 3
-INFO:root:Turning light off 2019-05-20 03:00:44.975901
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 37
-INFO:root:Zipping File... 2019-05-20 03:02:27.164546
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 27.639319) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 37
-INFO:root:Zipping File... 2019-05-20 03:11:57.145571
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 30.261604999999975) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 36
-INFO:root:Zipping File... 2019-05-20 03:21:29.400533
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 29.703408000000024) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 3
-INFO:root:Turning light off 2019-05-20 03:30:44.982674
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Zipping File... 2019-05-20 03:31:01.417870
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Soil Moisture Level: 36
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 23.410433000000012) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 03:40:26.922761
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 36
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 27.676803000000007) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 03:49:56.825834
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 36
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 31.148702000000014) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 03:59:29.956437
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Currrent time: 4
-INFO:root:Turning light off 2019-05-20 04:00:44.987603
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 35
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 29.107912999999996) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 04:09:01.138739
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 36
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 35.032399999999996) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 04:18:38.404173
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 35
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 33.985828000000026) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 04:28:14.619799
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Currrent time: 4
-INFO:root:Turning light off 2019-05-20 04:30:44.991804
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 36
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 39.221092) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 04:37:55.932790
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Sending images...
-INFO:root:Soil Moisture Level: 36
-INFO:root:It took (mins, seconds): (4.0, 32.308397000000014) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 04:47:30.496331
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Sending images...
-INFO:root:Soil Moisture Level: 36
-INFO:root:It took (mins, seconds): (4.0, 25.507461999999975) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 04:56:58.079748
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:Currrent time: 5
-INFO:root:Turning light off 2019-05-20 05:00:44.996726
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Watered plants at: 2019-05-20 05:01:19.639760
-INFO:root:It took (mins, seconds): (4.0, 25.631349) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: 37
-INFO:root:Email Sent 2019-05-20 05:02:36.959930
-INFO:root:Zipping File... 2019-05-20 05:06:25.799896
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:It took (mins, seconds): (4.0, 38.876266999999984) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: 33
-INFO:root:Zipping File... 2019-05-20 05:16:06.720758
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 28.297833000000026) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 34
-INFO:root:Zipping File... 2019-05-20 05:25:37.307767
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 27.716917000000024) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 5
-INFO:root:Turning light off 2019-05-20 05:30:45.008286
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 34
-INFO:root:Zipping File... 2019-05-20 05:35:07.342834
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 26.348967000000016) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 35
-INFO:root:Zipping File... 2019-05-20 05:44:36.003783
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 31.33452299999999) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 33
-INFO:root:Zipping File... 2019-05-20 05:54:09.355994
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 37.034276999999975) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 6
-INFO:root:Turning light on 2019-05-20 06:00:45.015112
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 32
-INFO:root:Zipping File... 2019-05-20 06:03:48.620722
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 28.975379999999973) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 31
-INFO:root:Zipping File... 2019-05-20 06:13:19.688479
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 26.753265999999996) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 32
-INFO:root:Zipping File... 2019-05-20 06:22:48.679302
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 35.38935300000003) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 6
-INFO:root:Turning light on 2019-05-20 06:30:45.022147
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 32
-INFO:root:Zipping File... 2019-05-20 06:32:26.287691
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 36.05648000000002) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 31
-INFO:root:Zipping File... 2019-05-20 06:42:04.511747
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 32.725682000000006) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 31
-INFO:root:Zipping File... 2019-05-20 06:51:39.300001
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 42.64509399999997) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 7
-INFO:root:Turning light on 2019-05-20 07:00:45.028761
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Zipping File... 2019-05-20 07:01:24.196703
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Soil Moisture Level: 32
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 31.33734800000002) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Zipping File... 2019-05-20 07:10:57.719075
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Soil Moisture Level: 31
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 29.16793899999999) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 07:20:28.991187
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 31
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 37.19743299999999) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 07:30:08.392432
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Currrent time: 7
-INFO:root:Turning light on 2019-05-20 07:30:45.033784
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 30
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 34.927179000000024) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 07:39:45.531304
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 30
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 36.77498000000003) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 07:49:24.442847
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 30
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 29.45232199999998) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 07:58:56.056106
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Currrent time: 8
-INFO:root:Turning light on 2019-05-20 08:00:45.038299
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 30
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 27.198090999999977) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 08:08:25.409639
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 30
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 40.880593999999974) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 08:18:08.647134
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 28
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 31.636004000000014) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 08:27:42.567080
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.738957) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 8
-INFO:root:Turning light on 2019-05-20 08:30:45.056796
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 29
-INFO:root:Zipping File... 2019-05-20 08:32:45.387498
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.640508) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 08:37:48.316016
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.719364) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 29
-INFO:root:Zipping File... 2019-05-20 08:42:51.249714
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.721499) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 08:47:54.084410
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.645238) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 29
-INFO:root:Zipping File... 2019-05-20 08:52:57.034710
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.841835) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 08:58:00.127789
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.675908) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 9
-INFO:root:Turning light on 2019-05-20 09:00:45.063614
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Watered plants at: 2019-05-20 09:01:24.643593
-INFO:root:Soil Moisture Level: 28
-INFO:root:Email Sent 2019-05-20 09:02:39.788602
-INFO:root:Zipping File... 2019-05-20 09:03:02.976998
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.718754) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 09:08:05.786671
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.722499) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 28
-INFO:root:Zipping File... 2019-05-20 09:13:08.669761
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.684575) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 09:18:11.515933
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.687938) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 28
-INFO:root:Zipping File... 2019-05-20 09:23:14.528170
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.69723) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 09:28:17.620540
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.695926) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 9
-INFO:root:Turning light on 2019-05-20 09:30:45.070226
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 27
-INFO:root:Zipping File... 2019-05-20 09:33:20.375059
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.747496) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 09:38:23.424121
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.670325) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 27
-INFO:root:Zipping File... 2019-05-20 09:43:26.419317
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.675865) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 09:48:29.218894
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.853695) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 26
-INFO:root:Zipping File... 2019-05-20 09:53:32.228172
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.71148) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 09:58:35.053187
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.907618) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 10
-INFO:root:Turning light on 2019-05-20 10:00:45.076927
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 27
-INFO:root:Zipping File... 2019-05-20 10:03:38.278938
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.711986) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 10:08:41.185119
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.734581) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 27
-INFO:root:Zipping File... 2019-05-20 10:13:44.342483
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.70099) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 10:18:47.388030
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.708009) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 25
-INFO:root:Zipping File... 2019-05-20 10:23:50.340274
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.693914) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 10:28:53.169597
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.640716) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 10
-INFO:root:Turning light on 2019-05-20 10:30:45.083711
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 25
-INFO:root:Zipping File... 2019-05-20 10:33:56.197379
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.694333) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 10:38:59.093920
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.835259) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 24
-INFO:root:Zipping File... 2019-05-20 10:44:02.140049
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.707201) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 10:49:05.247793
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.703863) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 25
-INFO:root:Zipping File... 2019-05-20 10:54:08.247080
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.632647) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 10:59:11.150516
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.732341) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 11
-INFO:root:Turning light on 2019-05-20 11:00:45.090267
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 23
-INFO:root:Zipping File... 2019-05-20 11:04:13.983808
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.645462) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 11:09:16.737433
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.737913) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 22
-INFO:root:Zipping File... 2019-05-20 11:14:19.727413
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.653747) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 11:19:22.494617
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.720453) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 22
-INFO:root:Zipping File... 2019-05-20 11:24:25.561540
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.683472) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 11:29:28.335573
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.681451) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 11
-INFO:root:Turning light on 2019-05-20 11:30:45.097079
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 21
-INFO:root:Zipping File... 2019-05-20 11:34:31.094058
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.706766) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 11:39:34.122923
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.720874) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 21
-INFO:root:Zipping File... 2019-05-20 11:44:36.979866
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.839247) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 11:49:40.076666
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.76471) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 21
-INFO:root:Zipping File... 2019-05-20 11:54:42.990250
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.760952) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 11:59:46.003131
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.785223) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 12
-INFO:root:Turning light off 2019-05-20 12:00:45.103935
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 20
-INFO:root:Zipping File... 2019-05-20 12:04:49.107219
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.722998) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 12:09:52.116767
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.665086) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 20
-INFO:root:Zipping File... 2019-05-20 12:14:54.888853
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.652566) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 12:19:57.636526
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.738667) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 18
-INFO:root:Zipping File... 2019-05-20 12:25:00.648972
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.757253) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 12:30:03.733694
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.718351) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 12
-INFO:root:Turning light off 2019-05-20 12:30:45.110476
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
+INFO:root:Turning light on 2019-05-21 19:16:08.651934
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 3063
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 3033
+INFO:root:Starting threads at time: 2019-05-21 19:30:29.088174...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Turning light on 2019-05-21 19:30:29.140962
+INFO:root:Soil Moisture Level: 15
+INFO:root:Taking image 1 out of 1
+INFO:root:Starting threads at time: 2019-05-21 19:31:28.188466...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-05-21 19:31:28.236604
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Soil Moisture Level: 15
+INFO:root:Starting threads at time: 2019-05-21 19:32:24.297878...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-05-21 19:32:24.357148
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 14
+INFO:root:Starting threads at time: 2019-05-21 19:34:32.206963...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-05-21 19:34:32.258298
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
 INFO:root:Soil Moisture Level: 16
-INFO:root:Zipping File... 2019-05-20 12:35:06.566754
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.730279) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 12:40:09.733999
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.73303) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 17
-INFO:root:Zipping File... 2019-05-20 12:45:12.714772
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.723885) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 12:50:15.581521
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.752536) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 16
-INFO:root:Zipping File... 2019-05-20 12:55:18.474030
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.699066) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 13:00:21.400383
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.73308) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 13
-INFO:root:Turning light off 2019-05-20 13:00:45.117122
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Watered plants at: 2019-05-20 13:01:29.652480
-INFO:root:Soil Moisture Level: 11
-INFO:root:Email Sent 2019-05-20 13:02:42.766070
-INFO:root:Zipping File... 2019-05-20 13:05:24.444417
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.74626) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 13:10:27.385983
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.675609) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 12
-INFO:root:Zipping File... 2019-05-20 13:15:30.179965
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.704507) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 13:20:33.089452
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.829827) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 5
-INFO:root:Zipping File... 2019-05-20 13:25:36.233166
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.669517) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 13:30:39.044232
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.728202) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 13
-INFO:root:Turning light off 2019-05-20 13:30:45.123928
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 8
-INFO:root:Zipping File... 2019-05-20 13:35:41.996993
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.691139) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 13:40:45.063320
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.70008) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 2
-INFO:root:Zipping File... 2019-05-20 13:45:47.933841
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.6408) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 13:50:50.816833
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.730552) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 3
-INFO:root:Zipping File... 2019-05-20 13:55:53.829686
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.684137) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 14
-INFO:root:Turning light off 2019-05-20 14:00:45.130507
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Zipping File... 2019-05-20 14:00:56.622717
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.72226) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: 1
-INFO:root:Zipping File... 2019-05-20 14:05:59.459617
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.941725) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Zipping File... 2019-05-20 14:11:02.813264
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.734733) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: 3
-INFO:root:Zipping File... 2019-05-20 14:16:05.759111
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.734651) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Zipping File... 2019-05-20 14:21:08.638248
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.714925) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: 1
-INFO:root:Zipping File... 2019-05-20 14:26:11.597543
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.719094) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 14
-INFO:root:Turning light off 2019-05-20 14:30:45.137360
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Zipping File... 2019-05-20 14:31:14.419823
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.670063) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -7
-INFO:root:Zipping File... 2019-05-20 14:36:17.390142
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.877267) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Zipping File... 2019-05-20 14:41:20.490649
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.69469) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -4
-INFO:root:Zipping File... 2019-05-20 14:46:23.387346
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.648676) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Zipping File... 2019-05-20 14:51:26.244122
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.656778) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -5
-INFO:root:Zipping File... 2019-05-20 14:56:29.160005
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.654956) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 15
-INFO:root:Turning light off 2019-05-20 15:00:45.144163
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Zipping File... 2019-05-20 15:01:32.095210
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.714786) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -8
-INFO:root:Zipping File... 2019-05-20 15:06:34.967381
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 1.136315) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Zipping File... 2019-05-20 15:11:38.531488
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.664415) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -2
-INFO:root:Zipping File... 2019-05-20 15:16:41.249512
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.706152) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Zipping File... 2019-05-20 15:21:44.069494
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.721745) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -6
-INFO:root:Zipping File... 2019-05-20 15:26:47.080102
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.695512) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 15
-INFO:root:Turning light off 2019-05-20 15:30:45.150735
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -4
-INFO:root:Zipping File... 2019-05-20 15:31:50.102716
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.818882) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 15:36:53.234149
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.731956) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -9
-INFO:root:Zipping File... 2019-05-20 15:41:56.199094
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.666705) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 15:46:59.094244
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.696586) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -7
-INFO:root:Zipping File... 2019-05-20 15:52:01.900202
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.684288) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 15:57:04.664347
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.88291) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 16
-INFO:root:Turning light off 2019-05-20 16:00:45.157531
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -11
-INFO:root:Zipping File... 2019-05-20 16:02:07.777287
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.74337) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 16:07:10.631686
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.720806) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -2
-INFO:root:Zipping File... 2019-05-20 16:12:13.595783
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.682781) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 16:17:16.426972
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.651704) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -21
-INFO:root:Zipping File... 2019-05-20 16:22:19.206646
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.707128) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 16:27:22.002662
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.621176) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 16
-INFO:root:Turning light off 2019-05-20 16:30:45.164397
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -6
-INFO:root:Zipping File... 2019-05-20 16:32:24.779778
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.753772) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 16:37:27.631264
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.694487) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -13
-INFO:root:Zipping File... 2019-05-20 16:42:30.600435
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.735865) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 16:47:33.673100
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.711474) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -3
-INFO:root:Zipping File... 2019-05-20 16:52:36.938769
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.66068) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 16:57:39.722894
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.684558) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 17
-INFO:root:Turning light off 2019-05-20 17:00:45.170962
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Watered plants at: 2019-05-20 17:01:34.661469
-INFO:root:Soil Moisture Level: -9
-INFO:root:Zipping File... 2019-05-20 17:02:42.599373
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.741156) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Email Sent 2019-05-20 17:02:45.786989
-INFO:root:Zipping File... 2019-05-20 17:07:45.632441
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.993702) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -16
-INFO:root:Zipping File... 2019-05-20 17:12:48.828869
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.718208) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 17:17:51.868794
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.719055) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -10
-INFO:root:Zipping File... 2019-05-20 17:22:54.830819
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.70404) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 17:27:57.676735
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.722461) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 17
-INFO:root:Turning light off 2019-05-20 17:30:45.177884
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -12
-INFO:root:Zipping File... 2019-05-20 17:33:00.485402
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.700299) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 17:38:03.492008
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.734387) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -6
-INFO:root:Zipping File... 2019-05-20 17:43:06.602883
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.746961) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 17:48:09.699603
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.75678) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: 17
-INFO:root:Zipping File... 2019-05-20 17:53:12.570307
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.74694) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 17:58:15.694601
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.821918) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 18
-INFO:root:Turning light on 2019-05-20 18:00:45.184677
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 43
-INFO:root:Zipping File... 2019-05-20 18:03:18.707470
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.682872) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 18:08:21.653408
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.738274) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -7
-INFO:root:Zipping File... 2019-05-20 18:13:24.686675
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.739684) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 18:18:27.564295
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.705969) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -8
-INFO:root:Zipping File... 2019-05-20 18:23:30.485418
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 1.00138) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 18:28:33.726402
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.653193) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 18
-INFO:root:Turning light on 2019-05-20 18:30:45.191278
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -13
-INFO:root:Zipping File... 2019-05-20 18:33:36.804580
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.652681) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 18:38:39.847226
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.964528) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -9
-INFO:root:Zipping File... 2019-05-20 18:43:43.161431
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.697557) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 18:48:46.098966
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.77339) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -15
-INFO:root:Zipping File... 2019-05-20 18:53:49.059258
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.725137) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 18:58:52.073134
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.745528) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
+INFO:root:Starting threads at time: 2019-05-21 19:35:45.901645...
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 19
-INFO:root:Turning light on 2019-05-20 19:00:45.198171
+INFO:root:Turning light on 2019-05-21 19:35:45.947745
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -1
-INFO:root:Zipping File... 2019-05-20 19:03:55.153348
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.714474) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 19:08:58.024938
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.746796) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 13
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -2
-INFO:root:Zipping File... 2019-05-20 19:14:01.102003
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.79597) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
 INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 19:19:04.158639
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.769086) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -15
-INFO:root:Zipping File... 2019-05-20 19:24:07.173191
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.6831) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 19:29:09.972557
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.772551) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
+INFO:root:Soil Moisture Level: 2948
+INFO:root:Starting threads at time: 2019-05-21 19:36:52.442305...
 INFO:root:Taking image 1 out of 1
 INFO:root:Currrent time: 19
-INFO:root:Turning light on 2019-05-20 19:30:45.204884
+INFO:root:Turning light on 2019-05-21 19:36:52.490080
+INFO:root:Inserted sunlight record
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 13
+INFO:root:Starting threads at time: 2019-05-21 19:38:02.498688...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: 12
-INFO:root:Zipping File... 2019-05-20 19:34:12.912287
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.767335) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 19:39:15.882440
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.787993) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -10
-INFO:root:Zipping File... 2019-05-20 19:44:18.844120
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.722333) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 19:49:21.818102
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.85061) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -8
-INFO:root:Zipping File... 2019-05-20 19:54:25.090581
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.897353) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 19:59:28.220045
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.807423) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 20
-INFO:root:Turning light on 2019-05-20 20:00:45.211470
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -12
-INFO:root:Zipping File... 2019-05-20 20:04:31.118097
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 1.058178) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 20:09:34.383679
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.725547) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -12
-INFO:root:Zipping File... 2019-05-20 20:14:37.407120
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.641334) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 20:19:40.449709
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.718583) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -3
-INFO:root:Zipping File... 2019-05-20 20:24:43.497400
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.769384) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 20:29:46.332583
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.716844) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 20
-INFO:root:Turning light on 2019-05-20 20:30:45.218348
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -5
-INFO:root:Zipping File... 2019-05-20 20:34:49.340123
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.73089) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 20:39:52.229176
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.828831) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -11
-INFO:root:Zipping File... 2019-05-20 20:44:55.146772
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.696333) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 20:49:57.907192
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.685645) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -10
-INFO:root:Zipping File... 2019-05-20 20:55:00.682796
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.821198) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 21:00:03.676315
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.664612) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 21
-INFO:root:Turning light on 2019-05-20 21:00:45.225046
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Watered plants at: 2019-05-20 21:01:39.670588
-INFO:root:Soil Moisture Level: -10
-INFO:root:Email Sent 2019-05-20 21:02:48.307747
-INFO:root:Zipping File... 2019-05-20 21:05:06.660720
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.730869) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 21:10:09.630406
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.760673) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -3
-INFO:root:Zipping File... 2019-05-20 21:15:12.682999
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.641475) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 21:20:15.501775
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.76413) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -3
-INFO:root:Zipping File... 2019-05-20 21:25:18.550678
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.789264) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 21:30:21.445086
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.659775) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 21
-INFO:root:Turning light on 2019-05-20 21:30:45.231675
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -12
-INFO:root:Zipping File... 2019-05-20 21:35:24.272224
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.712321) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 21:40:27.294584
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.752272) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -12
-INFO:root:Zipping File... 2019-05-20 21:45:30.206444
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.80548) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 21:50:33.309828
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.683346) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -9
-INFO:root:Zipping File... 2019-05-20 21:55:36.134084
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.803294) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 22:00:38.983819
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.731003) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 22
-INFO:root:Turning light on 2019-05-20 22:00:45.238478
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -9
-INFO:root:Zipping File... 2019-05-20 22:05:41.812557
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.714771) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 22:10:44.834195
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.727709) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -7
-INFO:root:Zipping File... 2019-05-20 22:15:47.794662
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.698668) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-20 22:20:50.769811
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.686151) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -10
-INFO:root:Zipping File... 2019-05-20 22:25:53.522480
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.716786) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 22
-INFO:root:Turning light on 2019-05-20 22:30:45.245223
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Zipping File... 2019-05-20 22:30:56.418347
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.687367) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -11
-INFO:root:Zipping File... 2019-05-20 22:35:59.448954
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.673385) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Zipping File... 2019-05-20 22:41:02.178020
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.827945) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -16
-INFO:root:Zipping File... 2019-05-20 22:46:05.230467
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.728224) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Zipping File... 2019-05-20 22:51:08.220901
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.723826) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -5
-INFO:root:Zipping File... 2019-05-20 22:56:11.111739
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.775213) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 23
-INFO:root:Turning light on 2019-05-20 23:00:45.251989
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Zipping File... 2019-05-20 23:01:14.068917
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.695642) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -9
-INFO:root:Zipping File... 2019-05-20 23:06:17.162347
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.675071) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Zipping File... 2019-05-20 23:11:20.184619
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.742975) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -8
-INFO:root:Zipping File... 2019-05-20 23:16:23.064669
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.657994) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Zipping File... 2019-05-20 23:21:25.790051
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.653768) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -9
-INFO:root:Zipping File... 2019-05-20 23:26:28.596075
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.831264) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 23
-INFO:root:Turning light on 2019-05-20 23:30:45.258622
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Zipping File... 2019-05-20 23:31:31.542691
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.72374) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -9
-INFO:root:Zipping File... 2019-05-20 23:36:34.566921
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.741395) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Zipping File... 2019-05-20 23:41:37.722991
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.790537) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -3
-INFO:root:Zipping File... 2019-05-20 23:46:40.662691
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.742682) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Zipping File... 2019-05-20 23:51:43.716742
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.718935) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -7
-INFO:root:Zipping File... 2019-05-20 23:56:46.649041
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.721399) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-19.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 0
-INFO:root:Turning light off 2019-05-21 00:00:45.265336
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Zipping File... 2019-05-21 00:01:49.441669
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Soil Moisture Level: -7
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 22.094996999999978) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Zipping File... 2019-05-21 00:11:13.592718
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Soil Moisture Level: -13
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 20.770583999999985) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 00:20:36.480583
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -10
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 30.61249700000002) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 00:30:09.131226
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Currrent time: 0
-INFO:root:Turning light off 2019-05-21 00:30:45.270269
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -13
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (5.0, 46.02485100000001) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Zipping File... 2019-05-21 00:40:57.419620
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Soil Moisture Level: -8
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 32.36622599999998) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 00:50:31.851692
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -13
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 55.79893800000002) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 01:00:29.889892
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Currrent time: 1
-INFO:root:Turning light off 2019-05-21 01:00:45.277878
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Watered plants at: 2019-05-21 01:01:44.676596
-INFO:root:Soil Moisture Level: -5
-INFO:root:Email Sent 2019-05-21 01:02:51.918580
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 45.567848000000026) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 01:10:17.480654
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -9
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 39.65280200000001) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 01:19:59.231012
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -7
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 24.74169999999998) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 01:29:26.228593
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Currrent time: 1
-INFO:root:Turning light off 2019-05-21 01:30:45.282293
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -7
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 26.541795999999977) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 01:38:54.842566
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -10
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 19.764417999999978) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 01:48:16.626014
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Sending images...
-INFO:root:Soil Moisture Level: -9
-INFO:root:It took (mins, seconds): (4.0, 13.144319999999993) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 01:57:32.029929
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Currrent time: 2
-INFO:root:Turning light off 2019-05-21 02:00:45.286489
-INFO:root:Sending images...
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:It took (mins, seconds): (4.0, 13.427436999999998) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -6
-INFO:root:Zipping File... 2019-05-21 02:06:47.542871
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:It took (mins, seconds): (4.0, 9.84668400000001) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: 3
-INFO:root:Zipping File... 2019-05-21 02:15:59.571557
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 10.039308000000005) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -7
-INFO:root:Zipping File... 2019-05-21 02:25:11.881159
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 36.896997999999996) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 2
-INFO:root:Turning light off 2019-05-21 02:30:45.292400
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -9
-INFO:root:Zipping File... 2019-05-21 02:34:50.911212
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 24.747589000000005) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -9
-INFO:root:Zipping File... 2019-05-21 02:44:17.939949
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 11.29709600000001) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -10
-INFO:root:Zipping File... 2019-05-21 02:53:31.449667
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 24.03669100000002) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 3
-INFO:root:Turning light off 2019-05-21 03:00:45.298985
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -9
-INFO:root:Zipping File... 2019-05-21 03:02:57.503576
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 13.686557999999991) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -13
-INFO:root:Zipping File... 2019-05-21 03:12:13.206777
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 15.966086999999987) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Zipping File... 2019-05-21 03:21:31.258509
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Soil Moisture Level: -7
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 25.654966) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 3
-INFO:root:Turning light off 2019-05-21 03:30:45.305684
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Zipping File... 2019-05-21 03:30:59.145728
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Soil Moisture Level: -9
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 26.864532999999994) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 03:40:28.132243
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -9
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 20.982956) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 03:49:51.156494
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -9
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 27.560869000000025) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 03:59:20.773409
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Currrent time: 4
-INFO:root:Turning light off 2019-05-21 04:00:45.310616
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
+INFO:root:Turning light on 2019-05-21 19:38:02.547317
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
 INFO:root:Soil Moisture Level: 86
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 15.703628000000009) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
+INFO:root:Starting threads at time: 2019-05-21 19:40:55.854964...
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-05-21 19:40:55.978252
 INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 04:08:38.651271
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
 INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Sending images...
-INFO:root:Soil Moisture Level: -15
-INFO:root:It took (mins, seconds): (4.0, 12.69752299999999) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 88
+WARNING:root:Unable to parse soil moisture or time stamp for email
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-21 19:42:32.544163
 INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 04:17:53.468800
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
+INFO:root:Starting threads at time: 2019-05-21 19:47:55.568539...
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-05-21 19:47:55.637578
+INFO:root:Taking image 1 out of 1
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
 INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Sending images...
-INFO:root:Soil Moisture Level: -10
-INFO:root:It took (mins, seconds): (4.0, 14.039235999999988) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 04:27:09.795271
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:Currrent time: 4
-INFO:root:Turning light off 2019-05-21 04:30:45.319552
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:It took (mins, seconds): (4.0, 23.53756900000002) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -5
-INFO:root:Zipping File... 2019-05-21 04:36:35.331049
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 12.664954999999992) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -9
-INFO:root:Zipping File... 2019-05-21 04:45:50.274774
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 8.448635999999993) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 88
+WARNING:root:Unable to parse soil moisture or time stamp for email
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-21 19:49:31.533567
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -9
-INFO:root:Zipping File... 2019-05-21 04:55:00.967335
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 11.355916000000008) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 93
 INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 5
-INFO:root:Turning light off 2019-05-21 05:00:45.327090
+INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Watered plants at: 2019-05-21 05:01:49.684727
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 91
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 20
+INFO:root:Turning light on 2019-05-21 20:17:55.697985
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 40
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 87
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
 INFO:root:Soil Moisture Level: -7
-INFO:root:Email Sent 2019-05-21 05:02:54.665993
-INFO:root:Zipping File... 2019-05-21 05:04:14.564621
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 11.724908999999997) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
 INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -9
-INFO:root:Zipping File... 2019-05-21 05:13:28.321398
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 10.750560000000007) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
 INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -10
-INFO:root:Zipping File... 2019-05-21 05:22:41.232948
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 22.775643000000002) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 5
-INFO:root:Turning light off 2019-05-21 05:30:45.333846
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Zipping File... 2019-05-21 05:32:06.122720
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Soil Moisture Level: -16
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 21.84996000000001) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Zipping File... 2019-05-21 05:41:30.295700
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Soil Moisture Level: -14
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 8.987822999999992) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 05:50:41.488973
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Inserted sunlight record
-INFO:root:Checked natural sunlight
-INFO:root:Soil Moisture Level: -9
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 21.167570000000012) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 06:00:04.715675
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Currrent time: 6
-INFO:root:Turning light on 2019-05-21 06:00:45.338795
+INFO:root:Currrent time: 20
+INFO:root:Turning light on 2019-05-21 20:47:55.704817
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -9
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 23.672008000000005) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
+INFO:root:Soil Moisture Level: -8
 INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 06:09:30.691839
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -9
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 17.217330000000004) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 06:18:50.233384
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Sending images...
-INFO:root:Soil Moisture Level: 5
-INFO:root:It took (mins, seconds): (4.0, 13.527613000000002) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 06:28:05.867528
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Currrent time: 6
-INFO:root:Turning light on 2019-05-21 06:30:45.343103
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:Sending images...
-INFO:root:Soil Moisture Level: -6
-INFO:root:It took (mins, seconds): (4.0, 20.47694899999999) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Zipping File... 2019-05-21 06:37:28.628218
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:It took (mins, seconds): (4.0, 21.648656000000017) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -13
-INFO:root:Zipping File... 2019-05-21 06:46:52.450884
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:Inserted sunlight record
-INFO:root:Checked artificial sunlight
-INFO:root:It took (mins, seconds): (4.0, 25.759581000000026) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
-INFO:root:Taking image 1 out of 1
-INFO:root:Soil Moisture Level: -11
-INFO:root:Zipping File... 2019-05-21 06:56:20.404349
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:Currrent time: 7
-INFO:root:Turning light on 2019-05-21 07:00:45.347900
-INFO:root:It took (mins, seconds): (4.0, 31.220451000000025) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -11
-INFO:root:Zipping File... 2019-05-21 07:05:53.699596
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 24.028817000000004) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
+INFO:root:Soil Moisture Level: 88
+INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -10
-INFO:root:Zipping File... 2019-05-21 07:15:19.996703
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 9.850865999999996) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
+INFO:root:Soil Moisture Level: 90
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 21
+INFO:root:Turning light on 2019-05-21 21:17:55.711526
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 91
+INFO:root:Taking image 1 out of 1
 INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -11
-INFO:root:Zipping File... 2019-05-21 07:24:32.085693
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:root: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (4.0, 18.95046400000001) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
+INFO:root:Soil Moisture Level: 88
 INFO:root:Taking image 1 out of 1
-INFO:root:Currrent time: 7
-INFO:root:Turning light on 2019-05-21 07:30:45.354114
+INFO:root:Starting threads at time: 2019-05-21 21:33:14.394721...
+INFO:root:Taking image 1 out of 1
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Currrent time: 21
+INFO:root:Turning light on 2019-05-21 21:33:14.487495
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
-INFO:root:Soil Moisture Level: -9
-INFO:root:Zipping File... 2019-05-21 07:33:55.004595
-INFO:root:zipping path: /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20
-INFO:root:Sending images...
-INFO:root:It took (mins, seconds): (0.0, 0.658379) to transfer /home/pi/Desktop/smartGarden/smartGarden/images/2019-05-20.zip
+INFO:root:Soil Moisture Level: -3
+WARNING:root:Unable to parse soil moisture or time stamp for email
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-21 21:34:51.050401
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 85
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Starting threads at time: 2019-05-21 21:49:03.967653...
+INFO:root:Currrent time: 21
+INFO:root:Taking image 1 out of 1
+INFO:root:Turning light on 2019-05-21 21:49:04.021008
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 87
+WARNING:root:Unable to parse soil moisture or time stamp for email
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-21 21:50:40.486662
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 88
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 87
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 22
+INFO:root:Turning light on 2019-05-21 22:19:04.048930
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 90
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 90
+INFO:root:Taking image 1 out of 1
+INFO:root:Starting threads at time: 2019-05-21 22:31:06.783989...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 22
+INFO:root:Turning light on 2019-05-21 22:31:06.920259
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Soil Moisture Level: 90
+INFO:root:Taking image 1 out of 1
+INFO:root:Starting threads at time: 2019-05-21 22:34:51.333890...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 22
+INFO:root:Turning light on 2019-05-21 22:34:51.488799
+INFO:root:Inserted sunlight record
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 90
+INFO:root:Starting threads at time: 2019-05-21 22:37:43.188046...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 22
+INFO:root:Turning light on 2019-05-21 22:37:43.324830
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Soil Moisture Level: 90
+INFO:root:Starting threads at time: 2019-05-21 22:38:19.379437...
+INFO:root:Currrent time: 22
+INFO:root:Taking image 1 out of 1
+INFO:root:Turning light on 2019-05-21 22:38:19.417377
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Soil Moisture Level: 90
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 89
 INFO:root:Taking image 1 out of 1

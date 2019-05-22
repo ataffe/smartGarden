@@ -1,6 +1,7 @@
 import os
 import zipfile
 from datetime import datetime
+import cv2
 
 def zipdir(path, ziph):
     for root, dirs, files in os.walk(path):
@@ -45,8 +46,19 @@ def take_pics(ymd, number=1, sharpness=1):
         filename = filename.replace(".","-")
         filename = filename + ".jpg"
         #resolution 1280x720
-        myCmd = 'fswebcam -q -i 0 -r 800x600 /home/pi/Desktop/smartGarden/smartGarden/test/images/' + ymd + "/" + str(filename)
-        os.system(myCmd)
+        vid_cap = cv2.VideoCapture(0)
+        vid_cap.set(3, 1280)
+        vid_cap.set(4, 720)
+        if not vid_cap.isOpened():
+            raise Exception("could not open video device")
+            
+        for x in range(10):
+            ret, frame = vid_cap.read()
+            
+        cv2.imwrite("/home/pi/Desktop/smartGarden/smartGarden/test/images/" + ymd + "/" + str(filename), frame)
+        vid_cap.release()
+        #myCmd = 'fswebcam -q -i 0 -r 1280x720 /home/pi/Desktop/smartGarden/smartGarden/test/images/' + ymd + "/" + str(filename)
+        #os.system(myCmd)
         
 
     
