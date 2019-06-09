@@ -4,5 +4,10 @@
 Garden that is controlled with a raspberry pi zero. More to come. 
 ![alt text](https://raw.github.com/ataffe/smartGarden/master/infographic/Infographic.png)
 
-[![GARDEN](https://img.youtube.com/vi/HcUiwqYfW7I&/0.jpg)](https://www.youtube.com/watch?v=HcUiwqYfW7I&feature=youtu.be)
+
+Time Lapse Video 
+
+[![GARDEN](https://img.youtube.com/vi/HcUiwqYfW7I/0.jpg)](https://www.youtube.com/watch?v=HcUiwqYfW7I&feature=youtu.be)
+
+
 ![alt text](https://raw.github.com/ataffe/smartGarden/master/infographic/Elastic_Stack_Logo.jpg) ![alt text](https://raw.github.com/ataffe/smartGarden/master/infographic/RPI_Logo.png) 
