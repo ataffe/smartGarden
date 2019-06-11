@@ -1074,3 +1074,4 @@ Soil Moisture Level: 96 2019-06-11 07:44:39.223875 Raw Value: 1654
 Soil Moisture Level: 96 2019-06-11 07:54:39.863353 Raw Value: 1659
 Soil Moisture Level: 96 2019-06-11 08:04:40.500102 Raw Value: 1666
 Soil Moisture Level: 96 2019-06-11 08:14:41.138509 Raw Value: 1674
+Soil Moisture Level: 96 2019-06-11 08:24:41.774369 Raw Value: 1675

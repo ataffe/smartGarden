@@ -1445,3 +1445,4 @@ INFO:root:Taking image 1 out of 1
 INFO:root:Inserted sunlight record
 INFO:root:Checked artificial sunlight
 INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1675
