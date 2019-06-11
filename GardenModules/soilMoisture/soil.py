@@ -15,9 +15,9 @@ def check_soil():
 		chan = AnalogIn(ads, ADS.P0)
 		#From claibration
 		min = 1061.0
-		max = 14667.0
+		max = 17500.0
 		started = False
-		weight = 40.0
+		weight = 0.40
 		for x in range(50):
 			if started:
 				rawVal = chan.value
@@ -37,15 +37,15 @@ def check_soil():
 			if not started:
 				started = True
 		
-		logging.info("Soil Moisture Level: " + str(100 - round(output)))
-		#print("Soil Moisture Level: " + str(100 - round(output)) + "%")
+		logging.info("Soil Moisture Level: " + str(100 - round(output)) + " Raw Value: " + str(chan.value))
+		print("Soil Moisture Level: " + str(100 - round(output)) + "%")
 	except Exception as e:
 		logging.warn("Error calculating soil moisture")
 		logging.warn(e)
 	
 	try:
-		f = open("/home/pi/Desktop/smartGarden/smartGarden/soilLog.txt", "a+")
-		f.write("Soil Moisture Level: " + str(100 - round(output)) + " " + str(datetime.now()) + "\n")
+		f = open("/home/pi/Desktop/smartGarden/smartGarden/logs/soilLog.txt", "a+")
+		f.write("Soil Moisture Level: " + str(100 - round(output)) + " " + str(datetime.now()) + " Raw Value: " + str(chan.value) + "\n")
 	except Exception as e:
 		logging.warn("Error writing soil moisture level")
 		logging.warn(e)

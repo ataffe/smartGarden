@@ -18,16 +18,34 @@ def insertSunlightRecord(message,time1, time2):
 	finally:
 		conn.close()
 
+def prune():
+	time = datetime.now()
+	pruneDate = str(time - timedelta(days=30)).split()
+	
+	delete_command = "DELETE FROM sunlight WHERE record_timestamp LIKE '" + pruneDate[0] + "%';"
+	#select_command = "SELECT * FROM sunlight WHERE record_timestamp LIKE '" + pruneDate[0] + "%';"
+	#print("Prune Date: " + str(pruneDate))
+	try:
+		conn = sqlite3.connect('/home/pi/Desktop/smartGarden/smartGarden/gardenDatabase.db')
+		cursor = conn.cursor()
+		cursor.execute(delete_command)
+		conn.commit()
+	except Exception as e:
+		print("Error: " + str(e))
+	finally:
+		conn.close()
+	
+
 def check_sunlight():
 	artificialLightHours = False
 	f = None
 	try:
 		GPIO.setmode(GPIO.BCM)
 		GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
-		f = open("/home/pi/Desktop/smartGarden/smartGarden/sunlightLog.txt", "a+")
+		f = open("/home/pi/Desktop/smartGarden/smartGarden/logs/sunlightLog.txt", "a+")
 		time = datetime.now()
 		dateTimeString = str(time)
-		cleanDateString = str(time + timedelta(days=60))
+		cleanDateString = str(time + timedelta(days=30))
 		currentTimeStamp = str(datetime.now()).split()[1]
 		currentHour = currentTimeStamp.split(':')[0]
 		hourAsInt = int(currentHour)
