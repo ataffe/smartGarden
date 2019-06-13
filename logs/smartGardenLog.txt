@@ -1,0 +1,1448 @@
+INFO:root:Starting threads at time: 2019-05-24 15:54:42.820796...
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 15
+INFO:root:  
+
+
+All Threads Started!
+
+
+
+ ____                       _      ____               _            
+/ ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
+\___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
+ ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
+|____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+INFO:root:Turning light off 2019-05-24 15:54:42.889204
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 5 Raw Value: 16628
+WARNING:root:Unable to parse soil moisture or time stamp for email
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-24 15:56:20.055689
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 5 Raw Value: 16664
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 5 Raw Value: 16645
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 16
+INFO:root:Turning light off 2019-05-24 16:24:42.938739
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 5 Raw Value: 16646
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 5 Raw Value: 16659
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 5 Raw Value: 16663
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 16
+INFO:root:Turning light off 2019-05-24 16:54:42.944287
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 5 Raw Value: 16669
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 5 Raw Value: 16642
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16588
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 17
+INFO:root:Turning light off 2019-05-24 17:24:42.949967
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 5 Raw Value: 16612
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16514
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 5 Raw Value: 16611
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 17
+INFO:root:Turning light off 2019-05-24 17:54:42.955533
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 5 Raw Value: 16602
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 5 Raw Value: 16620
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 5 Raw Value: 16603
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 18
+INFO:root:Turning light on 2019-05-24 18:24:42.961230
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16534
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16567
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16565
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 18
+INFO:root:Turning light on 2019-05-24 18:54:42.966723
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Watered plants at: 2019-05-24 18:54:47.853723
+INFO:root:Soil Moisture Level: 6 Raw Value: 16564
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16572
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16592
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-05-24 19:24:42.972603
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16584
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16583
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16582
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-05-24 19:54:42.978400
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16569
+WARNING:root:Unable to parse soil moisture or time stamp for email
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-24 19:56:22.460777
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16558
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16538
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 20
+INFO:root:Turning light on 2019-05-24 20:24:42.983999
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16561
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16525
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16564
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 20
+INFO:root:Turning light on 2019-05-24 20:54:42.989700
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 5 Raw Value: 16599
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16550
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16528
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 21
+INFO:root:Turning light on 2019-05-24 21:24:42.995259
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16538
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16521
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16507
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 21
+INFO:root:Turning light on 2019-05-24 21:54:43.000964
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Watered plants at: 2019-05-24 21:54:52.860071
+INFO:root:Soil Moisture Level: 6 Raw Value: 16484
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16504
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16448
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 22
+INFO:root:Turning light on 2019-05-24 22:24:43.006512
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16535
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16493
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16498
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 22
+INFO:root:Turning light on 2019-05-24 22:54:43.012372
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16532
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16524
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16516
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 23
+INFO:root:Turning light on 2019-05-24 23:24:43.018146
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16516
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16540
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16519
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 23
+INFO:root:Turning light on 2019-05-24 23:54:43.023703
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16457
+WARNING:root:Unable to parse soil moisture or time stamp for email
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-24 23:56:25.002034
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16459
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16459
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 0
+INFO:root:Turning light off 2019-05-25 00:24:43.029496
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16446
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16461
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16447
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 0
+INFO:root:Turning light off 2019-05-25 00:54:43.035579
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Watered plants at: 2019-05-25 00:54:57.867629
+INFO:root:Soil Moisture Level: 6 Raw Value: 16437
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16471
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16483
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 1
+INFO:root:Turning light off 2019-05-25 01:24:43.041884
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16453
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16475
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16461
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 1
+INFO:root:Turning light off 2019-05-25 01:54:43.047752
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16462
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16450
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16468
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 2
+INFO:root:Turning light off 2019-05-25 02:24:43.053397
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16479
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16473
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16487
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 2
+INFO:root:Turning light off 2019-05-25 02:54:43.059185
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16477
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16474
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16490
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 3
+INFO:root:Turning light off 2019-05-25 03:24:43.064743
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16447
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16473
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16457
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 3
+INFO:root:Turning light off 2019-05-25 03:54:43.070352
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Watered plants at: 2019-05-25 03:55:02.871649
+INFO:root:Soil Moisture Level: 9 Raw Value: 16070
+INFO:root:Taking image 1 out of 1
+WARNING:root:Unable to parse soil moisture or time stamp for email
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-25 03:56:27.293842
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16465
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16545
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 4
+INFO:root:Turning light off 2019-05-25 04:24:43.075904
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16543
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16543
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16535
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 4
+INFO:root:Turning light off 2019-05-25 04:54:43.081743
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16538
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 7 Raw Value: 16298
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16463
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 5
+INFO:root:Turning light off 2019-05-25 05:24:43.087290
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 7 Raw Value: 16360
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 7 Raw Value: 16330
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 7 Raw Value: 16360
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 5
+INFO:root:Turning light off 2019-05-25 05:54:43.093267
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16511
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16471
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16556
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 6
+INFO:root:Turning light on 2019-05-25 06:24:43.099061
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16505
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16516
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16484
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 6
+INFO:root:Turning light on 2019-05-25 06:54:43.104613
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Watered plants at: 2019-05-25 06:55:07.880246
+INFO:root:Soil Moisture Level: 6 Raw Value: 16533
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 7 Raw Value: 16405
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16523
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 7
+INFO:root:Turning light on 2019-05-25 07:24:43.110266
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16494
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16538
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16508
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 7
+INFO:root:Turning light on 2019-05-25 07:54:43.115830
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16438
+WARNING:root:Unable to parse soil moisture or time stamp for email
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-25 07:56:30.010248
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 7 Raw Value: 16413
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 7 Raw Value: 16397
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 8
+INFO:root:Turning light on 2019-05-25 08:24:43.121672
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 7 Raw Value: 16418
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16453
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16443
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 8
+INFO:root:Turning light on 2019-05-25 08:54:43.127194
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16516
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 7 Raw Value: 16426
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16468
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 9
+INFO:root:Turning light on 2019-05-25 09:24:43.132969
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16523
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 7 Raw Value: 16389
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16531
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 9
+INFO:root:Turning light on 2019-05-25 09:54:43.138603
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Watered plants at: 2019-05-25 09:55:12.884967
+INFO:root:Soil Moisture Level: 6 Raw Value: 16563
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 7 Raw Value: 16398
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16540
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 10
+INFO:root:Turning light on 2019-05-25 10:24:43.144103
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16507
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16486
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16501
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 10
+INFO:root:Turning light on 2019-05-25 10:54:43.149797
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16527
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16509
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16536
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 11
+INFO:root:Turning light on 2019-05-25 11:24:43.155368
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16493
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16550
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16521
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 11
+INFO:root:Turning light on 2019-05-25 11:54:43.161222
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 7 Raw Value: 16401
+WARNING:root:Unable to parse soil moisture or time stamp for email
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-25 11:56:32.315221
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16572
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 7 Raw Value: 16422
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 12
+INFO:root:Turning light off 2019-05-25 12:24:43.167090
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16489
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16490
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16486
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 12
+INFO:root:Turning light off 2019-05-25 12:54:43.172746
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Watered plants at: 2019-05-25 12:55:17.891764
+INFO:root:Soil Moisture Level: 6 Raw Value: 16535
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 8 Raw Value: 16117
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16562
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 13
+INFO:root:Turning light off 2019-05-25 13:24:43.178466
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16586
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16547
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16473
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 13
+INFO:root:Turning light off 2019-05-25 13:54:43.184009
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16546
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16583
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16560
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 14
+INFO:root:Turning light off 2019-05-25 14:24:43.189671
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16469
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16452
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16539
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 14
+INFO:root:Turning light off 2019-05-25 14:54:43.195195
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16537
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 7 Raw Value: 16319
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16542
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 15
+INFO:root:Turning light off 2019-05-25 15:24:43.201011
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 8 Raw Value: 16142
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16556
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16471
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 15
+INFO:root:Turning light off 2019-05-25 15:54:43.206550
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Watered plants at: 2019-05-25 15:55:22.897642
+INFO:root:Soil Moisture Level: 6 Raw Value: 16548
+WARNING:root:Unable to parse soil moisture or time stamp for email
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-05-25 15:56:34.673071
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16450
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16541
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 16
+INFO:root:Turning light off 2019-05-25 16:24:43.212405
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16552
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 5 Raw Value: 16597
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16538
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 16
+INFO:root:Turning light off 2019-05-25 16:54:43.218070
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16538
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16548
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16548
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 17
+INFO:root:Turning light off 2019-05-25 17:24:43.223638
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16542
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16518
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16487
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 17
+INFO:root:Turning light off 2019-05-25 17:54:43.229488
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16506
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 7 Raw Value: 16407
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16475
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 18
+INFO:root:Turning light on 2019-05-25 18:24:43.235104
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16436
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 9 Raw Value: 16080
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 8 Raw Value: 16186
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 18
+INFO:root:Turning light on 2019-05-25 18:54:43.240899
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Watered plants at: 2019-05-25 18:55:27.903343
+INFO:root:Soil Moisture Level: 8 Raw Value: 16258
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 6 Raw Value: 16585
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 7 Raw Value: 16379
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-05-25 19:24:43.246422
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 7 Raw Value: 16384
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16481
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16484
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-05-25 19:54:43.252087
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 6 Raw Value: 16498
+WARNING:root:Unable to parse soil moisture or time stamp for email
+INFO:root:Pruned Log: smartGardenLog.txt
+INFO:root:Pruned Log: soilLog.txt
+INFO:root:Pruned Log: sunlightLog.txt
+INFO:root:Currrent time: 19
+INFO:root:Turning light on 2019-06-10 19:39:14.040085
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Watered plants at: 2019-06-10 19:41:13.278574
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1674
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1677
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1681
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 20
+INFO:root:Turning light on 2019-06-10 20:09:14.045024
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1682
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1680
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1675
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 20
+INFO:root:Turning light on 2019-06-10 20:39:14.050574
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1671
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 96 Raw Value: 1670
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 96 Raw Value: 1667
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 21
+INFO:root:Turning light on 2019-06-10 21:09:14.056432
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 96 Raw Value: 1668
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 96 Raw Value: 1663
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 96 Raw Value: 1659
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 21
+INFO:root:Turning light on 2019-06-10 21:39:14.062005
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 96 Raw Value: 1658
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 96 Raw Value: 1659
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 96 Raw Value: 1659
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 22
+INFO:root:Turning light on 2019-06-10 22:09:14.066948
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1656
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1654
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1652
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 22
+INFO:root:Turning light on 2019-06-10 22:39:14.071029
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Watered plants at: 2019-06-10 22:41:18.288895
+WARNING:root:Unable to parse soil moisture or time stamp for email
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-06-10 22:41:33.856946
+INFO:root:Soil Moisture Level: 96 Raw Value: 1656
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1655
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1652
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 23
+INFO:root:Turning light on 2019-06-10 23:09:14.452989
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1651
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1649
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1649
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 23
+INFO:root:Turning light on 2019-06-10 23:39:14.462104
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1646
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1646
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1645
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 0
+INFO:root:Turning light off 2019-06-11 00:09:14.467901
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1643
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1641
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1640
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 0
+INFO:root:Turning light off 2019-06-11 00:39:14.473674
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1638
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1638
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1638
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 1
+INFO:root:Turning light off 2019-06-11 01:09:14.479230
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1636
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1637
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1635
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 1
+INFO:root:Turning light off 2019-06-11 01:39:14.485252
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Watered plants at: 2019-06-11 01:41:23.321935
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1636
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1634
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1633
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 2
+INFO:root:Turning light off 2019-06-11 02:09:14.490797
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1634
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1632
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1632
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 2
+INFO:root:Turning light off 2019-06-11 02:39:14.496586
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1632
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1631
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1630
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 3
+INFO:root:Turning light off 2019-06-11 03:09:14.502114
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1630
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1628
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1626
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 3
+INFO:root:Turning light off 2019-06-11 03:39:14.507837
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+WARNING:root:Unable to parse soil moisture or time stamp for email
+WARNING:root:list index out of range
+INFO:root:Email Sent 2019-06-11 03:41:36.620717
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1626
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1626
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1626
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 4
+INFO:root:Turning light off 2019-06-11 04:09:14.513623
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1626
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1626
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1624
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 4
+INFO:root:Turning light off 2019-06-11 04:39:14.519604
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Watered plants at: 2019-06-11 04:41:28.339404
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1625
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1624
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1625
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 5
+INFO:root:Turning light off 2019-06-11 05:09:14.525232
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1623
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1625
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1627
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 5
+INFO:root:Turning light off 2019-06-11 05:39:14.530738
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1626
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1629
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked natural sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 97 Raw Value: 1627
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 6
+INFO:root:Turning light on 2019-06-11 06:09:14.536567
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1654
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1652
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1651
+INFO:root:Currrent time: 6
+INFO:root:Turning light on 2019-06-11 06:39:14.541535
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1650
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 96 Raw Value: 1650
+INFO:root:Taking image 1 out of 1
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Soil Moisture Level: 96 Raw Value: 1650
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 7
+INFO:root:Turning light on 2019-06-11 07:09:14.547377
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1651
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1652
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1652
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 7
+INFO:root:Turning light on 2019-06-11 07:39:14.553210
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Watered plants at: 2019-06-11 07:41:33.348208
+INFO:root:Soil Moisture Level: 96 Raw Value: 1655
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1660
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1666
+INFO:root:Taking image 1 out of 1
+INFO:root:Currrent time: 8
+INFO:root:Turning light on 2019-06-11 08:09:14.558809
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1673
+INFO:root:Taking image 1 out of 1
+INFO:root:Inserted sunlight record
+INFO:root:Checked artificial sunlight
+INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 96 Raw Value: 1675

@@ -45,7 +45,7 @@ def send_email():
 						</tr>
 						"""
 		soilLogArray = []
-		with open("/home/pi/Desktop/smartGarden/smartGarden/soilLog.txt", "r") as fp2:
+		with open("/home/pi/Desktop/smartGarden/smartGarden/logs/soilLog.txt", "r") as fp2:
 			for count, line in enumerate(fp2):
 				soilLogArray.append(line)
 				
@@ -59,19 +59,22 @@ def send_email():
 				logging.warn("Unable to parse soil moisture or time stamp for email")
 				logging.warn(e)
 
-		with open("/home/pi/Desktop/smartGarden/smartGarden/sunlightLog.txt", "r") as fp:
+		with open("/home/pi/Desktop/smartGarden/smartGarden/logs/sunlightLog.txt", "r") as fp:
 			for cnt, line in enumerate(fp):
 				lineArray = line.split()
 				highlightedRow = "<td style='color: #FFD700;background-color: #00aced;border: 1px solid;padding: 8px; text-align: center; '>"
 				regularRow = "<td style='border: 1px solid;padding: 8px; text-align: center;'>"
 				greyRow = "<td style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>"			
 
-				if currentYMD == lineArray[3]:
+				if currentYMD == lineArray[3] or currentYMD == lineArray[4]:
 					if soilIterator < len(soilMoistureArray):
 						soilMoisture = soilMoistureArray[soilIterator]
 						soilTimeStamp = soilTimeStampArray[soilIterator]
 						soilIterator = soilIterator + 1
 						print("Setting moisture: " + soilMoisture)
+					else:
+						soilMoisture = "NO DATA"
+						soilTimeStamp = "NO DATA"
 
 					if cnt % 2 == 0:
 							if "YES" in lineArray[0]:
@@ -128,7 +131,7 @@ def send_email():
 
 	try:
 		#Open the file to be sent
-		attachment = open("/home/pi/Desktop/smartGarden/smartGarden/smartGardenLog.txt", "rb")
+		attachment = open("/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt", "rb")
 		p = MIMEBase('application', 'octet-stream')
 		p.set_payload((attachment).read())
 		encoders.encode_base64(p)
