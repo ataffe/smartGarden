@@ -1,0 +1,10 @@
+filebeat.inputs:
+	- type: log
+	enabled: true
+	paths:
+		#Add the correct path
+    - /home/pi/Desktop/smartGarden/smartGarden/logs/*
+
+  output.logstash:
+    #Add the correct ip and port for cactuar
+    hosts: ["192.168.0.20:5044"]
