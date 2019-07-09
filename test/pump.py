@@ -18,7 +18,7 @@ p.start(dutycycle)
 while True:
 	try:
 		if keyboard.is_pressed('q'):
-			print "\n\n\nExiting\n\n"
+			print("\n\n\nExiting\n\n")
 			GPIO.output(18, GPIO.LOW)
 			p.stop()
 			break

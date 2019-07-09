@@ -11,6 +11,10 @@ import GardenModules.sunlightSensor.sunlight as sunlight
 import GardenModules.email.email as email
 import GardenModules.pump.pump as pump
 import cv2
+from flask import Flask, request
+from flask_restful import Resource, Api
+
+#TODO ADD REST ENDPOINT FOR STOPPING PROGRAM
 
 
 #GPIO.setmode(GPIO.BCM)
@@ -23,6 +27,15 @@ ARTIFICIAL_LIGHT_SECONDS = 1800
 WAIT_TIME_PRUNE = 86400
 LAMP_PIN = 16
 image_count = 0
+SHUTDOWN_FLAG = False
+app = Flask(__name__)
+api = Api(app)
+
+class Shutdown(Resource):
+	def get(self):
+		SHUTDOWN_FLAG = True
+
+api.add_resource(Shutdown, '/shutdown_garden') #Shutdown Route
 
 def prune(file):
 	lines = []
@@ -37,8 +50,8 @@ def prune(file):
 		
 	try:
 		logFile = open("/home/pi/Desktop/smartGarden/smartGarden/logs/" + file, "w")
-		if len(lines) > 1000:
-			for x in range(1000):
+		if len(lines) > 5000:
+			for x in range(5000):
 				logFile.write(lines[x])
 	except Exception as e:
 		print("Error writing log file: " + file)
@@ -182,6 +195,8 @@ def email_thread():
 	timer = threading.Event()
 	while not timer.wait(EMAIL_TIME_SECONDS):
 		email.send_email()
+		if SHUTDOWN_FLAG:
+			break
 
 def sunlight_thread():
 	sunlight.check_sunlight()
@@ -189,14 +204,22 @@ def sunlight_thread():
 	while not timer.wait(WAIT_TIME_SECONDS):
 		sunlight.check_sunlight()
 		sunlight.prune()
+		if SHUTDOWN_FLAG:
+			break
 
 def pump_thread():
-	#pump.run_pump(5)
+	time.sleep(10)
+	#pump.run_pump(8,60)
 	timer = threading.Event()
 	while not timer.wait(PUMP_TIME_SECONDS):
-		pump.run_pump(5)
+		pump.run_pump(2,40)
+		pump.run_pump(3,50)
+		pump.run_pump(4,60)
+		if SHUTDOWN_FLAG:
+			break
 
 def camera_thread():
+	#TODO ADD ANOTHER THREAD FOR SENDING IMAGES TO CACTUAR PC
 	ymd = create_folder()
 	timer = threading.Event()
 	#run_camera(send_folder=False)
@@ -217,6 +240,8 @@ def camera_thread():
 		else:
 			send_folder = False
 		run_camera(False)
+		if SHUTDOWN_FLAG:
+			break
 		
 
 def artifical_light_thread():
@@ -224,6 +249,8 @@ def artifical_light_thread():
 	timer = threading.Event()
 	while not timer.wait(ARTIFICIAL_LIGHT_SECONDS):
 		run_artificial_light()
+		if SHUTDOWN_FLAG:
+			break
 	GPIO.cleanup()
 
 def soil_moisture_thread():
@@ -231,15 +258,22 @@ def soil_moisture_thread():
 	timer = threading.Event()
 	while not timer.wait(WAIT_TIME_SECONDS):
 		soil.check_soil()
+		if SHUTDOWN_FLAG:
+			break
 
 def prune_logs_thread():
 	prune("smartGardenLog.txt")
 	timer = threading.Event()
 	while not timer.wait(WAIT_TIME_PRUNE):
+		#TODO FIX PRUNING
 		prune("smartGardenLog.txt")
-		prune("soilLog.txt")
-		prune("sunlightLog.txt")
-	
+		#prune("soilLog.txt")
+		#prune("sunlightLog.txt")
+		if SHUTDOWN_FLAG:
+			break
+			
+def api_thread():
+	app.run(port='5002')
 
 
 if __name__ == "__main__":
@@ -250,30 +284,40 @@ if __name__ == "__main__":
 	thread4 = threading.Thread(target=camera_thread)
 	thread5 = threading.Thread(target=artifical_light_thread)
 	thread6 = threading.Thread(target=soil_moisture_thread)
-	thread7 = threading.Thread(target=prune_logs_thread)
+	thread7 = threading.Thread(target=api_thread)
+	#thread7 = threading.Thread(target=prune_logs_thread)
 	
 	print("Starting threads at time: " + str(datetime.now()) + "...")
 	logging.info("Starting threads at time: " + str(datetime.now()) + "...")
 	thread1.start()
-	thread2.start()
+	#thread2.start()
 	thread3.start()
 	thread4.start()
 	thread5.start()
-	thread6.start()
-	thread7.start()
-	print("""  \n\n\nAll Threads Started!\n\n\n
+	#thread6.start()
+	#thread7.daemon = True
+	#thread7.start()
+	print("""  
  ____                       _      ____               _            
 / ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
 \___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
  ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
 |____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+  Created by Alexander Taffe
+  Version 0.1
+  \n\n\nAll Threads Started!\n\n\n
   """)
-	logging.info("""  \n\n\nAll Threads Started!\n\n\n
+	logging.info("""
  ____                       _      ____               _            
 / ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
 \___ \| '_ ` _ \ / _` | '__| __| | |  _ / _` | '__/ _` |/ _ \ '_ \ 
  ___) | | | | | | (_| | |  | |_  | |_| | (_| | | | (_| |  __/ | | |
 |____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
+  
+  Created by Alexander Taffe
+  Version 0.1
+  \n\n\nAll Threads Started!\n\n\n
   """)
 	thread1.join()
 	thread2.join()
@@ -281,3 +325,4 @@ if __name__ == "__main__":
 	thread4.join()
 	thread5.join()
 	thread6.join()
+	#thread7.join()

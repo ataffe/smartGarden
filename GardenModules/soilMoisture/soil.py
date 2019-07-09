@@ -14,8 +14,8 @@ def check_soil():
 		ads.gain = 2/3
 		chan = AnalogIn(ads, ADS.P0)
 		#From claibration
-		min = 1061.0
-		max = 17500.0
+		min = 900.0
+		max = 18500.0
 		started = False
 		weight = 0.40
 		for x in range(50):
@@ -38,6 +38,7 @@ def check_soil():
 				started = True
 		
 		logging.info("Soil Moisture Level: " + str(100 - round(output)) + " Raw Value: " + str(chan.value))
+		#print("output: " + str(output))
 		print("Soil Moisture Level: " + str(100 - round(output)) + "%")
 	except Exception as e:
 		logging.warn("Error calculating soil moisture")
