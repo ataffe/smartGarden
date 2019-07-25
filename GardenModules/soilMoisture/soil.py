@@ -9,13 +9,17 @@ def check_soil():
 	rawVal = 0.0
 	try:
 		i2c = busio.I2C(board.SCL, board.SDA)
-		ads = ADS.ADS1115(i2c)
+		ads = ADS.ADS1115(i2c, address=0x4a)
 		#Set Gain to 16 bits
-		ads.gain = 2/3
+		# 2/3 = 14800 - 7500 = 7300
+		# 1 = (Dry) 22000 - 11000 (wet) = 11000
+		# 2 = 32767 - 22500 = 10267
+
+		ads.gain = 1
 		chan = AnalogIn(ads, ADS.P0)
 		#From claibration
-		min = 900.0
-		max = 18500.0
+		min = 1000.0
+		max = 22000.0
 		started = False
 		weight = 0.40
 		for x in range(50):

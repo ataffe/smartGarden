@@ -209,7 +209,7 @@ def sunlight_thread():
 
 def pump_thread():
 	time.sleep(10)
-	#pump.run_pump(8,60)
+	pump.run_pump(8,60)
 	timer = threading.Event()
 	while not timer.wait(PUMP_TIME_SECONDS):
 		pump.run_pump(2,40)
@@ -294,7 +294,7 @@ if __name__ == "__main__":
 	thread3.start()
 	thread4.start()
 	thread5.start()
-	#thread6.start()
+	thread6.start()
 	#thread7.daemon = True
 	#thread7.start()
 	print("""  
@@ -320,7 +320,7 @@ if __name__ == "__main__":
   \n\n\nAll Threads Started!\n\n\n
   """)
 	thread1.join()
-	thread2.join()
+	#thread2.join()
 	thread3.join()
 	thread4.join()
 	thread5.join()

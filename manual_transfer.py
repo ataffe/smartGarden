@@ -29,7 +29,7 @@ def send_folder(ymd):
 	scp_command = "SSHPASS='al.EX.91.27' sshpass -e scp " + ymd + " alext@192.168.0.20:D:\\\\smartGarden\\\\Images"
 	os.system(scp_command)
 	os.system("rm -f " + ymd)
-	#os.system("rm -rf " + baseFolder)
+	os.system("rm -rf " + baseFolder)
 	os.chdir(currentDirectory)
 	time2 = datetime.now()
 	diff = time2 - time1
