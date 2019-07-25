@@ -1,4 +1,4 @@
-import zipfile
+alextimport zipfile
 import os
 from datetime import datetime, timedelta
 
@@ -43,9 +43,6 @@ def transferFile(daysBack):
 	send_folder(ymd)
 
 days = int(input("Enter the numbers of days to transfer: "))
-
-if days == 0:
-	transferFile(0)
 
 for x in range(days):
 	transferFile(x+1)

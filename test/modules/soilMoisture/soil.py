@@ -8,7 +8,7 @@ def test_soil():
 	print("i2c configured")
 
 	ads = ADS.ADS1115(i2c)
-	ads.gain = 2/3
+	ads.gain = 1
 	print("ADS configured with gain: " + str(ads.gain))
 
 	chan = AnalogIn(ads, ADS.P0)
