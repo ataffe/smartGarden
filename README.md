@@ -8,7 +8,7 @@ Garden that is controlled with a raspberry pi zero.
 
 Time Lapse Video 
 
-[![GARDEN](https://img.youtube.com/vi/HcUiwqYfW7I/0.jpg)](https://www.youtube.com/watch?v=HcUiwqYfW7I&feature=youtu.be)
+[![GARDEN](https://img.youtube.com/vi/t3zazeLUzj0/0.jpg)](https://www.youtube.com/watch?v=HcUiwqYfW7I&feature=youtu.be)
 
 
 [![alt text](https://raw.github.com/ataffe/smartGarden/master/infographic/Elastic_Stack_Logo.jpg)](https://www.elastic.co/) 
