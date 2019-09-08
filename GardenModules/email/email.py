@@ -58,6 +58,7 @@ def send_email():
 			except Exception as e:
 				logging.warn("Unable to parse soil moisture or time stamp for email")
 				logging.warn(e)
+				print("Error parsing soil log: " + str(e))
 
 		with open("/home/pi/Desktop/smartGarden/smartGarden/logs/sunlightLog.txt", "r") as fp:
 			for cnt, line in enumerate(fp):
@@ -75,7 +76,6 @@ def send_email():
 					else:
 						soilMoisture = "NO DATA"
 						soilTimeStamp = "NO DATA"
-
 					if cnt % 2 == 0:
 							if "YES" in lineArray[0]:
 									row = "<tr style='width:100%'>" + highlightedRow  + lineArray[0] + " " + lineArray[1] + "</td>"
@@ -128,6 +128,7 @@ def send_email():
 		</html>
 		"""
 		logging.warn(e)
+		print("Error sending email: " + str(e))
 
 	try:
 		#Open the file to be sent

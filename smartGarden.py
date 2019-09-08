@@ -10,9 +10,11 @@ import GardenModules.soilMoisture.soil as soil
 import GardenModules.sunlightSensor.sunlight as sunlight
 import GardenModules.email.email as email
 import GardenModules.pump.pump as pump
+import GardenModules.prune.prune as prune
 import cv2
-from flask import Flask, request
-from flask_restful import Resource, Api
+from flask import Flask
+from flask import request
+import sys
 
 #TODO ADD REST ENDPOINT FOR STOPPING PROGRAM
 
@@ -29,36 +31,112 @@ LAMP_PIN = 16
 image_count = 0
 SHUTDOWN_FLAG = False
 app = Flask(__name__)
-api = Api(app)
 
-class Shutdown(Resource):
-	def get(self):
-		SHUTDOWN_FLAG = True
 
-api.add_resource(Shutdown, '/shutdown_garden') #Shutdown Route
+def shutdown_server():
+    func = request.environ.get('werkzeug.server.shutdown')
+    if func is None:
+        raise RuntimeError('Not running with the Werkzeug Server')
+    func()
 
-def prune(file):
-	lines = []
+@app.route('/shutdown')
+def shutdown():
+	logging.info("Shutting down garden.")
+	print("Shutting down garden.")
+	SHUTDOWN_FLAG = True
+	shutdown_server()
+	return "Shutting down..."
+
+@app.route('/test')
+def test():
+	return "Hello World at time: " + str(datetime.now())
+
+@app.route('/soil')
+def soil_route():
 	try:
-		logFile = open("/home/pi/Desktop/smartGarden/smartGarden/logs/" + file, "r")
-		for line in logFile:
-			lines.append(line)
+		with open("/home/pi/Desktop/smartGarden/smartGarden/logs/soilLog.txt") as file:
+			#lines = file.readlines()
+			table = ""
+			for count, line in reversed(list(enumerate(file))):
+				fields = line.split()
+				raw_value = fields[8]
+				percent = fields[3]
+				date = fields[4]
+				time = fields[5]
+
+				if count % 2 == 0:
+					table = table + "<tr style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>"
+				else:
+					table = table + "<tr style='border: 1px solid;padding: 8px; text-align: center;'>"
+
+				table = table + "<td>" + date + "</td>"
+				table = table + "<td>" + time + "</td>"
+				table = table + "<td>" + percent + "</td>"
+				table = table + "<td>" + raw_value + "</td>"
+				table = table + "</tr>"
+		return '''
+		<html>
+			<head>
+				<title>Soil Moisture - Smart Garden</title>
+			</head>
+			<body>
+				<h1 style="font-family: 'Roboto', sans-serif;">Soil Moisture Data</h1>
+				<table style="width:100%">
+					<tr>
+						<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;">Date</th>
+						<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;">Time</th>
+						<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;">Soil Moisture Percent</th>
+						<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;">Soil Moisture Raw Value</th>
+					</tr>
+					''' + table + '''
+				</table>
+			</body>
+		</html>
+		'''
 	except Exception as e:
-		print("Error reading log file: " + file + " for pruning")
-	finally:
-		logFile.close()
-		
-	try:
-		logFile = open("/home/pi/Desktop/smartGarden/smartGarden/logs/" + file, "w")
-		if len(lines) > 5000:
-			for x in range(5000):
-				logFile.write(lines[x])
-	except Exception as e:
-		print("Error writing log file: " + file)
-	finally:
-		logFile.close()
-	logging.info("Pruned Log: " + file)
-	print("Pruned log: " + file)
+		logging.warn("There was an exception returning soil data to rest endpoint: " + str(e))
+		return "There was an exception: " + str(e)
+
+
+@app.route('/garden')
+def garden_route():
+	with open("/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt") as file:
+		return file.read()
+
+@app.route('/')
+@app.route('/index')
+def index():
+	svgImage = ""
+	with open("/home/pi/Desktop/smartGarden/smartGarden/plant.svg", "r") as file:
+		svgImage = file.read()
+
+	return '''
+	<html>
+		<head>
+			<title>Home Page - Smart Garden</title>
+			<link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
+			<style>
+			.button {
+				background-color: #4CAF50; /* Green */
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				}
+			</style>
+		</head>
+		<body>
+			<h1 style="font-family: 'Roboto', sans-serif;">Smart Garden is up and running.</h1>
+			<form action="http://192.168.0.18:5002/soil">
+				<input class="button" type="submit" value="View Soil Moisture"/>
+			</form>
+			''' + svgImage + '''
+		</body>
+	</html>
+	'''
 			
 def create_folder():
 	filename = str(datetime.now()).replace(" ", "-")
@@ -190,10 +268,10 @@ def run_artificial_light():
 		
 
 def email_thread():
-	time.sleep(60)
+	time.sleep(10)
 	email.send_email()
 	timer = threading.Event()
-	while not timer.wait(EMAIL_TIME_SECONDS):
+	while not timer.wait(EMAIL_TIME_SECONDS) and not SHUTDOWN_FLAG:
 		email.send_email()
 		if SHUTDOWN_FLAG:
 			break
@@ -201,17 +279,17 @@ def email_thread():
 def sunlight_thread():
 	sunlight.check_sunlight()
 	timer = threading.Event()
-	while not timer.wait(WAIT_TIME_SECONDS):
+	while not timer.wait(WAIT_TIME_SECONDS) and not SHUTDOWN_FLAG:
 		sunlight.check_sunlight()
 		sunlight.prune()
 		if SHUTDOWN_FLAG:
 			break
 
 def pump_thread():
-	time.sleep(10)
-	pump.run_pump(8,60)
+	#time.sleep(10)
+	#pump.run_pump(8,60)
 	timer = threading.Event()
-	while not timer.wait(PUMP_TIME_SECONDS):
+	while not timer.wait(PUMP_TIME_SECONDS) and not SHUTDOWN_FLAG:
 		pump.run_pump(2,40)
 		pump.run_pump(3,50)
 		pump.run_pump(4,60)
@@ -225,7 +303,7 @@ def camera_thread():
 	#run_camera(send_folder=False)
 	send_folder = False
 	sent_folder = False
-	while not timer.wait(CAMERA_TIME_SECONDS):
+	while not timer.wait(CAMERA_TIME_SECONDS) and not SHUTDOWN_FLAG:
 		try:
 			time = str(datetime.now()).split()
 			hour = str(time[1].split(':')[0])
@@ -247,7 +325,7 @@ def camera_thread():
 def artifical_light_thread():
 	run_artificial_light()
 	timer = threading.Event()
-	while not timer.wait(ARTIFICIAL_LIGHT_SECONDS):
+	while not timer.wait(ARTIFICIAL_LIGHT_SECONDS) and not SHUTDOWN_FLAG:
 		run_artificial_light()
 		if SHUTDOWN_FLAG:
 			break
@@ -256,24 +334,29 @@ def artifical_light_thread():
 def soil_moisture_thread():
 	soil.check_soil()
 	timer = threading.Event()
-	while not timer.wait(WAIT_TIME_SECONDS):
+	while not timer.wait(WAIT_TIME_SECONDS) and not SHUTDOWN_FLAG:
 		soil.check_soil()
 		if SHUTDOWN_FLAG:
 			break
 
 def prune_logs_thread():
-	prune("smartGardenLog.txt")
+	prune.prune("smartGardenLog.txt")
 	timer = threading.Event()
-	while not timer.wait(WAIT_TIME_PRUNE):
+	while not timer.wait(WAIT_TIME_PRUNE) and not SHUTDOWN_FLAG:
 		#TODO FIX PRUNING
-		prune("smartGardenLog.txt")
-		#prune("soilLog.txt")
+		print("Pruning smartGardenLog")
+		prune.prune("smartGardenLog.txt")
+		prune("soilLog.txt")
 		#prune("sunlightLog.txt")
 		if SHUTDOWN_FLAG:
 			break
 			
 def api_thread():
-	app.run(port='5002')
+	print("Starting API")
+	logging.info("Starting API")
+	app.run(host='192.168.0.18', port='5002')
+	print("API thread closed.")
+	
 
 
 if __name__ == "__main__":
@@ -285,18 +368,31 @@ if __name__ == "__main__":
 	thread5 = threading.Thread(target=artifical_light_thread)
 	thread6 = threading.Thread(target=soil_moisture_thread)
 	thread7 = threading.Thread(target=api_thread)
-	#thread7 = threading.Thread(target=prune_logs_thread)
+	thread8 = threading.Thread(target=prune_logs_thread)
 	
 	print("Starting threads at time: " + str(datetime.now()) + "...")
 	logging.info("Starting threads at time: " + str(datetime.now()) + "...")
+	thread1.daemon = True
 	thread1.start()
+
 	#thread2.start()
+
+	thread3.daemon = True
 	thread3.start()
+
+	thread4.daemon = True
 	thread4.start()
+
+	thread5.daemon = True
 	thread5.start()
+
+	thread6.daemon = True
 	thread6.start()
-	#thread7.daemon = True
-	#thread7.start()
+
+	thread7.start()
+
+	thread8.daemon = True
+	thread8.start()
 	print("""  
  ____                       _      ____               _            
 / ___| _ __ ___   __ _ _ __| |_   / ___| __ _ _ __ __| | ___ _ __  
@@ -319,10 +415,23 @@ if __name__ == "__main__":
   Version 0.1
   \n\n\nAll Threads Started!\n\n\n
   """)
+
+	thread7.join()
+	print("Thread 7 ended")
+	logging.info("Shut Down Complete!")
+	sys.exit()
+
 	thread1.join()
+	print("Thread 1 ended")
 	#thread2.join()
 	thread3.join()
+	print("Thread 3 ended")
 	thread4.join()
+	print("Thread 4 ended")
 	thread5.join()
+	print("Thread 5 ended")
 	thread6.join()
-	#thread7.join()
+	print("Thread 6 ended")
+	thread8.join()
+	print("Thread 8 ended")
+	
