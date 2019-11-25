@@ -51,6 +51,16 @@ def shutdown():
 def test():
 	return "Hello World at time: " + str(datetime.now())
 
+@app.route('/setWater/<value>')
+def setWater(value):
+	PUMP_TIME_SECONDS = int(value) * 3600
+	return "ok"
+
+@app.route('/getWater')
+def getWater():
+	return PUMP_TIME_SECONDS / 3600;
+
+
 @app.route('/soil')
 def soil_route():
 	try:
