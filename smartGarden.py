@@ -22,7 +22,7 @@ import sys
 #GPIO.setmode(GPIO.BCM)
 #GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 WAIT_TIME_SECONDS = 600
-EMAIL_TIME_SECONDS = 18000
+EMAIL_TIME_SECONDS = 36000
 PUMP_TIME_SECONDS = 10800
 CAMERA_TIME_SECONDS = 300
 ARTIFICIAL_LIGHT_SECONDS = 1800
@@ -256,10 +256,10 @@ def run_artificial_light():
 		currentTimeStamp = str(datetime.now()).split()[1]
 		currentHour = int(currentTimeStamp.split(':')[0])
 		logging.info("Currrent time: " + str(currentHour))
-		if currentHour >= 18 or (currentHour >= 6 and currentHour < 12):
+		if (currentHour >= 18 and currentHour < 22):
 			control_artifical_light("on")
 			logging.info("Turning light on "+ str(datetime.now()))
-		elif (currentHour >= 12 and currentHour < 18) or currentHour < 6:
+		elif (currentHour >= 0 and currentHour < 18) or currentHour > 22:
 			control_artifical_light("off")
 			logging.info("Turning light off "+ str(datetime.now()))
 	except Exception as e:
