@@ -8,7 +8,46 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/d41cced03c.js" crossorigin="anonymous"></script>
-    <title>Status</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<title>Status</title>
+
+	<!-- JQuery-->
+	<script>
+		$(document).ready(function(){
+
+			setInterval(function() {
+					var xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function() {
+						if (this.readyState == 4 && this.status == 200 && this.response === "ok") {
+							console.log("success heart beat");
+							$("#statusText small").text("ON");
+							$("#statusText small").css("font-weight", "Bold");
+							$("#statusText small").removeClass("text-danger");
+							$("#statusText small").addClass("text-success");
+						} else if(this.readyState == 4 && this.status == 0){
+							console.log("fail heartbeat");
+							$("#statusText small").text("OFF");
+							$("#statusText small").css("font-weight", "Bold");
+							$("#statusText small").removeClass("text-success");
+							$("#statusText small").addClass("text-danger");
+						}
+					}
+					xhttp.open("GET", "http://192.168.0.18:5002/heartBeat", true);
+					xhttp.send();
+				}, 3000);
+
+			$("#shutdownButton").click(function() {
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						alert("Garden Shutdown Complete");
+					}
+				}
+				xhttp.open("GET", "http://192.168.0.18:5002/shutdown", true);
+				xhttp.send();
+			});
+		});
+	</script>
   </head>
   <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -34,7 +73,14 @@
 			</ul>
 		</div>
 	</nav>
-    <h1>Status!</h1>
+    <h1>Garden Status</h1>
+	<h3 id="statusText">
+		Garden status is: 
+		<small class="text-success"><strong>CHECKING</strong></small>
+	</h3>
+	</br>
+	</br>
+	<button id="shutdownButton" type="button" class="btn btn-danger btn-lg btn-block">Shutdown Garden</button>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
