@@ -17683,3 +17683,12 @@ Soil Moisture Level: 89 2019-11-25 18:58:13.780632 Raw Value: 3223
 Soil Moisture Level: 89 2019-11-25 19:08:14.408938 Raw Value: 3250
 Soil Moisture Level: 89 2019-11-25 19:18:15.072903 Raw Value: 3297
 Soil Moisture Level: 89 2019-11-25 19:28:15.707460 Raw Value: 3324
+Soil Moisture Level: 89 2019-11-25 19:42:31.247050 Raw Value: 3296
+Soil Moisture Level: 89 2019-11-25 19:56:33.694212 Raw Value: 3270
+Soil Moisture Level: 89 2019-11-25 20:05:23.666221 Raw Value: 3246
+Soil Moisture Level: 89 2019-11-25 20:07:20.992708 Raw Value: 3237
+Soil Moisture Level: 89 2019-11-25 20:09:10.115312 Raw Value: 3240
+Soil Moisture Level: 89 2019-11-25 20:11:02.034997 Raw Value: 3236
+Soil Moisture Level: 89 2019-11-25 20:12:33.735687 Raw Value: 3228
+Soil Moisture Level: 89 2019-11-25 20:13:25.826074 Raw Value: 3221
+Soil Moisture Level: 89 2019-11-25 20:17:05.053489 Raw Value: 3214

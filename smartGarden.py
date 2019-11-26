@@ -15,6 +15,7 @@ import cv2
 from flask import Flask
 from flask import request
 from flask_cors import CORS
+from flask_debug import Debug
 import sys
 
 #TODO ADD REST ENDPOINT FOR STOPPING PROGRAM
@@ -33,6 +34,7 @@ image_count = 0
 SHUTDOWN_FLAG = False
 app = Flask(__name__)
 CORS(app)
+Debug(app)
 
 def shutdown_server():
     func = request.environ.get('werkzeug.server.shutdown')
@@ -59,8 +61,11 @@ def setWater(value):
 
 @app.route('/getWater')
 def getWater():
-	# print("getWater Called")
-	return (PUMP_TIME_SECONDS / 3600)
+	print("getWater Called with pump time: " + str(PUMP_TIME_SECONDS / 3600))
+	try:
+		return str(PUMP_TIME_SECONDS / 3600)
+	except Exception as e:
+		print(e)
 
 
 @app.route('/soil')
@@ -368,7 +373,7 @@ def prune_logs_thread():
 def api_thread():
 	print("Starting API")
 	logging.info("Starting API")
-	app.run(debug=True, host='192.168.0.18', port='5002')
+	app.run(host='192.168.0.18', port='5002')
 	print("API thread closed.")
 	
 
