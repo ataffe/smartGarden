@@ -14,6 +14,7 @@ import GardenModules.prune.prune as prune
 import cv2
 from flask import Flask
 from flask import request
+from flask_cors import CORS
 import sys
 
 #TODO ADD REST ENDPOINT FOR STOPPING PROGRAM
@@ -31,7 +32,7 @@ LAMP_PIN = 16
 image_count = 0
 SHUTDOWN_FLAG = False
 app = Flask(__name__)
-
+CORS(app)
 
 def shutdown_server():
     func = request.environ.get('werkzeug.server.shutdown')
@@ -47,9 +48,9 @@ def shutdown():
 	shutdown_server()
 	return "Shutting down..."
 
-@app.route('/test')
-def test():
-	return "Hello World at time: " + str(datetime.now())
+@app.route('/heartBeat')
+def heartBeat():
+	return "ok"
 
 @app.route('/setWater/<value>')
 def setWater(value):
@@ -58,7 +59,8 @@ def setWater(value):
 
 @app.route('/getWater')
 def getWater():
-	return PUMP_TIME_SECONDS / 3600;
+	# print("getWater Called")
+	return (PUMP_TIME_SECONDS / 3600)
 
 
 @app.route('/soil')
@@ -333,11 +335,13 @@ def camera_thread():
 		
 
 def artifical_light_thread():
+	control_artifical_light("on")
 	run_artificial_light()
 	timer = threading.Event()
 	while not timer.wait(ARTIFICIAL_LIGHT_SECONDS) and not SHUTDOWN_FLAG:
 		run_artificial_light()
 		if SHUTDOWN_FLAG:
+			control_artifical_light("off")
 			break
 	GPIO.cleanup()
 
@@ -364,7 +368,7 @@ def prune_logs_thread():
 def api_thread():
 	print("Starting API")
 	logging.info("Starting API")
-	app.run(host='192.168.0.18', port='5002')
+	app.run(debug=True, host='192.168.0.18', port='5002')
 	print("API thread closed.")
 	
 
