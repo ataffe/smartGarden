@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="sun.css">
+	<link rel="stylesheet" type="text/css" href="status.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/d41cced03c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<title>Status</title>
+
+	<!-- JQuery-->
+	<script>
+		$(document).ready(function(){
+
+			setInterval(function() {
+					var xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function() {
+						if (this.readyState == 4 && this.status == 200 && this.response === "ok") {
+							$("#statusText small").text("ON");
+							$("#statusText small").css("font-weight", "Bold");
+							$("#statusText small").removeClass("text-danger");
+							$("#statusText small").addClass("text-success");
+							$("body").css('background-color', 'white');
+						} else if(this.readyState == 4 && this.status == 0){
+							$("#statusText small").text("OFF");
+							$("#statusText small").css("font-weight", "Bold");
+							$("#statusText small").removeClass("text-success");
+							$("#statusText small").addClass("text-danger");
+							$("body").css('background-color', '#324C5C');
+						}
+					}
+					xhttp.open("GET", "http://192.168.0.18:5002/heartBeat", true);
+					xhttp.send();
+				}, 3000);
+
+			$("#shutdownButton").click(function() {
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						alert("Garden Shutdown Complete");
+					}
+				}
+				xhttp.open("GET", "http://192.168.0.18:5002/shutdown", true);
+				xhttp.send();
+			});
+		});
+	</script>
+  </head>
+  <body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		
+		<a class="navbar-brand" href="index.html"><i class="fas fa-seedling"></i> Garden Control Panel</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="water.html"><i class="fas fa-tint"></i> Water<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="light.html"><i class="fas fa-lightbulb"></i> Light</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="soilMoisture.html"><i class="fab fa-pagelines"></i> Soil Moisture</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#"><i class="fas fa-tv"></i> Status</a>
+			</li>
+			</ul>
+		</div>
+	</nav>
+    <h1>Garden Status</h1>
+	<h3 id="statusText">
+		Garden status is: 
+		<small class="text-success"><strong>CHECKING</strong></small>
+	</h3>
+	</br>
+	<button id="shutdownButton" type="button" class="btn btn-danger btn-lg btn-block">Shutdown Garden</button>
+	</br>
+	</br>
+	<div id="sun" class="sun">
+            <div class="sun-face">
+                <div class="sun-hlight"></div>
+                <div class="sun-leye"></div>
+                <div class="sun-reye"></div>
+                <div class="sun-lred"></div>
+                <div class="sun-rred"></div>
+                <div class="sun-nose"></div>
+            </div>
+            <div class="sun-anime">
+            <div class="sun-ball"></div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+        </div>
+    </div>
+	<div class="wrap">
+		<div class="base">
+			<div class="flowerpot"></div>
+			<div class="blade blade-center"></div>
+			<div class="blade blade-left-s"></div>
+			<div class="blade blade-right-s"></div>
+			<div class="blade blade-left-l"></div>
+			<div class="blade blade-right-l"></div>
+		</div>
+	</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

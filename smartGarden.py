@@ -14,15 +14,18 @@ import GardenModules.prune.prune as prune
 import cv2
 from flask import Flask
 from flask import request
+from flask_cors import CORS
+from flask_debug import Debug
 import sys
 
-#TODO ADD REST ENDPOINT FOR STOPPING PROGRAM
-
+# Disable logging for api
+log = logging.getLogger('werkzeug')
+log.setLevel(logging.ERROR)
 
 #GPIO.setmode(GPIO.BCM)
 #GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 WAIT_TIME_SECONDS = 600
-EMAIL_TIME_SECONDS = 18000
+EMAIL_TIME_SECONDS = 36000
 PUMP_TIME_SECONDS = 10800
 CAMERA_TIME_SECONDS = 300
 ARTIFICIAL_LIGHT_SECONDS = 1800
@@ -31,7 +34,8 @@ LAMP_PIN = 16
 image_count = 0
 SHUTDOWN_FLAG = False
 app = Flask(__name__)
-
+CORS(app)
+Debug(app)
 
 def shutdown_server():
     func = request.environ.get('werkzeug.server.shutdown')
@@ -47,9 +51,25 @@ def shutdown():
 	shutdown_server()
 	return "Shutting down..."
 
-@app.route('/test')
-def test():
-	return "Hello World at time: " + str(datetime.now())
+@app.route('/heartBeat')
+def heartBeat():
+	return "ok"
+
+@app.route('/setWater/<value>')
+def setWater(value):
+	global PUMP_TIME_SECONDS
+	PUMP_TIME_SECONDS = int(value) * 3600
+	print("Pump interval now set to: " + str(PUMP_TIME_SECONDS))
+	return "ok"
+
+@app.route('/getWater')
+def getWater():
+	try:
+		print("Returning pump time: " + str(PUMP_TIME_SECONDS))
+		return str(PUMP_TIME_SECONDS / 3600)
+	except Exception as e:
+		print(e)
+
 
 @app.route('/soil')
 def soil_route():
@@ -256,10 +276,10 @@ def run_artificial_light():
 		currentTimeStamp = str(datetime.now()).split()[1]
 		currentHour = int(currentTimeStamp.split(':')[0])
 		logging.info("Currrent time: " + str(currentHour))
-		if currentHour >= 18 or (currentHour >= 6 and currentHour < 12):
+		if (currentHour >= 18 and currentHour < 22):
 			control_artifical_light("on")
 			logging.info("Turning light on "+ str(datetime.now()))
-		elif (currentHour >= 12 and currentHour < 18) or currentHour < 6:
+		elif (currentHour >= 0 and currentHour < 18) or currentHour > 22:
 			control_artifical_light("off")
 			logging.info("Turning light off "+ str(datetime.now()))
 	except Exception as e:
@@ -323,11 +343,13 @@ def camera_thread():
 		
 
 def artifical_light_thread():
+	control_artifical_light("on")
 	run_artificial_light()
 	timer = threading.Event()
 	while not timer.wait(ARTIFICIAL_LIGHT_SECONDS) and not SHUTDOWN_FLAG:
 		run_artificial_light()
 		if SHUTDOWN_FLAG:
+			control_artifical_light("off")
 			break
 	GPIO.cleanup()
 

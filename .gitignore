@@ -6,3 +6,6 @@ images
 # .pyc #
 ########
 *.pyc
+
+# database #
+*.db
