@@ -18,8 +18,9 @@ from flask_cors import CORS
 from flask_debug import Debug
 import sys
 
-#TODO ADD REST ENDPOINT FOR STOPPING PROGRAM
-
+# Disable logging for api
+log = logging.getLogger('werkzeug')
+log.setLevel(logging.ERROR)
 
 #GPIO.setmode(GPIO.BCM)
 #GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
@@ -56,13 +57,15 @@ def heartBeat():
 
 @app.route('/setWater/<value>')
 def setWater(value):
+	global PUMP_TIME_SECONDS
 	PUMP_TIME_SECONDS = int(value) * 3600
+	print("Pump interval now set to: " + str(PUMP_TIME_SECONDS))
 	return "ok"
 
 @app.route('/getWater')
 def getWater():
-	print("getWater Called with pump time: " + str(PUMP_TIME_SECONDS / 3600))
 	try:
+		print("Returning pump time: " + str(PUMP_TIME_SECONDS))
 		return str(PUMP_TIME_SECONDS / 3600)
 	except Exception as e:
 		print(e)
