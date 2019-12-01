@@ -137,12 +137,12 @@ def control_panel_water():
 		return file.read()
 
 @app.route('/light')
-def control_panel_water():
+def control_panel_light():
 	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/light.html') as file:
 		return file.read()
 
 @app.route('/soilMoisture')
-def control_panel_water():
+def control_panel_soil_moisture():
 	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/soilMoisture.html') as file:
 		return file.read()
 # End Control Panel Endpoints
