@@ -83,7 +83,7 @@
 			xhttp.onreadystatechange = function() {
 				if(this.readyState == 4 && this.status == 200) {
 					console.log("Received new water interval");
-					$("#currentWaterLabel span mark").text(this.response);
+					$("#currentWaterLabel span strong").text(this.response);
 				}
 			}
 			xhttp.open("GET", "http://192.168.0.18:5002/getWater", true);
