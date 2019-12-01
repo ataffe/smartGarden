@@ -12,8 +12,7 @@ import GardenModules.email.email as email
 import GardenModules.pump.pump as pump
 import GardenModules.prune.prune as prune
 import cv2
-from flask import Flask
-from flask import request
+from flask import Flask, request, render_template
 from flask_cors import CORS
 from flask_debug import Debug
 import sys
@@ -33,7 +32,7 @@ WAIT_TIME_PRUNE = 86400
 LAMP_PIN = 16
 image_count = 0
 SHUTDOWN_FLAG = False
-app = Flask(__name__)
+app = Flask(__name__, template_folder='/home/pi/Desktop/smartGarden/smartGarden/ControlPanel', static_folder="/home/pi/Desktop/smartGarden/smartGarden/ControlPanel")
 CORS(app)
 Debug(app)
 
@@ -128,8 +127,7 @@ def garden_route():
 @app.route('/')
 @app.route('/controlPanel')
 def control_panel():
-	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/index.html') as file:
-		return file.read()
+	return render_template("index.html")
 
 @app.route('/water')
 def control_panel_water():
@@ -322,10 +320,10 @@ def run_artificial_light():
 
 def email_thread():
 	time.sleep(10)
-	email.send_email()
+	#email.send_email()
 	timer = threading.Event()
 	while not timer.wait(EMAIL_TIME_SECONDS) and not SHUTDOWN_FLAG:
-		email.send_email()
+		#email.send_email()
 		if SHUTDOWN_FLAG:
 			break
 
@@ -415,7 +413,7 @@ def api_thread():
 
 
 if __name__ == "__main__":
-	logging.basicConfig(filename="/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt", level=logging.INFO)
+	#logging.basicConfig(filename="/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt", level=logging.INFO)
 	thread1 = threading.Thread(target=email_thread)
 	thread2 = threading.Thread(target=sunlight_thread)
 	thread3 = threading.Thread(target=pump_thread)
