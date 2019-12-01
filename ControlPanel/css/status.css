@@ -14,21 +14,11 @@
 		.flowerpot {
 		position: relative;
 		width: 100%;
-		height: 70px;
+		height: 60px;
 		overflow: hidden;
-		background-image: linear-gradient(50deg, white 20px, white 21px, transparent 20px), linear-gradient(310deg, white 20px, #d1bb94 21px, #d1bb94 100%);
+		background-image: linear-gradient(310deg, #d1bb94, #d1bb94 21px, #d1bb94 100%);
 		}
-		.flowerpot:after {
-		content: " ";
-		position: absolute;
-		display: block;
-		left: 30px;
-		top: -5px;
-		width: 60px;
-		height: 90px;
-		background: linear-gradient(285deg, #d1bb94 20px, #d6c8a5 21px, #d6c8a5 100%);
-		transform: rotate(50deg);
-		}
+
 
 		.blade {
 		position: absolute;
