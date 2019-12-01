@@ -145,6 +145,16 @@ def control_panel_light():
 def control_panel_soil_moisture():
 	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/soilMoisture.html') as file:
 		return file.read()
+
+@app.route('/sun_css')
+def sun_css():
+	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/sun.css') as file:
+		return file.read()
+
+@app.route('/status_css')
+def status_css():
+	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/status.css') as file:
+		return file.read()
 # End Control Panel Endpoints
 
 @app.route('/home')
