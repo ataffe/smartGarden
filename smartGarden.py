@@ -72,7 +72,7 @@ def getWater():
 	except Exception as e:
 		print(e)
 
-@app.route('setLight/<value>')
+@app.route('/setLight/<value>')
 def setLight(value):
 	global LIGHT_START_TIME
 	global LIGHT_END_TIME
@@ -85,7 +85,7 @@ def setLight(value):
 def getLight():
 	try:
 		print("Returning light times start: " + str(LIGHT_START_TIME) + " light times end: " + str(LIGHT_END_TIME))
-		return str(LIGHT_START_TIME + ":" + LIGHT_END_TIME)
+		return str(LIGHT_START_TIME) + ":" + str(LIGHT_END_TIME)
 	except Exception as e:
 		print(e)
 

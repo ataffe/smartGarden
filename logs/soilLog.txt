@@ -18203,3 +18203,6 @@ Soil Moisture Level: 83 2019-12-01 00:00:42.118789 Raw Value: 4613
 Soil Moisture Level: 83 2019-12-01 00:05:26.308513 Raw Value: 4590
 Soil Moisture Level: 83 2019-12-01 00:07:20.795898 Raw Value: 4594
 Soil Moisture Level: 83 2019-12-01 00:08:32.676706 Raw Value: 4602
+Soil Moisture Level: 83 2019-12-01 01:37:08.179286 Raw Value: 4659
+Soil Moisture Level: 83 2019-12-01 01:40:43.236774 Raw Value: 4658
+Soil Moisture Level: 83 2019-12-01 01:50:43.879977 Raw Value: 4632
