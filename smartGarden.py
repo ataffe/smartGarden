@@ -21,17 +21,20 @@ import sys
 log = logging.getLogger('werkzeug')
 log.setLevel(logging.ERROR)
 
-#GPIO.setmode(GPIO.BCM)
-#GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+# Constants
 WAIT_TIME_SECONDS = 600
 EMAIL_TIME_SECONDS = 36000
 PUMP_TIME_SECONDS = 10800
 CAMERA_TIME_SECONDS = 300
-ARTIFICIAL_LIGHT_SECONDS = 1800
+ARTIFICIAL_LIGHT_SECONDS = 300
 WAIT_TIME_PRUNE = 86400
 LAMP_PIN = 16
 image_count = 0
 SHUTDOWN_FLAG = False
+LIGHT_START_TIME = 18
+LIGHT_END_TIME = 22
+
+
 app = Flask(__name__, template_folder='/home/pi/Desktop/smartGarden/smartGarden/ControlPanel', static_folder="/home/pi/Desktop/smartGarden/smartGarden/ControlPanel")
 CORS(app)
 Debug(app)
@@ -69,6 +72,22 @@ def getWater():
 	except Exception as e:
 		print(e)
 
+@app.route('setLight/<value>')
+def setLight(value):
+	global LIGHT_START_TIME
+	global LIGHT_END_TIME
+	LIGHT_START_TIME = int(value.split(':')[0])
+	LIGHT_END_TIME = int(value.split(':')[1])
+	print("Setting new start time as: " + str(LIGHT_START_TIME) + " and end time as: " + str(LIGHT_END_TIME))
+	return "ok"
+
+@app.route('/getLightTimes')
+def getLight():
+	try:
+		print("Returning light times start: " + str(LIGHT_START_TIME) + " light times end: " + str(LIGHT_END_TIME))
+		return str(LIGHT_START_TIME + ":" + LIGHT_END_TIME)
+	except Exception as e:
+		print(e)
 
 @app.route('/soil')
 def soil_route():
@@ -154,40 +173,6 @@ def status_css():
 	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/status.css') as file:
 		return file.read()
 # End Control Panel Endpoints
-
-@app.route('/home')
-def index():
-	svgImage = ""
-	with open("/home/pi/Desktop/smartGarden/smartGarden/plant.svg", "r") as file:
-		svgImage = file.read()
-
-	return '''
-	<html>
-		<head>
-			<title>Home Page - Smart Garden</title>
-			<link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
-			<style>
-			.button {
-				background-color: #4CAF50; /* Green */
-				border: none;
-				color: white;
-				padding: 15px 32px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 16px;
-				}
-			</style>
-		</head>
-		<body>
-			<h1 style="font-family: 'Roboto', sans-serif;">Smart Garden is up and running.</h1>
-			<form action="http://192.168.0.18:5002/soil">
-				<input class="button" type="submit" value="View Soil Moisture"/>
-			</form>
-			''' + svgImage + '''
-		</body>
-	</html>
-	'''
 			
 def create_folder():
 	filename = str(datetime.now()).replace(" ", "-")
@@ -307,10 +292,10 @@ def run_artificial_light():
 		currentTimeStamp = str(datetime.now()).split()[1]
 		currentHour = int(currentTimeStamp.split(':')[0])
 		logging.info("Currrent time: " + str(currentHour))
-		if (currentHour >= 18 and currentHour < 22):
+		if (currentHour >= LIGHT_START_TIME and currentHour < LIGHT_END_TIME):
 			control_artifical_light("on")
 			logging.info("Turning light on "+ str(datetime.now()))
-		elif (currentHour >= 0 and currentHour < 18) or currentHour > 22:
+		elif (currentHour < LIGHT_START_TIME or currentHour > LIGHT_END_TIME):
 			control_artifical_light("off")
 			logging.info("Turning light off "+ str(datetime.now()))
 	except Exception as e:
