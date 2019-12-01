@@ -123,6 +123,8 @@ def garden_route():
 	with open("/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt") as file:
 		return file.read()
 
+
+# Control Panel End Points
 @app.route('/')
 @app.route('/controlPanel')
 def control_panel():
@@ -143,6 +145,7 @@ def control_panel_water():
 def control_panel_water():
 	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/soilMoisture.html') as file:
 		return file.read()
+# End Control Panel Endpoints
 
 @app.route('/home')
 def index():
