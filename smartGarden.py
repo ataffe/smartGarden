@@ -124,7 +124,27 @@ def garden_route():
 		return file.read()
 
 @app.route('/')
-@app.route('/index')
+@app.route('/controlPanel')
+def control_panel():
+	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/index.html') as file:
+		return file.read()
+
+@app.route('/water')
+def control_panel_water():
+	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/water.html') as file:
+		return file.read()
+
+@app.route('/light')
+def control_panel_water():
+	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/light.html') as file:
+		return file.read()
+
+@app.route('/soilMoisture')
+def control_panel_water():
+	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/soilMoisture.html') as file:
+		return file.read()
+
+@app.route('/home')
 def index():
 	svgImage = ""
 	with open("/home/pi/Desktop/smartGarden/smartGarden/plant.svg", "r") as file:
