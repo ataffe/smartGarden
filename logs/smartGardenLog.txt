@@ -1,3 +1,4 @@
+INFO:root:Starting API
 INFO:root:Pruned Log: smartGardenLog.txt
 INFO:root:
  ____                       _      ____               _            
@@ -16,8 +17,7 @@ All Threads Started!
 
 
   
-INFO:root:Soil Moisture Level: 93 Raw Value: 2425
-INFO:root:Email Sent 2019-11-26 22:29:19.006978
-INFO:root:Taking image 1 out of 1
+INFO:root:Soil Moisture Level: 83 Raw Value: 4535
+INFO:root:Email Sent 2019-11-30 20:58:18.505726
 INFO:root:Shutting down garden.
 INFO:root:Shut Down Complete!
