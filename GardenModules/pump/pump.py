@@ -11,11 +11,9 @@ class WaterPump:
         if runtime == None:
             raise Exception("The value of run_time for the water pump was  None")
         try:
-            GPIO.setmode(GPIO.BCM)
-            GPIO.setup(_pin, GPIO.OUT)
-            GPIO.output(_pin, GPIO.HIGH)
-            GPIO.output(_pin, GPIO.LOW)
-            p = GPIO.PWM(_pin,pwm)
+            _setup(self,_pin)
+            _togglePin(self,_pin)
+            p = GPIO.PWM(self,_pin, pwm)
             p.start(_dutyCycle)
             time.sleep(runtime)
             GPIO.output(_pin, GPIO.LOW)
@@ -26,6 +24,14 @@ class WaterPump:
             logging.warn(exception)
             _printWatered(self)
 	
+    def _togglePin(self, pin):
+        GPIO.output(pin, GPIO.HIGH)
+        GPIO.output(pin, GPIO.LOW)
+        
+    def _setup(self, pin):
+        GPIO.setmode(GPIO.BCM)
+        GPIO.setup(_pin, GPIO.OUT)
+    
     def _printWatered(self):
         logging.info(""" 
 		
