@@ -1,8 +1,15 @@
-workflow "Python Lint" {
-  on = "push"
-  resolves = ["python-lint"]
-}
+name: Garden-Push-Workflow
+on: [push]
 
-action "python-lint" {
-  uses = "CyberZHG@github-action-python-lint@master"
-}
+jobs:
+  build:
+    name: py-lint
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: py-lint
+        id: py-lint
+        uses: CyberZHG/github-action-python-lint@0.0.2
+        
+  
+     
+
