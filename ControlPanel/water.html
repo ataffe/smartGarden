@@ -4,159 +4,27 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+	<link rel="stylesheet", type="text/css" href="/ControlPanel/css/water.css">
+	
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--Awsome font for the icons-->
 	<script src="https://kit.fontawesome.com/d41cced03c.js" crossorigin="anonymous"></script>
+	<!--Jquery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- The below script has to be after the JQuery scripts-->
+	<script src="/ControlPanel/js/water.js"></script>
     <title>Water Management</title>
 
 	<!-- JQuery -->
 	<script>
-		$(document).ready(function(){
 
-			var xhttp = new XMLHttpRequest();
-			xhttp.onreadystatechange = function() {
-				if(this.readyState == 4 && this.status == 200) {
-					console.log("Received new water interval");
-					$("#currentWaterLabel span mark").text(this.response);
-				}
-			}
-			xhttp.open("GET", "http://192.168.0.18:5002/getWater", true);
-			xhttp.send();
-
-			$(document).on("click", "a", function() {
-				$('#dropdownMenuButton').html($(this).text());
-			});
-
-			function alertTimeout(wait){
-				setTimeout(function(){
-					$('#selectAlert').children('.alert:first-child').alert('close');
-				}, wait);
-			}
-
-			$("#setButton").click(function() {
-				var hoursString = $('#dropdownMenuButton').html().split(" ")[0];
-				var hours = parseInt(hoursString, 10);
-				if(!isNaN(hours)) {
-					xhttp.onreadystatechange = function() {
-						if(this.readyState == 4 && this.status == 200 && this.response == "ok") {
-							console.log("Set water interval successfully");
-							xhttp.open("GET", "http://192.168.0.18:5002/getWater", true);
-							xhttp.send();
-							$('#selectAlert').children('.alert:first-child').alert('close');
-							$("#selectAlert").append("<div class='alert alert-success alert-dismissable' role='alert' id='myAlert2'> <button type='button' class='close' data-dismiss='alert'  aria-hidden='true'>&times;</button>New water interval successfully set!</div>");
-							alertTimeout(2000);
-						} else if(this.readyState == 4 && this.status == 200) {
-							console.log("Received new water interval");
-							$("#currentWaterLabel span mark").text(this.response);
-						}
-					}
-					xhttp.open("GET", "http://192.168.0.18:5002/setWater/" +  hours, true);
-					xhttp.send();
-				} else {
-					$('#selectAlert').children('.alert:first-child').alert('close');
-					$("#selectAlert").append("<div class='alert alert-danger alert-dismissable' role='alert' id='myAlert2'> <button type='button' class='close' data-dismiss='alert'  aria-hidden='true'>&times;</button> Please select an interval.</div>");
-					alertTimeout(2000);
-				}
-			});
-		});
 	</script>
-	<style>
-		body{
-  			background: #3399ff;
-		}
-
-
-		.circle{
-		position: absolute;
-		border-radius: 50%;
-		background: white;
-		animation: ripple 15s infinite;
-		box-shadow: 0px 0px 1px 0px #508fb9;
-		}
-
-		.small{
-		width: 200px;
-		height: 200px;
-		left: -100px;
-		bottom: -100px;
-		}
-
-		.medium{
-		width: 400px;
-		height: 400px;
-		left: -200px;
-		bottom: -200px;
-		}
-
-		.large{
-		width: 600px;
-		height: 600px;
-		left: -300px;
-		bottom: -300px;
-		}
-
-		.xlarge{
-		width: 800px;
-		height: 800px;
-		left: -400px;
-		bottom: -400px;
-		}
-
-		.xxlarge{
-		width: 1000px;
-		height: 1000px;
-		left: -500px;
-		bottom: -500px;
-		}
-
-		.shade1{
-		opacity: 0.2;
-		}
-		.shade2{
-		opacity: 0.5;
-		}
-
-		.shade3{
-		opacity: 0.7;
-		}
-
-		.shade4{
-		opacity: 0.8;
-		}
-
-		.shade5{
-		opacity: 0.9;
-		}
-
-		@keyframes ripple{
-		0%{
-			transform: scale(0.8);
-		}
-		
-		50%{
-			transform: scale(1.2);
-		}
-		
-		100%{
-			transform: scale(0.8);
-		}
-		}
-	</style>
   </head>
   <body>
-		<div class='ripple-background'>
-			<div class='circle xxlarge shade1'></div>
-			<div class='circle xlarge shade2'></div>
-			<div class='circle large shade3'></div>
-			<div class='circle mediun shade4'></div>
-			<div class='circle small shade5'></div>
-		</div>
-
+	<!--Navigation Bar-->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		
-		<a class="navbar-brand" href="index.html"><i class="fas fa-seedling"></i> Garden Control Panel</a>
+		<a class="navbar-brand" href="/ControlPanel/index.html"><i class="fas fa-seedling"></i> Garden Control Panel</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     	<span class="navbar-toggler-icon"></span>
   		</button>
@@ -166,25 +34,26 @@
 				<a class="nav-link" href="#"><i class="fas fa-tint"></i> Water<span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="light.html"><i class="fas fa-lightbulb"></i> Light</a>
+				<a class="nav-link" href="/ControlPanel/light.html"><i class="fas fa-lightbulb"></i> Light</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="soilMoisture.html"><i class="fab fa-pagelines"></i> Soil Moisture</a>
+				<a class="nav-link" href="/ControlPanel/soilMoisture.html"><i class="fab fa-pagelines"></i> Soil Moisture</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="index.html"><i class="fas fa-tv"></i> Status</a>
+				<a class="nav-link" href="/ControlPanel/index.html"><i class="fas fa-tv"></i> Status</a>
 			</li>
 			</ul>
 		</div>
 	</nav>
+	<!--Text functional buttons-->
 	<div class="text-center">
-		<h1 class="display-4">Water Management</h1>
-		<h4 id="currentWaterLabel">Current Water Interval: Every <span><mark>3</mark></span> hours.</h4>
-
+		<h1 style="color: white" class="display-4">Water Management</h1>
 		</br>
+		</br>
+		<h4 style="color: white;" id="currentWaterLabel">Current Water Interval: Every <span><strong style="color: yellow;">3</strong></span> hours.</h4>
 		</br>
 		<div class="dropdown">
-			<span class="h4">Set New Interval: </span><button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<span style="color: white;" class="h4">Set New Interval: </span><button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				Click to Set Water Interval
 			</button>
 			<div id="waterDropdown" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -219,8 +88,10 @@
 		<div id="selectAlert"></div>
 		<button id="setButton" type="button" class="btn btn-primary btn-lg">Set</button>
 	</div>
-    
 
+	<!--Rain-->
+	<div class="rain front-row"></div>
+  	<div class="rain back-row"></div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
