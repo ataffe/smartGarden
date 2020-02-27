@@ -2,15 +2,15 @@ import RPi.GPIO as GPIO
 import logging
 import time
 import threading
-import GardenModules.GardenModule
+from GardenModules import GardenModule
 from datetime import datetime
 
 class WaterPump(GardenModule):
+	_dutyCycle = 60
+	_pin = 18
+	_pumpInterval = 10800
 	def __init__(self):
-		super().__init__()
-		self._dutyCycle = 60
-		self._pin = 18
-		self._pumpInterval = 10800
+		super().__init__(self)
 
 	def run(self, runtime=None, pwm=50):
 		if runtime == None:
