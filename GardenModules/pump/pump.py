@@ -11,7 +11,7 @@ class WaterPump(GardenModule):
 		self._dutyCycle = 60
 		self._pin = 18
 		self._pumpInterval = 10800
-	
+
 	def run(self, runtime=None, pwm=50):
 		if runtime == None:
 			raise Exception("The value of run_time for the water pump was  None")
