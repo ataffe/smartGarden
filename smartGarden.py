@@ -9,7 +9,7 @@ import logging
 import GardenModules.soilMoisture.soil as soil
 import GardenModules.sunlightSensor.sunlight as sunlight
 import GardenModules.email.email as email
-import GardenModules.pump.pump as pump
+from GardenModules.pump.pump import WaterPump
 import GardenModules.prune.prune as prune
 import cv2
 from flask import Flask, request, render_template
@@ -259,23 +259,6 @@ def run_camera(send_folder):
 		ymd = create_folder()
 	take_pics(ymd)
 
-def run_pump(run_time):
-	try:
-		dutycycle = 60
-		GPIO.setmode(GPIO.BCM)
-		GPIO.setup(18, GPIO.OUT)
-		GPIO.output(18, GPIO.HIGH)
-		GPIO.output(18, GPIO.LOW)
-		p = GPIO.PWM(18,50)
-		p.start(dutycycle)
-		time.sleep(run_time)
-		GPIO.output(18, GPIO.LOW)
-		p.stop()
-		logging.info("Watered plants at: " + str(datetime.now()))
-	except Exception as e:
-		logging.warn("There was an error watering the plants.")
-		logging.warn(e)
-
 def control_artifical_light(on_off):
 	try:
 		GPIO.setmode(GPIO.BCM)
@@ -318,17 +301,6 @@ def sunlight_thread():
 	while not timer.wait(WAIT_TIME_SECONDS) and not SHUTDOWN_FLAG:
 		sunlight.check_sunlight()
 		sunlight.prune()
-		if SHUTDOWN_FLAG:
-			break
-
-def pump_thread():
-	#time.sleep(10)
-	#pump.run_pump(8,60)
-	timer = threading.Event()
-	while not timer.wait(PUMP_TIME_SECONDS) and not SHUTDOWN_FLAG:
-		pump.run_pump(2,40)
-		pump.run_pump(3,50)
-		pump.run_pump(4,60)
 		if SHUTDOWN_FLAG:
 			break
 
@@ -398,10 +370,11 @@ def api_thread():
 
 
 if __name__ == "__main__":
+	pump = WaterPump()
 	#logging.basicConfig(filename="/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt", level=logging.INFO)
 	thread1 = threading.Thread(target=email_thread)
 	thread2 = threading.Thread(target=sunlight_thread)
-	thread3 = threading.Thread(target=pump_thread)
+	thread3 = threading.Thread(target=pump.thread)
 	thread4 = threading.Thread(target=camera_thread)
 	thread5 = threading.Thread(target=artifical_light_thread)
 	thread6 = threading.Thread(target=soil_moisture_thread)
