@@ -375,7 +375,7 @@ if __name__ == "__main__":
 	thread1 = threading.Thread(target=email_thread)
 	thread2 = threading.Thread(target=sunlight_thread)
 	thread3 = threading.Thread(target=pump.thread)
-	thread4 = threading.Thread(target=camera_thread)
+	#thread4 = threading.Thread(target=camera_thread)
 	thread5 = threading.Thread(target=artifical_light_thread)
 	thread6 = threading.Thread(target=soil_moisture_thread)
 	thread7 = threading.Thread(target=api_thread)
@@ -391,8 +391,8 @@ if __name__ == "__main__":
 	thread3.daemon = True
 	thread3.start()
 
-	thread4.daemon = True
-	thread4.start()
+	#thread4.daemon = True
+	#thread4.start()
 
 	thread5.daemon = True
 	thread5.start()
@@ -437,8 +437,8 @@ if __name__ == "__main__":
 	#thread2.join()
 	thread3.join()
 	print("Thread 3 ended")
-	thread4.join()
-	print("Thread 4 ended")
+	#thread4.join()
+	#print("Thread 4 ended")
 	thread5.join()
 	print("Thread 5 ended")
 	thread6.join()
