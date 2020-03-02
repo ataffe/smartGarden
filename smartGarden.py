@@ -6,10 +6,10 @@ import time
 import os
 import zipfile
 import logging
-import GardenModules.soilMoisture.soil as soil
 import GardenModules.sunlightSensor.sunlight as sunlight
 import GardenModules.email.email as email
 from GardenModules.pump.pump import WaterPump
+from GardenModules.soilMoisture.soil import SoilMoisture
 import GardenModules.prune.prune as prune
 import cv2
 from flask import Flask, request, render_template
@@ -24,7 +24,6 @@ log.setLevel(logging.ERROR)
 # Constants
 WAIT_TIME_SECONDS = 600
 EMAIL_TIME_SECONDS = 36000
-PUMP_TIME_SECONDS = 10800
 CAMERA_TIME_SECONDS = 300
 ARTIFICIAL_LIGHT_SECONDS = 300
 WAIT_TIME_PRUNE = 86400
@@ -341,14 +340,6 @@ def artifical_light_thread():
 			break
 	GPIO.cleanup()
 
-def soil_moisture_thread():
-	soil.check_soil()
-	timer = threading.Event()
-	while not timer.wait(WAIT_TIME_SECONDS) and not SHUTDOWN_FLAG:
-		soil.check_soil()
-		if SHUTDOWN_FLAG:
-			break
-
 def prune_logs_thread():
 	prune.prune("smartGardenLog.txt")
 	timer = threading.Event()
@@ -368,16 +359,17 @@ def api_thread():
 	print("API thread closed.")
 	
 
-
 if __name__ == "__main__":
 	pump = WaterPump()
+	soilMoistureSensor = SoilMoisture()
+
 	#logging.basicConfig(filename="/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt", level=logging.INFO)
 	thread1 = threading.Thread(target=email_thread)
 	thread2 = threading.Thread(target=sunlight_thread)
 	thread3 = threading.Thread(target=pump.thread)
 	#thread4 = threading.Thread(target=camera_thread)
 	thread5 = threading.Thread(target=artifical_light_thread)
-	thread6 = threading.Thread(target=soil_moisture_thread)
+	thread6 = threading.Thread(target=soilMoistureSensor.thread)
 	thread7 = threading.Thread(target=api_thread)
 	thread8 = threading.Thread(target=prune_logs_thread)
 	

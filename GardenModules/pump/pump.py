@@ -7,11 +7,12 @@ from datetime import datetime
 
 class WaterPump(GardenModule):
 	def __init__(self):
+		super().__init__(self)
 		self._dutyCycle = 60
 		self._pin = 18
 		self._pumpInterval = 10800
 
-	def run(self, runtime=None, pwm=50):
+	def _run(self, runtime=None, pwm=50):
 		if runtime == None:
 			raise Exception("The value of run_time for the water pump was  None")
 		try:
@@ -31,7 +32,7 @@ class WaterPump(GardenModule):
 	def thread(self):
 		timer = threading.Event()
 		while not timer.wait(self._pumpInterval) and not self._shutDownFlag:
-			self.run(self, 3, 50)
+			self._run(self, 3, 50)
 			if self.shutDownFlag:
 				break
 
