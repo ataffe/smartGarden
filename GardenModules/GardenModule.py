@@ -1,4 +1,3 @@
-
 class GardenModule:
 	def __init__(self):
 		self._shutDownFlag = False

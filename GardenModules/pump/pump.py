@@ -2,26 +2,25 @@ import RPi.GPIO as GPIO
 import logging
 import time
 import threading
-from GardenModules import GardenModule
+from GardenModules.GardenModule import GardenModule
 from datetime import datetime
 
 class WaterPump(GardenModule):
-	_dutyCycle = 60
-	_pin = 18
-	_pumpInterval = 10800
 	def __init__(self):
-		super().__init__(self)
+		self._dutyCycle = 60
+		self._pin = 18
+		self._pumpInterval = 10800
 
 	def run(self, runtime=None, pwm=50):
 		if runtime == None:
 			raise Exception("The value of run_time for the water pump was  None")
 		try:
-			self._setup(self,_pin)
-			self._togglePin(self,_pin)
-			p = GPIO.PWM(self,_pin, pwm)
-			p.start(_dutyCycle)
+			self._setup(self, self._pin)
+			self._togglePin(self, self._pin)
+			p = GPIO.PWM(self, self._pin, pwm)
+			p.start(self._dutyCycle)
 			time.sleep(runtime)
-			GPIO.output(_pin, GPIO.LOW)
+			GPIO.output(self._pin, GPIO.LOW)
 			p.stop()
 			logging.info("Watered plants at: " + str(datetime.now()))
 		except Exception as exception:
@@ -31,7 +30,7 @@ class WaterPump(GardenModule):
 
 	def thread(self):
 		timer = threading.Event()
-		while not timer.wait(_pumpInterval) and not self._shutDownFlag:
+		while not timer.wait(self._pumpInterval) and not self._shutDownFlag:
 			self.run(self, 3, 50)
 			if self.shutDownFlag:
 				break
@@ -42,7 +41,7 @@ class WaterPump(GardenModule):
 
 	def _setup(self, pin):
 		GPIO.setmode(GPIO.BCM)
-		GPIO.setup(_pin, GPIO.OUT)
+		GPIO.setup(pin, GPIO.OUT)
 	
 	def _printWatered(self):
 		logging.info(""" 
