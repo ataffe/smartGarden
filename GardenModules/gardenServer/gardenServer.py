@@ -2,9 +2,7 @@ from flask import Flask, request, render_template
 from flask_cors import CORS
 from flask_debug import Debug
 from GardenModules.GardenModule import GardenModule
-from GardenModules.pump.pump import WaterPump
 import logging
-import threading
 
 app = Flask(__name__, template_folder='/home/pi/Desktop/smartGarden/smartGarden/ControlPanel', static_folder="/home/pi/Desktop/smartGarden/smartGarden/ControlPanel")
 CORS(app)
