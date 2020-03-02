@@ -9,7 +9,7 @@ from datetime import datetime
 
 class SoilMoisture(GardenModule):
 	def __init__(self):
-		super().__init__(self)
+		super().__init__()
 		self._i2c = i2c = busio.I2C(board.SCL, board.SDA)
 		self._ads = ADS.ADS1115(self._i2c, address=0x4a)
 		self._ads.gail = 1

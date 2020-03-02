@@ -7,7 +7,7 @@ from datetime import datetime
 
 class WaterPump(GardenModule):
 	def __init__(self):
-		super().__init__(self)
+		super().__init__()
 		self._dutyCycle = 60
 		self._pin = 18
 		self._pumpInterval = 10800
