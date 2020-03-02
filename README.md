@@ -1,7 +1,7 @@
 # PiGarden 
 # [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) [![ForTheBadge powered-by-electricity](http://ForTheBadge.com/images/badges/powered-by-electricity.svg)](http://ForTheBadge.com) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
-###### My Garden that is controlled with a raspberry pi zero. The system controls water, light, and measures soil moisture and sun light.
+###### My Garden that is controlled with a raspberry pi zero. The system controls water and light, while measuring soil moisture and sun light.
 
 ![alt text](https://raw.github.com/ataffe/smartGarden/master/infographic/Infographic.png)
 
