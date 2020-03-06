@@ -11,6 +11,7 @@ import GardenModules.email.email as email
 from GardenModules.pump.pump import WaterPump
 from GardenModules.soilMoisture.soil import SoilMoisture
 from GardenModules.gardenServer.gardenServer import GardenServer
+from GardenModules.artificalLight.artificalLight import ArtificialLight
 import GardenModules.prune.prune as prune
 import cv2
 from flask import Flask, request, render_template
@@ -26,16 +27,13 @@ log.setLevel(logging.ERROR)
 WAIT_TIME_SECONDS = 600
 EMAIL_TIME_SECONDS = 36000
 CAMERA_TIME_SECONDS = 300
-ARTIFICIAL_LIGHT_SECONDS = 300
 WAIT_TIME_PRUNE = 86400
-LAMP_PIN = 16
 image_count = 0
 SHUTDOWN_FLAG = False
-LIGHT_START_TIME = 18
-LIGHT_END_TIME = 22
 
 
-app = Flask(__name__, template_folder='/home/pi/Desktop/smartGarden/smartGarden/ControlPanel', static_folder="/home/pi/Desktop/smartGarden/smartGarden/ControlPanel")
+app = Flask(__name__, template_folder='/home/pi/Desktop/smartGarden/smartGarden/ControlPanel',
+            static_folder="/home/pi/Desktop/smartGarden/smartGarden/ControlPanel")
 CORS(app)
 Debug(app)
 
@@ -124,33 +122,6 @@ def run_camera(send_folder):
 		ymd = create_folder()
 	take_pics(ymd)
 
-def control_artifical_light(on_off):
-	try:
-		GPIO.setmode(GPIO.BCM)
-		GPIO.setup(LAMP_PIN, GPIO.OUT, initial=1)
-		if on_off == "on":
-			GPIO.output(LAMP_PIN, 0)
-		else:
-			GPIO.output(LAMP_PIN, 1)
-	except Exception as e:
-		logging.warn(e)
-
-def run_artificial_light():
-	try:
-		currentTimeStamp = str(datetime.now()).split()[1]
-		currentHour = int(currentTimeStamp.split(':')[0])
-		logging.info("Currrent time: " + str(currentHour))
-		if LIGHT_START_TIME <= currentHour < LIGHT_END_TIME:
-			control_artifical_light("on")
-			logging.info("Turning light on "+ str(datetime.now()))
-		elif currentHour < LIGHT_START_TIME or currentHour > LIGHT_END_TIME:
-			control_artifical_light("off")
-			logging.info("Turning light off "+ str(datetime.now()))
-	except Exception as e:
-		logging.info("Could not setup light "+ str(datetime.now()))
-		logging.warn(e)
-		
-
 def email_thread():
 	time.sleep(10)
 	#email.send_email()
@@ -193,18 +164,7 @@ def camera_thread():
 		run_camera(False)
 		if SHUTDOWN_FLAG:
 			break
-		
 
-def artifical_light_thread():
-	control_artifical_light("on")
-	run_artificial_light()
-	timer = threading.Event()
-	while not timer.wait(ARTIFICIAL_LIGHT_SECONDS) and not SHUTDOWN_FLAG:
-		run_artificial_light()
-		if SHUTDOWN_FLAG:
-			control_artifical_light("off")
-			break
-	GPIO.cleanup()
 
 def prune_logs_thread():
 	#prune.prune("smartGardenLog.txt")
@@ -223,13 +183,12 @@ if __name__ == "__main__":
 	pump = WaterPump(logging)
 	soilMoistureSensor = SoilMoisture(logging)
 	server = GardenServer(pump)
+	artificialLight = ArtificialLight(logging)
 
 	thread1 = threading.Thread(target=email_thread)
 	thread2 = threading.Thread(target=sunlight_thread)
 	# thread3 = threading.Thread(target=pump.thread)
 	# thread4 = threading.Thread(target=camera_thread)
-	thread5 = threading.Thread(target=artifical_light_thread)
-	# thread6 = threading.Thread(target=soilMoistureSensor.thread)
 	# thread7 = threading.Thread(target=server.thread)
 	thread8 = threading.Thread(target=prune_logs_thread)
 	
@@ -242,14 +201,10 @@ if __name__ == "__main__":
 	# thread3.daemon = True
 	# thread3.start()
 	pump.start()
-
-	thread5.daemon = True
-	thread5.start()
-
+	artificialLight.start()
+	soilMoistureSensor.start()
 	# thread6.daemon = True
 	# thread6.start()
-	soilMoistureSensor.start()
-
 	# thread7.start()
 	server.start()
 
@@ -292,8 +247,8 @@ if __name__ == "__main__":
 	print("Thread 3 ended")
 	# thread4.join()
 	# print("Thread 4 ended")
-	thread5.join()
-	print("Thread 5 ended")
+	artificialLight.join()
+	print("Artificial Light ended")
 	# thread6.join()
 	soilMoistureSensor.join()
 	print("Thread 6 ended")
