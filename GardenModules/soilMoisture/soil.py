@@ -9,8 +9,8 @@ import traceback
 
 
 class SoilMoisture(GardenModule):
-	def __init__(self, log):
-		super().__init__()
+	def __init__(self, log, event):
+		super().__init__(event)
 		self.log = log
 		self._i2c = busio.I2C(board.SCL, board.SDA)
 		self._ads = ADS.ADS1115(self._i2c, address=0x4a)
@@ -67,7 +67,7 @@ class SoilMoisture(GardenModule):
 	def run(self):
 		self._checkSoil()
 		timer = threading.Event()
-		while not timer.wait(self.soilInterval) and not self.shutDownFlag:
+		while not timer.wait(self.soilInterval) and not self._sentinel.isSet():
 			self._checkSoil()
 			if self.shutDownFlag:
 				break
