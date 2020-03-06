@@ -5,8 +5,8 @@ import threading
 
 
 class ArtificialLight(GardenModule):
-    def __init__(self, log):
-        super().__init__()
+    def __init__(self, log, event):
+        super().__init__(event)
         self.logging = log
         self._light_start_time = 18
         self._light_end_time = 22
@@ -43,7 +43,7 @@ class ArtificialLight(GardenModule):
         self._set_artificial_light("on")
         self._run_artificial_light()
         timer = threading.Event()
-        while not timer.wait(self._artificial_light_time) and not self._shutDownFlag:
+        while not timer.wait(self._artificial_light_time) and not self._sentinel:
             self._run_artificial_light()
             if self._shutDownFlag:
                 self._set_artificial_light("off")
