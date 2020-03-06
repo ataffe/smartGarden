@@ -12,3 +12,8 @@ images
 
 # pycharm #
 .idea/
+
+# MISC
+camera.sh
+manual_transfer.py
+smartGardenLog.txt
