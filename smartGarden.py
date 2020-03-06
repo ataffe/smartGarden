@@ -363,7 +363,7 @@ if __name__ == "__main__":
 	pump = WaterPump()
 	soilMoistureSensor = SoilMoisture()
 
-	#logging.basicConfig(filename="/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt", level=logging.INFO)
+	logging.basicConfig(filename="/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt", level=logging.INFO)
 	thread1 = threading.Thread(target=email_thread)
 	thread2 = threading.Thread(target=sunlight_thread)
 	thread3 = threading.Thread(target=pump.thread)
@@ -383,9 +383,6 @@ if __name__ == "__main__":
 	thread3.daemon = True
 	thread3.start()
 
-	#thread4.daemon = True
-	#thread4.start()
-
 	thread5.daemon = True
 	thread5.start()
 
@@ -404,7 +401,7 @@ if __name__ == "__main__":
 |____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
   
   Created by Alexander Taffe
-  Version 0.1
+  Version 0.2
   \n\n\nAll Threads Started!\n\n\n
   """)
 	logging.info("""
@@ -415,7 +412,7 @@ if __name__ == "__main__":
 |____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
   
   Created by Alexander Taffe
-  Version 0.1
+  Version 0.2
   \n\n\nAll Threads Started!\n\n\n
   """)
 

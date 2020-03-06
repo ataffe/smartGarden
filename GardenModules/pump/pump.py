@@ -5,6 +5,7 @@ import threading
 from GardenModules.GardenModule import GardenModule
 from datetime import datetime
 
+# TODO try to make this a thread
 class WaterPump(GardenModule):
 	def __init__(self):
 		super().__init__()
@@ -16,9 +17,10 @@ class WaterPump(GardenModule):
 		if runtime == None:
 			raise Exception("The value of run_time for the water pump was  None")
 		try:
-			self._setup(self, self._pin)
-			self._togglePin(self, self._pin)
-			p = GPIO.PWM(self, self._pin, pwm)
+			logging.info("watering garden with pin:" + str(self._pin) + " and dutycycle: " + str(self._dutyCycle))
+			self._setup(self._pin)
+			self._togglePin(self._pin)
+			p = GPIO.PWM(self._pin, pwm)
 			p.start(self._dutyCycle)
 			time.sleep(runtime)
 			GPIO.output(self._pin, GPIO.LOW)
@@ -27,9 +29,11 @@ class WaterPump(GardenModule):
 		except Exception as exception:
 			logging.warn("There was an error watering the plants.")
 			logging.warn(exception)
-			self._printWatered(self)
+			self._printWatered()
 
 	def thread(self):
+		print("Watering plant")
+		self._run(3, 50)
 		timer = threading.Event()
 		while not timer.wait(self._pumpInterval) and not self._shutDownFlag:
 			self._run(self, 3, 50)
