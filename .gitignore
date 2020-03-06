@@ -17,3 +17,5 @@ images
 camera.sh
 manual_transfer.py
 smartGardenLog.txt
+manual_transfer.py.save
+build_table.py
