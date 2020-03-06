@@ -187,7 +187,6 @@ if __name__ == "__main__":
 
 	thread1 = threading.Thread(target=email_thread)
 	thread2 = threading.Thread(target=sunlight_thread)
-	# thread3 = threading.Thread(target=pump.thread)
 	# thread4 = threading.Thread(target=camera_thread)
 	# thread7 = threading.Thread(target=server.thread)
 	thread8 = threading.Thread(target=prune_logs_thread)
@@ -241,17 +240,18 @@ if __name__ == "__main__":
 
 	thread1.join()
 	print("Thread 1 ended")
-	# thread2.join()
-	# thread3.join()
+
 	pump.join()
-	print("Thread 3 ended")
+	print("Pump thread ended")
+
 	# thread4.join()
 	# print("Thread 4 ended")
 	artificialLight.join()
 	print("Artificial Light ended")
 	# thread6.join()
 	soilMoistureSensor.join()
-	print("Thread 6 ended")
+	print("Soil Moisture thread ended")
+
 	thread8.join()
 	print("Thread 8 ended")
-	
+

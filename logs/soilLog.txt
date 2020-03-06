@@ -18510,3 +18510,4 @@ Soil Moisture Level: 105 2020-03-05 22:30:48.635491 Raw Value: 43
 Soil Moisture Level: 105 2020-03-05 22:31:48.674226 Raw Value: 41
 Soil Moisture Level: 105 2020-03-05 22:38:04.365413 Raw Value: 29
 Soil Moisture Level: 105 2020-03-05 22:40:18.547895 Raw Value: 31
+Soil Moisture Level: 105 2020-03-05 22:56:44.553865 Raw Value: 24
