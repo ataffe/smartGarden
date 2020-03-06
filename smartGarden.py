@@ -140,10 +140,10 @@ def run_artificial_light():
 		currentTimeStamp = str(datetime.now()).split()[1]
 		currentHour = int(currentTimeStamp.split(':')[0])
 		logging.info("Currrent time: " + str(currentHour))
-		if (currentHour >= LIGHT_START_TIME and currentHour < LIGHT_END_TIME):
+		if LIGHT_START_TIME <= currentHour < LIGHT_END_TIME:
 			control_artifical_light("on")
 			logging.info("Turning light on "+ str(datetime.now()))
-		elif (currentHour < LIGHT_START_TIME or currentHour > LIGHT_END_TIME):
+		elif currentHour < LIGHT_START_TIME or currentHour > LIGHT_END_TIME:
 			control_artifical_light("off")
 			logging.info("Turning light off "+ str(datetime.now()))
 	except Exception as e:
@@ -224,14 +224,13 @@ if __name__ == "__main__":
 	soilMoistureSensor = SoilMoisture(logging)
 	server = GardenServer(pump)
 
-	
 	thread1 = threading.Thread(target=email_thread)
 	thread2 = threading.Thread(target=sunlight_thread)
-	thread3 = threading.Thread(target=pump.thread)
-	#thread4 = threading.Thread(target=camera_thread)
+	# thread3 = threading.Thread(target=pump.thread)
+	# thread4 = threading.Thread(target=camera_thread)
 	thread5 = threading.Thread(target=artifical_light_thread)
-	thread6 = threading.Thread(target=soilMoistureSensor.thread)
-	thread7 = threading.Thread(target=server.thread)
+	# thread6 = threading.Thread(target=soilMoistureSensor.thread)
+	# thread7 = threading.Thread(target=server.thread)
 	thread8 = threading.Thread(target=prune_logs_thread)
 	
 	print("Starting threads at time: " + str(datetime.now()) + "...")
@@ -239,18 +238,20 @@ if __name__ == "__main__":
 	thread1.daemon = True
 	thread1.start()
 
-	#thread2.start()
-
-	thread3.daemon = True
-	thread3.start()
+	# thread2.start()
+	# thread3.daemon = True
+	# thread3.start()
+	pump.start()
 
 	thread5.daemon = True
 	thread5.start()
 
-	thread6.daemon = True
-	thread6.start()
+	# thread6.daemon = True
+	# thread6.start()
+	soilMoistureSensor.start()
 
-	thread7.start()
+	# thread7.start()
+	server.start()
 
 	thread8.daemon = True
 	thread8.start()
@@ -277,21 +278,24 @@ if __name__ == "__main__":
   \n\n\nAll Threads Started!\n\n\n
   """)
 
-	thread7.join()
-	print("Thread 7 ended")
+	# thread7.join()
+	server.join()
+	print("server shutdown")
 	logging.info("Shut Down Complete!")
 	sys.exit()
 
 	thread1.join()
 	print("Thread 1 ended")
-	#thread2.join()
-	thread3.join()
+	# thread2.join()
+	# thread3.join()
+	pump.join()
 	print("Thread 3 ended")
-	#thread4.join()
-	#print("Thread 4 ended")
+	# thread4.join()
+	# print("Thread 4 ended")
 	thread5.join()
 	print("Thread 5 ended")
-	thread6.join()
+	# thread6.join()
+	soilMoistureSensor.join()
 	print("Thread 6 ended")
 	thread8.join()
 	print("Thread 8 ended")

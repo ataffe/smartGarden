@@ -15,10 +15,10 @@ LIGHT_START_TIME = 18
 LIGHT_END_TIME = 22
 
 def shutdown_server():
-    func = request.environ.get('werkzeug.server.shutdown')
-    if func is None:
-        raise RuntimeError('Not running with the Werkzeug Server')
-    func()
+	func = request.environ.get('werkzeug.server.shutdown')
+	if func is None:
+		raise RuntimeError('Not running with the Werkzeug Server')
+	func()
 
 @app.route('/shutdown')
 def shutdown(self):
@@ -62,6 +62,7 @@ def setWater(value):
 	print("Pump interval now set to: " + str(pump_time))
 	pump.setInterval(pump_time)
 	return "ok"
+
 
 # TODO get values from light object
 @app.route('/getLightTimes')
@@ -119,10 +120,12 @@ def soil_route():
 		logging.warn("There was an exception returning soil data to rest endpoint: " + str(e))
 		return "There was an exception: " + str(e)
 
+
 @app.route('/garden')
 def garden_route():
 	with open("/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt") as file:
 		return file.read()
+
 
 # Control Panel End Points
 @app.route('/')
@@ -130,25 +133,30 @@ def garden_route():
 def control_panel():
 	return render_template("index.html")
 
+
 @app.route('/water')
 def control_panel_water():
 	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/water.html') as file:
 		return file.read()
+
 
 @app.route('/light')
 def control_panel_light():
 	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/light.html') as file:
 		return file.read()
 
+
 @app.route('/soilMoisture')
 def control_panel_soil_moisture():
 	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/soilMoisture.html') as file:
 		return file.read()
 
+
 @app.route('/sun_css')
 def sun_css():
 	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/sun.css') as file:
 		return file.read()
+
 
 @app.route('/status_css')
 def status_css():
@@ -170,7 +178,7 @@ class GardenServer(GardenModule):
 		global pump
 		pump = water_pump
 
-	def thread(self):
+	def run(self):
 		print("Starting API")
 		logging.info("Starting API")
 		app.run(host='192.168.0.18', port='5002')

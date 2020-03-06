@@ -64,11 +64,10 @@ class SoilMoisture(GardenModule):
 		except Exception as exception:
 			self.log.exception("Error writing soil moisture level")
 
-	def thread(self):
+	def run(self):
 		self._checkSoil()
 		timer = threading.Event()
 		while not timer.wait(self.soilInterval) and not self.shutDownFlag:
 			self._checkSoil()
 			if self.shutDownFlag:
 				break
-	

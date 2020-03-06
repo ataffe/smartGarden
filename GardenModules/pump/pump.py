@@ -32,7 +32,7 @@ class WaterPump(GardenModule):
 			self.logging.warn(exception)
 			self._printWatered()
 
-	def thread(self):
+	def run(self):
 		try:
 			print("Watering plant")
 			self._run(3, 50)
