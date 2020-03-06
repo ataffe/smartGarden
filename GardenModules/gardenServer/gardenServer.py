@@ -2,6 +2,7 @@ from flask import Flask, request, render_template
 from flask_cors import CORS
 from flask_debug import Debug
 from GardenModules.GardenModule import GardenModule
+from signal import signal, SIGINT
 import logging
 
 app = Flask(__name__, template_folder='/home/pi/Desktop/smartGarden/smartGarden/ControlPanel', static_folder="/home/pi/Desktop/smartGarden/smartGarden/ControlPanel")
@@ -173,10 +174,11 @@ def _shutdown_server():
 
 
 class GardenServer(GardenModule):
-	def __init__(self, water_pump):
-		super().__init__()
+	def __init__(self, water_pump, event):
+		super().__init__(event)
 		global pump
 		pump = water_pump
+		signal(SIGINT, self.shutdown)
 
 	def run(self):
 		print("Starting API")
