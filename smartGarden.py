@@ -13,6 +13,9 @@ from GardenModules.soilMoisture.soil import SoilMoisture
 from GardenModules.gardenServer.gardenServer import GardenServer
 import GardenModules.prune.prune as prune
 import cv2
+from flask import Flask, request, render_template
+from flask_cors import CORS
+from flask_debug import Debug
 import sys
 
 # Disable logging for api
@@ -32,6 +35,10 @@ LIGHT_START_TIME = 18
 LIGHT_END_TIME = 22
 
 
+app = Flask(__name__, template_folder='/home/pi/Desktop/smartGarden/smartGarden/ControlPanel', static_folder="/home/pi/Desktop/smartGarden/smartGarden/ControlPanel")
+CORS(app)
+Debug(app)
+
 def create_folder():
 	filename = str(datetime.now()).replace(" ", "-")
 	dateArray = filename.split('-')
@@ -43,14 +50,12 @@ def create_folder():
 	finally:
 		return ymd
 
-
 def zipdir(path, ziph):
 	logging.info("zipping path: " + path)
 	for root, dirs, files in os.walk(path):
 		logging.info("root: " + root)
 		for file in files:
 			ziph.write(os.path.join(root, file))
-
 
 def send_folder(ymd):
 	time1 = datetime.now()
@@ -83,7 +88,6 @@ def send_folder(ymd):
 		logging.warn("There was an error deleting the folders and moving back a directory")
 		logging.warn(e)
 
-
 def take_pics(ymd, number=1):
 	for x in range(number):
 		logging.info("Taking image " + str(x + 1) + " out of " + str(number))
@@ -108,7 +112,6 @@ def take_pics(ymd, number=1):
 		#myCmd = 'fswebcam -q -i 0 -r 1280x720 /home/pi/Desktop/smartGarden/smartGarden/images/' + ymd + "/" + str(filename)
 		#os.system(myCmd)
 
-
 def run_camera(send_folder):
 	ymd = create_folder()
 	if send_folder:
@@ -121,7 +124,6 @@ def run_camera(send_folder):
 		ymd = create_folder()
 	take_pics(ymd)
 
-
 def control_artifical_light(on_off):
 	try:
 		GPIO.setmode(GPIO.BCM)
@@ -132,7 +134,6 @@ def control_artifical_light(on_off):
 			GPIO.output(LAMP_PIN, 1)
 	except Exception as e:
 		logging.warn(e)
-
 
 def run_artificial_light():
 	try:
@@ -159,7 +160,6 @@ def email_thread():
 		if SHUTDOWN_FLAG:
 			break
 
-
 def sunlight_thread():
 	sunlight.check_sunlight()
 	timer = threading.Event()
@@ -168,7 +168,6 @@ def sunlight_thread():
 		sunlight.prune()
 		if SHUTDOWN_FLAG:
 			break
-
 
 def camera_thread():
 	#TODO ADD ANOTHER THREAD FOR SENDING IMAGES TO CACTUAR PC
@@ -207,9 +206,8 @@ def artifical_light_thread():
 			break
 	GPIO.cleanup()
 
-
 def prune_logs_thread():
-	prune.prune("smartGardenLog.txt")
+	#prune.prune("smartGardenLog.txt")
 	timer = threading.Event()
 	while not timer.wait(WAIT_TIME_PRUNE) and not SHUTDOWN_FLAG:
 		#TODO FIX PRUNING
@@ -220,20 +218,20 @@ def prune_logs_thread():
 		if SHUTDOWN_FLAG:
 			break
 
-
 if __name__ == "__main__":
-	pump = WaterPump()
-	soilMoistureSensor = SoilMoisture()
+	logging.basicConfig(filename="/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt", level=logging.INFO)
+	pump = WaterPump(logging)
+	soilMoistureSensor = SoilMoisture(logging)
 	server = GardenServer(pump)
 
-	logging.basicConfig(filename="/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt", level=logging.INFO)
+	
 	thread1 = threading.Thread(target=email_thread)
 	thread2 = threading.Thread(target=sunlight_thread)
 	thread3 = threading.Thread(target=pump.thread)
 	#thread4 = threading.Thread(target=camera_thread)
 	thread5 = threading.Thread(target=artifical_light_thread)
 	thread6 = threading.Thread(target=soilMoistureSensor.thread)
-	thread7 = threading.Thread(target=server.thread())
+	thread7 = threading.Thread(target=server.thread)
 	thread8 = threading.Thread(target=prune_logs_thread)
 	
 	print("Starting threads at time: " + str(datetime.now()) + "...")

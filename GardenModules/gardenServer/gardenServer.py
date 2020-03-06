@@ -11,6 +11,15 @@ Debug(app)
 pump = None
 light = None
 
+LIGHT_START_TIME = 18
+LIGHT_END_TIME = 22
+
+def shutdown_server():
+    func = request.environ.get('werkzeug.server.shutdown')
+    if func is None:
+        raise RuntimeError('Not running with the Werkzeug Server')
+    func()
+
 @app.route('/shutdown')
 def shutdown(self):
 	logging.info("Shutting down garden.")
@@ -36,7 +45,7 @@ def getWater():
 
 
 @app.route('/setLight/<value>')
-def setLight(value)
+def setLight(value):
 	# TODO add global light object and get times from it
 	global LIGHT_START_TIME
 	global LIGHT_END_TIME
@@ -114,12 +123,6 @@ def soil_route():
 def garden_route():
 	with open("/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt") as file:
 		return file.read()
-
-@app.route('/garden')
-def garden_route():
-	with open("/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt") as file:
-		return file.read()
-
 
 # Control Panel End Points
 @app.route('/')

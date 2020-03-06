@@ -1,4 +1,3 @@
-import logging
 import board
 import busio
 import adafruit_ads1x15.ads1115 as ADS
@@ -6,16 +5,19 @@ import threading
 from adafruit_ads1x15.analog_in import AnalogIn
 from GardenModules.GardenModule import GardenModule
 from datetime import datetime
+import traceback
 
 
 class SoilMoisture(GardenModule):
-	def __init__(self):
+	def __init__(self, log):
 		super().__init__()
+		self.log = log
 		self._i2c = i2c = busio.I2C(board.SCL, board.SDA)
 		self._ads = ADS.ADS1115(self._i2c, address=0x4a)
-		self._ads.gail = 1
-		self.channel = chan = AnalogIn(self._ads, ADS.P0)
+		self._ads.gain = 1
+		self.channel = AnalogIn(self._ads, ADS.P0)
 		self.soilInterval = 600
+		self.log.info("Channel: " + str(self.channel))
 
 	def _checkSoil(self):
 		rawVal = 0.0
@@ -30,6 +32,7 @@ class SoilMoisture(GardenModule):
 			max = 22000.0
 			started = False
 			weight = 0.40
+			output = 0.0
 			for x in range(50):
 				if started:
 					rawVal = self.channel.value
@@ -39,7 +42,7 @@ class SoilMoisture(GardenModule):
 					filteredVal = (weight * val) + ((1 - weight) * val)
 					output = filteredVal
 				else:
-					rawVal = chan.value
+					rawVal = self.channel.value
 					#Normalization
 					val = (rawVal - min) / (max - min)
 					#Convert to a percentage
@@ -49,19 +52,17 @@ class SoilMoisture(GardenModule):
 				if not started:
 					started = True
 			
-			logging.info("Soil Moisture Level: " + str(100 - round(output)) + " Raw Value: " + str(chan.value))
+			self.log.info("Soil Moisture Level: " + str(100 - round(output)) + " Raw Value: " + str(self.channel.value))
 			#print("output: " + str(output))
 			print("Soil Moisture Level: " + str(100 - round(output)) + "%")
 		except Exception as exception:
-			logging.warn("Error calculating soil moisture")
-			logging.warn(exception)
+			self.log.exception("Error calculating soil moisture")
 
 		try:
 			with open("/home/pi/Desktop/smartGarden/smartGarden/logs/soilLog.txt", "a+") as logFile:
 				logFile.write("Soil Moisture Level: " + str(100 - round(output)) + " " + str(datetime.now()) + " Raw Value: " + str(self.channel.value) + "\n")
 		except Exception as exception:
-			logging.warn("Error writing soil moisture level")
-			logging.warn(exception)
+			self.log.exception("Error writing soil moisture level")
 
 	def thread(self):
 		self._checkSoil()
