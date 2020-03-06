@@ -7,8 +7,8 @@ from datetime import datetime
 
 # TODO try to make this a thread
 class WaterPump(GardenModule):
-	def __init__(self, log):
-		super().__init__()
+	def __init__(self, log, event):
+		super().__init__(event)
 		self.logging = log
 		self._dutyCycle = 60
 		self._pin = 18
@@ -37,7 +37,7 @@ class WaterPump(GardenModule):
 			print("Watering plant")
 			self._run(3, 50)
 			timer = threading.Event()
-			while not timer.wait(self._pumpInterval) and not self._shutDownFlag:
+			while not timer.wait(self._pumpInterval) and not self._sentinel.isSet():
 				self._run(self, 3, 50)
 				if self.shutDownFlag:
 					break
