@@ -40,6 +40,12 @@ class WaterPump(GardenModule):
 			if self.shutDownFlag:
 				break
 
+	def setInterval(self, interval):
+		self._pumpInterval = interval
+
+	def getInterval(self):
+		return self._pumpInterval
+
 	def _togglePin(self, pin):
 		GPIO.output(pin, GPIO.HIGH)
 		GPIO.output(pin, GPIO.LOW)

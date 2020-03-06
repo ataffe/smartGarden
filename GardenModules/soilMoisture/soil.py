@@ -7,6 +7,7 @@ from adafruit_ads1x15.analog_in import AnalogIn
 from GardenModules.GardenModule import GardenModule
 from datetime import datetime
 
+
 class SoilMoisture(GardenModule):
 	def __init__(self):
 		super().__init__()
@@ -19,7 +20,7 @@ class SoilMoisture(GardenModule):
 	def _checkSoil(self):
 		rawVal = 0.0
 		try:
-			#Set Gain to 16 bits
+			# Set Gain to 16 bits
 			# 2/3 = 14800 - 7500 = 7300
 			# 1 = (Dry) 22000 - 11000 (wet) = 11000
 			# 2 = 32767 - 22500 = 10267
