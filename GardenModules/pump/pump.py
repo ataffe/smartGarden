@@ -12,7 +12,7 @@ class WaterPump(GardenModule):
 	def __init__(self, log, queue):
 		super().__init__(queue)
 		self.logging = log
-		self._dutyCycle = 60
+		self._dutyCycle = 70
 		self._pin = 18
 		self._pumpInterval = 3600
 
