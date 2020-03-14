@@ -4,15 +4,18 @@ import time
 import threading
 from GardenModules.GardenModule import GardenModule
 from datetime import datetime
+import queue
+
 
 # TODO try to make this a thread
 class WaterPump(GardenModule):
-	def __init__(self, log):
+	def __init__(self, log, queue):
 		super().__init__()
 		self.logging = log
 		self._dutyCycle = 60
 		self._pin = 18
-		self._pumpInterval = 10800
+		self._pumpInterval = 120
+		self._sentinel = queue
 
 	def _run(self, runtime=None, pwm=50):
 		if runtime == None:
@@ -34,13 +37,16 @@ class WaterPump(GardenModule):
 
 	def run(self):
 		try:
-			print("Watering plant")
+			print("Starting pump thread.")
 			self._run(3, 50)
 			timer = threading.Event()
-			while not timer.wait(self._pumpInterval) and not self._shutDownFlag:
-				self._run(self, 3, 50)
-				if self.shutDownFlag:
+			while not timer.wait(self._pumpInterval):
+				self._run(3, 50)
+				if self._sentinel.get(block=True):
+					self._sentinel.put(stop)
 					break
+				self._sentinel.put(stop)
+				self._sentinel.task_done()
 		except Exception as exception:
 			self.logging.info("There was an exception in the pump thread: ")
 			self.logging.info(exception)

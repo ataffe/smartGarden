@@ -18,6 +18,7 @@ from flask import Flask, request, render_template
 from flask_cors import CORS
 from flask_debug import Debug
 import sys
+import queue
 
 # Disable logging for api
 log = logging.getLogger('werkzeug')
@@ -180,7 +181,9 @@ def prune_logs_thread():
 
 if __name__ == "__main__":
 	logging.basicConfig(filename="/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt", level=logging.INFO)
-	pump = WaterPump(logging)
+	sentinel = queue.Queue()
+	sentinel.put(False)
+	pump = WaterPump(logging, sentinel)
 	soilMoistureSensor = SoilMoisture(logging)
 	server = GardenServer(pump)
 	artificialLight = ArtificialLight(logging)
