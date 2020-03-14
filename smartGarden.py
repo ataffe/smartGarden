@@ -184,9 +184,9 @@ if __name__ == "__main__":
 	sentinel = queue.Queue()
 	sentinel.put(False)
 	pump = WaterPump(logging, sentinel)
-	soilMoistureSensor = SoilMoisture(logging)
-	server = GardenServer(pump)
-	artificialLight = ArtificialLight(logging)
+	soilMoistureSensor = SoilMoisture(logging, sentinel)
+	server = GardenServer(pump, sentinel)
+	artificialLight = ArtificialLight(logging, sentinel)
 
 	thread1 = threading.Thread(target=email_thread)
 	thread2 = threading.Thread(target=sunlight_thread)

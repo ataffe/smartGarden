@@ -173,8 +173,8 @@ def _shutdown_server():
 
 
 class GardenServer(GardenModule):
-	def __init__(self, water_pump):
-		super().__init__()
+	def __init__(self, water_pump, queue):
+		super().__init__(queue)
 		global pump
 		pump = water_pump
 

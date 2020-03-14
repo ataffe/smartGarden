@@ -18522,3 +18522,7 @@ Soil Moisture Level: 104 2020-03-13 18:01:53.641051 Raw Value: 75
 Soil Moisture Level: 104 2020-03-13 18:06:26.382386 Raw Value: 66
 Soil Moisture Level: 104 2020-03-13 18:26:28.570541 Raw Value: 69
 Soil Moisture Level: 104 2020-03-13 18:30:15.775288 Raw Value: 64
+Soil Moisture Level: 104 2020-03-13 18:47:33.067770 Raw Value: 70
+Soil Moisture Level: 105 2020-03-13 18:57:33.701247 Raw Value: 58
+Soil Moisture Level: 104 2020-03-13 20:01:45.234108 Raw Value: 153
+Soil Moisture Level: 104 2020-03-13 20:05:39.561325 Raw Value: 147

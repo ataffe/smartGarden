@@ -10,12 +10,11 @@ import queue
 # TODO try to make this a thread
 class WaterPump(GardenModule):
 	def __init__(self, log, queue):
-		super().__init__()
+		super().__init__(queue)
 		self.logging = log
 		self._dutyCycle = 60
 		self._pin = 18
-		self._pumpInterval = 120
-		self._sentinel = queue
+		self._pumpInterval = 3600
 
 	def _run(self, runtime=None, pwm=50):
 		if runtime == None:
@@ -43,9 +42,9 @@ class WaterPump(GardenModule):
 			while not timer.wait(self._pumpInterval):
 				self._run(3, 50)
 				if self._sentinel.get(block=True):
-					self._sentinel.put(stop)
+					self._sentinel.put(False)
 					break
-				self._sentinel.put(stop)
+				self._sentinel.put(False)
 				self._sentinel.task_done()
 		except Exception as exception:
 			self.logging.info("There was an exception in the pump thread: ")
