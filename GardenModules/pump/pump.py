@@ -34,13 +34,20 @@ class WaterPump(GardenModule):
 			self.logging.warn(exception)
 			self._printWatered()
 
+	def _run_sequence(self):
+		self._run(4, 80)
+		time.sleep(5)
+		self._run(4, 70)
+		time.sleep(5)
+		self._run(4, 50)
+
 	def run(self):
 		try:
 			print("Starting pump thread.")
-			self._run(3, 50)
+			self._run_sequence()
 			timer = threading.Event()
 			while not timer.wait(self._pumpInterval):
-				self._run(3, 50)
+				self._run_sequence()
 				if self._sentinel.get(block=True):
 					self._sentinel.put(False)
 					break
