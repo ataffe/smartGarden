@@ -16,7 +16,7 @@ class SoilMoisture(GardenModule):
 		self._ads = ADS.ADS1115(self._i2c, address=0x4a)
 		self._ads.gain = 1
 		self.channel = AnalogIn(self._ads, ADS.P0)
-		self.soilInterval = 600
+		self.soilInterval = 1800
 		self.log.info("Channel: " + str(self.channel))
 
 	def _checkSoil(self):
@@ -68,8 +68,13 @@ class SoilMoisture(GardenModule):
 		self._checkSoil()
 		timer = threading.Event()
 		while not timer.wait(self.soilInterval):
+			print("Running soil loop!: " + str(self.soilInterval))
 			self._checkSoil()
-			if self._sentinel.get():
-				self._sentinel.put(False)
+			# TODO create a function for the sentinel
+			if self._sentinel.get(block=True):
+				print("Sentinel was true!")
+				self._sentinel.put(True)
 				self._sentinel.task_done()
 				break
+			self._sentinel.put(False)
+			self._sentinel.task_done()

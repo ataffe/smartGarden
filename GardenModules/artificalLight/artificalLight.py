@@ -40,14 +40,17 @@ class ArtificialLight(GardenModule):
             self.logging.warn(e)
 
     def run(self):
-        self._set_artificial_light("on")
         self._run_artificial_light()
         timer = threading.Event()
         while not timer.wait(self._artificial_light_time):
+            self.logging.info("running light thread.")
+            print("running light thread.")
             self._run_artificial_light()
-            if self._sentinel.get():
+            if self._sentinel.get(block=True):
                 self._sentinel.put(True)
                 self._set_artificial_light("off")
                 self._sentinel.task_done()
                 break
+            self._sentinel.put(True)
+            self._sentinel.task_done()
         GPIO.cleanup()

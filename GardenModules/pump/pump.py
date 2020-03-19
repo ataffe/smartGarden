@@ -12,19 +12,18 @@ class WaterPump(GardenModule):
 	def __init__(self, log, queue):
 		super().__init__(queue)
 		self.logging = log
-		self._dutyCycle = 70
+		self._pwm = 70
 		self._pin = 18
-		self._pumpInterval = 3600
+		self._pumpInterval = 7200
 
-	def _run(self, runtime=None, pwm=50):
+	def _run(self, runtime=None, dutyCycle=50):
 		if runtime == None:
 			raise Exception("The value of run_time for the water pump was none.")
 		try:
-			self.logging.info("watering garden with pin:" + str(self._pin) + " and dutycycle: " + str(self._dutyCycle))
 			self._setup(self._pin)
 			self._togglePin(self._pin)
-			p = GPIO.PWM(self._pin, pwm)
-			p.start(self._dutyCycle)
+			p = GPIO.PWM(self._pin, self._pwm)
+			p.start(dutyCycle)
 			time.sleep(runtime)
 			GPIO.output(self._pin, GPIO.LOW)
 			p.stop()
@@ -35,7 +34,7 @@ class WaterPump(GardenModule):
 			self._printWatered()
 
 	def _run_sequence(self):
-		self._run(4, 80)
+		self._run(4, 100)
 		time.sleep(5)
 		self._run(4, 70)
 		time.sleep(5)
@@ -44,12 +43,13 @@ class WaterPump(GardenModule):
 	def run(self):
 		try:
 			print("Starting pump thread.")
-			self._run_sequence()
+			# self._run_sequence()
 			timer = threading.Event()
 			while not timer.wait(self._pumpInterval):
 				self._run_sequence()
 				if self._sentinel.get(block=True):
-					self._sentinel.put(False)
+					self._sentinel.put(True)
+					self._sentinel.task_done()
 					break
 				self._sentinel.put(False)
 				self._sentinel.task_done()
