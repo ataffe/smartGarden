@@ -11,6 +11,7 @@ class GardenModule(Thread):
 		pass
 
 	def shutdown(self):
+		print("Sentinel triggered in garden module.")
 		self._sentinel.get(block=True)
 		self._sentinel.put(True)
 		self._sentinel.task_done()

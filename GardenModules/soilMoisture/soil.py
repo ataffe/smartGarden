@@ -16,8 +16,9 @@ class SoilMoisture(GardenModule):
 		self._ads = ADS.ADS1115(self._i2c, address=0x4a)
 		self._ads.gain = 1
 		self.channel = AnalogIn(self._ads, ADS.P0)
-		self.soilInterval = 1800
+		self.soilInterval = 1800  # 1800
 		self.log.info("Channel: " + str(self.channel))
+		self.setName("soilThread")
 
 	def _checkSoil(self):
 		rawVal = 0.0
@@ -27,7 +28,7 @@ class SoilMoisture(GardenModule):
 			# 1 = (Dry) 22000 - 11000 (wet) = 11000
 			# 2 = 32767 - 22500 = 10267
 
-			#From claibration
+			# From claibration
 			min = 1000.0
 			max = 22000.0
 			started = False
@@ -38,29 +39,30 @@ class SoilMoisture(GardenModule):
 					rawVal = self.channel.value
 					val = (rawVal - min) / (max - min)
 					val = val * 100
-					#Exponential filter
+					# Exponential filter
 					filteredVal = (weight * val) + ((1 - weight) * val)
 					output = filteredVal
 				else:
 					rawVal = self.channel.value
-					#Normalization
+					# Normalization
 					val = (rawVal - min) / (max - min)
-					#Convert to a percentage
+					# Convert to a percentage
 					val = val * 100
 					output = val
 
 				if not started:
 					started = True
-			
+
 			self.log.info("Soil Moisture Level: " + str(100 - round(output)) + " Raw Value: " + str(self.channel.value))
-			#print("output: " + str(output))
+			# print("output: " + str(output))
 			print("Soil Moisture Level: " + str(100 - round(output)) + "%")
 		except Exception as exception:
 			self.log.exception("Error calculating soil moisture")
 
 		try:
 			with open("/home/pi/Desktop/smartGarden/smartGarden/logs/soilLog.txt", "a+") as logFile:
-				logFile.write("Soil Moisture Level: " + str(100 - round(output)) + " " + str(datetime.now()) + " Raw Value: " + str(self.channel.value) + "\n")
+				logFile.write("Soil Moisture Level: " + str(100 - round(output)) + " " + str(
+					datetime.now()) + " Raw Value: " + str(self.channel.value) + "\n")
 		except Exception as exception:
 			self.log.exception("Error writing soil moisture level")
 
@@ -68,11 +70,10 @@ class SoilMoisture(GardenModule):
 		self._checkSoil()
 		timer = threading.Event()
 		while not timer.wait(self.soilInterval):
-			print("Running soil loop!: " + str(self.soilInterval))
 			self._checkSoil()
 			# TODO create a function for the sentinel
 			if self._sentinel.get(block=True):
-				print("Sentinel was true!")
+				print("Sentinel was triggered in soil thread.")
 				self._sentinel.put(True)
 				self._sentinel.task_done()
 				break

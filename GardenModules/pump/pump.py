@@ -7,14 +7,14 @@ from datetime import datetime
 import queue
 
 
-# TODO try to make this a thread
 class WaterPump(GardenModule):
 	def __init__(self, log, queue):
 		super().__init__(queue)
 		self.logging = log
 		self._pwm = 70
 		self._pin = 18
-		self._pumpInterval = 7200
+		self._pumpInterval = 10800
+		self.setName("pumpThread")
 
 	def _run(self, runtime=None, dutyCycle=50):
 		if runtime == None:
@@ -47,7 +47,9 @@ class WaterPump(GardenModule):
 			timer = threading.Event()
 			while not timer.wait(self._pumpInterval):
 				self._run_sequence()
+				# TODO Refactor sentinel to be part of the while loop so that when it is triggered the loop ends.
 				if self._sentinel.get(block=True):
+					self.logging.info("Sentinel was triggered in pump thread.")
 					self._sentinel.put(True)
 					self._sentinel.task_done()
 					break

@@ -19,6 +19,7 @@ from flask_cors import CORS
 from flask_debug import Debug
 import sys
 import queue
+import signal
 
 # Disable logging for api
 log = logging.getLogger('werkzeug')
@@ -187,11 +188,11 @@ if __name__ == "__main__":
 	soilMoistureSensor = SoilMoisture(logging, sentinel)
 	server = GardenServer(pump, sentinel)
 	artificialLight = ArtificialLight(logging, sentinel)
+	signal.signal(signal.SIGINT, server.shutDownGarden)
 
 	thread1 = threading.Thread(target=email_thread)
 	thread2 = threading.Thread(target=sunlight_thread)
 	# thread4 = threading.Thread(target=camera_thread)
-	# thread7 = threading.Thread(target=server.thread)
 	thread8 = threading.Thread(target=prune_logs_thread)
 	
 	print("Starting threads at time: " + str(datetime.now()) + "...")
@@ -207,7 +208,6 @@ if __name__ == "__main__":
 	soilMoistureSensor.start()
 	# thread6.daemon = True
 	# thread6.start()
-	# thread7.start()
 	server.start()
 
 	thread8.daemon = True
@@ -235,7 +235,6 @@ if __name__ == "__main__":
   \n\n\nAll Threads Started!\n\n\n
   """)
 
-	# thread7.join()
 	server.join()
 	print("server shutdown")
 	logging.info("Shut Down Complete!")
