@@ -15,6 +15,9 @@ images
 # pycharm #
 .idea/
 
+# logs
+*.log
+
 # MISC
 camera.sh
 manual_transfer.py
