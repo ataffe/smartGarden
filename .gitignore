@@ -2,6 +2,8 @@
 ##########
 images
 
+# Config files
+*.yml
 
 # .pyc #
 ########
@@ -12,3 +14,14 @@ images
 
 # pycharm #
 .idea/
+
+# logs
+*.log
+logs/
+
+# MISC
+camera.sh
+manual_transfer.py
+smartGardenLog.txt
+manual_transfer.py.save
+build_table.py

@@ -3,6 +3,7 @@ from flask_cors import CORS
 from flask_debug import Debug
 from GardenModules.GardenModule import GardenModule
 import logging
+import time
 
 app = Flask(__name__, template_folder='/home/pi/Desktop/smartGarden/smartGarden/ControlPanel', static_folder="/home/pi/Desktop/smartGarden/smartGarden/ControlPanel")
 CORS(app)
@@ -14,23 +15,17 @@ light = None
 LIGHT_START_TIME = 18
 LIGHT_END_TIME = 22
 
-def shutdown_server():
-	func = request.environ.get('werkzeug.server.shutdown')
-	if func is None:
-		raise RuntimeError('Not running with the Werkzeug Server')
-	func()
 
 @app.route('/shutdown')
-def shutdown(self):
+def shutdown():
 	logging.info("Shutting down garden.")
 	print("Shutting down garden.")
-	self.shutdown = True
 	_shutdown_server()
 	return "Shutting down..."
 
 
 @app.route('/heartBeat')
-def heartBeat(self):
+def heartBeat():
 	return "ok"
 
 
@@ -173,8 +168,8 @@ def _shutdown_server():
 
 
 class GardenServer(GardenModule):
-	def __init__(self, water_pump):
-		super().__init__()
+	def __init__(self, water_pump, queue):
+		super().__init__(queue)
 		global pump
 		pump = water_pump
 
@@ -183,3 +178,11 @@ class GardenServer(GardenModule):
 		logging.info("Starting API")
 		app.run(host='192.168.0.18', port='5002')
 		print("API thread closed.")
+
+	def shutDownGarden(self, sig, frame):
+		logging.warn("Shutdown triggered.")
+		self._sentinel.get(block=True)
+		self._sentinel.put(True)
+		self._sentinel.task_done()
+		time.sleep(3)
+		shutdown()
