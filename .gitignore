@@ -17,6 +17,7 @@ images
 
 # logs
 *.log
+logs/
 
 # MISC
 camera.sh
