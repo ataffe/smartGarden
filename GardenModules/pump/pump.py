@@ -34,7 +34,7 @@ class WaterPump(GardenModule):
 			self._printWatered()
 
 	def _run_sequence(self):
-		self._run(4, 100)
+		self._run(10, 100)
 		time.sleep(5)
 		self._run(4, 70)
 		time.sleep(5)
