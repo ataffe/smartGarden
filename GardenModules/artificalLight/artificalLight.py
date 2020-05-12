@@ -8,7 +8,7 @@ class ArtificialLight(GardenModule):
     def __init__(self, log, queue):
         super().__init__(queue)
         self.logging = log
-        self._light_start_time = 18
+        self._light_start_time = 17
         self._light_end_time = 22
         self._lamp_pin = 16
         self._artificial_light_time = 300  # 300 seconds
@@ -19,7 +19,7 @@ class ArtificialLight(GardenModule):
             current_time_stamp = str(datetime.now()).split()[1]
             current_hour = int(current_time_stamp.split(':')[0])
             self.logging.info("Current time: " + str(current_hour))
-            if self._light_start_time <= current_hour <= self._light_end_time:
+            if (self._light_start_time <= current_hour <= self._light_end_time) or (5 <= current_hour < 10):
                 self.logging.info("Turning light on " + str(datetime.now()))
                 self._set_artificial_light("on")
             elif current_hour < self._light_start_time or current_hour > self._light_end_time:
