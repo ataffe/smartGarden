@@ -36,9 +36,9 @@ class WaterPump(GardenModule):
 	def _run_sequence(self):
 		self._run(10, 100)
 		time.sleep(5)
-		self._run(4, 70)
+		self._run(5, 70)
 		time.sleep(5)
-		self._run(4, 50)
+		self._run(5, 50)
 
 	def run(self):
 		try:
