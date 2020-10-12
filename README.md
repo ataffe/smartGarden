@@ -8,7 +8,7 @@
 ###### The Control Panel
 ![alt text](https://raw.github.com/ataffe/smartGarden/master/infographic/ControlPanel.PNG)
 
-###### The Actual Setup (It's rotated I need to fix this click to see it the right way)
+###### The Actual Setup
 ![alt text](https://raw.github.com/ataffe/smartGarden/master/infographic/IMG_6855.jpg)
 
 ###### Time Lapse Video of the strawberries
