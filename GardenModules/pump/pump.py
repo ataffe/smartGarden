@@ -13,7 +13,7 @@ class WaterPump(GardenModule):
 		self.logging = log
 		self._pwm = 70
 		self._pin = 18
-		self._pumpInterval = 21600
+		self._pumpInterval = 28800
 		self.setName("pumpThread")
 
 	def _run(self, runtime=None, dutyCycle=50):
@@ -36,14 +36,14 @@ class WaterPump(GardenModule):
 	def _run_sequence(self):
 		self._run(10, 100)
 		time.sleep(5)
-		self._run(5, 70)
+		self._run(3, 70)
 		time.sleep(5)
-		self._run(5, 50)
+		self._run(2, 50)
 
 	def run(self):
 		try:
 			print("Starting pump thread.")
-			self._run_sequence()
+			#self._run_sequence()
 			timer = threading.Event()
 			while not timer.wait(self._pumpInterval):
 				self._run_sequence()
