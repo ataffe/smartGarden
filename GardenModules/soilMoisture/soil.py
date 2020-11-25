@@ -13,7 +13,7 @@ class SoilMoisture(GardenModule):
 		super().__init__(queue)
 		self.log = log
 		self._i2c = busio.I2C(board.SCL, board.SDA)
-		self._ads = ADS.ADS1115(self._i2c, address=0x4a)
+		self._ads = ADS.ADS1115(self._i2c)
 		self._ads.gain = 1
 		self.channel = AnalogIn(self._ads, ADS.P0)
 		self.soilInterval = 1800  # 1800

@@ -5,7 +5,7 @@ import time
 
 i2c = busio.I2C(board.SCL, board.SDA)
 sensor = adafruit_tsl2561.TSL2561(i2c)
-sensor.gain = 1
+sensor.gain = 0
 
 while True:
     print('Lux: {}'.format(sensor.lux))

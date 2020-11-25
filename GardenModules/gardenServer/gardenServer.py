@@ -176,7 +176,7 @@ class GardenServer(GardenModule):
 	def run(self):
 		print("Starting API")
 		logging.info("Starting API")
-		app.run(host='192.168.0.15', port='5002')
+		app.run(port='5002')
 		print("API thread closed.")
 
 	def shutDownGarden(self, sig, frame):
