@@ -18,4 +18,4 @@
 
 [![alt text](https://raw.github.com/ataffe/smartGarden/master/infographic/Elastic_Stack_Logo.jpg)](https://www.elastic.co/) 
 [![alt text](https://raw.github.com/ataffe/smartGarden/master/infographic/RPI_Logo.png)](https://www.raspberrypi.org/)
-[![alt text](https://raw.github.com/ataffe/smartGarden/master/images/circuitPython.jpg)](https://circuitpython.org/)
+[![alt text](https://raw.github.com/ataffe/smartGarden/master/images/circuitPython.png)](https://circuitpython.org/)
