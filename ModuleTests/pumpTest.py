@@ -11,6 +11,7 @@ sentinel.put(False)
 soilMoistureSensor = SoilMoisture(logging, sentinel)
 pump = WaterPump(logging, sentinel, soilMoistureSensor)
 
+soilMoistureSensor.start()
 pump.start()
 
 while True:
@@ -19,3 +20,4 @@ while True:
     except KeyboardInterrupt:
         sentinel.put(True)
         print("Ending test")
+        break
