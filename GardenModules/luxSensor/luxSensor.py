@@ -15,7 +15,7 @@ class LuxSensor(GardenModule):
         self._sensor = adafruit_tsl2561.TSL2561(self._i2c)
         self._sensor.gain = 0
         self._grow_light_lux = 535
-        self._lux_interval = 300
+        self._lux_interval = 120
         self._data_file = "/home/pi/Desktop/smartGarden/smartGarden/Data/luxData.csv"
 
     def getLux(self):
