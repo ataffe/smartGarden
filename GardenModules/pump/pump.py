@@ -13,7 +13,7 @@ class WaterPump(GardenModule):
 		self.logging = log
 		self._pwm = 70
 		self._pin = 18
-		self._pumpInterval = 28800
+		self._pumpInterval = 43200
 		self.setName("pumpThread")
 
 	def _run(self, runtime=None, dutyCycle=50):
