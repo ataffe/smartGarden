@@ -123,24 +123,6 @@ def run_camera(send_folder):
 		ymd = create_folder()
 	take_pics(ymd)
 
-def email_thread():
-	time.sleep(10)
-	#email.send_email()
-	timer = threading.Event()
-	while not timer.wait(EMAIL_TIME_SECONDS) and not SHUTDOWN_FLAG:
-		#email.send_email()
-		if SHUTDOWN_FLAG:
-			break
-
-def sunlight_thread():
-	sunlight.check_sunlight()
-	timer = threading.Event()
-	while not timer.wait(WAIT_TIME_SECONDS) and not SHUTDOWN_FLAG:
-		sunlight.check_sunlight()
-		sunlight.prune()
-		if SHUTDOWN_FLAG:
-			break
-
 def camera_thread():
 	#TODO ADD ANOTHER THREAD FOR SENDING IMAGES TO CACTUAR PC
 	ymd = create_folder()
@@ -179,6 +161,7 @@ def prune_logs_thread():
 		if SHUTDOWN_FLAG:
 			break
 
+
 if __name__ == "__main__":
 	logging.basicConfig(filename="/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.log", level=logging.INFO)
 	sentinel = queue.Queue()
@@ -190,24 +173,15 @@ if __name__ == "__main__":
 	artificialLight = ArtificialLight(logging, sentinel)
 	signal.signal(signal.SIGINT, server.shutDownGarden)
 
-	thread1 = threading.Thread(target=email_thread)
-	thread2 = threading.Thread(target=sunlight_thread)
 	# thread4 = threading.Thread(target=camera_thread)
 	thread8 = threading.Thread(target=prune_logs_thread)
 	
 	print("Starting threads at time: " + str(datetime.now()) + "...")
 	logging.info("Starting threads at time: " + str(datetime.now()) + "...")
-	thread1.daemon = True
-	thread1.start()
 
-	# thread2.start()
-	# thread3.daemon = True
-	# thread3.start()
 	pump.start()
 	artificialLight.start()
 	soilMoistureSensor.start()
-	# thread6.daemon = True
-	# thread6.start()
 	server.start()
 
 	thread8.daemon = True
@@ -220,7 +194,7 @@ if __name__ == "__main__":
 |____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
   
   Created by Alexander Taffe
-  Version 0.2
+  Version 1.0
   \n\n\nAll Threads Started!\n\n\n
   """)
 	logging.info("""
@@ -231,7 +205,7 @@ if __name__ == "__main__":
 |____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
   
   Created by Alexander Taffe
-  Version 0.2
+  Version 1.0
   \n\n\nAll Threads Started!\n\n\n
   """)
 
@@ -240,9 +214,6 @@ if __name__ == "__main__":
 	logging.info("Shut Down Complete!")
 	sys.exit()
 
-	thread1.join()
-	print("Thread 1 ended")
-
 	pump.join()
 	print("Pump thread ended")
 
@@ -250,7 +221,6 @@ if __name__ == "__main__":
 	# print("Thread 4 ended")
 	artificialLight.join()
 	print("Artificial Light ended")
-	# thread6.join()
 	soilMoistureSensor.join()
 	print("Soil Moisture thread ended")
 

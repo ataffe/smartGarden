@@ -16,7 +16,7 @@ class SoilMoisture(GardenModule):
 		self._ads = ADS.ADS1115(self._i2c)
 		self._ads.gain = 1
 		self.channel = AnalogIn(self._ads, ADS.P0)
-		self.soilInterval = 1800  # 1800
+		self.soilInterval = 300  # 1800
 		self.log.info("Channel: " + str(self.channel))
 		self.setName("soilThread")
 

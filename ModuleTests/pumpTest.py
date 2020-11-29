@@ -21,3 +21,5 @@ while True:
         sentinel.put(True)
         print("Ending test")
         break
+
+pump.join()
