@@ -39,7 +39,7 @@ class SoilMoisture(GardenModule):
 				self.sum -= self.queue.get()
 				self.average_soil_value = self.sum / self.window_size
 				self.percentage = ((self.sum / self.window_size) / 21680) * 100
-				self.log.info("Soil Moisture Level: {} | Averaged Value: {:.2f}%".format(self.sum / self.window_size, self.percentage))
+				self.log.info("Soil Moisture Level: {} | Averaged Value: {:.2f}%".format(self.sum / self.window_size, self.getSoilPercentage()))
 				print("Soil Moisture Level: {} | Averaged Value: {:.2f}%".format(self.sum / self.window_size, self.percentage))
 			else:
 				self.queue.put(value)
