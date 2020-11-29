@@ -5,6 +5,7 @@ import threading
 from GardenModules.GardenModule import GardenModule
 from datetime import datetime
 import csv
+import os.path
 
 
 class LuxSensor(GardenModule):
@@ -25,6 +26,10 @@ class LuxSensor(GardenModule):
         return self._sensor.lux > self._grow_light_lux
 
     def _saveReading(self):
+        if not os.path.isfile(self._data_file):
+            with open(self._data_file, 'w') as file:
+                pass
+
         with open(self._data_file, mode='a') as file:
             writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             writer.writerow([self._sensor.lux, datetime.now()])
