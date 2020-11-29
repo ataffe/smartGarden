@@ -7,7 +7,6 @@ import os
 import zipfile
 import logging
 import GardenModules.sunlightSensor.sunlight as sunlight
-import GardenModules.email.email as email
 from GardenModules.pump.pump import WaterPump
 from GardenModules.soilMoisture.soil import SoilMoisture
 from GardenModules.gardenServer.gardenServer import GardenServer
@@ -184,8 +183,9 @@ if __name__ == "__main__":
 	logging.basicConfig(filename="/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.log", level=logging.INFO)
 	sentinel = queue.Queue()
 	sentinel.put(False)
-	pump = WaterPump(logging, sentinel)
+
 	soilMoistureSensor = SoilMoisture(logging, sentinel)
+	pump = WaterPump(logging, sentinel, soilMoistureSensor)
 	server = GardenServer(pump, sentinel)
 	artificialLight = ArtificialLight(logging, sentinel)
 	signal.signal(signal.SIGINT, server.shutDownGarden)

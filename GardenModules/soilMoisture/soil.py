@@ -5,7 +5,6 @@ import threading
 from adafruit_ads1x15.analog_in import AnalogIn
 from GardenModules.GardenModule import GardenModule
 from datetime import datetime
-import traceback
 from queue import Queue
 
 

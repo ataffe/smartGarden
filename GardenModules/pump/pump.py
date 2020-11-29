@@ -1,20 +1,20 @@
 import RPi.GPIO as GPIO
-import logging
 import time
 import threading
 from GardenModules.GardenModule import GardenModule
+from GardenModules.soilMoisture.soil import SoilMoisture
 from datetime import datetime
-import queue
 
 
 class WaterPump(GardenModule):
-	def __init__(self, log, queue):
+	def __init__(self, log, queue, soil_moisture_sensor):
 		super().__init__(queue)
 		self.logging = log
 		self._pwm = 70
 		self._pin = 18
-		self._pumpInterval = 43200
+		self._pumpInterval = 3600
 		self.setName("pumpThread")
+		self.soilMoisture = soil_moisture_sensor
 
 	def _run(self, runtime=None, dutyCycle=50):
 		if runtime == None:
@@ -46,7 +46,10 @@ class WaterPump(GardenModule):
 			#self._run_sequence()
 			timer = threading.Event()
 			while not timer.wait(self._pumpInterval):
-				self._run_sequence()
+				if self.soilMoisture.getSoilPercentage() < 49:
+					self._run_sequence()
+				else:
+					print("Skipping watering because soil moisture is at: {:.2f}%".format(self.soilMoisture.getSoilPercentage()))
 				# TODO Refactor sentinel to be part of the while loop so that when it is triggered the loop ends.
 				if self._sentinel.get(block=True):
 					self.logging.info("Sentinel was triggered in pump thread.")
