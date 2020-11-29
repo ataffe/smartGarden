@@ -70,7 +70,7 @@ class SoilMoisture(GardenModule):
 			self._sentinel.task_done()
 
 	def getSoilPercentage(self):
-		return self.percentage
+		return 100 - self.percentage
 
 	def getSoilValue(self):
 		return self.sum / self.window_size
