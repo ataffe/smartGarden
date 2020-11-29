@@ -11,7 +11,7 @@ class WaterPump(GardenModule):
 		self.logging = log
 		self._pwm = 70
 		self._pin = 18
-		self._pumpInterval = 60
+		self._pumpInterval = 3600
 		self.setName("pumpThread")
 		self.soilMoisture = soil_moisture_sensor
 
@@ -45,8 +45,12 @@ class WaterPump(GardenModule):
 			#self._run_sequence()
 			timer = threading.Event()
 			while not timer.wait(self._pumpInterval):
-				if self.soilMoisture.getSoilPercentage() < 49:
+				if self._pumpInterval == 10800:
+					self._pumpInterval = 3600
+
+				if self.soilMoisture.getSoilPercentage() < 40:
 					self._run_sequence()
+					self._pumpInterval = 10800
 				else:
 					print("Skipping watering because soil moisture is at: {:.2f}%".format(self.soilMoisture.getSoilPercentage()))
 				# TODO Refactor sentinel to be part of the while loop so that when it is triggered the loop ends.
