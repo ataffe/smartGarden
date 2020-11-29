@@ -46,9 +46,9 @@ class WaterPump(GardenModule):
             # self._run_sequence()
             timer = threading.Event()
             while not timer.wait(self._pumpInterval):
-                if self.soilMoisture.getSoilPercentage() < 49:
+                if self.soilMoisture.getSoilPercentage() < 40:
                     # self._run_sequence()
-                    print("Water because soil moisture is at: {}\n".format(self.soilMoisture.getSoilPercentage())
+                    print("Watering because soil moisture is at: {}\n".format(self.soilMoisture.getSoilPercentage())
                           + self._printWatered())
                 else:
                     print("Skipping watering because soil moisture is at: {:.2f}%".format(
