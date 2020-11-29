@@ -17,4 +17,5 @@ while True:
     try:
         pass
     except KeyboardInterrupt:
+        sentinel.put(True)
         print("Ending test")

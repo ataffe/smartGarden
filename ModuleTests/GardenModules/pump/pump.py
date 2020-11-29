@@ -12,7 +12,7 @@ class WaterPump(GardenModule):
         self.logging = log
         self._pwm = 70
         self._pin = 18
-        self._pumpInterval = 3600
+        self._pumpInterval = 60
         self.setName("pumpThread")
         self.soilMoisture = soil_moisture_sensor
 
