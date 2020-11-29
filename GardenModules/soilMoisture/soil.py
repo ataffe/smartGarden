@@ -40,7 +40,7 @@ class SoilMoisture(GardenModule):
 				self.average_soil_value = self.sum / self.window_size
 				self.percentage = ((self.sum / self.window_size) / 21680) * 100
 				self.log.info("Soil Moisture Level: {} | Averaged Value: {:.2f}%".format(self.sum / self.window_size, self.getSoilPercentage()))
-				print("Soil Moisture Level: {} | Averaged Value: {:.2f}%".format(self.sum / self.window_size, self.percentage))
+				print("Soil Moisture Level: {} | Averaged Value: {:.2f}%".format(self.sum / self.window_size, self.getSoilPercentage()))
 			else:
 				self.queue.put(value)
 				self.sum += value
@@ -50,7 +50,7 @@ class SoilMoisture(GardenModule):
 
 		try:
 			with open("/home/pi/Desktop/smartGarden/smartGarden/logs/soilLog.txt", "a+") as logFile:
-				logFile.write("Soil Moisture Level: " + str(self.percentage) + "% " + str(
+				logFile.write("Soil Moisture Level: " + str(self.getSoilPercentage()) + "% " + str(
 					datetime.now()) + " Raw Value: " + str(self.channel.value) + "\n")
 		except Exception as exception:
 			self.log.exception("Error writing soil moisture level")
