@@ -19,7 +19,7 @@ class ArtificialLight(GardenModule):
             current_time_stamp = str(datetime.now()).split()[1]
             current_hour = int(current_time_stamp.split(':')[0])
             self.logging.info("Current time: " + str(current_hour))
-            if (self._light_start_time <= current_hour <= self._light_end_time) or (5 <= current_hour < 10):
+            if self._light_start_time <= current_hour <= self._light_end_time:
                 self.logging.info("Turning light on " + str(datetime.now()))
                 self._set_artificial_light("on")
             elif current_hour < self._light_start_time or current_hour > self._light_end_time:

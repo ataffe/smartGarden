@@ -47,8 +47,8 @@ class SoilMoisture(GardenModule):
                     self.sum / self.window_size,
                     self.getSoilPercentage(), value))
             else:
-                self.queue.put(value)
                 self.sum += value
+            self.queue.put(value)
 
         except Exception as exception:
             self.log.exception("Error calculating soil moisture")
