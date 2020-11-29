@@ -5,6 +5,7 @@ import threading
 from adafruit_ads1x15.analog_in import AnalogIn
 from GardenModules.GardenModule import GardenModule
 from datetime import datetime
+from datetime import date
 from queue import Queue
 
 
@@ -62,6 +63,7 @@ class SoilMoisture(GardenModule):
     def run(self):
         self._checkSoil()
         timer = threading.Event()
+
         while not timer.wait(self.soilInterval):
             self._checkSoil()
             # TODO create a function for the sentinel
