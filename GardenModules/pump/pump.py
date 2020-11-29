@@ -2,7 +2,6 @@ import RPi.GPIO as GPIO
 import time
 import threading
 from GardenModules.GardenModule import GardenModule
-from GardenModules.soilMoisture.soil import SoilMoisture
 from datetime import datetime
 
 
@@ -12,12 +11,12 @@ class WaterPump(GardenModule):
 		self.logging = log
 		self._pwm = 70
 		self._pin = 18
-		self._pumpInterval = 3600
+		self._pumpInterval = 60
 		self.setName("pumpThread")
 		self.soilMoisture = soil_moisture_sensor
 
 	def _run(self, runtime=None, dutyCycle=50):
-		if runtime == None:
+		if runtime is None:
 			raise Exception("The value of run_time for the water pump was none.")
 		try:
 			self._setup(self._pin)
