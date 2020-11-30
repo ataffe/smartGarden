@@ -34,10 +34,11 @@ class LuxSensor(GardenModule):
             writer.writerow([self._sensor.lux, datetime.now()])
 
     def run(self):
+	print("Starting lux sensor thread")
         timer = threading.Event()
         while not timer.wait(self._lux_interval):
-            self._logging.info(self)
-            print(self)
+            self._logging.info(self.str())
+            print(self.str())
             self._saveReading()
             if self._sentinel.get(block=True):
                 print("Sentinel was triggered in soil thread.")
