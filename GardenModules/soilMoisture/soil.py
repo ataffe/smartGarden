@@ -56,7 +56,7 @@ class SoilMoisture(GardenModule):
                         pass
 
                 with open(self._data_file, mode='a') as file:
-                    writer = csv.writer(file, delimeter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+                    writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
                     writer.writerow([self.getSoilPercentage(), datetime.now()])
 
             else:
