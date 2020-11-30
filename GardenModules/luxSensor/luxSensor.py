@@ -37,8 +37,8 @@ class LuxSensor(GardenModule):
         print("Starting lux sensor thread")
         timer = threading.Event()
         while not timer.wait(self._lux_interval):
-            self._logging.info(self.str())
-            print(self.str())
+            self._logging.info(self.getString())
+            print(self.getString())
             self._saveReading()
             if self._sentinel.get(block=True):
                 print("Sentinel was triggered in soil thread.")
@@ -48,5 +48,5 @@ class LuxSensor(GardenModule):
             self._sentinel.put(False)
             self._sentinel.task_done()
 
-    def __str__(self):
+    def getString(self):
         return "Current lux reading: {}".format(self.getLux())
