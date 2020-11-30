@@ -1,3 +1,5 @@
+import os
+
 import adafruit_tsl2561
 import busio
 import board
