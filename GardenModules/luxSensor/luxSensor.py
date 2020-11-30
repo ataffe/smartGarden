@@ -34,7 +34,7 @@ class LuxSensor(GardenModule):
             writer.writerow([self._sensor.lux, datetime.now()])
 
     def run(self):
-	print("Starting lux sensor thread")
+        print("Starting lux sensor thread")
         timer = threading.Event()
         while not timer.wait(self._lux_interval):
             self._logging.info(self.str())
@@ -50,4 +50,3 @@ class LuxSensor(GardenModule):
 
     def __str__(self):
         return "Current lux reading: {}".format(self.getLux())
-

@@ -1,3 +1,6 @@
+import csv
+import os
+
 import board
 import busio
 import adafruit_ads1x15.ads1115 as ADS
@@ -20,6 +23,7 @@ class SoilMoisture(GardenModule):
         self.soilInterval = 300  # 1800
         self.log.info("Channel: " + str(self.channel))
         self.setName("soilThread")
+        self._data_file = "/home/pi/Desktop/smartGarden/smartGarden/Data/soilMoistureData.csv"
 
         # Set Gain to 16 bits
         # Gain = 1 # Wet: 13884 Dry: 21680
@@ -46,6 +50,15 @@ class SoilMoisture(GardenModule):
                 print("Soil Moisture Level: {} | Averaged Value: {:.2f}% | raw value {}".format(
                     self.sum / self.window_size,
                     self.getSoilPercentage(), value))
+
+                if os.path.exists(self._data_file):
+                    with open(self._data_file, 'w+'):
+                        pass
+
+                with open(self._data_file, mode='a') as file:
+                    writer = csv.writer(file, delimeter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+                    writer.writerow([self.getSoilPercentage(), datetime.now()])
+
             else:
                 self.sum += value
             self.queue.put(value)
