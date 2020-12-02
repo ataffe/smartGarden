@@ -20,7 +20,7 @@ class SoilMoisture(GardenModule):
         self._ads = ADS.ADS1115(self._i2c)
         self._ads.gain = 1
         self.channel = AnalogIn(self._ads, ADS.P0)
-        self.soilInterval = 300  # 1800
+        self.soilInterval = 120  # 1800
         self.log.info("Channel: " + str(self.channel))
         self.setName("soilThread")
         self._data_file = "/home/pi/Desktop/smartGarden/smartGarden/Data/soilMoistureData.csv"
@@ -51,13 +51,10 @@ class SoilMoisture(GardenModule):
                     self.sum / self.window_size,
                     self.getSoilPercentage(), value))
 
-                if os.path.exists(self._data_file):
-                    with open(self._data_file, 'w+'):
-                        pass
-
-                with open(self._data_file, mode='a') as file:
+                with open(self._data_file, mode='a+') as file:
+                    self.log.info("Writing to data file.")
                     writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-                    writer.writerow([self.getSoilPercentage(), datetime.now()])
+                    writer.writerow([self.getSoilPercentage(), str(self.sum / self.window_size), self.channel.value, datetime.now()])
 
             else:
                 self.sum += value
