@@ -9,7 +9,7 @@ class ArtificialLight(GardenModule):
         super().__init__(queue)
         self.logging = log
         self._light_start_time = 0
-        self._light_end_time = 6
+        self._light_end_time = 8
         self._lamp_pin = 16
         self._artificial_light_time = 300  # 300 seconds
         self.setName("ArtificialLightThread")

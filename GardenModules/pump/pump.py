@@ -53,7 +53,7 @@ class WaterPump(GardenModule):
 					self._pumpInterval = 3600
 
 				if self.soilMoisture.getSoilPercentage() < 40:
-					if times_watered < 1:
+					if times_watered < 3:
 						self._run_sequence()
 						times_watered = times_watered + 1
 

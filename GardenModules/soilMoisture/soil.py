@@ -30,10 +30,10 @@ class SoilMoisture(GardenModule):
         # Gain = 2/3 # Wet: 11031 Dry: 14989
         self.queue = Queue()
         self.sum = 0
-        self.window_size = 5
+        self.window_size = 10
         self.percentage = 0
         self.average_soil_value = 0
-        for x in range(0, 5):
+        for x in range(0, 10):
             self._checkSoil()
 
     def _checkSoil(self):
