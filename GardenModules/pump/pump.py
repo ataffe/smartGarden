@@ -43,7 +43,7 @@ class WaterPump(GardenModule):
 	def run(self):
 		try:
 			print("Starting pump thread.")
-			#self._run_sequence()
+			self._run_sequence()
 			timer = threading.Event()
 			water_date = date.today()
 			times_watered = 0

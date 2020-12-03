@@ -166,7 +166,12 @@ def prune_logs_thread():
 
 
 if __name__ == "__main__":
-    logging.basicConfig(filename="/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.log", level=logging.INFO)
+    logFile = "/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.log"
+    if not os.path.exists(logFile):
+        with open(logFile, 'w+'):
+            pass
+
+    logging.basicConfig(filename=logFile, level=logging.INFO)
     sentinel = queue.Queue()
     sentinel.put(False)
 
