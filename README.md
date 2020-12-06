@@ -5,6 +5,11 @@
 
 ![alt text](https://raw.github.com/ataffe/smartGarden/master/infographic/Infographic.png)
 
+###### Kibana Dashboard
+![alt text](https://raw.github.com/ataffe/smartGarden/master/images/Dashboard1.PNG)
+![alt text](https://raw.github.com/ataffe/smartGarden/master/images/Dashboard2.PNG)
+
+
 ###### The Control Panel
 ![alt text](https://raw.github.com/ataffe/smartGarden/master/infographic/ControlPanel.PNG)
 
