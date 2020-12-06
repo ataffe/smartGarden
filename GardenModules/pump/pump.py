@@ -43,7 +43,7 @@ class WaterPump(GardenModule):
 	def run(self):
 		try:
 			print("Starting pump thread.")
-			self._run_sequence()
+			#self._run_sequence()
 			timer = threading.Event()
 			water_date = date.today()
 			times_watered = 0
@@ -52,7 +52,7 @@ class WaterPump(GardenModule):
 				if self._pumpInterval == 10800:
 					self._pumpInterval = 3600
 
-				if self.soilMoisture.getSoilPercentage() < 40:
+				if self.soilMoisture.getSoilPercentage() < 40.50:
 					if times_watered < 3:
 						self._run_sequence()
 						times_watered = times_watered + 1

@@ -171,7 +171,8 @@ if __name__ == "__main__":
         with open(logFile, 'w+'):
             pass
 
-    logging.basicConfig(filename=logFile, level=logging.INFO)
+    logging.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s',
+                        filename=logFile, level=logging.INFO, datefmt='%Y-%m-%dT%H:%M:%S')
     sentinel = queue.Queue()
     sentinel.put(False)
 
