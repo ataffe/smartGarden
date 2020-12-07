@@ -47,4 +47,4 @@ class TempSensor(GardenModule):
 
     def get_string(self):
         temp_c, temp_f = self.read_temperature()
-        return str(temp_c) + 'C | ' + str(temp_f) + 'F'
+        return 'Temperature: ' + str(temp_c) + 'C | ' + str(temp_f) + 'F'

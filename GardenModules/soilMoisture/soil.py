@@ -51,10 +51,10 @@ class SoilMoisture(GardenModule):
                     self.sum / self.window_size,
                     self.getSoilPercentage(), value))
 
-                with open(self._data_file, mode='a+') as file:
-                    self.log.info("Writing to data file.")
-                    writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-                    writer.writerow([self.getSoilPercentage(), str(self.sum / self.window_size), self.channel.value, datetime.now()])
+                # with open(self._data_file, mode='a+') as file:
+                #     self.log.info("Writing to data file.")
+                #     writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+                #     writer.writerow([self.getSoilPercentage(), str(self.sum / self.window_size), self.channel.value, datetime.now()])
 
             else:
                 self.sum += value
