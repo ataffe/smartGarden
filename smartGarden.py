@@ -9,6 +9,7 @@ from GardenModules.pump.pump import WaterPump
 from GardenModules.soilMoisture.soil import SoilMoisture
 from GardenModules.gardenServer.gardenServer import GardenServer
 from GardenModules.artificalLight.artificalLight import ArtificialLight
+from GardenModules.tempSensor.tempSensor import TempSensor
 import GardenModules.prune.prune as prune
 import cv2
 from flask import Flask, request, render_template
@@ -180,6 +181,7 @@ if __name__ == "__main__":
     pump = WaterPump(logging, sentinel, soilMoistureSensor)
     server = GardenServer(pump, sentinel)
     luxSensor = LuxSensor(logging, sentinel)
+    tempSensor = TempSensor(logging, sentinel)
     artificialLight = ArtificialLight(logging, sentinel)
     signal.signal(signal.SIGINT, server.shutDownGarden)
 
@@ -191,6 +193,7 @@ if __name__ == "__main__":
 
     pump.start()
     luxSensor.start()
+    tempSensor.start()
     artificialLight.start()
     soilMoistureSensor.start()
     server.start()
@@ -236,5 +239,7 @@ if __name__ == "__main__":
     print("Soil moisture thread ended")
     luxSensor.join()
     print("Lux sensor thread ended")
+    tempSensor.join()
+    print("Temperature sensor thread ended")
     thread8.join()
     print("Thread 8 ended")

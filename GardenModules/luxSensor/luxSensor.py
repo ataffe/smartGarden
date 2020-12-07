@@ -21,7 +21,8 @@ class LuxSensor(GardenModule):
         self._data_file = "/home/pi/Desktop/smartGarden/smartGarden/Data/luxData.csv"
 
     def getLux(self):
-        return self._sensor.lux
+        lux_value = self._sensor.lux
+        return lux_value if lux_value is not None else 0
 
     def isSunlight(self):
         return self._sensor.lux > self._grow_light_lux
@@ -37,7 +38,7 @@ class LuxSensor(GardenModule):
         while not timer.wait(self._lux_interval):
             self._logging.info(self.getString())
             print(self.getString())
-            self._saveReading()
+            # self._saveReading()
             if self._sentinel.get(block=True):
                 print("Sentinel was triggered in soil thread.")
                 self._sentinel.put(True)
