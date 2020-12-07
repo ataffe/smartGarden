@@ -219,7 +219,7 @@ if __name__ == "__main__":
 |____/|_| |_| |_|\__,_|_|   \__|  \____|\__,_|_|  \__,_|\___|_| |_|
   
   Created by Alexander Taffe
-  Version 1.0
+  Version 2.0
   \n\n\nAll Threads Started!\n\n\n
   """)
 
