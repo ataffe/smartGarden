@@ -180,7 +180,12 @@ if __name__ == "__main__":
     soilMoistureSensor = SoilMoisture(logging, sentinel)
     pump = WaterPump(logging, sentinel, soilMoistureSensor)
     server = GardenServer(pump, sentinel)
-    luxSensor = LuxSensor(logging, sentinel)
+    luxSensor = None
+    try:
+        luxSensor = LuxSensor(logging, sentinel)
+    except Exception as e:
+        logging.error("Failed to start lux sensor")
+        logging.error(e)
     tempSensor = TempSensor(logging, sentinel)
     artificialLight = ArtificialLight(logging, sentinel)
     signal.signal(signal.SIGINT, server.shutDownGarden)
@@ -192,7 +197,8 @@ if __name__ == "__main__":
     logging.info("Starting threads at time: " + str(datetime.now()) + "...")
 
     pump.start()
-    luxSensor.start()
+    if luxSensor is not None:
+        luxSensor.start()
     tempSensor.start()
     artificialLight.start()
     soilMoistureSensor.start()

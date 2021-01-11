@@ -9,7 +9,7 @@ from queue import Queue
 
 i2c = busio.I2C(board.SCL, board.SDA)
 print("i2c configured")
-ads = ADS.ADS1115(i2c)
+ads = ADS.ADS1115(i2c, address=0x48)
 ads.gain = 1
 print("ADS configured with gain: " + str(ads.gain))
 chan = AnalogIn(ads, ADS.P0)

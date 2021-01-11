@@ -27,19 +27,14 @@ class WaterPump(GardenModule):
 			time.sleep(runtime)
 			GPIO.output(self._pin, GPIO.LOW)
 			p.stop()
-			self.logging.info("Watered plants at: " + str(datetime.now()))
 		except Exception as exception:
 			self.logging.warn("There was an error watering the plants.")
 			self.logging.warn(exception)
 			self._printWatered()
 
 	def _run_sequence(self):
-		self._run(10, 100)
-		time.sleep(5)
-		self._run(3, 70)
-		time.sleep(5)
-		self._run(2, 50)
-
+		self.logging.info("Watered plants at: " + str(datetime.now()))
+		self._run(15, 65)
 	def run(self):
 		try:
 			print("Starting pump thread.")
@@ -52,16 +47,17 @@ class WaterPump(GardenModule):
 				if self._pumpInterval == 10800:
 					self._pumpInterval = 3600
 
-				if self.soilMoisture.getSoilPercentage() < 40.50:
-					if times_watered < 3:
+				# if self.soilMoisture.getSoilPercentage() < 43.50:
+				# 	if times_watered < 3:
+				# 		self._run_sequence()
+				# 		times_watered = times_watered + 1
+
+				if water_date.strftime("%d/%m/%Y") != date.today().strftime("%d/%m/%Y"):
+					if times_watered == 0:
 						self._run_sequence()
-						times_watered = times_watered + 1
-
-					if water_date.strftime("%d/%m/%Y") != date.today().strftime("%d/%m/%Y"):
-						times_watered = 0
-						water_date = date.today()
-
-					self._pumpInterval = 10800
+						self._pumpInterval = 10800
+					times_watered = 0
+					water_date = date.today()
 				else:
 					print("Skipping watering because soil moisture is at: {:.2f}%".format(self.soilMoisture.getSoilPercentage()))
 				# TODO Refactor sentinel to be part of the while loop so that when it is triggered the loop ends.

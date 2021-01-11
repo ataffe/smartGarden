@@ -8,8 +8,8 @@ class ArtificialLight(GardenModule):
     def __init__(self, log, queue):
         super().__init__(queue)
         self.logging = log
-        self._light_start_time = 0
-        self._light_end_time = 8
+        self._light_start_time = 9
+        self._light_end_time = 17
         self._lamp_pin = 16
         self._artificial_light_time = 300  # 300 seconds
         self.setName("ArtificialLightThread")
