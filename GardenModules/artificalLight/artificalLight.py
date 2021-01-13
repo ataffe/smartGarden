@@ -18,6 +18,7 @@ class ArtificialLight(GardenModule):
         except Exception as exception:
             self._log.error("Grow light failed to start up.")
             self._log.error(exception)
+            self._started = False
 
     def _run_artificial_light(self):
         try:
@@ -47,17 +48,18 @@ class ArtificialLight(GardenModule):
             self._log.warn(e)
 
     def run(self):
-        self._run_artificial_light()
-        timer = threading.Event()
-        # TODO use Event.set to stop all thread gracefully.
-        while not timer.wait(self._artificial_light_time):
+        if self._started:
             self._run_artificial_light()
-            if self._sentinel.get(block=True):
-                self._log.info("Sentinel was triggered in light.")
-                self._sentinel.put(True)
-                self._set_artificial_light("off")
+            timer = threading.Event()
+            # TODO use Event.set to stop all thread gracefully.
+            while not timer.wait(self._artificial_light_time):
+                self._run_artificial_light()
+                if self._sentinel.get(block=True):
+                    self._log.info("Sentinel was triggered in light.")
+                    self._sentinel.put(True)
+                    self._set_artificial_light("off")
+                    self._sentinel.task_done()
+                    break
+                self._sentinel.put(False)
                 self._sentinel.task_done()
-                break
-            self._sentinel.put(False)
-            self._sentinel.task_done()
-        GPIO.cleanup()
+            GPIO.cleanup()

@@ -17,6 +17,7 @@ class TempSensor(GardenModule):
         except Exception as exception:
             self._log.error("Temperature sensor start up failed.")
             self._log.error(exception)
+            self._started = False
 
     def _read_temp_raw(self):
         f = open(self._device_file, 'r')
@@ -37,18 +38,19 @@ class TempSensor(GardenModule):
             return temp_c, temp_f
 
     def run(self):
-        print("Starting temperature sensor thread")
-        timer = threading.Event()
-        while not timer.wait(self._temp_interval):
-            self._log.info(self.get_string())
-            print(self.get_string())
-            if self._sentinel.get(block=True):
-                print("Sentinel was triggered in soil thread.")
-                self._sentinel.put(True)
+        if self._started:
+            print("Starting temperature sensor thread")
+            timer = threading.Event()
+            while not timer.wait(self._temp_interval):
+                self._log.info(self.get_string())
+                print(self.get_string())
+                if self._sentinel.get(block=True):
+                    print("Sentinel was triggered in soil thread.")
+                    self._sentinel.put(True)
+                    self._sentinel.task_done()
+                    break
+                self._sentinel.put(False)
                 self._sentinel.task_done()
-                break
-            self._sentinel.put(False)
-            self._sentinel.task_done()
 
     def get_string(self):
         temp_c, temp_f = self.read_temperature()

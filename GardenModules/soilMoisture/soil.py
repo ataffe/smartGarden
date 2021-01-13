@@ -40,6 +40,7 @@ class SoilMoisture(GardenModule):
         except Exception as exception:
             self._log.error("Soil Moisture sense failed to start up")
             self._log.error(exception)
+            self._started = False
 
     def _checkSoil(self):
         try:
@@ -76,19 +77,20 @@ class SoilMoisture(GardenModule):
             self._log.exception("Error writing soil moisture level")
 
     def run(self):
-        self._checkSoil()
-        timer = threading.Event()
-
-        while not timer.wait(self.soilInterval):
+        if self._started:
             self._checkSoil()
-            # TODO create a function for the sentinel
-            if self._sentinel.get(block=True):
-                print("Sentinel was triggered in soil thread.")
-                self._sentinel.put(True)
+            timer = threading.Event()
+
+            while not timer.wait(self.soilInterval):
+                self._checkSoil()
+                # TODO create a function for the sentinel
+                if self._sentinel.get(block=True):
+                    print("Sentinel was triggered in soil thread.")
+                    self._sentinel.put(True)
+                    self._sentinel.task_done()
+                    break
+                self._sentinel.put(False)
                 self._sentinel.task_done()
-                break
-            self._sentinel.put(False)
-            self._sentinel.task_done()
 
     def getSoilPercentage(self):
         return 100 - self.percentage

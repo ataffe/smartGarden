@@ -182,6 +182,7 @@ class GardenServer(GardenModule):
 		except Exception as exception:
 			logging.error("Garden server failed to start up.")
 			logging.error(exception)
+			self._started = False
 
 	def shutDownGarden(self, sig, frame):
 		logging.warn("Shutdown triggered.")
