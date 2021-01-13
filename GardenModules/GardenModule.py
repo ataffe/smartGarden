@@ -6,7 +6,7 @@ class GardenModule(Thread):
 		super().__init__()
 		self._sentinel = queue
 		self.daemon = True
-		self._started = True
+		self._startup = True
 
 	def run(self):
 		pass

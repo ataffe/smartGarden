@@ -8,7 +8,6 @@ import threading
 from adafruit_ads1x15.analog_in import AnalogIn
 from GardenModules.GardenModule import GardenModule
 from datetime import datetime
-from datetime import date
 from queue import Queue
 
 
@@ -40,7 +39,7 @@ class SoilMoisture(GardenModule):
         except Exception as exception:
             self._log.error("Soil Moisture sense failed to start up")
             self._log.error(exception)
-            self._started = False
+            self._startup = False
 
     def _checkSoil(self):
         try:
@@ -77,7 +76,7 @@ class SoilMoisture(GardenModule):
             self._log.exception("Error writing soil moisture level")
 
     def run(self):
-        if self._started:
+        if self._startup:
             self._checkSoil()
             timer = threading.Event()
 

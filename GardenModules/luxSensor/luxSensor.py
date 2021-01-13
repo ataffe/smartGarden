@@ -24,7 +24,7 @@ class LuxSensor(GardenModule):
         except Exception as exception:
             self._log.error("Lux sensor failed to start up.")
             self._log.error(exception)
-            self._started = False
+            self._startup = False
 
     def getLux(self):
         lux_value = self._sensor.lux
@@ -39,7 +39,7 @@ class LuxSensor(GardenModule):
             writer.writerow([self._sensor.lux, datetime.now()])
 
     def run(self):
-        if self._started:
+        if self._startup:
             print("Starting lux sensor thread")
             timer = threading.Event()
             while not timer.wait(self._lux_interval):
