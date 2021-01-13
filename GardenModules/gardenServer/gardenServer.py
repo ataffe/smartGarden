@@ -174,10 +174,14 @@ class GardenServer(GardenModule):
 		pump = water_pump
 
 	def run(self):
-		print("Starting API")
-		logging.info("Starting API")
-		app.run(port='5002')
-		print("API thread closed.")
+		try:
+			print("Starting API")
+			logging.info("Starting API")
+			app.run(port='5002')
+			print("API thread closed.")
+		except Exception as exception:
+			logging.error("Garden server failed to start up.")
+			logging.error(exception)
 
 	def shutDownGarden(self, sig, frame):
 		logging.warn("Shutdown triggered.")
