@@ -15,3 +15,6 @@ class GardenModule(Thread):
 		self._sentinel.get(block=True)
 		self._sentinel.put(True)
 		self._sentinel.task_done()
+
+	def health_check(self):
+		return "ok"

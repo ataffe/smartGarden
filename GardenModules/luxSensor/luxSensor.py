@@ -12,13 +12,18 @@ import csv
 class LuxSensor(GardenModule):
     def __init__(self, log, queue):
         super().__init__(queue)
-        self._logging = log
-        self._i2c = busio.I2C(board.SCL, board.SDA)
-        self._sensor = adafruit_tsl2561.TSL2561(self._i2c)
-        self._sensor.gain = 0
-        self._grow_light_lux = 535
-        self._lux_interval = 120
-        self._data_file = "/home/pi/Desktop/smartGarden/smartGarden/Data/luxData.csv"
+        self._log = log
+        try:
+            self._i2c = busio.I2C(board.SCL, board.SDA)
+            self._sensor = adafruit_tsl2561.TSL2561(self._i2c)
+            self._sensor.gain = 0
+            self._grow_light_lux = 535
+            self._lux_interval = 120
+            self._data_file = "/home/pi/Desktop/smartGarden/smartGarden/Data/luxData.csv"
+            self._log.info("Lux sensor start up successful")
+        except Exception as exception:
+            self._log.error("Lux sensor failed to start up.")
+            self._log.error(exception)
 
     def getLux(self):
         lux_value = self._sensor.lux
@@ -36,7 +41,7 @@ class LuxSensor(GardenModule):
         print("Starting lux sensor thread")
         timer = threading.Event()
         while not timer.wait(self._lux_interval):
-            self._logging.info(self.getString())
+            self._log.info(self.getString())
             print(self.getString())
             # self._saveReading()
             if self._sentinel.get(block=True):

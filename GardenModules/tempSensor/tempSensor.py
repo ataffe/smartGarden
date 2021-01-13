@@ -7,11 +7,16 @@ import threading
 class TempSensor(GardenModule):
     def __init__(self, log, queue):
         super().__init__(queue)
-        self._logging = log
-        self._base_dir = '/sys/bus/w1/devices/'
-        self._device_folder = glob.glob(self._base_dir + '28*')[0]
-        self._device_file = self._device_folder + '/w1_slave'
-        self._temp_interval = 120
+        self._log = log
+        try:
+            self._base_dir = '/sys/bus/w1/devices/'
+            self._device_folder = glob.glob(self._base_dir + '28*')[0]
+            self._device_file = self._device_folder + '/w1_slave'
+            self._temp_interval = 120
+            self._log.info("Temperature sensor start up successful")
+        except Exception as exception:
+            self._log.error("Temperature sensor start up failed.")
+            self._log.error(exception)
 
     def _read_temp_raw(self):
         f = open(self._device_file, 'r')
@@ -35,7 +40,7 @@ class TempSensor(GardenModule):
         print("Starting temperature sensor thread")
         timer = threading.Event()
         while not timer.wait(self._temp_interval):
-            self._logging.info(self.get_string())
+            self._log.info(self.get_string())
             print(self.get_string())
             if self._sentinel.get(block=True):
                 print("Sentinel was triggered in soil thread.")

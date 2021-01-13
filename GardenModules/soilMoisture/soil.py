@@ -15,26 +15,31 @@ from queue import Queue
 class SoilMoisture(GardenModule):
     def __init__(self, log, queue):
         super().__init__(queue)
-        self.log = log
-        self._i2c = busio.I2C(board.SCL, board.SDA)
-        self._ads = ADS.ADS1115(self._i2c, address=0x49)
-        self._ads.gain = 1
-        self.channel = AnalogIn(self._ads, ADS.P0)
-        self.soilInterval = 120  # 1800
-        self.log.info("Channel: " + str(self.channel))
-        self.setName("soilThread")
-        self._data_file = "/home/pi/Desktop/smartGarden/smartGarden/Data/soilMoistureData.csv"
+        self._log = log
+        try:
+            self._i2c = busio.I2C(board.SCL, board.SDA)
+            self._ads = ADS.ADS1115(self._i2c, address=0x49)
+            self._ads.gain = 1
+            self.channel = AnalogIn(self._ads, ADS.P0)
+            self.soilInterval = 120  # 1800
+            self._log.info("Channel: " + str(self.channel))
+            self.setName("soilThread")
+            self._data_file = "/home/pi/Desktop/smartGarden/smartGarden/Data/soilMoistureData.csv"
 
-        # Set Gain to 16 bits
-        # Gain = 1 # Wet: 13884 Dry: 21680
-        # Gain = 2/3 # Wet: 11031 Dry: 14989
-        self.queue = Queue()
-        self.sum = 0
-        self.window_size = 10
-        self.percentage = 0
-        self.average_soil_value = 0
-        for x in range(0, 10):
-            self._checkSoil()
+            # Set Gain to 16 bits
+            # Gain = 1 # Wet: 13884 Dry: 21680
+            # Gain = 2/3 # Wet: 11031 Dry: 14989
+            self.queue = Queue()
+            self.sum = 0
+            self.window_size = 10
+            self.percentage = 0
+            self.average_soil_value = 0
+            for x in range(0, 10):
+                self._checkSoil()
+            self._log.info("Soil moisture sensor start up successful")
+        except Exception as exception:
+            self._log.error("Soil Moisture sense failed to start up")
+            self._log.error(exception)
 
     def _checkSoil(self):
         try:
@@ -45,7 +50,7 @@ class SoilMoisture(GardenModule):
                 self.sum -= self.queue.get()
                 self.average_soil_value = self.sum / self.window_size
                 self.percentage = ((self.sum / self.window_size) / 21680) * 100
-                self.log.info("Soil Moisture Level: {} | Averaged Value: {:.2f}% | raw value {}".format(
+                self._log.info("Soil Moisture Level: {} | Averaged Value: {:.2f}% | raw value {}".format(
                     self.sum / self.window_size, self.getSoilPercentage(), value))
                 print("Soil Moisture Level: {} | Averaged Value: {:.2f}% | raw value {}".format(
                     self.sum / self.window_size,
@@ -61,14 +66,14 @@ class SoilMoisture(GardenModule):
             self.queue.put(value)
 
         except Exception as exception:
-            self.log.exception("Error calculating soil moisture")
+            self._log.exception("Error calculating soil moisture")
 
         try:
             with open("/home/pi/Desktop/smartGarden/smartGarden/logs/soilLog.txt", "a+") as logFile:
                 logFile.write("Soil Moisture Level: " + str(self.getSoilPercentage()) + "% " + str(
                     datetime.now()) + " Raw Value: " + str(self.channel.value) + "\n")
         except Exception as exception:
-            self.log.exception("Error writing soil moisture level")
+            self._log.exception("Error writing soil moisture level")
 
     def run(self):
         self._checkSoil()
