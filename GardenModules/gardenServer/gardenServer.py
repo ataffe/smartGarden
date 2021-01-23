@@ -177,7 +177,7 @@ class GardenServer(GardenModule):
 		try:
 			print("Starting API")
 			logging.info("Starting API")
-			app.run(port='5002')
+			app.run(host='0.0.0.0', port='5002')
 			print("API thread closed.")
 		except Exception as exception:
 			logging.error("Garden server failed to start up.")
@@ -185,7 +185,7 @@ class GardenServer(GardenModule):
 			self._started = False
 
 	def shutDownGarden(self, sig, frame):
-		logging.warn("Shutdown triggered.")
+		logging.warning("Shutdown triggered.")
 		self._sentinel.get(block=True)
 		self._sentinel.put(True)
 		self._sentinel.task_done()
