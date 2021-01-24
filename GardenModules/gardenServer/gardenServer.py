@@ -59,6 +59,13 @@ def setWater(value):
 	return "ok"
 
 
+@app.route('/rumPump/<time_seconds>')
+def runPump(time_seconds):
+	global pump
+	pump.pump(time_seconds)
+	return "Watering Complete"
+
+
 # TODO get values from light object
 @app.route('/getLightTimes')
 def getLight():

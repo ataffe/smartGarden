@@ -42,6 +42,11 @@ class WaterPump(GardenModule):
 	def _run_sequence(self):
 		self._log.info("Watered plants at: " + str(datetime.now()))
 		self._run(15, 65)
+
+	def pump(self, time_seconds):
+		self._log.info("Watered plants at: " + str(datetime.now()))
+		self._run(time_seconds, 65)
+
 	def run(self):
 		try:
 			print("Starting pump thread.")
