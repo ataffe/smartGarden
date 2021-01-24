@@ -62,7 +62,7 @@ def setWater(value):
 @app.route('/rumPump/<time_seconds>')
 def runPump(time_seconds):
 	global pump
-	pump.pump(time_seconds)
+	pump.pump(int(time_seconds))
 	return "Watering Complete"
 
 
