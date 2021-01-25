@@ -33,8 +33,8 @@ def heartBeat():
 def getWater():
 	global pump
 	try:
-		logging.info("Returning pump time: " + str(pump.getInterval))
-		return str(pump.getInterval / 3600)
+		logging.info("Returning pump time: " + str(pump.getInterval()))
+		return str(pump.getInterval() / 3600)
 	except Exception as e:
 		logging.error(e)
 		print(e)
