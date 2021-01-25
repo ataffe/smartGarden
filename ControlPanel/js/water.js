@@ -86,7 +86,7 @@
 					$("#currentWaterLabel span strong").text(this.response);
 				}
 			}
-			xhttp.open("GET", "http://192.168.0.18:5002/getWater", true);
+			xhttp.open("GET", "http://192.168.1.4:5002/getWater", true);
 			xhttp.send();
 
 			$(document).on("click", "a", function() {
@@ -106,7 +106,7 @@
 					xhttp.onreadystatechange = function() {
 						if(this.readyState == 4 && this.status == 200 && this.response == "ok") {
 							console.log("Set water interval successfully");
-							xhttp.open("GET", "http://192.168.0.18:5002/getWater", true);
+							xhttp.open("GET", "http://192.168.1.4:5002/getWater", true);
 							xhttp.send();
 							$('#selectAlert').children('.alert:first-child').alert('close');
 							$("#selectAlert").append("<div class='alert alert-success alert-dismissable' role='alert' id='myAlert2'> <button type='button' class='close' data-dismiss='alert'  aria-hidden='true'>&times;</button>New water interval successfully set!</div>");
@@ -116,7 +116,7 @@
 							$("#currentWaterLabel span mark").text(this.response);
 						}
 					}
-					xhttp.open("GET", "http://192.168.0.18:5002/setWater/" +  hours, true);
+					xhttp.open("GET", "http://192.168.1.4:5002/setWater/" +  hours, true);
 					xhttp.send();
 				} else {
 					$('#selectAlert').children('.alert:first-child').alert('close');

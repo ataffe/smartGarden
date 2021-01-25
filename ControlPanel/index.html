@@ -34,7 +34,7 @@
 							$("body").css('background-color', '#324C5C');
 						}
 					}
-					xhttp.open("GET", "http://192.168.0.18:5002/heartBeat", true);
+					xhttp.open("GET", "http://192.168.1.4:5002/heartBeat", true);
 					xhttp.send();
 				}, 3000);
 
@@ -45,7 +45,7 @@
 						alert("Garden Shutdown Complete");
 					}
 				}
-				xhttp.open("GET", "http://192.168.0.18:5002/shutdown", true);
+				xhttp.open("GET", "http://192.168.1.4:5002/shutdown", true);
 				xhttp.send();
 			});
 		});
@@ -53,7 +53,6 @@
   </head>
   <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		
 		<a class="navbar-brand" href="/ControlPanel/index.html"><i class="fas fa-seedling"></i> Garden Control Panel</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     	<span class="navbar-toggler-icon"></span>
@@ -75,14 +74,16 @@
 			</ul>
 		</div>
 	</nav>
-    <h1>Garden Status</h1>
-	<h3 id="statusText">
-		Garden status is: 
-		<small class="text-success"><strong>CHECKING</strong></small>
-	</h3>
-	</br>
-	<button id="shutdownButton" type="button" class="btn btn-danger btn-lg btn-block">Shutdown Garden</button>
-	</br>
+	<div class="container-fluid">
+		<h1>Garden Status</h1>
+		<h3 id="statusText">
+			Garden status is: 
+			<small class="text-success"><strong>CHECKING</strong></small>
+		</h3>
+		</br>
+		<button id="shutdownButton" type="button" class="btn btn-danger btn-lg">Shutdown Garden</button>
+		</br>
+	</div>
 	</br>
 	<div id="sun" class="sun">
             <div class="sun-face">
@@ -145,16 +146,6 @@
             </div>
         </div>
     </div>
-	<div class="wrap">
-		<div class="base">
-			<div class="flowerpot"></div>
-			<div class="blade blade-center"></div>
-			<div class="blade blade-left-s"></div>
-			<div class="blade blade-right-s"></div>
-			<div class="blade blade-left-l"></div>
-			<div class="blade blade-right-l"></div>
-		</div>
-	</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
