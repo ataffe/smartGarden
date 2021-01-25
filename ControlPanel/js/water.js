@@ -19,20 +19,6 @@
 				}, wait);
 			}
 
-			$("#runButton").click(function() {
-				var runTime = parseInt($('#runInput').val());
-				if(!isNaN(runTime)) {
-					console.log("Watering plants for " + runTime + " seconds.");
-					xhttp.onreadystatechange = function() {
-						if(this.readyState == 4 && this.status == 200) {
-							console.log("watered plants.");
-						}
-					}
-					xhttp.open("GET", "http://192.168.1.4/runPump/" + runTime, true);
-					xhttp.send();
-				}
-			});
-
 			$("#setButton").click(function() {
 				var hoursString = $('#dropdownMenuButton').html().split(" ")[0];
 				var hours = parseInt(hoursString, 10);
@@ -56,6 +42,20 @@
 					$('#selectAlert').children('.alert:first-child').alert('close');
 					$("#selectAlert").append("<div class='alert alert-danger alert-dismissable' role='alert' id='myAlert2'> <button type='button' class='close' data-dismiss='alert'  aria-hidden='true'>&times;</button> Please select an interval.</div>");
 					alertTimeout(2000);
+				}
+			});
+
+			$("#runButton").click(function() {
+				var runTime = parseInt($('#runInput').val());
+				if(!isNaN(runTime)) {
+					console.log("Watering plants for " + runTime + " seconds.");
+					xhttp.onreadystatechange = function() {
+						if(this.readyState == 4 && this.status == 200) {
+							console.log("watered plants.");
+						}
+					}
+					xhttp.open("GET", "http://192.168.1.4:5002/runPump/" + runTime, true);
+					xhttp.send();
 				}
 			});
 		});
