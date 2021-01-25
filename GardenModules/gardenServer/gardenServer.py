@@ -37,6 +37,7 @@ def getWater():
 		return str(pump.getInteval / 3600)
 	except Exception as e:
 		print(e)
+		print("Pump interval returned: " + str(pump.getInterval))
 
 
 @app.route('/setLight/<value>')
