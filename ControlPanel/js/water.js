@@ -50,12 +50,12 @@
 				console.log("watering plants: " + runTime);
 				if(!isNaN(runTime)) {
 					console.log("Watering plants for " + runTime + " seconds.");
-					$("#runButton").prop('value', 'Watering');
+					$("#runButton").html("Watering");
 					$("#runButton").prop('disabled', true);
 					xhttp.onreadystatechange = function() {
 						if(this.readyState == 4 && this.status == 200) {
 							console.log("watered plants.");
-							$("#runButton").prop('value', 'Run');
+							$("#runButton").html("Run");
 							$("#runButton").prop('disabled', false);
 						}
 					}
