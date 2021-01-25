@@ -45,53 +45,58 @@
 			</ul>
 		</div>
 	</nav>
+
 	<!--Text functional buttons-->
-	<div class="text-center">
-		<h1 style="color: white" class="display-4">Water Management</h1>
-		</br>
-		</br>
-		<h4 style="color: white;" id="currentWaterLabel">Current Water Interval: Every <span><strong style="color: yellow;">3</strong></span> hours.</h4>
-		</br>
-		<div class="dropdown">
-			<span style="color: white;" class="h4">Set New Interval: </span><button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Click to Set Water Interval
-			</button>
-			<div id="waterDropdown" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<a class="dropdown-item">1 hours</a>
-				<a class="dropdown-item">2 hours</a>
-				<a class="dropdown-item">3 hours</a>
-				<a class="dropdown-item">4 hours</a>
-				<a class="dropdown-item">5 hours</a>
-				<a class="dropdown-item">6 hours</a>
-				<a class="dropdown-item">7 hours</a>
-				<a class="dropdown-item">8 hours</a>
-				<a class="dropdown-item">9 hours</a>
-				<a class="dropdown-item">10 hours</a>
-				<a class="dropdown-item">11 hours</a>
-				<a class="dropdown-item">12 hours</a>
-				<a class="dropdown-item">13 hours</a>
-				<a class="dropdown-item">14 hours</a>
-				<a class="dropdown-item">15 hours</a>
-				<a class="dropdown-item">16 hours</a>
-				<a class="dropdown-item">17 hours</a>
-				<a class="dropdown-item">18 hours</a>
-				<a class="dropdown-item">19 hours</a>
-				<a class="dropdown-item">20 hours</a>
-				<a class="dropdown-item">21 hours</a>
-				<a class="dropdown-item">22 hours</a>
-				<a class="dropdown-item">23 hours</a>
-				<a class="dropdown-item">24 hours</a>
+	<h1 class="display-4 text-primary text-center">Water Management</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<!--Interval Card-->
+				<div class="m-1 card">
+					<div class="card-body">
+						<h5 class="card-title">Set Water Interval</h5>
+						<p class="text-primary" id="currentWaterLabel">Current Water Interval: Every <span><strong class="text-secondary">3</strong></span> hours.</p>
+						<div class="dropdown">
+							<span class="text-primary">Set New Interval: </span><button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Click to Set Water Interval
+							</button>
+							<div id="waterDropdown" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item">1 hours</a>
+								<a class="dropdown-item">2 hours</a>
+								<a class="dropdown-item">3 hours</a>
+								<a class="dropdown-item">4 hours</a>
+								<a class="dropdown-item">5 hours</a>
+								<a class="dropdown-item">6 hours</a>
+								<a class="dropdown-item">7 hours</a>
+								<a class="dropdown-item">8 hours</a>
+							</div>
+						</div>
+						</br>
+						<button id="setButton" type="button" class="btn btn-primary btn-lg">Set</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6">
+				<!--Interval Card-->
+				<div class="m-1 card">
+					<div class="card-body">
+						<h5 class="card-title">Run Pump</h5>
+						<div class="input-group m-auto">
+							<input id="runInput" type="text" class="form-control" placeholder="15">
+							<div class="input-group-append">
+								<span class="input-group-text">seconds</span>
+							</div>
+						</div>
+						</br>
+						<button id="runButton" type="button" class="btn btn-primary btn-lg">Run</button>
+					</div>
+				</div>
 			</div>
 		</div>
-		</br>
-		</br>
-		<div id="selectAlert"></div>
-		<button id="setButton" type="button" class="btn btn-primary btn-lg">Set</button>
 	</div>
 
 	<!--Rain-->
-	<div class="rain front-row"></div>
-  	<div class="rain back-row"></div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
