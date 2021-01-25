@@ -60,7 +60,7 @@ def setWater(value):
 	return "ok"
 
 
-@app.route('/rumPump/<time_seconds>')
+@app.route('/runPump/<time_seconds>')
 def runPump(time_seconds):
 	global pump
 	pump.pump(int(time_seconds))
