@@ -47,6 +47,7 @@
 
 			$("#runButton").click(function() {
 				var runTime = parseInt($('#runInput').val());
+				console.log("watering plants: " + runTime);
 				if(!isNaN(runTime)) {
 					console.log("Watering plants for " + runTime + " seconds.");
 					xhttp.onreadystatechange = function() {
