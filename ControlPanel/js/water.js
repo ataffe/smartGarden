@@ -50,13 +50,13 @@
 				console.log("watering plants: " + runTime);
 				if(!isNaN(runTime)) {
 					console.log("Watering plants for " + runTime + " seconds.");
-					$("#runButton").props('value', 'Watering');
-					$("#runButton").props('disabled', true);
+					$("#runButton").prop('value', 'Watering');
+					$("#runButton").prop('disabled', true);
 					xhttp.onreadystatechange = function() {
 						if(this.readyState == 4 && this.status == 200) {
 							console.log("watered plants.");
-							$("#runButton").props('value', 'Run');
-							$("#runButton").props('disabled', false);
+							$("#runButton").prop('value', 'Run');
+							$("#runButton").prop('disabled', false);
 						}
 					}
 					xhttp.open("GET", "http://192.168.1.4:5002/runPump/" + runTime, true);
