@@ -88,7 +88,6 @@ class WaterPump(GardenModule):
 		self._pumpInterval = interval
 
 	def getInterval(self):
-		print("Returning pump interval: " + str(self._pumpInterval))
 		return self._pumpInterval
 
 	def _togglePin(self, pin):

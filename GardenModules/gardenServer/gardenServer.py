@@ -33,11 +33,11 @@ def heartBeat():
 def getWater():
 	global pump
 	try:
-		print("Returning pump time: " + str(pump.getInteval))
-		return str(pump.getInteval / 3600)
+		logging.info("Returning pump time: " + str(pump.getInterval))
+		return str(pump.getInterval / 3600)
 	except Exception as e:
+		logging.error(e)
 		print(e)
-		print("Pump interval returned: " + str(pump.getInterval))
 
 
 @app.route('/setLight/<value>')
@@ -184,7 +184,7 @@ class GardenServer(GardenModule):
 	def run(self):
 		try:
 			print("Starting API")
-			logging.info("Starting API")
+			logging.info("Starting Garden Server.")
 			app.run(host='0.0.0.0', port='5002')
 			print("API thread closed.")
 		except Exception as exception:
