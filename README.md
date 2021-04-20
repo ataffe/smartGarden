@@ -6,7 +6,7 @@
 ### My goal is to optimize the growth of the plants. I would like to water based on the soil moisture instead of watering at set intervals and to provide suplemental light based on the amount of natural light. Currently I am watering based on the soil moisture sensor but the grow light is on a set interval. I am currently integrating a water proof temperature sensor.
 
 ###### Kibana Dashboard
-This is the kibana dashboard I use to monitor the sensor data in almost real time.
+This is the kibana dashboard I use to monitor the sensor data in almost real time. (Refreshes every 1 second)
 ![alt text](https://raw.github.com/ataffe/smartGarden/master/images/Dashboard1.PNG)
 ![alt text](https://raw.github.com/ataffe/smartGarden/master/images/Dashboard2.PNG)
 
