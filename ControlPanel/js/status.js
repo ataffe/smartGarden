@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
-			setInterval(getStatus("http://192.168.1.4:5002/heartBeat", "#statusText small", setBackgroundColor, '#324C5C'), 3000);
-			setInterval(getModuleStatus("http://192.168.1.4:5002/water/heartBeat", "#waterText", null, null), 3000);
-			setInterval(getModuleStatus("http://192.168.1.4:5002/lux/heartBeat", "#moistureText", null, null), 3000);
-			setInterval(getModuleStatus("http://192.168.1.4:5002/moisture/heartBeat", "#luxText",  null, null), 3000);
-			setInterval(getModuleStatus("http://192.168.1.4:5002/temp/heartBeat", "#tempText",  null, null), 3000);
+			setInterval(getStatus("http://192.168.1.4:5002/heartBeat", "#statusText small", setBackgroundColor, '#324C5C'), 1000);
+			setInterval(getModuleStatus("http://192.168.1.4:5002/water/heartBeat", "#waterText", null, null), 1000);
+			setInterval(getModuleStatus("http://192.168.1.4:5002/lux/heartBeat", "#moistureText", null, null), 1000);
+			setInterval(getModuleStatus("http://192.168.1.4:5002/moisture/heartBeat", "#luxText",  null, null), 1000);
+			setInterval(getModuleStatus("http://192.168.1.4:5002/temp/heartBeat", "#tempText",  null, null), 1000);
 
 			$("#shutdownButton").click(function() {
 				var xhttp = new XMLHttpRequest();
@@ -25,9 +25,6 @@ function setBackgroundColor(color) {
 function getModuleStatus(url, element) {
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
-		console.log("status: " + this.status + " for element: " + element);
-		console.log("response: " + this.response + " for element: " + element);
-		console.log("ready state: " + this.readyState + " for element: " + element);
 		if (this.readyState == 4 && this.status == 200 && this.response === "True") {
 			console.log("success for element: " + element);
 			$(element).text("ON");
