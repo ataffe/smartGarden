@@ -1,5 +1,5 @@
 # Smart Garden 
-# [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) [![ForTheBadge powered-by-electricity]
+# [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 ### This is my DIY project to automate my indoor garden using a raspberry pi 3b. There is a soil moisture sensor, a lux sensor and a temperature sensor for input. There is a DC water pump for the watering the garden and an led grow light to supplement sunlight for the plants. I currently have filebeat running on the raspberry pi sending log data to logstash which filters the logs and then sends the data to elasticsearch running on a PC. Kibana is used to visualize the data from the sensor for further development.
 
