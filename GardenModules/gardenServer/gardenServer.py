@@ -32,7 +32,7 @@ def heartBeat():
 	return "ok"
 
 
-@app.route('water/heartBeat')
+@app.route('/water/heartBeat')
 def waterHeartBeat():
 	global pump
 	return pump.is_running()
