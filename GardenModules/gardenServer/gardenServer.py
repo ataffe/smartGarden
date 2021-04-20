@@ -35,7 +35,7 @@ def heartBeat():
 @app.route('/water/heartBeat')
 def waterHeartBeat():
 	global pump
-	return pump.is_running()
+	return str(pump.is_running())
 
 
 @app.route('/getWater')
