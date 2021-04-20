@@ -179,7 +179,7 @@ if __name__ == "__main__":
 
     soilMoistureSensor = SoilMoisture(logging, sentinel)
     pump = WaterPump(logging, sentinel, soilMoistureSensor)
-    server = GardenServer(pump, sentinel)
+
     luxSensor = None
     try:
         luxSensor = LuxSensor(logging, sentinel)
@@ -188,6 +188,7 @@ if __name__ == "__main__":
         logging.error(e)
     tempSensor = TempSensor(logging, sentinel)
     artificialLight = ArtificialLight(logging, sentinel)
+    server = GardenServer(sentinel, pump, luxSensor, soilMoistureSensor, tempSensor)
     signal.signal(signal.SIGINT, server.shutDownGarden)
 
     # thread4 = threading.Thread(target=camera_thread)
