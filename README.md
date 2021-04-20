@@ -3,7 +3,7 @@
 
 ### This is my DIY project to automate my indoor garden using a raspberry pi 3b. There is a soil moisture sensor, a lux sensor and a temperature sensor for input. There is a DC water pump for the watering the garden and an led grow light to supplement sunlight for the plants. I currently have filebeat running on the raspberry pi sending log data to logstash which filters the logs and then sends the data to elasticsearch running on a PC. Kibana is used to visualize the data from the sensor for further development.
 
-### My goal is to optimize the growth of the plants. I would like to water based on the soil moisture instead of watering at set intervals and to provide suplemental light based on the amount of natural light. Currently I am watering based on the soil moisture sensor but the grow light is on a set interval. I am currently integrating a water proof temperature sensor.
+### My goal is to optimize the growth of the plants. I would like to water based on the soil moisture instead of watering at set intervals and to provide suplemental light based on the amount of natural light. Currently I am watering based on the soil moisture sensor but the grow light is on a set interval. The soil temperature is monitored via a water proof temperature sensor which is burried in the soil about 4 inches below the surface.
 
 ###### Kibana Dashboard
 This is the kibana dashboard I use to monitor the sensor data in almost real time. (Refreshes every 1 second)
