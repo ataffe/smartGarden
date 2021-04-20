@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
 			setInterval(getStatus("http://192.168.1.4:5002/heartBeat", "#statusText small", setBackgroundColor, '#324C5C'), 3000);
-			setInterval(getStatus("http://192.168.1.4:5002/water/heartBeat", "#waterText small", null, null), 3000);
-			setInterval(getStatus("http://192.168.1.4:5002/lux/heartBeat", "#moistureText small", null, null), 3000);
-			setInterval(getStatus("http://192.168.1.4:5002/moisture/heartBeat", "#luxText small",  null, null), 3000);
-			setInterval(getStatus("http://192.168.1.4:5002/temp/heartBeat", "#tempText small",  null, null), 3000);
+			setInterval(getModuleStatus("http://192.168.1.4:5002/water/heartBeat", "#waterText", null, null), 3000);
+			setInterval(getModuleStatus("http://192.168.1.4:5002/lux/heartBeat", "#moistureText", null, null), 3000);
+			setInterval(getModuleStatus("http://192.168.1.4:5002/moisture/heartBeat", "#luxText",  null, null), 3000);
+			setInterval(getModuleStatus("http://192.168.1.4:5002/temp/heartBeat", "#tempText",  null, null), 3000);
 
 			$("#shutdownButton").click(function() {
 				var xhttp = new XMLHttpRequest();
@@ -25,17 +25,20 @@ function setBackgroundColor(color) {
 function getModuleStatus(url, element) {
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200 && this.response == "True") {
+		console.log("status: " + this.status + " for element: " + element);
+		console.log("response: " + this.response + " for element: " + element);
+		console.log("ready state: " + this.readyState + " for element: " + element);
+		if (this.readyState == 4 && this.status == 200 && this.response === "True") {
+			console.log("success for element: " + element);
 			$(element).text("ON");
-			$(element).css("font-weight", "Bold");
-			$(element).removeClass("text-danger");
-			$(element).addClass("text-success");
-			$("body").css('background-color', 'white');
-		} else if(this.readyState == 4 && this.status == 0){
+			$(element).removeClass("badge badge-warning");
+			$(element).removeClass("badge badge-danger");
+			$(element).addClass("badge badge-success");
+		} else if(this.readyState == 4 && (this.response === "False" || this.status == 0)){
 			$(element).text("OFF");
-			$(element).css("font-weight", "Bold");
-			$(element).removeClass("text-success");
-			$(element).addClass("text-danger");
+			$(element).removeClass("badge badge-warning");
+			$(element).removeClass("badge badge-success");
+			$(element).addClass("badge badge-danger");
 		}
 	}
 	xhttp.open("GET", url, true);
@@ -48,14 +51,22 @@ function getStatus(url, element, callback, arg) {
 		if (this.readyState == 4 && this.status == 200 && this.response === "ok") {
 			$(element).text("ON");
 			$(element).css("font-weight", "Bold");
+			$(element).removeClass("text-warning");
 			$(element).removeClass("text-danger");
 			$(element).addClass("text-success");
 			$("body").css('background-color', 'white');
+
+			$("#shutdownButton").removeClass("disabled");
+			$("#shutdownButton").prop("disabled", false);
 		} else if(this.readyState == 4 && this.status == 0){
 			$(element).text("OFF");
 			$(element).css("font-weight", "Bold");
+			$(element).removeClass("text-warning");
 			$(element).removeClass("text-success");
 			$(element).addClass("text-danger");
+
+			$("#shutdownButton").addClass("disabled");
+			$("#shutdownButton").prop("disabled", true);
 			if(callback != null){
 				callback(arg);
 			}

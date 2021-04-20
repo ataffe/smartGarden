@@ -48,9 +48,9 @@
                     <div class="card-body">
                         <h3 id="statusText" class="card-body">
                             Garden status is: 
-                            <small class="text-success"><strong>CHECKING</strong></small>
+                            <small class="text-warning"><strong>CHECKING</strong></small>
                         </h3>
-                        <button id="shutdownButton" type="button" class="btn btn-danger btn-lg">Shutdown Garden</button>
+                        <button id="shutdownButton" type="button" class="btn btn-danger btn-lg disabled" disabled>Shutdown Garden</button>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                 <div class="m-1 card text-center">
                     <div class="card-body">
                         <h3>Water Pump</h3>
-                        <h3 id="waterText"><span class="badge badge-success">Live</span></h3>
+                        <h3><span id="waterText" class="badge badge-warning">CHECKING</span></h3>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                 <div class="m-1 card text-center">
                     <div class="card-body">
                         <h3>Soil Moisture Sensor</h3>
-                        <h3 id="moistureText"><span class="badge badge-danger">Failed</span></h3>
+                        <h3><span id="moistureText" class="badge badge-warning">CHECKING</span></h3>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                 <div class="m-1 card text-center">
                     <div class="card-body">
                         <h3>Lux Sensor</h3>
-                        <h3 id="luxText"><span class="badge badge-danger">Failed</span></h3>
+                        <h3><span id="luxText" class="badge badge-warning">CHECKING</span></h3>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                 <div class="m-1 card text-center">
                     <div class="card-body">
                         <h3>Temperature Sensor</h3>
-                        <h3 id="tempText"><span class="badge badge-success">Live</span></h3>
+                        <h3><span id="tempText" class="badge badge-warning">CHECKING</span></h3>
                     </div>
                 </div>
             </div>
