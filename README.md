@@ -1,5 +1,5 @@
 # Smart Garden 
-# [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) [![ForTheBadge powered-by-electricity](http://ForTheBadge.com/images/badges/powered-by-electricity.svg)](http://ForTheBadge.com)
+# [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) [![ForTheBadge powered-by-electricity]
 
 ### This is my DIY project to automate my indoor garden using a raspberry pi 3b. There is a soil moisture sensor, a lux sensor and a temperature sensor for input. There is a DC water pump for the watering the garden and an led grow light to supplement sunlight for the plants. I currently have filebeat running on the raspberry pi sending log data to logstash which filters the logs and then sends the data to elasticsearch running on a PC. Kibana is used to visualize the data from the sensor for further development.
 
@@ -19,4 +19,3 @@ A time lapse using opencv and a camera mounted on the pot. This is old I am work
 
 [![alt text](https://raw.github.com/ataffe/smartGarden/master/infographic/Elastic_Stack_Logo.jpg)](https://www.elastic.co/) 
 [![alt text](https://raw.github.com/ataffe/smartGarden/master/infographic/RPI_Logo.png)](https://www.raspberrypi.org/)
-[![alt text](https://raw.github.com/ataffe/smartGarden/master/images/circuitPython.png)](https://circuitpython.org/)
