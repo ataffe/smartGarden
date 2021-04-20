@@ -18,6 +18,7 @@ temp = None
 LIGHT_START_TIME = 18
 LIGHT_END_TIME = 22
 
+
 # Control Panel End Points
 @app.route('/shutdown')
 def shutdown():
@@ -28,18 +29,36 @@ def shutdown():
 
 
 @app.route('/heartBeat')
-def heartBeat():
+def heart_beat():
 	return "ok"
 
 
 @app.route('/water/heartBeat')
-def waterHeartBeat():
+def water_heart_beat():
 	global pump
 	return str(pump.is_running())
 
 
+@app.route('/lux/heartBeat')
+def lux_heart_beat():
+	global lux
+	return str(lux.is_running())
+
+
+@app.route('/moisture/heartBeat')
+def moisture_heart_beat():
+	global moisture
+	return str(moisture.is_running())
+
+
+@app.route('/temp/heartBeat')
+def temp_heart_beat():
+	global temp
+	return str(temp.is_running())
+
+
 @app.route('/getWater')
-def getWater():
+def get_water():
 	global pump
 	try:
 		logging.info("Returning pump time: " + str(pump.getInterval()))
@@ -50,7 +69,7 @@ def getWater():
 
 
 @app.route('/setLight/<value>')
-def setLight(value):
+def set_light(value):
 	# TODO add global light object and get times from it
 	global LIGHT_START_TIME
 	global LIGHT_END_TIME
@@ -61,7 +80,7 @@ def setLight(value):
 
 
 @app.route('/setWater/<value>')
-def setWater(value):
+def set_water(value):
 	global pump
 	pump_time = int(value) * 3600
 	print("Pump interval now set to: " + str(pump_time))
@@ -70,7 +89,7 @@ def setWater(value):
 
 
 @app.route('/runPump/<time_seconds>')
-def runPump(time_seconds):
+def run_pump(time_seconds):
 	global pump
 	pump.pump(int(time_seconds))
 	return "Watering Complete"
@@ -78,18 +97,18 @@ def runPump(time_seconds):
 
 # TODO get values from light object
 @app.route('/getLightTimes')
-def getLight():
+def get_light():
 	try:
 		print("Returning light times start: " + str(LIGHT_START_TIME) + " light times end: " + str(LIGHT_END_TIME))
 		return str(LIGHT_START_TIME) + ":" + str(LIGHT_END_TIME)
 	except Exception as e:
 		print(e)
 
+
 @app.route('/garden')
 def garden_route():
 	with open("/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt") as file:
 		return file.read()
-
 
 
 @app.route('/')
