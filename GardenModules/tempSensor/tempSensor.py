@@ -25,6 +25,9 @@ class TempSensor(GardenModule):
         f.close()
         return lines
 
+    def isStarted(self):
+        return self._startup
+
     def read_temperature(self):
         lines = self._read_temp_raw()
         while lines[0].strip()[-3:] != 'YES':

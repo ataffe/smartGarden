@@ -8,6 +8,9 @@ class GardenModule(Thread):
 		self.daemon = True
 		self._startup = True
 
+	def is_running(self):
+		return self._startup
+
 	def run(self):
 		pass
 

@@ -11,11 +11,14 @@ Debug(app)
 
 pump = None
 light = None
+lux = None
+moisture = None
+temp = None
 
 LIGHT_START_TIME = 18
 LIGHT_END_TIME = 22
 
-
+# Control Panel End Points
 @app.route('/shutdown')
 def shutdown():
 	logging.info("Shutting down garden.")
@@ -27,6 +30,12 @@ def shutdown():
 @app.route('/heartBeat')
 def heartBeat():
 	return "ok"
+
+
+@app.route('water/heartBeat')
+def waterHeartBeat():
+	global pump
+	return pump.is_running()
 
 
 @app.route('/getWater')
@@ -76,61 +85,13 @@ def getLight():
 	except Exception as e:
 		print(e)
 
-
-@app.route('/soil')
-def soil_route():
-	try:
-		with open("/home/pi/Desktop/smartGarden/smartGarden/logs/soilLog.txt") as file:
-			#lines = file.readlines()
-			table = ""
-			for count, line in reversed(list(enumerate(file))):
-				fields = line.split()
-				raw_value = fields[8]
-				percent = fields[3]
-				date = fields[4]
-				time = fields[5]
-
-				if count % 2 == 0:
-					table = table + "<tr style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>"
-				else:
-					table = table + "<tr style='border: 1px solid;padding: 8px; text-align: center;'>"
-
-				table = table + "<td>" + date + "</td>"
-				table = table + "<td>" + time + "</td>"
-				table = table + "<td>" + percent + "</td>"
-				table = table + "<td>" + raw_value + "</td>"
-				table = table + "</tr>"
-		return '''
-		<html>
-			<head>
-				<title>Soil Moisture - Smart Garden</title>
-			</head>
-			<body>
-				<h1 style="font-family: 'Roboto', sans-serif;">Soil Moisture Data</h1>
-				<table style="width:100%">
-					<tr>
-						<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;">Date</th>
-						<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;">Time</th>
-						<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;">Soil Moisture Percent</th>
-						<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;">Soil Moisture Raw Value</th>
-					</tr>
-					''' + table + '''
-				</table>
-			</body>
-		</html>
-		'''
-	except Exception as e:
-		logging.warn("There was an exception returning soil data to rest endpoint: " + str(e))
-		return "There was an exception: " + str(e)
-
-
 @app.route('/garden')
 def garden_route():
 	with open("/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt") as file:
 		return file.read()
 
 
-# Control Panel End Points
+
 @app.route('/')
 @app.route('/controlPanel')
 def control_panel():
@@ -176,10 +137,16 @@ def _shutdown_server():
 
 
 class GardenServer(GardenModule):
-	def __init__(self, water_pump, queue):
+	def __init__(self, queue, water_pump, lux_sensor, soil_moisture_sensor, temp_sensor):
 		super().__init__(queue)
 		global pump
 		pump = water_pump
+		global lux
+		lux = lux_sensor
+		global moisture
+		moisture = soil_moisture_sensor
+		global temp
+		temp = temp_sensor
 
 	def run(self):
 		try:
