@@ -14,5 +14,5 @@ sudo apt-get install libjasper-dev
 sudo apt-get install libqtgui4
 sudo apt-get install libqt4-test
 #paper trail
-wget -qO - --header="X-Papertrail-Token: 5z2e1Jt2DIcHx9gjLcE" \
-https://papertrailapp.com/destinations/17877732/setup.sh | sudo bash
+wget -qO - --header="X-Papertrail-Token: <Token>" \
+https://papertrailapp.com/destinations/<Token>/setup.sh | sudo bash

@@ -1,0 +1,3 @@
+# Soil Moisture Sensor
+
+This is a module to control a [Gikfun Capacitive Soil Moisture Sensor](https://www.amazon.com/gp/product/B07H3P1NRM/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) via I2C. The soil moisture sensor is connected to a [Onyehn ADS1115 16 Byte 4 Channel I2C IIC Analog-to-Digital ADC Converter](https://www.amazon.com/gp/product/B07L3Q7N7T/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)

@@ -5,7 +5,7 @@ from GardenModules.GardenModule import GardenModule
 import logging
 import time
 
-app = Flask(__name__, template_folder='/home/pi/Desktop/smartGarden/smartGarden/ControlPanel', static_folder="/home/pi/Desktop/smartGarden/smartGarden/ControlPanel")
+app = Flask(__name__, template_folder='./ControlPanel', static_folder="./ControlPanel")
 CORS(app)
 Debug(app)
 
@@ -105,9 +105,56 @@ def get_light():
 		print(e)
 
 
+@app.route('/soil')
+def soil_route():
+	try:
+		with open("./soilLog.txt") as file:
+			#lines = file.readlines()
+			table = ""
+			for count, line in reversed(list(enumerate(file))):
+				fields = line.split()
+				raw_value = fields[8]
+				percent = fields[3]
+				date = fields[4]
+				time = fields[5]
+
+				if count % 2 == 0:
+					table = table + "<tr style='background-color: #f2f2f2;border: 1px solid;padding: 8px; text-align: center'>"
+				else:
+					table = table + "<tr style='border: 1px solid;padding: 8px; text-align: center;'>"
+
+				table = table + "<td>" + date + "</td>"
+				table = table + "<td>" + time + "</td>"
+				table = table + "<td>" + percent + "</td>"
+				table = table + "<td>" + raw_value + "</td>"
+				table = table + "</tr>"
+		return '''
+		<html>
+			<head>
+				<title>Soil Moisture - Smart Garden</title>
+			</head>
+			<body>
+				<h1 style="font-family: 'Roboto', sans-serif;">Soil Moisture Data</h1>
+				<table style="width:100%">
+					<tr>
+						<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;">Date</th>
+						<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;">Time</th>
+						<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;">Soil Moisture Percent</th>
+						<th style="font-size: medium;padding: 8px;background-color: #4CAF50;color: white;">Soil Moisture Raw Value</th>
+					</tr>
+					''' + table + '''
+				</table>
+			</body>
+		</html>
+		'''
+	except Exception as e:
+		logging.warn("There was an exception returning soil data to rest endpoint: " + str(e))
+		return "There was an exception: " + str(e)
+
+
 @app.route('/garden')
 def garden_route():
-	with open("/home/pi/Desktop/smartGarden/smartGarden/logs/smartGardenLog.txt") as file:
+	with open("./logs/smartGardenLog.txt") as file:
 		return file.read()
 
 
@@ -119,31 +166,31 @@ def control_panel():
 
 @app.route('/water')
 def control_panel_water():
-	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/water.html') as file:
+	with open('./ControlPanel/water.html') as file:
 		return file.read()
 
 
 @app.route('/light')
 def control_panel_light():
-	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/light.html') as file:
+	with open('./ControlPanel/light.html') as file:
 		return file.read()
 
 
 @app.route('/soilMoisture')
 def control_panel_soil_moisture():
-	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/soilMoisture.html') as file:
+	with open('./ControlPanel/soilMoisture.html') as file:
 		return file.read()
 
 
 @app.route('/sun_css')
 def sun_css():
-	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/sun.css') as file:
+	with open('./ControlPanel/sun.css') as file:
 		return file.read()
 
 
 @app.route('/status_css')
 def status_css():
-	with open('/home/pi/Desktop/smartGarden/smartGarden/ControlPanel/status.css') as file:
+	with open('./ControlPanel/status.css') as file:
 		return file.read()
 # End Control Panel Endpoints
 

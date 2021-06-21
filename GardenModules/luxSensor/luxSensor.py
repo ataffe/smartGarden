@@ -19,7 +19,7 @@ class LuxSensor(GardenModule):
             self._sensor.gain = 0
             self._grow_light_lux = 535
             self._lux_interval = 120
-            self._data_file = "/home/pi/Desktop/smartGarden/smartGarden/Data/luxData.csv"
+            self._data_file = "./Data/luxData.csv"
             self._log.info("Lux sensor start up successful")
         except Exception as exception:
             self._log.error("Lux sensor failed to start up.")

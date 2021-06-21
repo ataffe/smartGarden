@@ -23,7 +23,7 @@ class SoilMoisture(GardenModule):
             self.soilInterval = 120  # 1800
             self._log.info("Channel: " + str(self.channel))
             self.setName("soilThread")
-            self._data_file = "/home/pi/Desktop/smartGarden/smartGarden/Data/soilMoistureData.csv"
+            self._data_file = "./Data/soilMoistureData.csv"
 
             # Set Gain to 16 bits
             # Gain = 1 # Wet: 13884 Dry: 21680
@@ -69,7 +69,7 @@ class SoilMoisture(GardenModule):
             self._log.exception("Error calculating soil moisture")
 
         try:
-            with open("/home/pi/Desktop/smartGarden/smartGarden/logs/soilLog.txt", "a+") as logFile:
+            with open("./logs/soilLog.txt", "a+") as logFile:
                 logFile.write("Soil Moisture Level: " + str(self.getSoilPercentage()) + "% " + str(
                     datetime.now()) + " Raw Value: " + str(self.channel.value) + "\n")
         except Exception as exception:

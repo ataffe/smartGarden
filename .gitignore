@@ -19,6 +19,8 @@
 *.log
 logs/
 
+#local
+*.local*
 # MISC
 camera.sh
 manual_transfer.py

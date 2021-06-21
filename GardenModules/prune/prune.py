@@ -3,7 +3,7 @@ import logging
 def prune(file):
 	lines = []
 	try:
-		logFile = open("/home/pi/Desktop/smartGarden/smartGarden/logs/" + file, "r")
+		logFile = open("./logs/" + file, "r")
 		for line in logFile:
 			lines.append(line)
 	except Exception as e:
@@ -12,7 +12,7 @@ def prune(file):
 		logFile.close()
 		
 	try:
-		logFile = open("/home/pi/Desktop/smartGarden/smartGarden/logs/" + file, "w")
+		logFile = open("./logs/" + file, "w")
 		if len(lines) > 5000:
 			# Only keep the last 5000 lines
 			for x in range(5000):
